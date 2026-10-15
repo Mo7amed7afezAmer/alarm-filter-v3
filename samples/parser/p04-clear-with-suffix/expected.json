@@ -1,0 +1,9 @@
+{
+  "format": "HASH",
+  "isClear": true,
+  "alarmName": "S_D_N_FENCE GATE ALARM",
+  "nameSuffix": "Default System Time",
+  "site": "SRAN_LWG_D_BH-SHOBRA-RIS_4360DE",
+  "alarmTime": "2026-10-11T12:58:05.000Z",
+  "alarmKey": "S_D_N_FENCE GATE ALARM||SRAN_LWG_D_BH-SHOBRA-RIS_4360DE"
+}

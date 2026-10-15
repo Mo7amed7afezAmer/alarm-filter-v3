@@ -1,0 +1,10 @@
+{
+  "format": "HASH",
+  "isClear": false,
+  "alarmName": "S_D_N_RECTIFIER MINOR ALARM",
+  "site": "SRAN_LG_TDD_E_BH-WASTANIYA_3804DE",
+  "alarmTime": "2026-10-11T18:12:23.000Z",
+  "consecNbr": "2292565",
+  "device": "MRBTS",
+  "alarmKey": "S_D_N_RECTIFIER MINOR ALARM||SRAN_LG_TDD_E_BH-WASTANIYA_3804DE"
+}

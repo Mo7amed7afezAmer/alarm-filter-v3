@@ -1,0 +1,10 @@
+{
+  "format": "HASH",
+  "isClear": true,
+  "alarmName": "S_D_N_WCDMA BASE STATION OUT OF USE",
+  "site": "U_S_BH-HORRIA_3928DE",
+  "alarmTime": "2026-10-11T16:03:38.000Z",
+  "consecNbr": "2280474",
+  "device": "site",
+  "alarmKey": "S_D_N_WCDMA BASE STATION OUT OF USE||U_S_BH-HORRIA_3928DE"
+}

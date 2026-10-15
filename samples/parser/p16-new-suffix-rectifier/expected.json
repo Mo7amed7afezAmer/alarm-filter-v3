@@ -1,0 +1,9 @@
+{
+  "format": "HASH",
+  "isClear": false,
+  "alarmName": "S_D_N_RECTIFIER MAJOR ALARM",
+  "nameSuffix": "Default System Time",
+  "site": "SRAN_LWG_TDD_G_DK-KFR-BAHAYTA_3752DE",
+  "alarmTime": "2026-10-11T13:33:08.000Z",
+  "alarmKey": "S_D_N_RECTIFIER MAJOR ALARM||SRAN_LWG_TDD_G_DK-KFR-BAHAYTA_3752DE"
+}

@@ -1,0 +1,10 @@
+{
+  "format": "HASH",
+  "isClear": true,
+  "alarmName": "S_D_N_SHELTER DOOR ALARM",
+  "site": "SRAN_LWG_TDD_V_BH-KFDW-BOLES_3207DE",
+  "alarmTime": "2026-10-11T18:02:13.000Z",
+  "consecNbr": "2291619",
+  "device": "MRBTS",
+  "alarmKey": "S_D_N_SHELTER DOOR ALARM||SRAN_LWG_TDD_V_BH-KFDW-BOLES_3207DE"
+}

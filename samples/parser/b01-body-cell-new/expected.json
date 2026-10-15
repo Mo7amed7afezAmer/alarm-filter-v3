@@ -1,0 +1,11 @@
+{
+  "format": "HASH",
+  "isClear": false,
+  "alarmName": "S_D_N_WCDMA CELL OUT OF USE",
+  "site": "U_S_BH-MHLT-KYL_3830DE",
+  "alarmTime": "2026-10-11T18:36:45.000Z",
+  "consecNbr": "2294476",
+  "device": "cell",
+  "cellName": "A_BH-MHLT-KYL_4_24314_S",
+  "alarmKey": "S_D_N_WCDMA CELL OUT OF USE||U_S_BH-MHLT-KYL_3830DE||A_BH-MHLT-KYL_4_24314_S"
+}
