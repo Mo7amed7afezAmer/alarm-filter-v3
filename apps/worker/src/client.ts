@@ -72,6 +72,10 @@ export async function createGmailApi(paths: { credentialsPath: string; tokenPath
   const userId = "me";
 
   return {
+    async labelsList() {
+      const { data } = await api.users.labels.list({ userId });
+      return (data.labels ?? []).map((l) => ({ id: l.id ?? "", name: l.name ?? "", type: l.type ?? undefined }));
+    },
     async getProfile() {
       const { data } = await api.users.getProfile({ userId });
       return { historyId: data.historyId ?? null };

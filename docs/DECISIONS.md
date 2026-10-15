@@ -79,6 +79,8 @@ R-02 and R-03 are not defined in PLAN.md §7.
 | --- | --- | --- |
 | G-T02 table count | PLAN.md says "16 tables"; REQUIREMENTS.md §5 lists 9 models. The schema implements exactly the 9 models in §5. | mohamed.hafez@docnile.com / 2026-10-15 |
 | G-T02 seed scope | Seed default rules (FR-16) and the initial ADMIN (FR-29) only. The hourly-normalizations seed (NFR-31) waits until the default list is supplied under `samples/seed/`. | mohamed.hafez@docnile.com / 2026-10-15 |
+| G-T07 lock 42 | Two worker instances: `pg_try_advisory_xact_lock(42)` — the second instance logs and skips the cycle (D-03), instead of waiting as `pg_advisory_xact_lock` would (NFR-10 wording). | mohamed.hafez@docnile.com / 2026-10-15 |
+| G-T07 health grace | FR-69 start-up grace = `HEALTH_STALE_AFTER_SEC` (default 300 s): no 503 for staleness during the first 300 s after the worker starts. | mohamed.hafez@docnile.com / 2026-10-15 |
 
 ## Approval (PLAN.md §10)
 

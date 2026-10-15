@@ -29,5 +29,39 @@ services:
         condition: service_healthy
     restart: "no"
 
+  worker:
+    build:
+      context: .
+      dockerfile: apps/worker/Dockerfile
+    restart: unless-stopped
+    environment:
+      DATABASE_URL: postgresql://${POSTGRES_USER:-alarms}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB:-alarms}
+      GOOGLE_CREDENTIALS_PATH: /run/gmail/credentials.json
+      GOOGLE_TOKEN_PATH: /run/gmail/token.json
+      GMAIL_LABELS: ${GMAIL_LABELS:-}
+      GMAIL_QUERY: ${GMAIL_QUERY:-}
+      OFFICE_LABEL_PARENTS: ${OFFICE_LABEL_PARENTS:-DN,DS}
+      ALARM_TZ: ${ALARM_TZ:-Africa/Cairo}
+      WORKER_CRON: ${WORKER_CRON:-* * * * *}
+      WORKER_HEALTH_PORT: ${WORKER_HEALTH_PORT:-4000}
+      MAX_MESSAGES_PER_RUN: ${MAX_MESSAGES_PER_RUN:-200}
+      INITIAL_BACKFILL_HOURS: ${INITIAL_BACKFILL_HOURS:-24}
+      HEALTH_STALE_AFTER_SEC: ${HEALTH_STALE_AFTER_SEC:-300}
+    volumes:
+      # NFR-21: OAuth files mounted read-only.
+      - ./secrets/credentials.json:/run/gmail/credentials.json:ro
+      - ./secrets/token.json:/run/gmail/token.json:ro
+    depends_on:
+      db:
+        condition: service_healthy
+      migrate:
+        condition: service_completed_successfully
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://127.0.0.1:$${WORKER_HEALTH_PORT}/health || exit 1"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 30s
+
 volumes:
   db-data:

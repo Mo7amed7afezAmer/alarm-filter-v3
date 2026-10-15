@@ -37,7 +37,14 @@ export interface GmailMessage {
   payload?: GmailPayload;
 }
 
+export interface GmailLabel {
+  id: string;
+  name: string;
+  type?: string;
+}
+
 export interface GmailApi {
+  labelsList(): Promise<GmailLabel[]>;
   getProfile(): Promise<{ historyId?: string | null }>;
   historyList(params: {
     startHistoryId: string;

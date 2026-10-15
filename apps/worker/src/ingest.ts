@@ -1,4 +1,4 @@
-import { insertRawMessages, knownGmailIds, type NewRawMessage, type PrismaClient } from "@alarm/db";
+import { insertRawMessages, knownGmailIds, type Db, type NewRawMessage } from "@alarm/db";
 import {
   currentHistoryId,
   getMessage,
@@ -20,7 +20,7 @@ export interface RawMessageSink {
   insert(rows: NewRawMessage[]): Promise<number>;
 }
 
-export function dbSink(db: PrismaClient): RawMessageSink {
+export function dbSink(db: Db): RawMessageSink {
   return {
     knownIds: (ids) => knownGmailIds(db, ids),
     insert: (rows) => insertRawMessages(db, rows),
