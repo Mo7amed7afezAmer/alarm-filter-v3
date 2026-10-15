@@ -1,0 +1,10 @@
+node_modules/
+.env
+.env.*
+secrets/
+credentials.json
+token.json
+dist/
+.next/
+coverage/
+playwright-report/
