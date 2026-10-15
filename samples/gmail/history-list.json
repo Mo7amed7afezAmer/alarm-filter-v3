@@ -1,0 +1,240 @@
+[
+  {
+    "history": [
+      {
+        "id": "8010",
+        "messages": [
+          {
+            "id": "1a12bc90a4119e8a",
+            "threadId": "1a12bc90a4119e8a",
+            "labelIds": [
+              "Label_DN",
+              "INBOX"
+            ]
+          }
+        ],
+        "messagesAdded": [
+          {
+            "message": {
+              "id": "1a12bc90a4119e8a",
+              "threadId": "1a12bc90a4119e8a",
+              "labelIds": [
+                "Label_DN",
+                "INBOX"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "8020",
+        "messages": [
+          {
+            "id": "1a12bffb0e18dc64",
+            "threadId": "1a12bffb0e18dc64",
+            "labelIds": [
+              "Label_DN",
+              "INBOX"
+            ]
+          }
+        ],
+        "messagesAdded": [
+          {
+            "message": {
+              "id": "1a12bffb0e18dc64",
+              "threadId": "1a12bffb0e18dc64",
+              "labelIds": [
+                "Label_DN",
+                "INBOX"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "8025",
+        "messages": [
+          {
+            "id": "draft0000000001",
+            "threadId": "draft0000000001",
+            "labelIds": [
+              "DRAFT"
+            ]
+          }
+        ],
+        "messagesAdded": [
+          {
+            "message": {
+              "id": "draft0000000001",
+              "threadId": "draft0000000001",
+              "labelIds": [
+                "DRAFT"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "8030",
+        "messages": [
+          {
+            "id": "1a12c3637e33cd71",
+            "threadId": "1a12c3637e33cd71",
+            "labelIds": [
+              "Label_DN",
+              "INBOX"
+            ]
+          }
+        ],
+        "messagesAdded": [
+          {
+            "message": {
+              "id": "1a12c3637e33cd71",
+              "threadId": "1a12c3637e33cd71",
+              "labelIds": [
+                "Label_DN",
+                "INBOX"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "historyId": "8100",
+    "nextPageToken": "page-2"
+  },
+  {
+    "history": [
+      {
+        "id": "8035",
+        "messages": [
+          {
+            "id": "sent00000000001",
+            "threadId": "sent00000000001",
+            "labelIds": [
+              "SENT"
+            ]
+          }
+        ],
+        "messagesAdded": [
+          {
+            "message": {
+              "id": "sent00000000001",
+              "threadId": "sent00000000001",
+              "labelIds": [
+                "SENT"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "8040",
+        "messages": [
+          {
+            "id": "1a12c3698726c4f4",
+            "threadId": "1a12c3698726c4f4",
+            "labelIds": [
+              "Label_DN",
+              "INBOX"
+            ]
+          }
+        ],
+        "labelsAdded": [
+          {
+            "message": {
+              "id": "1a12c3698726c4f4",
+              "threadId": "1a12c3698726c4f4",
+              "labelIds": [
+                "Label_DN",
+                "INBOX"
+              ]
+            },
+            "labelIds": [
+              "Label_DN"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "8045",
+        "messages": [
+          {
+            "id": "1a12bc90a4119e8a",
+            "threadId": "1a12bc90a4119e8a",
+            "labelIds": [
+              "Label_DN",
+              "INBOX"
+            ]
+          }
+        ],
+        "labelsAdded": [
+          {
+            "message": {
+              "id": "1a12bc90a4119e8a",
+              "threadId": "1a12bc90a4119e8a",
+              "labelIds": [
+                "Label_DN",
+                "Label_OTHER"
+              ]
+            },
+            "labelIds": [
+              "Label_OTHER"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "8050",
+        "messages": [
+          {
+            "id": "1a12c3856523f17f",
+            "threadId": "1a12c3856523f17f",
+            "labelIds": [
+              "Label_DN",
+              "INBOX"
+            ]
+          }
+        ],
+        "messagesAdded": [
+          {
+            "message": {
+              "id": "1a12c3856523f17f",
+              "threadId": "1a12c3856523f17f",
+              "labelIds": [
+                "Label_DN",
+                "INBOX"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "8060",
+        "messages": [
+          {
+            "id": "1a12c48bdc085fd2",
+            "threadId": "1a12c48bdc085fd2",
+            "labelIds": [
+              "Label_DN",
+              "INBOX"
+            ]
+          }
+        ],
+        "messagesAdded": [
+          {
+            "message": {
+              "id": "1a12c48bdc085fd2",
+              "threadId": "1a12c48bdc085fd2",
+              "labelIds": [
+                "Label_DN",
+                "INBOX"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "historyId": "8100"
+  }
+]

@@ -1,0 +1,59 @@
+{
+  "id": "1a12bc90a4119e8a",
+  "threadId": "1a12bc90a4119e8a",
+  "labelIds": [
+    "Label_DN",
+    "INBOX"
+  ],
+  "snippet": "",
+  "historyId": "8010",
+  "internalDate": "1791735952000",
+  "sizeEstimate": 886,
+  "payload": {
+    "partId": "",
+    "mimeType": "multipart/alternative",
+    "headers": [
+      {
+        "name": "From",
+        "value": "NOC Alarms <alarms@example.invalid>"
+      },
+      {
+        "name": "Subject",
+        "value": "CLEARED_S_D_N_WCDMA BASE STATION OUT OF USE on #U_S_BH-HORRIA_3928DE# at |11-OCT-2026 19:03:38 |"
+      }
+    ],
+    "body": {
+      "size": 0
+    },
+    "parts": [
+      {
+        "partId": "0",
+        "mimeType": "text/plain",
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "text/plain; charset=\"UTF-8\""
+          }
+        ],
+        "body": {
+          "size": 374,
+          "data": "CQkJCSMjIyMjIyMjIyMjI0NMRUFSRU5DRSBBTEFSTSMjIyMjIyMjIyMjDQoNCkFMQVJNIE5BTUU6IA0KCQlXQ0RNQSBCQVNFIFNUQVRJT04gT1VUIE9GIFVTRQ0KQUxBUk1fU1RBUlRfVElNRTogDQoJCTExLU9DVC0yMDI2IDE5OjAzOjM4DQpORV9uYW1lOiANCgkJUk5DNjYNCkFsYXJtX051bWJlcg0KCQk3Nzg2DQpNUl9vZl9Db250cm9sZWRfTkU6IA0KCQlOTw0KTVJfb2ZfU2l0ZToNCgkJU1lTX0RFTFRBX05PUlRIDQpBTEFSTV9TSVRFOg0KCQlVX1NfQkgtSE9SUklBXzM5MjhERQ0KQUxBUk1fRGV2aWNlOg0KCQlzaXRlDQpDT05TRUNfTkJSOiANCgkJIDIyODA0NzQNCg0KVEhBTktTIEZPUiBVU0lORyBUSElTIFRPT0wNCg0KUkVHQVJHRFMNCkQuUw0KDQo"
+        }
+      },
+      {
+        "partId": "1",
+        "mimeType": "text/html",
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "text/html; charset=\"UTF-8\""
+          }
+        ],
+        "body": {
+          "size": 411,
+          "data": "PGh0bWw-PGJvZHk-PHByZT4JCQkJIyMjIyMjIyMjIyMjQ0xFQVJFTkNFIEFMQVJNIyMjIyMjIyMjIyMNCg0KQUxBUk0gTkFNRTogDQoJCVdDRE1BIEJBU0UgU1RBVElPTiBPVVQgT0YgVVNFDQpBTEFSTV9TVEFSVF9USU1FOiANCgkJMTEtT0NULTIwMjYgMTk6MDM6MzgNCk5FX25hbWU6IA0KCQlSTkM2Ng0KQWxhcm1fTnVtYmVyDQoJCTc3ODYNCk1SX29mX0NvbnRyb2xlZF9ORTogDQoJCU5PDQpNUl9vZl9TaXRlOg0KCQlTWVNfREVMVEFfTk9SVEgNCkFMQVJNX1NJVEU6DQoJCVVfU19CSC1IT1JSSUFfMzkyOERFDQpBTEFSTV9EZXZpY2U6DQoJCXNpdGUNCkNPTlNFQ19OQlI6IA0KCQkgMjI4MDQ3NA0KDQpUSEFOS1MgRk9SIFVTSU5HIFRISVMgVE9PTA0KDQpSRUdBUkdEUw0KRC5TDQoNCjwvcHJlPjwvYm9keT48L2h0bWw-"
+        }
+      }
+    ]
+  }
+}

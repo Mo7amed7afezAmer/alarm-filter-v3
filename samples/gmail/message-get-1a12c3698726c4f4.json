@@ -1,0 +1,59 @@
+{
+  "id": "1a12c3698726c4f4",
+  "threadId": "1a12c3698726c4f4",
+  "labelIds": [
+    "Label_DN",
+    "INBOX"
+  ],
+  "snippet": "",
+  "historyId": "8040",
+  "internalDate": "1791743131000",
+  "sizeEstimate": 890,
+  "payload": {
+    "partId": "",
+    "mimeType": "multipart/alternative",
+    "headers": [
+      {
+        "name": "From",
+        "value": "NOC Alarms <alarms@example.invalid>"
+      },
+      {
+        "name": "Subject",
+        "value": "CLEARED_S_D_N_SHELTER DOOR ALARM on #SRAN_LWG_TDD_V_BH-KFDW-BOLES_3207DE# at |11-OCT-2026 21:02:13 |"
+      }
+    ],
+    "body": {
+      "size": 0
+    },
+    "parts": [
+      {
+        "partId": "0",
+        "mimeType": "text/plain",
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "text/plain; charset=\"UTF-8\""
+          }
+        ],
+        "body": {
+          "size": 378,
+          "data": "CQkJCSMjIyMjIyMjIyMjI0NMRUFSRU5DRSBBTEFSTSMjIyMjIyMjIyMjDQoNCkFMQVJNIE5BTUU6IA0KCQlTSEVMVEVSIERPT1IgQUxBUk0NCkFMQVJNX1NUQVJUX1RJTUU6IA0KCQkxMS1PQ1QtMjAyNiAyMTowMjoxMw0KTkVfbmFtZTogDQoJCVNSQU4NCkFsYXJtX051bWJlcg0KCQk3MTAzDQpNUl9vZl9Db250cm9sZWRfTkU6IA0KCQlOTw0KTVJfb2ZfU2l0ZToNCgkJU1lTX0RFTFRBX05PUlRIDQpBTEFSTV9TSVRFOg0KCQlTUkFOX0xXR19URERfVl9CSC1LRkRXLUJPTEVTXzMyMDdERQ0KQUxBUk1fRGV2aWNlOg0KCQlNUkJUUw0KQ09OU0VDX05CUjogDQoJCSAyMjkxNjE5DQoNClRIQU5LUyBGT1IgVVNJTkcgVEhJUyBUT09MDQoNClJFR0FSR0RTDQpELlMNCg0K"
+        }
+      },
+      {
+        "partId": "1",
+        "mimeType": "text/html",
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "text/html; charset=\"UTF-8\""
+          }
+        ],
+        "body": {
+          "size": 415,
+          "data": "PGh0bWw-PGJvZHk-PHByZT4JCQkJIyMjIyMjIyMjIyMjQ0xFQVJFTkNFIEFMQVJNIyMjIyMjIyMjIyMNCg0KQUxBUk0gTkFNRTogDQoJCVNIRUxURVIgRE9PUiBBTEFSTQ0KQUxBUk1fU1RBUlRfVElNRTogDQoJCTExLU9DVC0yMDI2IDIxOjAyOjEzDQpORV9uYW1lOiANCgkJU1JBTg0KQWxhcm1fTnVtYmVyDQoJCTcxMDMNCk1SX29mX0NvbnRyb2xlZF9ORTogDQoJCU5PDQpNUl9vZl9TaXRlOg0KCQlTWVNfREVMVEFfTk9SVEgNCkFMQVJNX1NJVEU6DQoJCVNSQU5fTFdHX1RERF9WX0JILUtGRFctQk9MRVNfMzIwN0RFDQpBTEFSTV9EZXZpY2U6DQoJCU1SQlRTDQpDT05TRUNfTkJSOiANCgkJIDIyOTE2MTkNCg0KVEhBTktTIEZPUiBVU0lORyBUSElTIFRPT0wNCg0KUkVHQVJHRFMNCkQuUw0KDQo8L3ByZT48L2JvZHk-PC9odG1sPg"
+        }
+      }
+    ]
+  }
+}

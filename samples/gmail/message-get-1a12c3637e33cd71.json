@@ -1,0 +1,59 @@
+{
+  "id": "1a12c3637e33cd71",
+  "threadId": "1a12c3637e33cd71",
+  "labelIds": [
+    "Label_DN",
+    "INBOX"
+  ],
+  "snippet": "",
+  "historyId": "8030",
+  "internalDate": "1791743105000",
+  "sizeEstimate": 885,
+  "payload": {
+    "partId": "",
+    "mimeType": "multipart/alternative",
+    "headers": [
+      {
+        "name": "From",
+        "value": "NOC Alarms <alarms@example.invalid>"
+      },
+      {
+        "name": "Subject",
+        "value": "S_D_N_RECTIFIER MINOR ALARM on #SRAN_LG_TDD_E_BH-WASTANIYA_3804DE# at |11-OCT-2026 21:12:23 |"
+      }
+    ],
+    "body": {
+      "size": 0
+    },
+    "parts": [
+      {
+        "partId": "0",
+        "mimeType": "text/plain",
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "text/plain; charset=\"UTF-8\""
+          }
+        ],
+        "body": {
+          "size": 373,
+          "data": "CQkJCSMjIyMjIyMjIyMjI05FVyBBTEFSTSMjIyMjIyMjIyMjDQoNCkFMQVJNIE5BTUU6IA0KCQlSRUNUSUZJRVIgTUlOT1IgQUxBUk0NCkFMQVJNX1NUQVJUX1RJTUU6IA0KCQkxMS1PQ1QtMjAyNiAyMToxMjoyMw0KTkVfbmFtZTogDQoJCVNSQU4NCkFsYXJtX051bWJlcg0KCQk3MTAzDQpNUl9vZl9Db250cm9sZWRfTkU6IA0KCQlOTw0KTVJfb2ZfU2l0ZToNCgkJU1lTX0RFTFRBX05PUlRIDQpBTEFSTV9TSVRFOg0KCQlTUkFOX0xHX1RERF9FX0JILVdBU1RBTklZQV8zODA0REUNCkFMQVJNX0RldmljZToNCgkJTVJCVFMNCkNPTlNFQ19OQlI6IA0KCQkgMjI5MjU2NQ0KDQpUSEFOS1MgRk9SIFVTSU5HIFRISVMgVE9PTA0KDQpSRUdBUkdEUw0KRC5TDQoNCg"
+        }
+      },
+      {
+        "partId": "1",
+        "mimeType": "text/html",
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "text/html; charset=\"UTF-8\""
+          }
+        ],
+        "body": {
+          "size": 410,
+          "data": "PGh0bWw-PGJvZHk-PHByZT4JCQkJIyMjIyMjIyMjIyMjTkVXIEFMQVJNIyMjIyMjIyMjIyMNCg0KQUxBUk0gTkFNRTogDQoJCVJFQ1RJRklFUiBNSU5PUiBBTEFSTQ0KQUxBUk1fU1RBUlRfVElNRTogDQoJCTExLU9DVC0yMDI2IDIxOjEyOjIzDQpORV9uYW1lOiANCgkJU1JBTg0KQWxhcm1fTnVtYmVyDQoJCTcxMDMNCk1SX29mX0NvbnRyb2xlZF9ORTogDQoJCU5PDQpNUl9vZl9TaXRlOg0KCQlTWVNfREVMVEFfTk9SVEgNCkFMQVJNX1NJVEU6DQoJCVNSQU5fTEdfVEREX0VfQkgtV0FTVEFOSVlBXzM4MDRERQ0KQUxBUk1fRGV2aWNlOg0KCQlNUkJUUw0KQ09OU0VDX05CUjogDQoJCSAyMjkyNTY1DQoNClRIQU5LUyBGT1IgVVNJTkcgVEhJUyBUT09MDQoNClJFR0FSR0RTDQpELlMNCg0KPC9wcmU-PC9ib2R5PjwvaHRtbD4"
+        }
+      }
+    ]
+  }
+}

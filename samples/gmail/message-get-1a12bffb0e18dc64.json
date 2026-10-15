@@ -1,0 +1,30 @@
+{
+  "id": "1a12bffb0e18dc64",
+  "threadId": "1a12bffb0e18dc64",
+  "labelIds": [
+    "Label_DN",
+    "INBOX"
+  ],
+  "snippet": "",
+  "historyId": "8020",
+  "internalDate": "1791739529000",
+  "sizeEstimate": 880,
+  "payload": {
+    "partId": "",
+    "mimeType": "text/html",
+    "headers": [
+      {
+        "name": "From",
+        "value": "NOC Alarms <alarms@example.invalid>"
+      },
+      {
+        "name": "Subject",
+        "value": "S_D_N_WCDMA BASE STATION OUT OF USE on #U_S_BH-HAMMAD_3809DE# at |11-OCT-2026 20:05:46 |"
+      }
+    ],
+    "body": {
+      "size": 498,
+      "data": "PGh0bWw-PGJvZHk-CQkJCSMjIyMjIyMjIyMjI05FVyBBTEFSTSMjIyMjIyMjIyMjPGJyPg0KPGJyPg0KQUxBUk0gTkFNRTogPGJyPg0KCQlXQ0RNQSBCQVNFIFNUQVRJT04gT1VUIE9GIFVTRTxicj4NCkFMQVJNX1NUQVJUX1RJTUU6IDxicj4NCgkJMTEtT0NULTIwMjYgMjA6MDU6NDY8YnI-DQpORV9uYW1lOiA8YnI-DQoJCVJOQzY2PGJyPg0KQWxhcm1fTnVtYmVyPGJyPg0KCQk3Nzg2PGJyPg0KTVJfb2ZfQ29udHJvbGVkX05FOiA8YnI-DQoJCU5PPGJyPg0KTVJfb2ZfU2l0ZTo8YnI-DQoJCVNZU19ERUxUQV9OT1JUSDxicj4NCkFMQVJNX1NJVEU6PGJyPg0KCQlVX1NfQkgtSEFNTUFEXzM4MDlERTxicj4NCkFMQVJNX0RldmljZTo8YnI-DQoJCXNpdGU8YnI-DQpDT05TRUNfTkJSOiA8YnI-DQoJCSAyMjg2NjEyPGJyPg0KPGJyPg0KVEhBTktTIEZPUiBVU0lORyBUSElTIFRPT0w8YnI-DQo8YnI-DQpSRUdBUkdEUzxicj4NCkQuUzxicj4NCjxicj4NCjwvYm9keT48L2h0bWw-"
+    }
+  }
+}
