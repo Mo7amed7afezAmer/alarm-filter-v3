@@ -61,7 +61,11 @@ importers:
         specifier: workspace:*
         version: link:../../packages/db
 
-  packages/core: {}
+  packages/core:
+    devDependencies:
+      '@types/node':
+        specifier: ^20.17.0
+        version: 20.19.43
 
   packages/db:
     dependencies:
