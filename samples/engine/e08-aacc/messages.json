@@ -1,0 +1,37 @@
+{
+  "note": "FR-20 then stale",
+  "batches": [
+    [
+      {
+        "gmailId": "s018",
+        "subject": "S_D_N_BCCH MISSING on #0301_S_SK-ADLIYA_3458DE# at |11-OCT-2026 16:00:30 |",
+        "receivedAt": "2026-10-11T13:05:30.000Z",
+        "body": null,
+        "office": "DN"
+      },
+      {
+        "gmailId": "s019",
+        "subject": "S_D_N_BCCH MISSING on #0301_S_SK-ADLIYA_3458DE# at |11-OCT-2026 16:01:10 |",
+        "receivedAt": "2026-10-11T13:05:31.000Z",
+        "body": null,
+        "office": "DN"
+      }
+    ],
+    [
+      {
+        "gmailId": "s203",
+        "subject": "CLEARED_S_D_N_BCCH MISSING on #0301_S_SK-ADLIYA_3458DE# at |11-OCT-2026 16:01:10 |",
+        "receivedAt": "2026-10-11T13:26:09.000Z",
+        "body": null,
+        "office": "DN"
+      },
+      {
+        "gmailId": "s204",
+        "subject": "CLEARED_S_D_N_BCCH MISSING on #0301_S_SK-ADLIYA_3458DE# at |11-OCT-2026 16:00:30 |",
+        "receivedAt": "2026-10-11T13:26:09.000Z",
+        "body": null,
+        "office": "DN"
+      }
+    ]
+  ]
+}

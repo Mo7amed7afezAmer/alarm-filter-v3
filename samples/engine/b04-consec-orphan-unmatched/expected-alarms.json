@@ -1,0 +1,40 @@
+{
+  "alarms": [
+    {
+      "alarmKey": "S_D_N_RECTIFIER MINOR ALARM||SRAN_LG_TDD_E_BH-WASTANIYA_3804DE",
+      "alarmName": "S_D_N_RECTIFIER MINOR ALARM",
+      "site": "SRAN_LG_TDD_E_BH-WASTANIYA_3804DE",
+      "category": "POWER",
+      "alarmTime": "2026-10-11T18:12:23.000Z",
+      "status": "ACTIVE",
+      "clearTime": null,
+      "durationMin": null,
+      "clearType": null,
+      "consecNbr": "2292565",
+      "cellName": null,
+      "device": "MRBTS",
+      "office": "DN"
+    }
+  ],
+  "orphanClears": [
+    {
+      "alarmKey": "S_D_N_RECTIFIER MINOR ALARM||SRAN_LG_TDD_E_BH-WASTANIYA_3804DE",
+      "subject": "CLEARED_S_D_N_RECTIFIER MINOR ALARM on #SRAN_LG_TDD_E_BH-WASTANIYA_3804DE# at |09-OCT-2026 19:29:17 |",
+      "clearTime": "2026-10-11T09:25:49.000Z",
+      "consecNbr": "1981512",
+      "office": "DN"
+    }
+  ],
+  "rawMessages": [
+    {
+      "gmailId": "1a12a487a6ff7ccf",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "1a12c3637e33cd71",
+      "processed": true,
+      "parseError": null
+    }
+  ]
+}

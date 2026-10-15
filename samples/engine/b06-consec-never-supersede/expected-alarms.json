@@ -1,0 +1,152 @@
+{
+  "alarms": [
+    {
+      "alarmKey": "S_D_N_RECTIFIER MINOR ALARM||SRAN_LWG_TDD_S_BH-6-OCTOBER_3273DE",
+      "alarmName": "S_D_N_RECTIFIER MINOR ALARM",
+      "site": "SRAN_LWG_TDD_S_BH-6-OCTOBER_3273DE",
+      "category": "POWER",
+      "alarmTime": "2026-10-11T08:02:08.000Z",
+      "status": "CLEARED",
+      "clearTime": "2026-10-11T08:26:19.000Z",
+      "durationMin": 24,
+      "clearType": "EMAIL",
+      "consecNbr": "2209978",
+      "cellName": null,
+      "device": "MRBTS",
+      "office": "DN"
+    },
+    {
+      "alarmKey": "S_D_N_RECTIFIER MINOR ALARM||SRAN_LWG_TDD_S_BH-6-OCTOBER_3273DE",
+      "alarmName": "S_D_N_RECTIFIER MINOR ALARM",
+      "site": "SRAN_LWG_TDD_S_BH-6-OCTOBER_3273DE",
+      "category": "POWER",
+      "alarmTime": "2026-10-11T11:21:08.000Z",
+      "status": "CLEARED",
+      "clearTime": "2026-10-11T12:06:00.000Z",
+      "durationMin": 45,
+      "clearType": "EMAIL",
+      "consecNbr": "2239985",
+      "cellName": null,
+      "device": "MRBTS",
+      "office": "DN"
+    },
+    {
+      "alarmKey": "S_D_N_RECTIFIER MINOR ALARM||SRAN_LWG_TDD_S_BH-6-OCTOBER_3273DE",
+      "alarmName": "S_D_N_RECTIFIER MINOR ALARM",
+      "site": "SRAN_LWG_TDD_S_BH-6-OCTOBER_3273DE",
+      "category": "POWER",
+      "alarmTime": "2026-10-11T11:55:25.000Z",
+      "status": "CLEARED",
+      "clearTime": "2026-10-11T12:26:14.000Z",
+      "durationMin": 31,
+      "clearType": "EMAIL",
+      "consecNbr": "2245584",
+      "cellName": null,
+      "device": "MRBTS",
+      "office": "DN"
+    },
+    {
+      "alarmKey": "S_D_N_RECTIFIER MINOR ALARM||SRAN_LWG_TDD_S_BH-6-OCTOBER_3273DE",
+      "alarmName": "S_D_N_RECTIFIER MINOR ALARM",
+      "site": "SRAN_LWG_TDD_S_BH-6-OCTOBER_3273DE",
+      "category": "POWER",
+      "alarmTime": "2026-10-11T12:23:07.000Z",
+      "status": "CLEARED",
+      "clearTime": "2026-10-11T12:46:01.000Z",
+      "durationMin": 23,
+      "clearType": "EMAIL",
+      "consecNbr": "2248772",
+      "cellName": null,
+      "device": "MRBTS",
+      "office": "DN"
+    },
+    {
+      "alarmKey": "S_D_N_RECTIFIER MINOR ALARM||SRAN_LWG_TDD_S_BH-6-OCTOBER_3273DE",
+      "alarmName": "S_D_N_RECTIFIER MINOR ALARM",
+      "site": "SRAN_LWG_TDD_S_BH-6-OCTOBER_3273DE",
+      "category": "POWER",
+      "alarmTime": "2026-10-11T13:42:17.000Z",
+      "status": "CLEARED",
+      "clearTime": "2026-10-11T14:06:33.000Z",
+      "durationMin": 24,
+      "clearType": "EMAIL",
+      "consecNbr": "2262061",
+      "cellName": null,
+      "device": "MRBTS",
+      "office": "DN"
+    },
+    {
+      "alarmKey": "S_D_N_RECTIFIER MINOR ALARM||SRAN_LWG_TDD_S_BH-6-OCTOBER_3273DE",
+      "alarmName": "S_D_N_RECTIFIER MINOR ALARM",
+      "site": "SRAN_LWG_TDD_S_BH-6-OCTOBER_3273DE",
+      "category": "POWER",
+      "alarmTime": "2026-10-11T17:37:27.000Z",
+      "status": "ACTIVE",
+      "clearTime": null,
+      "durationMin": null,
+      "clearType": null,
+      "consecNbr": "2289497",
+      "cellName": null,
+      "device": "MRBTS",
+      "office": "DN"
+    }
+  ],
+  "orphanClears": [],
+  "rawMessages": [
+    {
+      "gmailId": "1a129fec39ffe046",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "1a12a12016a871eb",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "1a12ab5f5ca8d7b1",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "1a12ada7cd7961ab",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "1a12adb23fa0d538",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "1a12aeccbaf5dde9",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "1a12aeda2cc83325",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "1a12affc34298d37",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "1a12b360c7473d48",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "1a12b497cbae470b",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "1a12c11a91d2fc1e",
+      "processed": true,
+      "parseError": null
+    }
+  ]
+}

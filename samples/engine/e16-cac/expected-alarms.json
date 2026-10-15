@@ -1,0 +1,52 @@
+{
+  "alarms": [
+    {
+      "alarmKey": "S_D_N_FENCE GATE ALARM||SRAN_LWG_D_BH-SHOBRA-RIS_4360DE",
+      "alarmName": "S_D_N_FENCE GATE ALARM",
+      "site": "SRAN_LWG_D_BH-SHOBRA-RIS_4360DE",
+      "category": "OTHER",
+      "alarmTime": "2026-10-11T13:05:14.000Z",
+      "status": "ACTIVE",
+      "clearTime": null,
+      "durationMin": null,
+      "clearType": null,
+      "consecNbr": null,
+      "cellName": null,
+      "device": null,
+      "office": "DN"
+    }
+  ],
+  "orphanClears": [
+    {
+      "alarmKey": "S_D_N_FENCE GATE ALARM||SRAN_LWG_D_BH-SHOBRA-RIS_4360DE",
+      "subject": "CLEARED_S_D_N_FENCE GATE ALARM on #SRAN_LWG_D_BH-SHOBRA-RIS_4360DE# at |30-SEP-2026 14:50:39 |",
+      "clearTime": "2026-10-11T13:05:48.000Z",
+      "consecNbr": null,
+      "office": "DN"
+    },
+    {
+      "alarmKey": "S_D_N_FENCE GATE ALARM||SRAN_LWG_D_BH-SHOBRA-RIS_4360DE",
+      "subject": "CLEARED_S_D_N_FENCE GATE ALARM;Default System Time on #SRAN_LWG_D_BH-SHOBRA-RIS_4360DE# at |11-OCT-2026 15:58:05 |",
+      "clearTime": "2026-10-11T13:25:43.000Z",
+      "consecNbr": null,
+      "office": "DN"
+    }
+  ],
+  "rawMessages": [
+    {
+      "gmailId": "s040",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "s136",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "s172",
+      "processed": true,
+      "parseError": null
+    }
+  ]
+}

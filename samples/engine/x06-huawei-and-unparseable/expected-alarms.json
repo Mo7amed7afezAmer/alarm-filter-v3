@@ -1,0 +1,21 @@
+{
+  "alarms": [],
+  "orphanClears": [],
+  "rawMessages": [
+    {
+      "gmailId": "1a12b49a56ded6dd",
+      "processed": true,
+      "parseError": "unrecognised subject format"
+    },
+    {
+      "gmailId": "s071",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "s072",
+      "processed": true,
+      "parseError": null
+    }
+  ]
+}

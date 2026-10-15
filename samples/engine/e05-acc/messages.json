@@ -1,0 +1,32 @@
+{
+  "note": "orphan then exact clear",
+  "batches": [
+    [
+      {
+        "gmailId": "s009",
+        "subject": "S_D_N_AIR CONDITION FAULT on #SRAN_LWG_TDNR_G_SK-MNSHYT-ABSA_0680DE# at |11-OCT-2026 15:52:56 |",
+        "receivedAt": "2026-10-11T13:05:21.000Z",
+        "body": null,
+        "office": "DN"
+      }
+    ],
+    [
+      {
+        "gmailId": "s059",
+        "subject": "CLEARED_S_D_N_AIR CONDITION FAULT on #SRAN_LWG_TDNR_G_SK-MNSHYT-ABSA_0680DE# at |11-OCT-2026 15:36:46 |",
+        "receivedAt": "2026-10-11T13:06:03.000Z",
+        "body": null,
+        "office": "DN"
+      }
+    ],
+    [
+      {
+        "gmailId": "s188",
+        "subject": "CLEARED_S_D_N_AIR CONDITION FAULT on #SRAN_LWG_TDNR_G_SK-MNSHYT-ABSA_0680DE# at |11-OCT-2026 15:52:56 |",
+        "receivedAt": "2026-10-11T13:25:58.000Z",
+        "body": null,
+        "office": "DN"
+      }
+    ]
+  ]
+}

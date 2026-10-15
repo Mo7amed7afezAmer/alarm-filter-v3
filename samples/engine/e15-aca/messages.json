@@ -1,0 +1,32 @@
+{
+  "note": "real pattern ACA",
+  "batches": [
+    [
+      {
+        "gmailId": "s039",
+        "subject": "S_D_N_NE3SWS AGENT NOT RESPONDING TO REQUESTS on #SRAN_LWG_S_SK-TUKH-QARMUS_0665DE# at |11-OCT-2026 15:55:39 |",
+        "receivedAt": "2026-10-11T13:05:45.000Z",
+        "body": null,
+        "office": "DN"
+      }
+    ],
+    [
+      {
+        "gmailId": "s144",
+        "subject": "CLEARED_S_D_N_NE3SWS AGENT NOT RESPONDING TO REQUESTS on #SRAN_LWG_S_SK-TUKH-QARMUS_0665DE# at |11-OCT-2026 15:50:40 |",
+        "receivedAt": "2026-10-11T13:25:11.000Z",
+        "body": null,
+        "office": "DN"
+      }
+    ],
+    [
+      {
+        "gmailId": "s257",
+        "subject": "S_D_N_NE3SWS AGENT NOT RESPONDING TO REQUESTS on #SRAN_LWG_S_SK-TUKH-QARMUS_0665DE# at |11-OCT-2026 16:35:40 |",
+        "receivedAt": "2026-10-11T13:45:09.000Z",
+        "body": null,
+        "office": "DN"
+      }
+    ]
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "note": "orphan for an unseen alarm, then exact pair",
+  "batches": [
+    [
+      {
+        "gmailId": "s001",
+        "subject": "S_D_N_FIRE ALARM;Default System Time on #SRAN_LWG_TDD_G_SK-ADLIYA_3458DE# at |11-OCT-2026 16:02:39 |",
+        "receivedAt": "2026-10-11T13:05:14.000Z",
+        "body": null,
+        "office": "DN"
+      },
+      {
+        "gmailId": "s049",
+        "subject": "CLEARED_S_D_N_FIRE ALARM on #SRAN_LWG_TDD_G_SK-ADLIYA_3458DE# at |11-OCT-2026 15:40:43 |",
+        "receivedAt": "2026-10-11T13:05:55.000Z",
+        "body": null,
+        "office": "DN"
+      }
+    ],
+    [
+      {
+        "gmailId": "s146",
+        "subject": "S_D_N_FIRE ALARM on #SRAN_LWG_TDD_G_SK-ADLIYA_3458DE# at |11-OCT-2026 16:08:25 |",
+        "receivedAt": "2026-10-11T13:25:12.000Z",
+        "body": null,
+        "office": "DN"
+      },
+      {
+        "gmailId": "s183",
+        "subject": "CLEARED_S_D_N_FIRE ALARM;Default System Time on #SRAN_LWG_TDD_G_SK-ADLIYA_3458DE# at |11-OCT-2026 16:02:39 |",
+        "receivedAt": "2026-10-11T13:25:51.000Z",
+        "body": null,
+        "office": "DN"
+      }
+    ]
+  ]
+}

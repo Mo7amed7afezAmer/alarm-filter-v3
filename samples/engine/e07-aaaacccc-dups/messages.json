@@ -1,0 +1,65 @@
+{
+  "note": "FR-19 dups",
+  "batches": [
+    [
+      {
+        "gmailId": "s020",
+        "subject": "S_D_N_BCCH MISSING on #3531_S_KS-SHARAQA_3961DE# at |11-OCT-2026 16:01:58 |",
+        "receivedAt": "2026-10-11T13:05:35.000Z",
+        "body": null,
+        "office": "DN"
+      },
+      {
+        "gmailId": "s021",
+        "subject": "S_D_N_BCCH MISSING on #3531_S_KS-SHARAQA_3961DE# at |11-OCT-2026 16:01:59 |",
+        "receivedAt": "2026-10-11T13:05:35.000Z",
+        "body": null,
+        "office": "DN"
+      },
+      {
+        "gmailId": "s022",
+        "subject": "S_D_N_BCCH MISSING on #3531_S_KS-SHARAQA_3961DE# at |11-OCT-2026 16:01:59 |",
+        "receivedAt": "2026-10-11T13:05:36.000Z",
+        "body": null,
+        "office": "DN"
+      },
+      {
+        "gmailId": "s023",
+        "subject": "S_D_N_BCCH MISSING on #3531_S_KS-SHARAQA_3961DE# at |11-OCT-2026 16:01:59 |",
+        "receivedAt": "2026-10-11T13:05:36.000Z",
+        "body": null,
+        "office": "DN"
+      }
+    ],
+    [
+      {
+        "gmailId": "s205",
+        "subject": "CLEARED_S_D_N_BCCH MISSING on #3531_S_KS-SHARAQA_3961DE# at |11-OCT-2026 16:01:58 |",
+        "receivedAt": "2026-10-11T13:26:10.000Z",
+        "body": null,
+        "office": "DN"
+      },
+      {
+        "gmailId": "s206",
+        "subject": "CLEARED_S_D_N_BCCH MISSING on #3531_S_KS-SHARAQA_3961DE# at |11-OCT-2026 16:01:59 |",
+        "receivedAt": "2026-10-11T13:26:10.000Z",
+        "body": null,
+        "office": "DN"
+      },
+      {
+        "gmailId": "s207",
+        "subject": "CLEARED_S_D_N_BCCH MISSING on #3531_S_KS-SHARAQA_3961DE# at |11-OCT-2026 16:01:59 |",
+        "receivedAt": "2026-10-11T13:26:11.000Z",
+        "body": null,
+        "office": "DN"
+      },
+      {
+        "gmailId": "s208",
+        "subject": "CLEARED_S_D_N_BCCH MISSING on #3531_S_KS-SHARAQA_3961DE# at |11-OCT-2026 16:01:59 |",
+        "receivedAt": "2026-10-11T13:26:11.000Z",
+        "body": null,
+        "office": "DN"
+      }
+    ]
+  ]
+}

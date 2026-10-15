@@ -1,0 +1,40 @@
+{
+  "alarms": [
+    {
+      "alarmKey": "S_D_N_FIRE ALARM||SRAN_LWG_S_MF-MNUF-MAWKEF_0981DE",
+      "alarmName": "S_D_N_FIRE ALARM",
+      "site": "SRAN_LWG_S_MF-MNUF-MAWKEF_0981DE",
+      "category": "OTHER",
+      "alarmTime": "2026-10-11T13:17:31.000Z",
+      "status": "ACTIVE",
+      "clearTime": null,
+      "durationMin": null,
+      "clearType": null,
+      "consecNbr": null,
+      "cellName": null,
+      "device": null,
+      "office": "DN"
+    }
+  ],
+  "orphanClears": [
+    {
+      "alarmKey": "S_D_N_FIRE ALARM||SRAN_LWG_S_MF-MNUF-MAWKEF_0981DE",
+      "subject": "CLEARED_S_D_N_FIRE ALARM on #SRAN_LWG_S_MF-MNUF-MAWKEF_0981DE# at |11-OCT-2026 15:41:53 |",
+      "clearTime": "2026-10-11T13:05:52.000Z",
+      "consecNbr": null,
+      "office": "DN"
+    }
+  ],
+  "rawMessages": [
+    {
+      "gmailId": "s043",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "s139",
+      "processed": true,
+      "parseError": null
+    }
+  ]
+}

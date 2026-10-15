@@ -1,0 +1,30 @@
+{
+  "note": "real pattern CAC",
+  "batches": [
+    [
+      {
+        "gmailId": "s040",
+        "subject": "CLEARED_S_D_N_FENCE GATE ALARM on #SRAN_LWG_D_BH-SHOBRA-RIS_4360DE# at |30-SEP-2026 14:50:39 |",
+        "receivedAt": "2026-10-11T13:05:48.000Z",
+        "body": null,
+        "office": "DN"
+      }
+    ],
+    [
+      {
+        "gmailId": "s136",
+        "subject": "S_D_N_FENCE GATE ALARM on #SRAN_LWG_D_BH-SHOBRA-RIS_4360DE# at |11-OCT-2026 16:05:14 |",
+        "receivedAt": "2026-10-11T13:25:06.000Z",
+        "body": null,
+        "office": "DN"
+      },
+      {
+        "gmailId": "s172",
+        "subject": "CLEARED_S_D_N_FENCE GATE ALARM;Default System Time on #SRAN_LWG_D_BH-SHOBRA-RIS_4360DE# at |11-OCT-2026 15:58:05 |",
+        "receivedAt": "2026-10-11T13:25:43.000Z",
+        "body": null,
+        "office": "DN"
+      }
+    ]
+  ]
+}

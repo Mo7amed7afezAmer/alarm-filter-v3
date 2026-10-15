@@ -1,0 +1,28 @@
+{
+  "note": "FR-13 ignored, FR-14 parseError",
+  "batches": [
+    [
+      {
+        "gmailId": "s071",
+        "subject": "Huawei Alram Notify New alarm: October-RNC33/UMTS Cell Max DL Power Mismatch/Major",
+        "receivedAt": "2026-10-11T13:09:07.000Z",
+        "body": null,
+        "office": "DN"
+      },
+      {
+        "gmailId": "s072",
+        "subject": "Huawei Alram Notify New alarm: October-RNC33/UMTS Cell Max DL Power Mismatch/Major",
+        "receivedAt": "2026-10-11T13:09:07.000Z",
+        "body": null,
+        "office": "DN"
+      },
+      {
+        "gmailId": "1a12b49a56ded6dd",
+        "subject": "Nokia (Down & Environmental) Alarms Update Report",
+        "receivedAt": "2026-10-11T14:06:36.000Z",
+        "body": null,
+        "office": "DN"
+      }
+    ]
+  ]
+}

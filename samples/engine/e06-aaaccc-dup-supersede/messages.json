@@ -1,0 +1,51 @@
+{
+  "note": "FR-19 dup, FR-20, stale",
+  "batches": [
+    [
+      {
+        "gmailId": "s015",
+        "subject": "S_D_N_BCCH MISSING on #2521_D_DK-MARKAZYA_3373DE# at |11-OCT-2026 16:01:59 |",
+        "receivedAt": "2026-10-11T13:05:26.000Z",
+        "body": null,
+        "office": "DN"
+      },
+      {
+        "gmailId": "s016",
+        "subject": "S_D_N_BCCH MISSING on #2521_D_DK-MARKAZYA_3373DE# at |11-OCT-2026 16:01:59 |",
+        "receivedAt": "2026-10-11T13:05:26.000Z",
+        "body": null,
+        "office": "DN"
+      },
+      {
+        "gmailId": "s017",
+        "subject": "S_D_N_BCCH MISSING on #2521_D_DK-MARKAZYA_3373DE# at |11-OCT-2026 16:01:58 |",
+        "receivedAt": "2026-10-11T13:05:27.000Z",
+        "body": null,
+        "office": "DN"
+      }
+    ],
+    [
+      {
+        "gmailId": "s200",
+        "subject": "CLEARED_S_D_N_BCCH MISSING on #2521_D_DK-MARKAZYA_3373DE# at |11-OCT-2026 16:01:59 |",
+        "receivedAt": "2026-10-11T13:26:07.000Z",
+        "body": null,
+        "office": "DN"
+      },
+      {
+        "gmailId": "s201",
+        "subject": "CLEARED_S_D_N_BCCH MISSING on #2521_D_DK-MARKAZYA_3373DE# at |11-OCT-2026 16:01:59 |",
+        "receivedAt": "2026-10-11T13:26:08.000Z",
+        "body": null,
+        "office": "DN"
+      },
+      {
+        "gmailId": "s202",
+        "subject": "CLEARED_S_D_N_BCCH MISSING on #2521_D_DK-MARKAZYA_3373DE# at |11-OCT-2026 16:01:58 |",
+        "receivedAt": "2026-10-11T13:26:08.000Z",
+        "body": null,
+        "office": "DN"
+      }
+    ]
+  ]
+}

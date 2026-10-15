@@ -1,0 +1,23 @@
+{
+  "note": "orphan consec ≠ alarm consec",
+  "batches": [
+    [
+      {
+        "gmailId": "1a12a487a6ff7ccf",
+        "subject": "CLEARED_S_D_N_RECTIFIER MINOR ALARM on #SRAN_LG_TDD_E_BH-WASTANIYA_3804DE# at |09-OCT-2026 19:29:17 |",
+        "receivedAt": "2026-10-11T09:25:49.000Z",
+        "body": "\t\t\t\t############CLEARENCE ALARM###########\r\n\r\nALARM NAME: \r\n\t\tRECTIFIER MINOR ALARM\r\nALARM_START_TIME: \r\n\t\t09-OCT-2026 19:29:17\r\nNE_name: \r\n\t\tSRAN\r\nAlarm_Number\r\n\t\t7103\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tSRAN_LG_TDD_E_BH-WASTANIYA_3804DE\r\nALARM_Device:\r\n\t\tMRBTS\r\nCONSEC_NBR: \r\n\t\t 1981512\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+        "office": "DN"
+      }
+    ],
+    [
+      {
+        "gmailId": "1a12c3637e33cd71",
+        "subject": "S_D_N_RECTIFIER MINOR ALARM on #SRAN_LG_TDD_E_BH-WASTANIYA_3804DE# at |11-OCT-2026 21:12:23 |",
+        "receivedAt": "2026-10-11T18:25:05.000Z",
+        "body": "\t\t\t\t############NEW ALARM###########\r\n\r\nALARM NAME: \r\n\t\tRECTIFIER MINOR ALARM\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 21:12:23\r\nNE_name: \r\n\t\tSRAN\r\nAlarm_Number\r\n\t\t7103\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tSRAN_LG_TDD_E_BH-WASTANIYA_3804DE\r\nALARM_Device:\r\n\t\tMRBTS\r\nCONSEC_NBR: \r\n\t\t 2292565\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+        "office": "DN"
+      }
+    ]
+  ]
+}

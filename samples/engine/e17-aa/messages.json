@@ -1,0 +1,21 @@
+{
+  "note": "real pattern AA",
+  "batches": [
+    [
+      {
+        "gmailId": "s292",
+        "subject": "D_S_BCCH MISSING on #2421_O_MF-HK-FRAWNYH_0G01DE# at |11-OCT-2026 16:40:06 |",
+        "receivedAt": "2026-10-11T13:45:45.000Z",
+        "body": null,
+        "office": "DN"
+      },
+      {
+        "gmailId": "s293",
+        "subject": "D_S_BCCH MISSING on #2421_O_MF-HK-FRAWNYH_0G01DE# at |11-OCT-2026 16:40:08 |",
+        "receivedAt": "2026-10-11T13:45:46.000Z",
+        "body": null,
+        "office": "DN"
+      }
+    ]
+  ]
+}

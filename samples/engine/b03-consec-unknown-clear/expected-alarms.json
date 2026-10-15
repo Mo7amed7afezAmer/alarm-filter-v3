@@ -1,0 +1,70 @@
+{
+  "alarms": [
+    {
+      "alarmKey": "S_D_N_SHELTER DOOR ALARM||SRAN_LWG_TDD_V_BH-KFDW-BOLES_3207DE",
+      "alarmName": "S_D_N_SHELTER DOOR ALARM",
+      "site": "SRAN_LWG_TDD_V_BH-KFDW-BOLES_3207DE",
+      "category": "OTHER",
+      "alarmTime": "2026-10-11T07:57:21.000Z",
+      "status": "CLEARED",
+      "clearTime": "2026-10-11T16:05:46.000Z",
+      "durationMin": 488,
+      "clearType": "EMAIL",
+      "consecNbr": "2209431",
+      "cellName": null,
+      "device": "MRBTS",
+      "office": "DN"
+    },
+    {
+      "alarmKey": "S_D_N_SHELTER DOOR ALARM||SRAN_LWG_TDD_V_BH-KFDW-BOLES_3207DE",
+      "alarmName": "S_D_N_SHELTER DOOR ALARM",
+      "site": "SRAN_LWG_TDD_V_BH-KFDW-BOLES_3207DE",
+      "category": "OTHER",
+      "alarmTime": "2026-10-11T18:02:13.000Z",
+      "status": "CLEARED",
+      "clearTime": "2026-10-11T18:25:31.000Z",
+      "durationMin": 23,
+      "clearType": "EMAIL",
+      "consecNbr": "2291619",
+      "cellName": null,
+      "device": "MRBTS",
+      "office": "DN"
+    }
+  ],
+  "orphanClears": [
+    {
+      "alarmKey": "S_D_N_SHELTER DOOR ALARM||SRAN_LWG_TDD_V_BH-KFDW-BOLES_3207DE",
+      "subject": "CLEARED_S_D_N_SHELTER DOOR ALARM on #SRAN_LWG_TDD_V_BH-KFDW-BOLES_3207DE# at |09-OCT-2026 06:51:11 |",
+      "clearTime": "2026-10-11T08:06:02.000Z",
+      "consecNbr": "1885351",
+      "office": "DN"
+    }
+  ],
+  "rawMessages": [
+    {
+      "gmailId": "1a129ff6ccdf71fd",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "1a12a003253b795d",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "1a12bb6a663e5510",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "1a12c23f9ff7bede",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "1a12c3698726c4f4",
+      "processed": true,
+      "parseError": null
+    }
+  ]
+}

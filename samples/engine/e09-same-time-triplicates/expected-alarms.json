@@ -1,0 +1,52 @@
+{
+  "alarms": [
+    {
+      "alarmKey": "S_D_N_BCCH MISSING||1731_D_BH-SHOBRA-RIS_4360DE",
+      "alarmName": "S_D_N_BCCH MISSING",
+      "site": "1731_D_BH-SHOBRA-RIS_4360DE",
+      "category": "OTHER",
+      "alarmTime": "2026-10-11T12:51:00.000Z",
+      "status": "CLEARED",
+      "clearTime": "2026-10-11T13:26:12.000Z",
+      "durationMin": 35,
+      "clearType": "EMAIL",
+      "consecNbr": null,
+      "cellName": null,
+      "device": null,
+      "office": "DN"
+    }
+  ],
+  "orphanClears": [],
+  "rawMessages": [
+    {
+      "gmailId": "s024",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "s025",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "s028",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "s211",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "s212",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "s214",
+      "processed": true,
+      "parseError": null
+    }
+  ]
+}

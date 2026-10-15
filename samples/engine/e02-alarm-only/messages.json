@@ -1,0 +1,14 @@
+{
+  "note": "stays ACTIVE",
+  "batches": [
+    [
+      {
+        "gmailId": "s271",
+        "subject": "S_D_N_FENCE GATE on #SRAN_LWG_TDD_G_BH-UMB-BH_3926DE# at |11-OCT-2026 16:28:15 |",
+        "receivedAt": "2026-10-11T13:45:16.000Z",
+        "body": null,
+        "office": "DN"
+      }
+    ]
+  ]
+}

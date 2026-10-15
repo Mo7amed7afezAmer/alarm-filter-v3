@@ -1,0 +1,50 @@
+{
+  "note": "orphan with consec; exact consec clears",
+  "batches": [
+    [
+      {
+        "gmailId": "1a12a003253b795d",
+        "subject": "S_D_N_SHELTER DOOR ALARM on #SRAN_LWG_TDD_V_BH-KFDW-BOLES_3207DE# at |11-OCT-2026 10:57:21 |",
+        "receivedAt": "2026-10-11T08:05:25.000Z",
+        "body": "\t\t\t\t############NEW ALARM###########\r\n\r\nALARM NAME: \r\n\t\tSHELTER DOOR ALARM\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 10:57:21\r\nNE_name: \r\n\t\tSRAN\r\nAlarm_Number\r\n\t\t7103\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tSRAN_LWG_TDD_V_BH-KFDW-BOLES_3207DE\r\nALARM_Device:\r\n\t\tMRBTS\r\nCONSEC_NBR: \r\n\t\t 2209431\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+        "office": "DN"
+      }
+    ],
+    [
+      {
+        "gmailId": "1a129ff6ccdf71fd",
+        "subject": "CLEARED_S_D_N_SHELTER DOOR ALARM on #SRAN_LWG_TDD_V_BH-KFDW-BOLES_3207DE# at |09-OCT-2026 06:51:11 |",
+        "receivedAt": "2026-10-11T08:06:02.000Z",
+        "body": "\t\t\t\t############CLEARENCE ALARM###########\r\n\r\nALARM NAME: \r\n\t\tSHELTER DOOR ALARM\r\nALARM_START_TIME: \r\n\t\t09-OCT-2026 06:51:11\r\nNE_name: \r\n\t\tSRAN\r\nAlarm_Number\r\n\t\t7103\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tSRAN_LWG_TDD_V_BH-KFDW-BOLES_3207DE\r\nALARM_Device:\r\n\t\tMRBTS\r\nCONSEC_NBR: \r\n\t\t 1885351\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+        "office": "DN"
+      }
+    ],
+    [
+      {
+        "gmailId": "1a12bb6a663e5510",
+        "subject": "CLEARED_S_D_N_SHELTER DOOR ALARM on #SRAN_LWG_TDD_V_BH-KFDW-BOLES_3207DE# at |11-OCT-2026 10:57:21 |",
+        "receivedAt": "2026-10-11T16:05:46.000Z",
+        "body": "\t\t\t\t############CLEARENCE ALARM###########\r\n\r\nALARM NAME: \r\n\t\tSHELTER DOOR ALARM\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 10:57:21\r\nNE_name: \r\n\t\tSRAN\r\nAlarm_Number\r\n\t\t7103\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tSRAN_LWG_TDD_V_BH-KFDW-BOLES_3207DE\r\nALARM_Device:\r\n\t\tMRBTS\r\nCONSEC_NBR: \r\n\t\t 2209431\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+        "office": "DN"
+      }
+    ],
+    [
+      {
+        "gmailId": "1a12c23f9ff7bede",
+        "subject": "S_D_N_SHELTER DOOR ALARM on #SRAN_LWG_TDD_V_BH-KFDW-BOLES_3207DE# at |11-OCT-2026 21:02:13 |",
+        "receivedAt": "2026-10-11T18:05:12.000Z",
+        "body": "\t\t\t\t############NEW ALARM###########\r\n\r\nALARM NAME: \r\n\t\tSHELTER DOOR ALARM\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 21:02:13\r\nNE_name: \r\n\t\tSRAN\r\nAlarm_Number\r\n\t\t7103\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tSRAN_LWG_TDD_V_BH-KFDW-BOLES_3207DE\r\nALARM_Device:\r\n\t\tMRBTS\r\nCONSEC_NBR: \r\n\t\t 2291619\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+        "office": "DN"
+      }
+    ],
+    [
+      {
+        "gmailId": "1a12c3698726c4f4",
+        "subject": "CLEARED_S_D_N_SHELTER DOOR ALARM on #SRAN_LWG_TDD_V_BH-KFDW-BOLES_3207DE# at |11-OCT-2026 21:02:13 |",
+        "receivedAt": "2026-10-11T18:25:31.000Z",
+        "body": "\t\t\t\t############CLEARENCE ALARM###########\r\n\r\nALARM NAME: \r\n\t\tSHELTER DOOR ALARM\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 21:02:13\r\nNE_name: \r\n\t\tSRAN\r\nAlarm_Number\r\n\t\t7103\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tSRAN_LWG_TDD_V_BH-KFDW-BOLES_3207DE\r\nALARM_Device:\r\n\t\tMRBTS\r\nCONSEC_NBR: \r\n\t\t 2291619\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+        "office": "DN"
+      }
+    ]
+  ]
+}

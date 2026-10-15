@@ -1,0 +1,51 @@
+{
+  "note": "FR-19 dup by key+time",
+  "batches": [
+    [
+      {
+        "gmailId": "s024",
+        "subject": "S_D_N_BCCH MISSING on #1731_D_BH-SHOBRA-RIS_4360DE# at |11-OCT-2026 15:51:00 |",
+        "receivedAt": "2026-10-11T13:05:37.000Z",
+        "body": null,
+        "office": "DN"
+      },
+      {
+        "gmailId": "s025",
+        "subject": "S_D_N_BCCH MISSING on #1731_D_BH-SHOBRA-RIS_4360DE# at |11-OCT-2026 15:51:00 |",
+        "receivedAt": "2026-10-11T13:05:37.000Z",
+        "body": null,
+        "office": "DN"
+      },
+      {
+        "gmailId": "s028",
+        "subject": "S_D_N_BCCH MISSING on #1731_D_BH-SHOBRA-RIS_4360DE# at |11-OCT-2026 15:51:00 |",
+        "receivedAt": "2026-10-11T13:05:38.000Z",
+        "body": null,
+        "office": "DN"
+      }
+    ],
+    [
+      {
+        "gmailId": "s211",
+        "subject": "CLEARED_S_D_N_BCCH MISSING on #1731_D_BH-SHOBRA-RIS_4360DE# at |11-OCT-2026 15:51:00 |",
+        "receivedAt": "2026-10-11T13:26:12.000Z",
+        "body": null,
+        "office": "DN"
+      },
+      {
+        "gmailId": "s212",
+        "subject": "CLEARED_S_D_N_BCCH MISSING on #1731_D_BH-SHOBRA-RIS_4360DE# at |11-OCT-2026 15:51:00 |",
+        "receivedAt": "2026-10-11T13:26:12.000Z",
+        "body": null,
+        "office": "DN"
+      },
+      {
+        "gmailId": "s214",
+        "subject": "CLEARED_S_D_N_BCCH MISSING on #1731_D_BH-SHOBRA-RIS_4360DE# at |11-OCT-2026 15:51:00 |",
+        "receivedAt": "2026-10-11T13:26:13.000Z",
+        "body": null,
+        "office": "DN"
+      }
+    ]
+  ]
+}

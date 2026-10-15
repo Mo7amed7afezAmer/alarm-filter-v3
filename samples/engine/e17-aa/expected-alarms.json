@@ -1,0 +1,47 @@
+{
+  "alarms": [
+    {
+      "alarmKey": "D_S_BCCH MISSING||2421_O_MF-HK-FRAWNYH_0G01DE",
+      "alarmName": "D_S_BCCH MISSING",
+      "site": "2421_O_MF-HK-FRAWNYH_0G01DE",
+      "category": "OTHER",
+      "alarmTime": "2026-10-11T13:40:06.000Z",
+      "status": "CLEARED",
+      "clearTime": "2026-10-11T13:40:08.000Z",
+      "durationMin": 0,
+      "clearType": "AUTO_SUPERSEDED",
+      "consecNbr": null,
+      "cellName": null,
+      "device": null,
+      "office": "DN"
+    },
+    {
+      "alarmKey": "D_S_BCCH MISSING||2421_O_MF-HK-FRAWNYH_0G01DE",
+      "alarmName": "D_S_BCCH MISSING",
+      "site": "2421_O_MF-HK-FRAWNYH_0G01DE",
+      "category": "OTHER",
+      "alarmTime": "2026-10-11T13:40:08.000Z",
+      "status": "ACTIVE",
+      "clearTime": null,
+      "durationMin": null,
+      "clearType": null,
+      "consecNbr": null,
+      "cellName": null,
+      "device": null,
+      "office": "DN"
+    }
+  ],
+  "orphanClears": [],
+  "rawMessages": [
+    {
+      "gmailId": "s292",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "s293",
+      "processed": true,
+      "parseError": null
+    }
+  ]
+}

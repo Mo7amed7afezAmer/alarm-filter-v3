@@ -1,0 +1,32 @@
+{
+  "note": "orphan + pair",
+  "batches": [
+    [
+      {
+        "gmailId": "1a12a24ed0e6e561",
+        "subject": "CLEARED_S_D_N_WCDMA BASE STATION OUT OF USE on #U_S_BH-HORRIA_3928DE# at |11-OCT-2026 10:18:41 |",
+        "receivedAt": "2026-10-11T08:46:59.000Z",
+        "body": "\t\t\t\t############CLEARENCE ALARM###########\r\n\r\nALARM NAME: \r\n\t\tWCDMA BASE STATION OUT OF USE\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 10:18:41\r\nNE_name: \r\n\t\tRNC66\r\nAlarm_Number\r\n\t\t7786\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tU_S_BH-HORRIA_3928DE\r\nALARM_Device:\r\n\t\tsite\r\nCONSEC_NBR: \r\n\t\t 2204165\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+        "office": "DN"
+      }
+    ],
+    [
+      {
+        "gmailId": "1a12bb67302cf966",
+        "subject": "S_D_N_WCDMA BASE STATION OUT OF USE on #U_S_BH-HORRIA_3928DE# at |11-OCT-2026 19:03:38 |",
+        "receivedAt": "2026-10-11T16:05:34.000Z",
+        "body": "\t\t\t\t############NEW ALARM###########\r\n\r\nALARM NAME: \r\n\t\tWCDMA BASE STATION OUT OF USE\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 19:03:38\r\nNE_name: \r\n\t\tRNC66\r\nAlarm_Number\r\n\t\t7786\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tU_S_BH-HORRIA_3928DE\r\nALARM_Device:\r\n\t\tsite\r\nCONSEC_NBR: \r\n\t\t 2280474\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+        "office": "DN"
+      }
+    ],
+    [
+      {
+        "gmailId": "1a12bc90a4119e8a",
+        "subject": "CLEARED_S_D_N_WCDMA BASE STATION OUT OF USE on #U_S_BH-HORRIA_3928DE# at |11-OCT-2026 19:03:38 |",
+        "receivedAt": "2026-10-11T16:25:52.000Z",
+        "body": "\t\t\t\t############CLEARENCE ALARM###########\r\n\r\nALARM NAME: \r\n\t\tWCDMA BASE STATION OUT OF USE\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 19:03:38\r\nNE_name: \r\n\t\tRNC66\r\nAlarm_Number\r\n\t\t7786\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tU_S_BH-HORRIA_3928DE\r\nALARM_Device:\r\n\t\tsite\r\nCONSEC_NBR: \r\n\t\t 2280474\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+        "office": "DN"
+      }
+    ]
+  ]
+}

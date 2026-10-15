@@ -1,0 +1,37 @@
+{
+  "alarms": [
+    {
+      "alarmKey": "S_D_N_AIR CONDITION FAULT||SRAN_LWG_TDNR_G_SK-MNSHYT-ABSA_0680DE",
+      "alarmName": "S_D_N_AIR CONDITION FAULT",
+      "site": "SRAN_LWG_TDNR_G_SK-MNSHYT-ABSA_0680DE",
+      "category": "OTHER",
+      "alarmTime": "2026-10-11T12:52:56.000Z",
+      "status": "CLEARED",
+      "clearTime": "2026-10-11T13:06:03.000Z",
+      "durationMin": 13,
+      "clearType": "EMAIL",
+      "consecNbr": null,
+      "cellName": null,
+      "device": null,
+      "office": "DN"
+    }
+  ],
+  "orphanClears": [],
+  "rawMessages": [
+    {
+      "gmailId": "s009",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "s059",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "s188",
+      "processed": true,
+      "parseError": null
+    }
+  ]
+}

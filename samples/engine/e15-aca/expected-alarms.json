@@ -1,0 +1,52 @@
+{
+  "alarms": [
+    {
+      "alarmKey": "S_D_N_NE3SWS AGENT NOT RESPONDING TO REQUESTS||SRAN_LWG_S_SK-TUKH-QARMUS_0665DE",
+      "alarmName": "S_D_N_NE3SWS AGENT NOT RESPONDING TO REQUESTS",
+      "site": "SRAN_LWG_S_SK-TUKH-QARMUS_0665DE",
+      "category": "OTHER",
+      "alarmTime": "2026-10-11T12:55:39.000Z",
+      "status": "CLEARED",
+      "clearTime": "2026-10-11T13:25:11.000Z",
+      "durationMin": 30,
+      "clearType": "EMAIL",
+      "consecNbr": null,
+      "cellName": null,
+      "device": null,
+      "office": "DN"
+    },
+    {
+      "alarmKey": "S_D_N_NE3SWS AGENT NOT RESPONDING TO REQUESTS||SRAN_LWG_S_SK-TUKH-QARMUS_0665DE",
+      "alarmName": "S_D_N_NE3SWS AGENT NOT RESPONDING TO REQUESTS",
+      "site": "SRAN_LWG_S_SK-TUKH-QARMUS_0665DE",
+      "category": "OTHER",
+      "alarmTime": "2026-10-11T13:35:40.000Z",
+      "status": "ACTIVE",
+      "clearTime": null,
+      "durationMin": null,
+      "clearType": null,
+      "consecNbr": null,
+      "cellName": null,
+      "device": null,
+      "office": "DN"
+    }
+  ],
+  "orphanClears": [],
+  "rawMessages": [
+    {
+      "gmailId": "s039",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "s144",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "s257",
+      "processed": true,
+      "parseError": null
+    }
+  ]
+}

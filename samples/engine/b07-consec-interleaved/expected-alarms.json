@@ -1,0 +1,132 @@
+{
+  "alarms": [
+    {
+      "alarmKey": "S_D_N_NE3SWS AGENT NOT RESPONDING TO REQUESTS||SRAN_LWG_S_KS-KHALIJ-HUKS_3322DE",
+      "alarmName": "S_D_N_NE3SWS AGENT NOT RESPONDING TO REQUESTS",
+      "site": "SRAN_LWG_S_KS-KHALIJ-HUKS_3322DE",
+      "category": "OTHER",
+      "alarmTime": "2026-10-11T10:36:55.000Z",
+      "status": "CLEARED",
+      "clearTime": "2026-10-11T11:25:18.000Z",
+      "durationMin": 48,
+      "clearType": "EMAIL",
+      "consecNbr": "1113623577",
+      "cellName": null,
+      "device": "site",
+      "office": "DN"
+    },
+    {
+      "alarmKey": "S_D_N_NE3SWS AGENT NOT RESPONDING TO REQUESTS||SRAN_LWG_S_KS-KHALIJ-HUKS_3322DE",
+      "alarmName": "S_D_N_NE3SWS AGENT NOT RESPONDING TO REQUESTS",
+      "site": "SRAN_LWG_S_KS-KHALIJ-HUKS_3322DE",
+      "category": "OTHER",
+      "alarmTime": "2026-10-11T10:42:54.000Z",
+      "status": "CLEARED",
+      "clearTime": "2026-10-11T11:26:42.000Z",
+      "durationMin": 44,
+      "clearType": "EMAIL",
+      "consecNbr": "2234402",
+      "cellName": null,
+      "device": "site",
+      "office": "DN"
+    },
+    {
+      "alarmKey": "S_D_N_NE3SWS AGENT NOT RESPONDING TO REQUESTS||SRAN_LWG_S_KS-KHALIJ-HUKS_3322DE",
+      "alarmName": "S_D_N_NE3SWS AGENT NOT RESPONDING TO REQUESTS",
+      "site": "SRAN_LWG_S_KS-KHALIJ-HUKS_3322DE",
+      "category": "OTHER",
+      "alarmTime": "2026-10-11T14:36:55.000Z",
+      "status": "CLEARED",
+      "clearTime": "2026-10-11T15:25:12.000Z",
+      "durationMin": 48,
+      "clearType": "EMAIL",
+      "consecNbr": "1113624626",
+      "cellName": null,
+      "device": "site",
+      "office": "DN"
+    },
+    {
+      "alarmKey": "S_D_N_NE3SWS AGENT NOT RESPONDING TO REQUESTS||SRAN_LWG_S_KS-KHALIJ-HUKS_3322DE",
+      "alarmName": "S_D_N_NE3SWS AGENT NOT RESPONDING TO REQUESTS",
+      "site": "SRAN_LWG_S_KS-KHALIJ-HUKS_3322DE",
+      "category": "OTHER",
+      "alarmTime": "2026-10-11T14:40:54.000Z",
+      "status": "CLEARED",
+      "clearTime": "2026-10-11T15:25:49.000Z",
+      "durationMin": 45,
+      "clearType": "EMAIL",
+      "consecNbr": "2270682",
+      "cellName": null,
+      "device": "site",
+      "office": "DN"
+    }
+  ],
+  "orphanClears": [
+    {
+      "alarmKey": "S_D_N_NE3SWS AGENT NOT RESPONDING TO REQUESTS||SRAN_LWG_S_KS-KHALIJ-HUKS_3322DE",
+      "subject": "CLEARED_S_D_N_NE3SWS AGENT NOT RESPONDING TO REQUESTS on #SRAN_LWG_S_KS-KHALIJ-HUKS_3322DE# at |11-OCT-2026 09:36:55 |",
+      "clearTime": "2026-10-11T10:05:22.000Z",
+      "consecNbr": "1113622816",
+      "office": "DN"
+    },
+    {
+      "alarmKey": "S_D_N_NE3SWS AGENT NOT RESPONDING TO REQUESTS||SRAN_LWG_S_KS-KHALIJ-HUKS_3322DE",
+      "subject": "CLEARED_S_D_N_NE3SWS AGENT NOT RESPONDING TO REQUESTS on #SRAN_LWG_S_KS-KHALIJ-HUKS_3322DE# at |11-OCT-2026 09:44:54 |",
+      "clearTime": "2026-10-11T10:07:16.000Z",
+      "consecNbr": "2199993",
+      "office": "DN"
+    }
+  ],
+  "rawMessages": [
+    {
+      "gmailId": "1a12a6ca5dd9d21c",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "1a12a6e6803e511c",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "1a12a910bf619bc5",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "1a12a91d61fa9f5e",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "1a12ab72d602ba24",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "1a12ab7ac62d2869",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "1a12b6ccd667965b",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "1a12b6d31da81295",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "1a12b9173d665af6",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "1a12b93a6bffdb7b",
+      "processed": true,
+      "parseError": null
+    }
+  ]
+}

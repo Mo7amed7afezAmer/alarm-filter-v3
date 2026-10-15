@@ -1,0 +1,23 @@
+{
+  "note": "real pattern CA",
+  "batches": [
+    [
+      {
+        "gmailId": "s043",
+        "subject": "CLEARED_S_D_N_FIRE ALARM on #SRAN_LWG_S_MF-MNUF-MAWKEF_0981DE# at |11-OCT-2026 15:41:53 |",
+        "receivedAt": "2026-10-11T13:05:52.000Z",
+        "body": null,
+        "office": "DN"
+      }
+    ],
+    [
+      {
+        "gmailId": "s139",
+        "subject": "S_D_N_FIRE ALARM on #SRAN_LWG_S_MF-MNUF-MAWKEF_0981DE# at |11-OCT-2026 16:17:31 |",
+        "receivedAt": "2026-10-11T13:25:09.000Z",
+        "body": null,
+        "office": "DN"
+      }
+    ]
+  ]
+}

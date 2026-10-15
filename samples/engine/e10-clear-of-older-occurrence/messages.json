@@ -1,0 +1,21 @@
+{
+  "note": "Clear for an older time sorts first and becomes an orphan",
+  "batches": [
+    [
+      {
+        "gmailId": "s005",
+        "subject": "S_D_N_RECTIFIER MINOR ALARM on #SRAN_LWG_TDD_S_BH-OASIS-RD-2_4319DE# at |11-OCT-2026 15:47:32 |",
+        "receivedAt": "2026-10-11T13:05:16.000Z",
+        "body": null,
+        "office": "DN"
+      },
+      {
+        "gmailId": "s055",
+        "subject": "CLEARED_S_D_N_RECTIFIER MINOR ALARM on #SRAN_LWG_TDD_S_BH-OASIS-RD-2_4319DE# at |10-OCT-2026 03:20:58 |",
+        "receivedAt": "2026-10-11T13:05:59.000Z",
+        "body": null,
+        "office": "DN"
+      }
+    ]
+  ]
+}

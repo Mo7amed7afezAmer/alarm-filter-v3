@@ -1,0 +1,23 @@
+{
+  "note": "D-05 global matching; FR-23 office tags",
+  "batches": [
+    [
+      {
+        "gmailId": "s011",
+        "subject": "S_D_N_SHELTER DOO on #SRAN_LWG_TDNR_S_GH-TANTA-UNV2_4392DE# at |11-OCT-2026 16:00:52 |",
+        "receivedAt": "2026-10-11T13:05:22.000Z",
+        "body": null,
+        "office": "DN"
+      }
+    ],
+    [
+      {
+        "gmailId": "s190",
+        "subject": "CLEARED_S_D_N_SHELTER DOO on #SRAN_LWG_TDNR_S_GH-TANTA-UNV2_4392DE# at |11-OCT-2026 16:00:52 |",
+        "receivedAt": "2026-10-11T13:25:59.000Z",
+        "body": null,
+        "office": "DS"
+      }
+    ]
+  ]
+}

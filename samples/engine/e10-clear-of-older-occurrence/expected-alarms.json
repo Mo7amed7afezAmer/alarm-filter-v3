@@ -1,0 +1,40 @@
+{
+  "alarms": [
+    {
+      "alarmKey": "S_D_N_RECTIFIER MINOR ALARM||SRAN_LWG_TDD_S_BH-OASIS-RD-2_4319DE",
+      "alarmName": "S_D_N_RECTIFIER MINOR ALARM",
+      "site": "SRAN_LWG_TDD_S_BH-OASIS-RD-2_4319DE",
+      "category": "POWER",
+      "alarmTime": "2026-10-11T12:47:32.000Z",
+      "status": "ACTIVE",
+      "clearTime": null,
+      "durationMin": null,
+      "clearType": null,
+      "consecNbr": null,
+      "cellName": null,
+      "device": null,
+      "office": "DN"
+    }
+  ],
+  "orphanClears": [
+    {
+      "alarmKey": "S_D_N_RECTIFIER MINOR ALARM||SRAN_LWG_TDD_S_BH-OASIS-RD-2_4319DE",
+      "subject": "CLEARED_S_D_N_RECTIFIER MINOR ALARM on #SRAN_LWG_TDD_S_BH-OASIS-RD-2_4319DE# at |10-OCT-2026 03:20:58 |",
+      "clearTime": "2026-10-11T13:05:59.000Z",
+      "consecNbr": null,
+      "office": "DN"
+    }
+  ],
+  "rawMessages": [
+    {
+      "gmailId": "s005",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "s055",
+      "processed": true,
+      "parseError": null
+    }
+  ]
+}

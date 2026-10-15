@@ -1,0 +1,69 @@
+{
+  "note": "several keys, body-less and consec",
+  "batches": [
+    [
+      {
+        "gmailId": "s001",
+        "subject": "S_D_N_FIRE ALARM;Default System Time on #SRAN_LWG_TDD_G_SK-ADLIYA_3458DE# at |11-OCT-2026 16:02:39 |",
+        "receivedAt": "2026-10-11T13:05:14.000Z",
+        "body": null,
+        "office": "DN"
+      },
+      {
+        "gmailId": "s011",
+        "subject": "S_D_N_SHELTER DOO on #SRAN_LWG_TDNR_S_GH-TANTA-UNV2_4392DE# at |11-OCT-2026 16:00:52 |",
+        "receivedAt": "2026-10-11T13:05:22.000Z",
+        "body": null,
+        "office": "DN"
+      },
+      {
+        "gmailId": "s049",
+        "subject": "CLEARED_S_D_N_FIRE ALARM on #SRAN_LWG_TDD_G_SK-ADLIYA_3458DE# at |11-OCT-2026 15:40:43 |",
+        "receivedAt": "2026-10-11T13:05:55.000Z",
+        "body": null,
+        "office": "DN"
+      }
+    ],
+    [
+      {
+        "gmailId": "s146",
+        "subject": "S_D_N_FIRE ALARM on #SRAN_LWG_TDD_G_SK-ADLIYA_3458DE# at |11-OCT-2026 16:08:25 |",
+        "receivedAt": "2026-10-11T13:25:12.000Z",
+        "body": null,
+        "office": "DN"
+      },
+      {
+        "gmailId": "s183",
+        "subject": "CLEARED_S_D_N_FIRE ALARM;Default System Time on #SRAN_LWG_TDD_G_SK-ADLIYA_3458DE# at |11-OCT-2026 16:02:39 |",
+        "receivedAt": "2026-10-11T13:25:51.000Z",
+        "body": null,
+        "office": "DN"
+      },
+      {
+        "gmailId": "s190",
+        "subject": "CLEARED_S_D_N_SHELTER DOO on #SRAN_LWG_TDNR_S_GH-TANTA-UNV2_4392DE# at |11-OCT-2026 16:00:52 |",
+        "receivedAt": "2026-10-11T13:25:59.000Z",
+        "body": null,
+        "office": "DN"
+      }
+    ],
+    [
+      {
+        "gmailId": "1a12b6ccd0fa574e",
+        "subject": "S_D_N_ACOC DOOR OPEN on #SRAN_LG_TDD_V_BH-SIDI-GHAZY_0444DE# at |11-OCT-2026 17:40:36 |",
+        "receivedAt": "2026-10-11T14:45:06.000Z",
+        "body": "\t\t\t\t############NEW ALARM###########\r\n\r\nALARM NAME: \r\n\t\tACOC DOOR OPEN\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 17:40:36\r\nNE_name: \r\n\t\tSRAN\r\nAlarm_Number\r\n\t\t7103\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tSRAN_LG_TDD_V_BH-SIDI-GHAZY_0444DE\r\nALARM_Device:\r\n\t\tMRBTS\r\nCONSEC_NBR: \r\n\t\t 2270667\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+        "office": "DN"
+      }
+    ],
+    [
+      {
+        "gmailId": "1a12b81985529ade",
+        "subject": "CLEARED_S_D_N_ACOC DOOR OPEN on #SRAN_LG_TDD_V_BH-SIDI-GHAZY_0444DE# at |11-OCT-2026 17:40:36 |",
+        "receivedAt": "2026-10-11T15:05:40.000Z",
+        "body": "\t\t\t\t############CLEARENCE ALARM###########\r\n\r\nALARM NAME: \r\n\t\tACOC DOOR OPEN\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 17:40:36\r\nNE_name: \r\n\t\tSRAN\r\nAlarm_Number\r\n\t\t7103\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tSRAN_LG_TDD_V_BH-SIDI-GHAZY_0444DE\r\nALARM_Device:\r\n\t\tMRBTS\r\nCONSEC_NBR: \r\n\t\t 2270667\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+        "office": "DN"
+      }
+    ]
+  ]
+}

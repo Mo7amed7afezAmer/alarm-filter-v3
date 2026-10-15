@@ -1,0 +1,122 @@
+{
+  "alarms": [
+    {
+      "alarmKey": "S_D_N_WCDMA CELL OUT OF USE||U_S_BH-MHLT-KYL_3830DE||A_BH-MHLT-KYL_2_24312_S",
+      "alarmName": "S_D_N_WCDMA CELL OUT OF USE",
+      "site": "U_S_BH-MHLT-KYL_3830DE",
+      "category": "OTHER",
+      "alarmTime": "2026-10-11T18:02:49.000Z",
+      "status": "CLEARED",
+      "clearTime": "2026-10-11T18:25:38.000Z",
+      "durationMin": 23,
+      "clearType": "EMAIL",
+      "consecNbr": "2291816",
+      "cellName": "A_BH-MHLT-KYL_2_24312_S",
+      "device": "cell",
+      "office": "DN"
+    },
+    {
+      "alarmKey": "S_D_N_WCDMA CELL OUT OF USE||U_S_BH-MHLT-KYL_3830DE||A_BH-MHLT-KYL_3_24313_S",
+      "alarmName": "S_D_N_WCDMA CELL OUT OF USE",
+      "site": "U_S_BH-MHLT-KYL_3830DE",
+      "category": "OTHER",
+      "alarmTime": "2026-10-11T18:02:49.000Z",
+      "status": "CLEARED",
+      "clearTime": "2026-10-11T18:25:38.000Z",
+      "durationMin": 23,
+      "clearType": "EMAIL",
+      "consecNbr": "2291814",
+      "cellName": "A_BH-MHLT-KYL_3_24313_S",
+      "device": "cell",
+      "office": "DN"
+    },
+    {
+      "alarmKey": "S_D_N_WCDMA CELL OUT OF USE||U_S_BH-MHLT-KYL_3830DE||A_BH-MHLT-KYL_4_24314_S",
+      "alarmName": "S_D_N_WCDMA CELL OUT OF USE",
+      "site": "U_S_BH-MHLT-KYL_3830DE",
+      "category": "OTHER",
+      "alarmTime": "2026-10-11T18:02:49.000Z",
+      "status": "CLEARED",
+      "clearTime": "2026-10-11T18:25:39.000Z",
+      "durationMin": 23,
+      "clearType": "EMAIL",
+      "consecNbr": "2291817",
+      "cellName": "A_BH-MHLT-KYL_4_24314_S",
+      "device": "cell",
+      "office": "DN"
+    },
+    {
+      "alarmKey": "S_D_N_WCDMA CELL OUT OF USE||U_S_BH-MHLT-KYL_3830DE||A_BH-MHLT-KYL_2_24312_S",
+      "alarmName": "S_D_N_WCDMA CELL OUT OF USE",
+      "site": "U_S_BH-MHLT-KYL_3830DE",
+      "category": "OTHER",
+      "alarmTime": "2026-10-11T18:33:13.000Z",
+      "status": "ACTIVE",
+      "clearTime": null,
+      "durationMin": null,
+      "clearType": null,
+      "consecNbr": "2294326",
+      "cellName": "A_BH-MHLT-KYL_2_24312_S",
+      "device": "cell",
+      "office": "DN"
+    },
+    {
+      "alarmKey": "S_D_N_WCDMA CELL OUT OF USE||U_S_BH-MHLT-KYL_3830DE||A_BH-MHLT-KYL_4_24314_S",
+      "alarmName": "S_D_N_WCDMA CELL OUT OF USE",
+      "site": "U_S_BH-MHLT-KYL_3830DE",
+      "category": "OTHER",
+      "alarmTime": "2026-10-11T18:36:45.000Z",
+      "status": "ACTIVE",
+      "clearTime": null,
+      "durationMin": null,
+      "clearType": null,
+      "consecNbr": "2294476",
+      "cellName": "A_BH-MHLT-KYL_4_24314_S",
+      "device": "cell",
+      "office": "DN"
+    }
+  ],
+  "orphanClears": [],
+  "rawMessages": [
+    {
+      "gmailId": "1a12c240e5cd69ef",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "1a12c2415accf6c6",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "1a12c24173f5b744",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "1a12c36b733f5952",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "1a12c36b90009b17",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "1a12c3856523f17f",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "1a12c48b83efc086",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "1a12c48bdc085fd2",
+      "processed": true,
+      "parseError": null
+    }
+  ]
+}

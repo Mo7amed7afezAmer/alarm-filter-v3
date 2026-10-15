@@ -1,0 +1,55 @@
+{
+  "alarms": [],
+  "orphanClears": [
+    {
+      "alarmKey": "D_S_BCCH MISSING||0111_S_QL-KFR-ARAB_3891DE",
+      "subject": "CLEARED_D_S_BCCH MISSING on #0111_S_QL-KFR-ARAB_3891DE# at |11-OCT-2026 15:40:26 |",
+      "clearTime": "2026-10-11T13:06:11.000Z",
+      "consecNbr": null,
+      "office": "DN"
+    },
+    {
+      "alarmKey": "D_S_BCCH MISSING||0111_S_QL-KFR-ARAB_3891DE",
+      "subject": "CLEARED_D_S_BCCH MISSING on #0111_S_QL-KFR-ARAB_3891DE# at |11-OCT-2026 15:40:35 |",
+      "clearTime": "2026-10-11T13:06:12.000Z",
+      "consecNbr": null,
+      "office": "DN"
+    },
+    {
+      "alarmKey": "D_S_BCCH MISSING||0111_S_QL-KFR-ARAB_3891DE",
+      "subject": "CLEARED_D_S_BCCH MISSING on #0111_S_QL-KFR-ARAB_3891DE# at |11-OCT-2026 15:40:50 |",
+      "clearTime": "2026-10-11T13:06:13.000Z",
+      "consecNbr": null,
+      "office": "DN"
+    },
+    {
+      "alarmKey": "D_S_BCCH MISSING||0111_S_QL-KFR-ARAB_3891DE",
+      "subject": "CLEARED_D_S_BCCH MISSING on #0111_S_QL-KFR-ARAB_3891DE# at |11-OCT-2026 15:40:59 |",
+      "clearTime": "2026-10-11T13:06:13.000Z",
+      "consecNbr": null,
+      "office": "DN"
+    }
+  ],
+  "rawMessages": [
+    {
+      "gmailId": "s063",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "s064",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "s065",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "s066",
+      "processed": true,
+      "parseError": null
+    }
+  ]
+}

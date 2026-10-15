@@ -1,0 +1,77 @@
+{
+  "alarms": [
+    {
+      "alarmKey": "S_D_N_BCCH MISSING||3531_S_KS-SHARAQA_3961DE",
+      "alarmName": "S_D_N_BCCH MISSING",
+      "site": "3531_S_KS-SHARAQA_3961DE",
+      "category": "OTHER",
+      "alarmTime": "2026-10-11T13:01:58.000Z",
+      "status": "CLEARED",
+      "clearTime": "2026-10-11T13:01:59.000Z",
+      "durationMin": 0,
+      "clearType": "AUTO_SUPERSEDED",
+      "consecNbr": null,
+      "cellName": null,
+      "device": null,
+      "office": "DN"
+    },
+    {
+      "alarmKey": "S_D_N_BCCH MISSING||3531_S_KS-SHARAQA_3961DE",
+      "alarmName": "S_D_N_BCCH MISSING",
+      "site": "3531_S_KS-SHARAQA_3961DE",
+      "category": "OTHER",
+      "alarmTime": "2026-10-11T13:01:59.000Z",
+      "status": "CLEARED",
+      "clearTime": "2026-10-11T13:26:10.000Z",
+      "durationMin": 24,
+      "clearType": "EMAIL",
+      "consecNbr": null,
+      "cellName": null,
+      "device": null,
+      "office": "DN"
+    }
+  ],
+  "orphanClears": [],
+  "rawMessages": [
+    {
+      "gmailId": "s020",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "s021",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "s022",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "s023",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "s205",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "s206",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "s207",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "s208",
+      "processed": true,
+      "parseError": null
+    }
+  ]
+}

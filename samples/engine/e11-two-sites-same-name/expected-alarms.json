@@ -1,0 +1,57 @@
+{
+  "alarms": [
+    {
+      "alarmKey": "S_D_N_BTS O&M LINK FAILURE||2521_D_DK-MARKAZYA_3373DE",
+      "alarmName": "S_D_N_BTS O&M LINK FAILURE",
+      "site": "2521_D_DK-MARKAZYA_3373DE",
+      "category": "DOWN",
+      "alarmTime": "2026-10-11T13:01:08.000Z",
+      "status": "CLEARED",
+      "clearTime": "2026-10-11T13:26:02.000Z",
+      "durationMin": 25,
+      "clearType": "EMAIL",
+      "consecNbr": null,
+      "cellName": null,
+      "device": null,
+      "office": "DN"
+    },
+    {
+      "alarmKey": "S_D_N_BTS O&M LINK FAILURE||3531_S_KS-SHARAQA_3961DE",
+      "alarmName": "S_D_N_BTS O&M LINK FAILURE",
+      "site": "3531_S_KS-SHARAQA_3961DE",
+      "category": "DOWN",
+      "alarmTime": "2026-10-11T13:01:08.000Z",
+      "status": "CLEARED",
+      "clearTime": "2026-10-11T13:26:02.000Z",
+      "durationMin": 25,
+      "clearType": "EMAIL",
+      "consecNbr": null,
+      "cellName": null,
+      "device": null,
+      "office": "DN"
+    }
+  ],
+  "orphanClears": [],
+  "rawMessages": [
+    {
+      "gmailId": "s012",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "s013",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "s194",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "s195",
+      "processed": true,
+      "parseError": null
+    }
+  ]
+}

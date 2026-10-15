@@ -1,0 +1,32 @@
+{
+  "alarms": [
+    {
+      "alarmKey": "S_D_N_ACOC DOOR OPEN||SRAN_LG_TDD_V_BH-SIDI-GHAZY_0444DE",
+      "alarmName": "S_D_N_ACOC DOOR OPEN",
+      "site": "SRAN_LG_TDD_V_BH-SIDI-GHAZY_0444DE",
+      "category": "OTHER",
+      "alarmTime": "2026-10-11T14:40:36.000Z",
+      "status": "CLEARED",
+      "clearTime": "2026-10-11T15:05:40.000Z",
+      "durationMin": 25,
+      "clearType": "EMAIL",
+      "consecNbr": "2270667",
+      "cellName": null,
+      "device": "MRBTS",
+      "office": "DN"
+    }
+  ],
+  "orphanClears": [],
+  "rawMessages": [
+    {
+      "gmailId": "1a12b6ccd0fa574e",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "1a12b81985529ade",
+      "processed": true,
+      "parseError": null
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "alarms": [
+    {
+      "alarmKey": "S_D_N_FENCE GATE||SRAN_LWG_TDD_G_BH-UMB-BH_3926DE",
+      "alarmName": "S_D_N_FENCE GATE",
+      "site": "SRAN_LWG_TDD_G_BH-UMB-BH_3926DE",
+      "category": "OTHER",
+      "alarmTime": "2026-10-11T13:28:15.000Z",
+      "status": "ACTIVE",
+      "clearTime": null,
+      "durationMin": null,
+      "clearType": null,
+      "consecNbr": null,
+      "cellName": null,
+      "device": null,
+      "office": "DN"
+    }
+  ],
+  "orphanClears": [],
+  "rawMessages": [
+    {
+      "gmailId": "s271",
+      "processed": true,
+      "parseError": null
+    }
+  ]
+}

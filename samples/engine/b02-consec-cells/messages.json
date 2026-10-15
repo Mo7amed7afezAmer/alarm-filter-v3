@@ -1,0 +1,67 @@
+{
+  "note": "FR-11 cell in key",
+  "batches": [
+    [
+      {
+        "gmailId": "1a12c240e5cd69ef",
+        "subject": "S_D_N_WCDMA CELL OUT OF USE on #U_S_BH-MHLT-KYL_3830DE# at |11-OCT-2026 21:02:49 |",
+        "receivedAt": "2026-10-11T18:05:18.000Z",
+        "body": "\t\t\t\t############NEW ALARM###########\r\n\r\nALARM NAME: \r\n\t\tWCDMA CELL OUT OF USE\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 21:02:49\r\nNE_name: \r\n\t\tRNC66\r\nAlarm_Number\r\n\t\t7771\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tU_S_BH-MHLT-KYL_3830DE\r\ncell name :\r\n\t\tA_BH-MHLT-KYL_2_24312_S\r\nALARM_Device:\r\n\t\tcell\r\nCONSEC_NBR: \r\n\t\t 2291816\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+        "office": "DN"
+      },
+      {
+        "gmailId": "1a12c2415accf6c6",
+        "subject": "S_D_N_WCDMA CELL OUT OF USE on #U_S_BH-MHLT-KYL_3830DE# at |11-OCT-2026 21:02:49 |",
+        "receivedAt": "2026-10-11T18:05:18.000Z",
+        "body": "\t\t\t\t############NEW ALARM###########\r\n\r\nALARM NAME: \r\n\t\tWCDMA CELL OUT OF USE\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 21:02:49\r\nNE_name: \r\n\t\tRNC66\r\nAlarm_Number\r\n\t\t7771\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tU_S_BH-MHLT-KYL_3830DE\r\ncell name :\r\n\t\tA_BH-MHLT-KYL_4_24314_S\r\nALARM_Device:\r\n\t\tcell\r\nCONSEC_NBR: \r\n\t\t 2291817\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+        "office": "DN"
+      },
+      {
+        "gmailId": "1a12c24173f5b744",
+        "subject": "S_D_N_WCDMA CELL OUT OF USE on #U_S_BH-MHLT-KYL_3830DE# at |11-OCT-2026 21:02:49 |",
+        "receivedAt": "2026-10-11T18:05:18.000Z",
+        "body": "\t\t\t\t############NEW ALARM###########\r\n\r\nALARM NAME: \r\n\t\tWCDMA CELL OUT OF USE\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 21:02:49\r\nNE_name: \r\n\t\tRNC66\r\nAlarm_Number\r\n\t\t7771\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tU_S_BH-MHLT-KYL_3830DE\r\ncell name :\r\n\t\tA_BH-MHLT-KYL_3_24313_S\r\nALARM_Device:\r\n\t\tcell\r\nCONSEC_NBR: \r\n\t\t 2291814\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+        "office": "DN"
+      }
+    ],
+    [
+      {
+        "gmailId": "1a12c36b733f5952",
+        "subject": "CLEARED_S_D_N_WCDMA CELL OUT OF USE on #U_S_BH-MHLT-KYL_3830DE# at |11-OCT-2026 21:02:49 |",
+        "receivedAt": "2026-10-11T18:25:38.000Z",
+        "body": "\t\t\t\t############CLEARENCE ALARM###########\r\n\r\nALARM NAME: \r\n\t\tWCDMA CELL OUT OF USE\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 21:02:49\r\nNE_name: \r\n\t\tRNC66\r\nAlarm_Number\r\n\t\t7771\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tU_S_BH-MHLT-KYL_3830DE\r\ncell name :\r\n\t\tA_BH-MHLT-KYL_2_24312_S\r\nALARM_Device:\r\n\t\tcell\r\nCONSEC_NBR: \r\n\t\t 2291816\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+        "office": "DN"
+      },
+      {
+        "gmailId": "1a12c3856523f17f",
+        "subject": "CLEARED_S_D_N_WCDMA CELL OUT OF USE on #U_S_BH-MHLT-KYL_3830DE# at |11-OCT-2026 21:02:49 |",
+        "receivedAt": "2026-10-11T18:25:38.000Z",
+        "body": "\t\t\t\t############CLEARENCE ALARM###########\r\n\r\nALARM NAME: \r\n\t\tWCDMA CELL OUT OF USE\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 21:02:49\r\nNE_name: \r\n\t\tRNC66\r\nAlarm_Number\r\n\t\t7771\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tU_S_BH-MHLT-KYL_3830DE\r\ncell name :\r\n\t\tA_BH-MHLT-KYL_3_24313_S\r\nALARM_Device:\r\n\t\tcell\r\nCONSEC_NBR: \r\n\t\t 2291814\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+        "office": "DN"
+      },
+      {
+        "gmailId": "1a12c36b90009b17",
+        "subject": "CLEARED_S_D_N_WCDMA CELL OUT OF USE on #U_S_BH-MHLT-KYL_3830DE# at |11-OCT-2026 21:02:49 |",
+        "receivedAt": "2026-10-11T18:25:39.000Z",
+        "body": "\t\t\t\t############CLEARENCE ALARM###########\r\n\r\nALARM NAME: \r\n\t\tWCDMA CELL OUT OF USE\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 21:02:49\r\nNE_name: \r\n\t\tRNC66\r\nAlarm_Number\r\n\t\t7771\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tU_S_BH-MHLT-KYL_3830DE\r\ncell name :\r\n\t\tA_BH-MHLT-KYL_4_24314_S\r\nALARM_Device:\r\n\t\tcell\r\nCONSEC_NBR: \r\n\t\t 2291817\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+        "office": "DN"
+      }
+    ],
+    [
+      {
+        "gmailId": "1a12c48b83efc086",
+        "subject": "S_D_N_WCDMA CELL OUT OF USE on #U_S_BH-MHLT-KYL_3830DE# at |11-OCT-2026 21:33:13 |",
+        "receivedAt": "2026-10-11T18:45:20.000Z",
+        "body": "\t\t\t\t############NEW ALARM###########\r\n\r\nALARM NAME: \r\n\t\tWCDMA CELL OUT OF USE\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 21:33:13\r\nNE_name: \r\n\t\tRNC66\r\nAlarm_Number\r\n\t\t7771\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tU_S_BH-MHLT-KYL_3830DE\r\ncell name :\r\n\t\tA_BH-MHLT-KYL_2_24312_S\r\nALARM_Device:\r\n\t\tcell\r\nCONSEC_NBR: \r\n\t\t 2294326\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+        "office": "DN"
+      },
+      {
+        "gmailId": "1a12c48bdc085fd2",
+        "subject": "S_D_N_WCDMA CELL OUT OF USE on #U_S_BH-MHLT-KYL_3830DE# at |11-OCT-2026 21:36:45 |",
+        "receivedAt": "2026-10-11T18:45:21.000Z",
+        "body": "\t\t\t\t############NEW ALARM###########\r\n\r\nALARM NAME: \r\n\t\tWCDMA CELL OUT OF USE\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 21:36:45\r\nNE_name: \r\n\t\tRNC66\r\nAlarm_Number\r\n\t\t7771\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tU_S_BH-MHLT-KYL_3830DE\r\ncell name :\r\n\t\tA_BH-MHLT-KYL_4_24314_S\r\nALARM_Device:\r\n\t\tcell\r\nCONSEC_NBR: \r\n\t\t 2294476\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+        "office": "DN"
+      }
+    ]
+  ]
+}

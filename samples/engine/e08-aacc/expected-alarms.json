@@ -1,0 +1,57 @@
+{
+  "alarms": [
+    {
+      "alarmKey": "S_D_N_BCCH MISSING||0301_S_SK-ADLIYA_3458DE",
+      "alarmName": "S_D_N_BCCH MISSING",
+      "site": "0301_S_SK-ADLIYA_3458DE",
+      "category": "OTHER",
+      "alarmTime": "2026-10-11T13:00:30.000Z",
+      "status": "CLEARED",
+      "clearTime": "2026-10-11T13:01:10.000Z",
+      "durationMin": 1,
+      "clearType": "AUTO_SUPERSEDED",
+      "consecNbr": null,
+      "cellName": null,
+      "device": null,
+      "office": "DN"
+    },
+    {
+      "alarmKey": "S_D_N_BCCH MISSING||0301_S_SK-ADLIYA_3458DE",
+      "alarmName": "S_D_N_BCCH MISSING",
+      "site": "0301_S_SK-ADLIYA_3458DE",
+      "category": "OTHER",
+      "alarmTime": "2026-10-11T13:01:10.000Z",
+      "status": "CLEARED",
+      "clearTime": "2026-10-11T13:26:09.000Z",
+      "durationMin": 25,
+      "clearType": "EMAIL",
+      "consecNbr": null,
+      "cellName": null,
+      "device": null,
+      "office": "DN"
+    }
+  ],
+  "orphanClears": [],
+  "rawMessages": [
+    {
+      "gmailId": "s018",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "s019",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "s203",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "s204",
+      "processed": true,
+      "parseError": null
+    }
+  ]
+}

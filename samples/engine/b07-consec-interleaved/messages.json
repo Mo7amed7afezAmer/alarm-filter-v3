@@ -1,0 +1,89 @@
+{
+  "note": "two consec series on one key",
+  "batches": [
+    [
+      {
+        "gmailId": "1a12a6ca5dd9d21c",
+        "subject": "CLEARED_S_D_N_NE3SWS AGENT NOT RESPONDING TO REQUESTS on #SRAN_LWG_S_KS-KHALIJ-HUKS_3322DE# at |11-OCT-2026 09:36:55 |",
+        "receivedAt": "2026-10-11T10:05:22.000Z",
+        "body": "\t\t\t\t############CLEARENCE ALARM###########\r\n\r\nALARM NAME: \r\n\t\tNE3SWS AGENT NOT RESPONDING TO REQUESTS\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 09:36:55\r\nNE_name: \r\n\t\t\r\nAlarm_Number\r\n\t\t9047\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tSRAN_LWG_S_KS-KHALIJ-HUKS_3322DE\r\nALARM_Device:\r\n\t\tsite\r\nCONSEC_NBR: \r\n\t\t 1113622816\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+        "office": "DN"
+      }
+    ],
+    [
+      {
+        "gmailId": "1a12a6e6803e511c",
+        "subject": "CLEARED_S_D_N_NE3SWS AGENT NOT RESPONDING TO REQUESTS on #SRAN_LWG_S_KS-KHALIJ-HUKS_3322DE# at |11-OCT-2026 09:44:54 |",
+        "receivedAt": "2026-10-11T10:07:16.000Z",
+        "body": "\t\t\t\t############CLEARENCE ALARM###########\r\n\r\nALARM NAME: \r\n\t\tNE3SWS AGENT NOT RESPONDING TO REQUESTS\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 09:44:54\r\nNE_name: \r\n\t\t\r\nAlarm_Number\r\n\t\t9047\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tSRAN_LWG_S_KS-KHALIJ-HUKS_3322DE\r\nALARM_Device:\r\n\t\tsite\r\nCONSEC_NBR: \r\n\t\t 2199993\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+        "office": "DN"
+      }
+    ],
+    [
+      {
+        "gmailId": "1a12a910bf619bc5",
+        "subject": "S_D_N_NE3SWS AGENT NOT RESPONDING TO REQUESTS on #SRAN_LWG_S_KS-KHALIJ-HUKS_3322DE# at |11-OCT-2026 13:36:55 |",
+        "receivedAt": "2026-10-11T10:45:08.000Z",
+        "body": "\t\t\t\t############NEW ALARM###########\r\n\r\nALARM NAME: \r\n\t\tNE3SWS AGENT NOT RESPONDING TO REQUESTS\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 13:36:55\r\nNE_name: \r\n\t\t\r\nAlarm_Number\r\n\t\t9047\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tSRAN_LWG_S_KS-KHALIJ-HUKS_3322DE\r\nALARM_Device:\r\n\t\tsite\r\nCONSEC_NBR: \r\n\t\t 1113623577\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+        "office": "DN"
+      },
+      {
+        "gmailId": "1a12a91d61fa9f5e",
+        "subject": "S_D_N_NE3SWS AGENT NOT RESPONDING TO REQUESTS on #SRAN_LWG_S_KS-KHALIJ-HUKS_3322DE# at |11-OCT-2026 13:42:54 |",
+        "receivedAt": "2026-10-11T10:45:57.000Z",
+        "body": "\t\t\t\t############NEW ALARM###########\r\n\r\nALARM NAME: \r\n\t\tNE3SWS AGENT NOT RESPONDING TO REQUESTS\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 13:42:54\r\nNE_name: \r\n\t\t\r\nAlarm_Number\r\n\t\t9047\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tSRAN_LWG_S_KS-KHALIJ-HUKS_3322DE\r\nALARM_Device:\r\n\t\tsite\r\nCONSEC_NBR: \r\n\t\t 2234402\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+        "office": "DN"
+      }
+    ],
+    [
+      {
+        "gmailId": "1a12ab7ac62d2869",
+        "subject": "CLEARED_S_D_N_NE3SWS AGENT NOT RESPONDING TO REQUESTS on #SRAN_LWG_S_KS-KHALIJ-HUKS_3322DE# at |11-OCT-2026 13:36:55 |",
+        "receivedAt": "2026-10-11T11:25:18.000Z",
+        "body": "\t\t\t\t############CLEARENCE ALARM###########\r\n\r\nALARM NAME: \r\n\t\tNE3SWS AGENT NOT RESPONDING TO REQUESTS\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 13:36:55\r\nNE_name: \r\n\t\t\r\nAlarm_Number\r\n\t\t9047\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tSRAN_LWG_S_KS-KHALIJ-HUKS_3322DE\r\nALARM_Device:\r\n\t\tsite\r\nCONSEC_NBR: \r\n\t\t 1113623577\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+        "office": "DN"
+      }
+    ],
+    [
+      {
+        "gmailId": "1a12ab72d602ba24",
+        "subject": "CLEARED_S_D_N_NE3SWS AGENT NOT RESPONDING TO REQUESTS on #SRAN_LWG_S_KS-KHALIJ-HUKS_3322DE# at |11-OCT-2026 13:42:54 |",
+        "receivedAt": "2026-10-11T11:26:42.000Z",
+        "body": "\t\t\t\t############CLEARENCE ALARM###########\r\n\r\nALARM NAME: \r\n\t\tNE3SWS AGENT NOT RESPONDING TO REQUESTS\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 13:42:54\r\nNE_name: \r\n\t\t\r\nAlarm_Number\r\n\t\t9047\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tSRAN_LWG_S_KS-KHALIJ-HUKS_3322DE\r\nALARM_Device:\r\n\t\tsite\r\nCONSEC_NBR: \r\n\t\t 2234402\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+        "office": "DN"
+      }
+    ],
+    [
+      {
+        "gmailId": "1a12b6ccd667965b",
+        "subject": "S_D_N_NE3SWS AGENT NOT RESPONDING TO REQUESTS on #SRAN_LWG_S_KS-KHALIJ-HUKS_3322DE# at |11-OCT-2026 17:36:55 |",
+        "receivedAt": "2026-10-11T14:45:08.000Z",
+        "body": "\t\t\t\t############NEW ALARM###########\r\n\r\nALARM NAME: \r\n\t\tNE3SWS AGENT NOT RESPONDING TO REQUESTS\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 17:36:55\r\nNE_name: \r\n\t\t\r\nAlarm_Number\r\n\t\t9047\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tSRAN_LWG_S_KS-KHALIJ-HUKS_3322DE\r\nALARM_Device:\r\n\t\tsite\r\nCONSEC_NBR: \r\n\t\t 1113624626\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+        "office": "DN"
+      },
+      {
+        "gmailId": "1a12b6d31da81295",
+        "subject": "S_D_N_NE3SWS AGENT NOT RESPONDING TO REQUESTS on #SRAN_LWG_S_KS-KHALIJ-HUKS_3322DE# at |11-OCT-2026 17:40:54 |",
+        "receivedAt": "2026-10-11T14:45:32.000Z",
+        "body": "\t\t\t\t############NEW ALARM###########\r\n\r\nALARM NAME: \r\n\t\tNE3SWS AGENT NOT RESPONDING TO REQUESTS\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 17:40:54\r\nNE_name: \r\n\t\t\r\nAlarm_Number\r\n\t\t9047\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tSRAN_LWG_S_KS-KHALIJ-HUKS_3322DE\r\nALARM_Device:\r\n\t\tsite\r\nCONSEC_NBR: \r\n\t\t 2270682\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+        "office": "DN"
+      }
+    ],
+    [
+      {
+        "gmailId": "1a12b9173d665af6",
+        "subject": "CLEARED_S_D_N_NE3SWS AGENT NOT RESPONDING TO REQUESTS on #SRAN_LWG_S_KS-KHALIJ-HUKS_3322DE# at |11-OCT-2026 17:36:55 |",
+        "receivedAt": "2026-10-11T15:25:12.000Z",
+        "body": "\t\t\t\t############CLEARENCE ALARM###########\r\n\r\nALARM NAME: \r\n\t\tNE3SWS AGENT NOT RESPONDING TO REQUESTS\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 17:36:55\r\nNE_name: \r\n\t\t\r\nAlarm_Number\r\n\t\t9047\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tSRAN_LWG_S_KS-KHALIJ-HUKS_3322DE\r\nALARM_Device:\r\n\t\tsite\r\nCONSEC_NBR: \r\n\t\t 1113624626\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+        "office": "DN"
+      },
+      {
+        "gmailId": "1a12b93a6bffdb7b",
+        "subject": "CLEARED_S_D_N_NE3SWS AGENT NOT RESPONDING TO REQUESTS on #SRAN_LWG_S_KS-KHALIJ-HUKS_3322DE# at |11-OCT-2026 17:40:54 |",
+        "receivedAt": "2026-10-11T15:25:49.000Z",
+        "body": "\t\t\t\t############CLEARENCE ALARM###########\r\n\r\nALARM NAME: \r\n\t\tNE3SWS AGENT NOT RESPONDING TO REQUESTS\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 17:40:54\r\nNE_name: \r\n\t\t\r\nAlarm_Number\r\n\t\t9047\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tSRAN_LWG_S_KS-KHALIJ-HUKS_3322DE\r\nALARM_Device:\r\n\t\tsite\r\nCONSEC_NBR: \r\n\t\t 2270682\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+        "office": "DN"
+      }
+    ]
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "alarms": [
+    {
+      "alarmKey": "S_D_N_BCCH MISSING||2611_D_KS-ABTU_3703DE",
+      "alarmName": "S_D_N_BCCH MISSING",
+      "site": "2611_D_KS-ABTU_3703DE",
+      "category": "OTHER",
+      "alarmTime": "2026-10-11T13:17:51.000Z",
+      "status": "CLEARED",
+      "clearTime": "2026-10-11T13:17:52.000Z",
+      "durationMin": 0,
+      "clearType": "AUTO_SUPERSEDED",
+      "consecNbr": null,
+      "cellName": null,
+      "device": null,
+      "office": "DN"
+    },
+    {
+      "alarmKey": "S_D_N_BCCH MISSING||2611_D_KS-ABTU_3703DE",
+      "alarmName": "S_D_N_BCCH MISSING",
+      "site": "2611_D_KS-ABTU_3703DE",
+      "category": "OTHER",
+      "alarmTime": "2026-10-11T13:17:52.000Z",
+      "status": "ACTIVE",
+      "clearTime": null,
+      "durationMin": null,
+      "clearType": null,
+      "consecNbr": null,
+      "cellName": null,
+      "device": null,
+      "office": "DN"
+    }
+  ],
+  "orphanClears": [],
+  "rawMessages": [
+    {
+      "gmailId": "s164",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "s165",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "s166",
+      "processed": true,
+      "parseError": null
+    }
+  ]
+}

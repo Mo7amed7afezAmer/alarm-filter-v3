@@ -1,0 +1,32 @@
+{
+  "alarms": [
+    {
+      "alarmKey": "S_D_N_SHELTER DOO||SRAN_LWG_TDNR_S_GH-TANTA-UNV2_4392DE",
+      "alarmName": "S_D_N_SHELTER DOO",
+      "site": "SRAN_LWG_TDNR_S_GH-TANTA-UNV2_4392DE",
+      "category": "OTHER",
+      "alarmTime": "2026-10-11T13:00:52.000Z",
+      "status": "CLEARED",
+      "clearTime": "2026-10-11T13:25:59.000Z",
+      "durationMin": 25,
+      "clearType": "EMAIL",
+      "consecNbr": null,
+      "cellName": null,
+      "device": null,
+      "office": "DN"
+    }
+  ],
+  "orphanClears": [],
+  "rawMessages": [
+    {
+      "gmailId": "s011",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "s190",
+      "processed": true,
+      "parseError": null
+    }
+  ]
+}

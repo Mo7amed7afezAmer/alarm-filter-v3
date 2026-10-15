@@ -1,0 +1,37 @@
+{
+  "note": "keys differ by site",
+  "batches": [
+    [
+      {
+        "gmailId": "s012",
+        "subject": "S_D_N_BTS O&M LINK FAILURE on #3531_S_KS-SHARAQA_3961DE# at |11-OCT-2026 16:01:08 |",
+        "receivedAt": "2026-10-11T13:05:24.000Z",
+        "body": null,
+        "office": "DN"
+      },
+      {
+        "gmailId": "s013",
+        "subject": "S_D_N_BTS O&M LINK FAILURE on #2521_D_DK-MARKAZYA_3373DE# at |11-OCT-2026 16:01:08 |",
+        "receivedAt": "2026-10-11T13:05:24.000Z",
+        "body": null,
+        "office": "DN"
+      }
+    ],
+    [
+      {
+        "gmailId": "s194",
+        "subject": "CLEARED_S_D_N_BTS O&M LINK FAILURE on #3531_S_KS-SHARAQA_3961DE# at |11-OCT-2026 16:01:08 |",
+        "receivedAt": "2026-10-11T13:26:02.000Z",
+        "body": null,
+        "office": "DN"
+      },
+      {
+        "gmailId": "s195",
+        "subject": "CLEARED_S_D_N_BTS O&M LINK FAILURE on #2521_D_DK-MARKAZYA_3373DE# at |11-OCT-2026 16:01:08 |",
+        "receivedAt": "2026-10-11T13:26:02.000Z",
+        "body": null,
+        "office": "DN"
+      }
+    ]
+  ]
+}

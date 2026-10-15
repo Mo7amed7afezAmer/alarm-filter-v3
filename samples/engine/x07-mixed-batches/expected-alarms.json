@@ -1,0 +1,115 @@
+{
+  "alarms": [
+    {
+      "alarmKey": "S_D_N_SHELTER DOO||SRAN_LWG_TDNR_S_GH-TANTA-UNV2_4392DE",
+      "alarmName": "S_D_N_SHELTER DOO",
+      "site": "SRAN_LWG_TDNR_S_GH-TANTA-UNV2_4392DE",
+      "category": "OTHER",
+      "alarmTime": "2026-10-11T13:00:52.000Z",
+      "status": "CLEARED",
+      "clearTime": "2026-10-11T13:25:59.000Z",
+      "durationMin": 25,
+      "clearType": "EMAIL",
+      "consecNbr": null,
+      "cellName": null,
+      "device": null,
+      "office": "DN"
+    },
+    {
+      "alarmKey": "S_D_N_FIRE ALARM||SRAN_LWG_TDD_G_SK-ADLIYA_3458DE",
+      "alarmName": "S_D_N_FIRE ALARM",
+      "site": "SRAN_LWG_TDD_G_SK-ADLIYA_3458DE",
+      "category": "OTHER",
+      "alarmTime": "2026-10-11T13:02:39.000Z",
+      "status": "CLEARED",
+      "clearTime": "2026-10-11T13:25:51.000Z",
+      "durationMin": 23,
+      "clearType": "EMAIL",
+      "consecNbr": null,
+      "cellName": null,
+      "device": null,
+      "office": "DN"
+    },
+    {
+      "alarmKey": "S_D_N_FIRE ALARM||SRAN_LWG_TDD_G_SK-ADLIYA_3458DE",
+      "alarmName": "S_D_N_FIRE ALARM",
+      "site": "SRAN_LWG_TDD_G_SK-ADLIYA_3458DE",
+      "category": "OTHER",
+      "alarmTime": "2026-10-11T13:08:25.000Z",
+      "status": "ACTIVE",
+      "clearTime": null,
+      "durationMin": null,
+      "clearType": null,
+      "consecNbr": null,
+      "cellName": null,
+      "device": null,
+      "office": "DN"
+    },
+    {
+      "alarmKey": "S_D_N_ACOC DOOR OPEN||SRAN_LG_TDD_V_BH-SIDI-GHAZY_0444DE",
+      "alarmName": "S_D_N_ACOC DOOR OPEN",
+      "site": "SRAN_LG_TDD_V_BH-SIDI-GHAZY_0444DE",
+      "category": "OTHER",
+      "alarmTime": "2026-10-11T14:40:36.000Z",
+      "status": "CLEARED",
+      "clearTime": "2026-10-11T15:05:40.000Z",
+      "durationMin": 25,
+      "clearType": "EMAIL",
+      "consecNbr": "2270667",
+      "cellName": null,
+      "device": "MRBTS",
+      "office": "DN"
+    }
+  ],
+  "orphanClears": [
+    {
+      "alarmKey": "S_D_N_FIRE ALARM||SRAN_LWG_TDD_G_SK-ADLIYA_3458DE",
+      "subject": "CLEARED_S_D_N_FIRE ALARM on #SRAN_LWG_TDD_G_SK-ADLIYA_3458DE# at |11-OCT-2026 15:40:43 |",
+      "clearTime": "2026-10-11T13:05:55.000Z",
+      "consecNbr": null,
+      "office": "DN"
+    }
+  ],
+  "rawMessages": [
+    {
+      "gmailId": "1a12b6ccd0fa574e",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "1a12b81985529ade",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "s001",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "s011",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "s049",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "s146",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "s183",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "s190",
+      "processed": true,
+      "parseError": null
+    }
+  ]
+}

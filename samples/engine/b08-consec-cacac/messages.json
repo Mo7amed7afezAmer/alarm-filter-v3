@@ -1,0 +1,50 @@
+{
+  "note": "orphan then two pairs",
+  "batches": [
+    [
+      {
+        "gmailId": "1a12a5c1db9c69d4",
+        "subject": "CLEARED_S_D_N_WCDMA BASE STATION OUT OF USE on #U_S_KS-KHALIJ-HUKS_3322DE# at |11-OCT-2026 09:34:35 |",
+        "receivedAt": "2026-10-11T09:47:16.000Z",
+        "body": "\t\t\t\t############CLEARENCE ALARM###########\r\n\r\nALARM NAME: \r\n\t\tWCDMA BASE STATION OUT OF USE\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 09:34:35\r\nNE_name: \r\n\t\tRNC66\r\nAlarm_Number\r\n\t\t7786\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tU_S_KS-KHALIJ-HUKS_3322DE\r\nALARM_Device:\r\n\t\tsite\r\nCONSEC_NBR: \r\n\t\t 2198420\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+        "office": "DN"
+      }
+    ],
+    [
+      {
+        "gmailId": "1a12a91d2c63f2d6",
+        "subject": "S_D_N_WCDMA BASE STATION OUT OF USE on #U_S_KS-KHALIJ-HUKS_3322DE# at |11-OCT-2026 13:36:34 |",
+        "receivedAt": "2026-10-11T10:45:53.000Z",
+        "body": "\t\t\t\t############NEW ALARM###########\r\n\r\nALARM NAME: \r\n\t\tWCDMA BASE STATION OUT OF USE\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 13:36:34\r\nNE_name: \r\n\t\tRNC66\r\nAlarm_Number\r\n\t\t7786\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tU_S_KS-KHALIJ-HUKS_3322DE\r\nALARM_Device:\r\n\t\tsite\r\nCONSEC_NBR: \r\n\t\t 2233733\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+        "office": "DN"
+      }
+    ],
+    [
+      {
+        "gmailId": "1a12aa4873d99a53",
+        "subject": "CLEARED_S_D_N_WCDMA BASE STATION OUT OF USE on #U_S_KS-KHALIJ-HUKS_3322DE# at |11-OCT-2026 13:36:34 |",
+        "receivedAt": "2026-10-11T11:06:22.000Z",
+        "body": "\t\t\t\t############CLEARENCE ALARM###########\r\n\r\nALARM NAME: \r\n\t\tWCDMA BASE STATION OUT OF USE\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 13:36:34\r\nNE_name: \r\n\t\tRNC66\r\nAlarm_Number\r\n\t\t7786\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tU_S_KS-KHALIJ-HUKS_3322DE\r\nALARM_Device:\r\n\t\tsite\r\nCONSEC_NBR: \r\n\t\t 2233733\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+        "office": "DN"
+      }
+    ],
+    [
+      {
+        "gmailId": "1a12b6d2512ebe6a",
+        "subject": "S_D_N_WCDMA BASE STATION OUT OF USE on #U_S_KS-KHALIJ-HUKS_3322DE# at |11-OCT-2026 17:35:10 |",
+        "receivedAt": "2026-10-11T14:45:29.000Z",
+        "body": "\t\t\t\t############NEW ALARM###########\r\n\r\nALARM NAME: \r\n\t\tWCDMA BASE STATION OUT OF USE\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 17:35:10\r\nNE_name: \r\n\t\tRNC66\r\nAlarm_Number\r\n\t\t7786\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tU_S_KS-KHALIJ-HUKS_3322DE\r\nALARM_Device:\r\n\t\tsite\r\nCONSEC_NBR: \r\n\t\t 2269765\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+        "office": "DN"
+      }
+    ],
+    [
+      {
+        "gmailId": "1a12b802955eae20",
+        "subject": "CLEARED_S_D_N_WCDMA BASE STATION OUT OF USE on #U_S_KS-KHALIJ-HUKS_3322DE# at |11-OCT-2026 17:35:10 |",
+        "receivedAt": "2026-10-11T15:06:16.000Z",
+        "body": "\t\t\t\t############CLEARENCE ALARM###########\r\n\r\nALARM NAME: \r\n\t\tWCDMA BASE STATION OUT OF USE\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 17:35:10\r\nNE_name: \r\n\t\tRNC66\r\nAlarm_Number\r\n\t\t7786\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tU_S_KS-KHALIJ-HUKS_3322DE\r\nALARM_Device:\r\n\t\tsite\r\nCONSEC_NBR: \r\n\t\t 2269765\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+        "office": "DN"
+      }
+    ]
+  ]
+}

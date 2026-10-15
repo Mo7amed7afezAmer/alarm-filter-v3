@@ -1,0 +1,104 @@
+{
+  "note": "FR-20 consec alarms stay ACTIVE together",
+  "batches": [
+    [
+      {
+        "gmailId": "1a129fec39ffe046",
+        "subject": "S_D_N_RECTIFIER MINOR ALARM on #SRAN_LWG_TDD_S_BH-6-OCTOBER_3273DE# at |11-OCT-2026 11:02:08 |",
+        "receivedAt": "2026-10-11T08:05:18.000Z",
+        "body": "\t\t\t\t############NEW ALARM###########\r\n\r\nALARM NAME: \r\n\t\tRECTIFIER MINOR ALARM\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 11:02:08\r\nNE_name: \r\n\t\tSRAN\r\nAlarm_Number\r\n\t\t7103\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tSRAN_LWG_TDD_S_BH-6-OCTOBER_3273DE\r\nALARM_Device:\r\n\t\tMRBTS\r\nCONSEC_NBR: \r\n\t\t 2209978\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+        "office": "DN"
+      }
+    ],
+    [
+      {
+        "gmailId": "1a12a12016a871eb",
+        "subject": "CLEARED_S_D_N_RECTIFIER MINOR ALARM on #SRAN_LWG_TDD_S_BH-6-OCTOBER_3273DE# at |11-OCT-2026 11:02:08 |",
+        "receivedAt": "2026-10-11T08:26:19.000Z",
+        "body": "\t\t\t\t############CLEARENCE ALARM###########\r\n\r\nALARM NAME: \r\n\t\tRECTIFIER MINOR ALARM\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 11:02:08\r\nNE_name: \r\n\t\tSRAN\r\nAlarm_Number\r\n\t\t7103\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tSRAN_LWG_TDD_S_BH-6-OCTOBER_3273DE\r\nALARM_Device:\r\n\t\tMRBTS\r\nCONSEC_NBR: \r\n\t\t 2209978\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+        "office": "DN"
+      }
+    ],
+    [
+      {
+        "gmailId": "1a12ab5f5ca8d7b1",
+        "subject": "S_D_N_RECTIFIER MINOR ALARM on #SRAN_LWG_TDD_S_BH-6-OCTOBER_3273DE# at |11-OCT-2026 14:21:08 |",
+        "receivedAt": "2026-10-11T11:25:17.000Z",
+        "body": "\t\t\t\t############NEW ALARM###########\r\n\r\nALARM NAME: \r\n\t\tRECTIFIER MINOR ALARM\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 14:21:08\r\nNE_name: \r\n\t\tSRAN\r\nAlarm_Number\r\n\t\t7103\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tSRAN_LWG_TDD_S_BH-6-OCTOBER_3273DE\r\nALARM_Device:\r\n\t\tMRBTS\r\nCONSEC_NBR: \r\n\t\t 2239985\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+        "office": "DN"
+      }
+    ],
+    [
+      {
+        "gmailId": "1a12ada7cd7961ab",
+        "subject": "S_D_N_RECTIFIER MINOR ALARM on #SRAN_LWG_TDD_S_BH-6-OCTOBER_3273DE# at |11-OCT-2026 14:55:25 |",
+        "receivedAt": "2026-10-11T12:05:18.000Z",
+        "body": "\t\t\t\t############NEW ALARM###########\r\n\r\nALARM NAME: \r\n\t\tRECTIFIER MINOR ALARM\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 14:55:25\r\nNE_name: \r\n\t\tSRAN\r\nAlarm_Number\r\n\t\t7103\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tSRAN_LWG_TDD_S_BH-6-OCTOBER_3273DE\r\nALARM_Device:\r\n\t\tMRBTS\r\nCONSEC_NBR: \r\n\t\t 2245584\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+        "office": "DN"
+      }
+    ],
+    [
+      {
+        "gmailId": "1a12adb23fa0d538",
+        "subject": "CLEARED_S_D_N_RECTIFIER MINOR ALARM on #SRAN_LWG_TDD_S_BH-6-OCTOBER_3273DE# at |11-OCT-2026 14:21:08 |",
+        "receivedAt": "2026-10-11T12:06:00.000Z",
+        "body": "\t\t\t\t############CLEARENCE ALARM###########\r\n\r\nALARM NAME: \r\n\t\tRECTIFIER MINOR ALARM\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 14:21:08\r\nNE_name: \r\n\t\tSRAN\r\nAlarm_Number\r\n\t\t7103\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tSRAN_LWG_TDD_S_BH-6-OCTOBER_3273DE\r\nALARM_Device:\r\n\t\tMRBTS\r\nCONSEC_NBR: \r\n\t\t 2239985\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+        "office": "DN"
+      }
+    ],
+    [
+      {
+        "gmailId": "1a12aeccbaf5dde9",
+        "subject": "S_D_N_RECTIFIER MINOR ALARM on #SRAN_LWG_TDD_S_BH-6-OCTOBER_3273DE# at |11-OCT-2026 15:23:07 |",
+        "receivedAt": "2026-10-11T12:25:17.000Z",
+        "body": "\t\t\t\t############NEW ALARM###########\r\n\r\nALARM NAME: \r\n\t\tRECTIFIER MINOR ALARM\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 15:23:07\r\nNE_name: \r\n\t\tSRAN\r\nAlarm_Number\r\n\t\t7103\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tSRAN_LWG_TDD_S_BH-6-OCTOBER_3273DE\r\nALARM_Device:\r\n\t\tMRBTS\r\nCONSEC_NBR: \r\n\t\t 2248772\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+        "office": "DN"
+      }
+    ],
+    [
+      {
+        "gmailId": "1a12aeda2cc83325",
+        "subject": "CLEARED_S_D_N_RECTIFIER MINOR ALARM on #SRAN_LWG_TDD_S_BH-6-OCTOBER_3273DE# at |11-OCT-2026 14:55:25 |",
+        "receivedAt": "2026-10-11T12:26:14.000Z",
+        "body": "\t\t\t\t############CLEARENCE ALARM###########\r\n\r\nALARM NAME: \r\n\t\tRECTIFIER MINOR ALARM\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 14:55:25\r\nNE_name: \r\n\t\tSRAN\r\nAlarm_Number\r\n\t\t7103\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tSRAN_LWG_TDD_S_BH-6-OCTOBER_3273DE\r\nALARM_Device:\r\n\t\tMRBTS\r\nCONSEC_NBR: \r\n\t\t 2245584\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+        "office": "DN"
+      }
+    ],
+    [
+      {
+        "gmailId": "1a12affc34298d37",
+        "subject": "CLEARED_S_D_N_RECTIFIER MINOR ALARM on #SRAN_LWG_TDD_S_BH-6-OCTOBER_3273DE# at |11-OCT-2026 15:23:07 |",
+        "receivedAt": "2026-10-11T12:46:01.000Z",
+        "body": "\t\t\t\t############CLEARENCE ALARM###########\r\n\r\nALARM NAME: \r\n\t\tRECTIFIER MINOR ALARM\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 15:23:07\r\nNE_name: \r\n\t\tSRAN\r\nAlarm_Number\r\n\t\t7103\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tSRAN_LWG_TDD_S_BH-6-OCTOBER_3273DE\r\nALARM_Device:\r\n\t\tMRBTS\r\nCONSEC_NBR: \r\n\t\t 2248772\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+        "office": "DN"
+      }
+    ],
+    [
+      {
+        "gmailId": "1a12b360c7473d48",
+        "subject": "S_D_N_RECTIFIER MINOR ALARM on #SRAN_LWG_TDD_S_BH-6-OCTOBER_3273DE# at |11-OCT-2026 16:42:17 |",
+        "receivedAt": "2026-10-11T13:45:19.000Z",
+        "body": "\t\t\t\t############NEW ALARM###########\r\n\r\nALARM NAME: \r\n\t\tRECTIFIER MINOR ALARM\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 16:42:17\r\nNE_name: \r\n\t\tSRAN\r\nAlarm_Number\r\n\t\t7103\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tSRAN_LWG_TDD_S_BH-6-OCTOBER_3273DE\r\nALARM_Device:\r\n\t\tMRBTS\r\nCONSEC_NBR: \r\n\t\t 2262061\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+        "office": "DN"
+      }
+    ],
+    [
+      {
+        "gmailId": "1a12b497cbae470b",
+        "subject": "CLEARED_S_D_N_RECTIFIER MINOR ALARM on #SRAN_LWG_TDD_S_BH-6-OCTOBER_3273DE# at |11-OCT-2026 16:42:17 |",
+        "receivedAt": "2026-10-11T14:06:33.000Z",
+        "body": "\t\t\t\t############CLEARENCE ALARM###########\r\n\r\nALARM NAME: \r\n\t\tRECTIFIER MINOR ALARM\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 16:42:17\r\nNE_name: \r\n\t\tSRAN\r\nAlarm_Number\r\n\t\t7103\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tSRAN_LWG_TDD_S_BH-6-OCTOBER_3273DE\r\nALARM_Device:\r\n\t\tMRBTS\r\nCONSEC_NBR: \r\n\t\t 2262061\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+        "office": "DN"
+      }
+    ],
+    [
+      {
+        "gmailId": "1a12c11a91d2fc1e",
+        "subject": "S_D_N_RECTIFIER MINOR ALARM on #SRAN_LWG_TDD_S_BH-6-OCTOBER_3273DE# at |11-OCT-2026 20:37:27 |",
+        "receivedAt": "2026-10-11T17:45:10.000Z",
+        "body": "\t\t\t\t############NEW ALARM###########\r\n\r\nALARM NAME: \r\n\t\tRECTIFIER MINOR ALARM\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 20:37:27\r\nNE_name: \r\n\t\tSRAN\r\nAlarm_Number\r\n\t\t7103\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tSRAN_LWG_TDD_S_BH-6-OCTOBER_3273DE\r\nALARM_Device:\r\n\t\tMRBTS\r\nCONSEC_NBR: \r\n\t\t 2289497\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+        "office": "DN"
+      }
+    ]
+  ]
+}

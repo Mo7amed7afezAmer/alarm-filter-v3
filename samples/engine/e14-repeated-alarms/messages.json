@@ -1,0 +1,28 @@
+{
+  "note": "real pattern AAA",
+  "batches": [
+    [
+      {
+        "gmailId": "s164",
+        "subject": "S_D_N_BCCH MISSING on #2611_D_KS-ABTU_3703DE# at |11-OCT-2026 16:17:51 |",
+        "receivedAt": "2026-10-11T13:25:32.000Z",
+        "body": null,
+        "office": "DN"
+      },
+      {
+        "gmailId": "s165",
+        "subject": "S_D_N_BCCH MISSING on #2611_D_KS-ABTU_3703DE# at |11-OCT-2026 16:17:52 |",
+        "receivedAt": "2026-10-11T13:25:33.000Z",
+        "body": null,
+        "office": "DN"
+      },
+      {
+        "gmailId": "s166",
+        "subject": "S_D_N_BCCH MISSING on #2611_D_KS-ABTU_3703DE# at |11-OCT-2026 16:17:51 |",
+        "receivedAt": "2026-10-11T13:25:33.000Z",
+        "body": null,
+        "office": "DN"
+      }
+    ]
+  ]
+}

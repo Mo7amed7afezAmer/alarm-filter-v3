@@ -1,0 +1,70 @@
+{
+  "alarms": [
+    {
+      "alarmKey": "S_D_N_WCDMA BASE STATION OUT OF USE||U_S_KS-KHALIJ-HUKS_3322DE",
+      "alarmName": "S_D_N_WCDMA BASE STATION OUT OF USE",
+      "site": "U_S_KS-KHALIJ-HUKS_3322DE",
+      "category": "OTHER",
+      "alarmTime": "2026-10-11T10:36:34.000Z",
+      "status": "CLEARED",
+      "clearTime": "2026-10-11T11:06:22.000Z",
+      "durationMin": 30,
+      "clearType": "EMAIL",
+      "consecNbr": "2233733",
+      "cellName": null,
+      "device": "site",
+      "office": "DN"
+    },
+    {
+      "alarmKey": "S_D_N_WCDMA BASE STATION OUT OF USE||U_S_KS-KHALIJ-HUKS_3322DE",
+      "alarmName": "S_D_N_WCDMA BASE STATION OUT OF USE",
+      "site": "U_S_KS-KHALIJ-HUKS_3322DE",
+      "category": "OTHER",
+      "alarmTime": "2026-10-11T14:35:10.000Z",
+      "status": "CLEARED",
+      "clearTime": "2026-10-11T15:06:16.000Z",
+      "durationMin": 31,
+      "clearType": "EMAIL",
+      "consecNbr": "2269765",
+      "cellName": null,
+      "device": "site",
+      "office": "DN"
+    }
+  ],
+  "orphanClears": [
+    {
+      "alarmKey": "S_D_N_WCDMA BASE STATION OUT OF USE||U_S_KS-KHALIJ-HUKS_3322DE",
+      "subject": "CLEARED_S_D_N_WCDMA BASE STATION OUT OF USE on #U_S_KS-KHALIJ-HUKS_3322DE# at |11-OCT-2026 09:34:35 |",
+      "clearTime": "2026-10-11T09:47:16.000Z",
+      "consecNbr": "2198420",
+      "office": "DN"
+    }
+  ],
+  "rawMessages": [
+    {
+      "gmailId": "1a12a5c1db9c69d4",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "1a12a91d2c63f2d6",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "1a12aa4873d99a53",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "1a12b6d2512ebe6a",
+      "processed": true,
+      "parseError": null
+    },
+    {
+      "gmailId": "1a12b802955eae20",
+      "processed": true,
+      "parseError": null
+    }
+  ]
+}

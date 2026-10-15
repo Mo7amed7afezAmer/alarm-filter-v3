@@ -1,0 +1,35 @@
+{
+  "note": "real pattern CCCC",
+  "batches": [
+    [
+      {
+        "gmailId": "s063",
+        "subject": "CLEARED_D_S_BCCH MISSING on #0111_S_QL-KFR-ARAB_3891DE# at |11-OCT-2026 15:40:26 |",
+        "receivedAt": "2026-10-11T13:06:11.000Z",
+        "body": null,
+        "office": "DN"
+      },
+      {
+        "gmailId": "s064",
+        "subject": "CLEARED_D_S_BCCH MISSING on #0111_S_QL-KFR-ARAB_3891DE# at |11-OCT-2026 15:40:35 |",
+        "receivedAt": "2026-10-11T13:06:12.000Z",
+        "body": null,
+        "office": "DN"
+      },
+      {
+        "gmailId": "s065",
+        "subject": "CLEARED_D_S_BCCH MISSING on #0111_S_QL-KFR-ARAB_3891DE# at |11-OCT-2026 15:40:59 |",
+        "receivedAt": "2026-10-11T13:06:13.000Z",
+        "body": null,
+        "office": "DN"
+      },
+      {
+        "gmailId": "s066",
+        "subject": "CLEARED_D_S_BCCH MISSING on #0111_S_QL-KFR-ARAB_3891DE# at |11-OCT-2026 15:40:50 |",
+        "receivedAt": "2026-10-11T13:06:13.000Z",
+        "body": null,
+        "office": "DN"
+      }
+    ]
+  ]
+}
