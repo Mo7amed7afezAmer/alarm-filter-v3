@@ -1,4 +1,4 @@
-// Models are added in G-T02 (REQUIREMENTS.md §5).
+// Data model: REQUIREMENTS.md §5.
 generator client {
   provider = "prisma-client-js"
 }
@@ -6,4 +6,155 @@ generator client {
 datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
+}
+
+enum Category {
+  DOWN
+  POWER
+  OTHER
+}
+
+enum AlarmStatus {
+  ACTIVE
+  CLEARED
+}
+
+enum ClearType {
+  EMAIL
+  AUTO_SUPERSEDED
+}
+
+enum Role {
+  VIEWER
+  OPERATOR
+  ADMIN
+}
+
+/// Every Gmail message is kept here; it is the source of truth for reprocess (NFR-27).
+model RawMessage {
+  id           Int           @id @default(autoincrement())
+  gmailId      String        @unique
+  subject      String
+  receivedAt   DateTime
+  body         String?
+  office       String?
+  parseError   String?
+  processedAt  DateTime?
+  orphanClears OrphanClear[]
+
+  @@index([receivedAt])
+  @@index([office])
+  @@map("raw_messages")
+}
+
+model Alarm {
+  id          Int         @id @default(autoincrement())
+  alarmKey    String
+  alarmName   String
+  site        String
+  category    Category
+  alarmTime   DateTime
+  status      AlarmStatus @default(ACTIVE)
+  clearTime   DateTime?
+  durationMin Int?
+  clearType   ClearType?
+  consecNbr   String?     @unique
+  cellName    String?
+  device      String?
+  office      String?
+  createdAt   DateTime    @default(now())
+
+  @@index([alarmKey, alarmTime])
+  @@index([status, category])
+  @@index([office, status])
+  @@index([site])
+  @@map("alarms")
+}
+
+model OrphanClear {
+  id           Int        @id @default(autoincrement())
+  alarmKey     String
+  subject      String
+  clearTime    DateTime
+  rawMessageId Int
+  rawMessage   RawMessage @relation(fields: [rawMessageId], references: [id], onDelete: Cascade)
+  consecNbr    String?
+  office       String?
+
+  @@index([alarmKey])
+  @@index([consecNbr])
+  @@map("orphan_clears")
+}
+
+model Rule {
+  id       Int      @id @default(autoincrement())
+  pattern  String
+  category Category
+  priority Int
+
+  @@index([priority])
+  @@map("rules")
+}
+
+model Site {
+  site   String  @id
+  region String?
+  owner  String?
+
+  @@map("sites")
+}
+
+model User {
+  id                  Int       @id @default(autoincrement())
+  email               String    @unique
+  passwordHash        String
+  role                Role      @default(VIEWER)
+  notifyPrefs         Json?
+  notificationsSeenAt DateTime?
+  displayPrefs        Json?
+
+  @@map("users")
+}
+
+model SystemStatus {
+  id              Int       @id @default(1)
+  lastHistoryId   String?
+  lastRunAt       DateTime?
+  lastError       String?
+  lastRunMessages Int       @default(0)
+  reprocessDays   Int?
+  officeLabel     String?
+  syncedLabel     String?
+  availableLabels Json?
+  displayFilter   Json?
+
+  @@map("system_status")
+}
+
+model SiteMaster {
+  code        String   @id
+  siteName    String?
+  office      String
+  nodality    String?
+  vip         Boolean  @default(false)
+  siteType    String?
+  powerSource String?
+  battery     String?
+  phone       String?
+  region      String?
+  notes       String?
+  updatedAt   DateTime @updatedAt
+
+  @@index([office])
+  @@map("site_master")
+}
+
+model HourlyNormalization {
+  id    Int    @id @default(autoincrement())
+  field String
+  from  String
+  to    String
+
+  @@unique([field, from])
+  @@map("hourly_normalizations")
 }

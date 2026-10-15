@@ -7,4 +7,5 @@ COPY packages/db/package.json packages/db/
 RUN pnpm install --frozen-lockfile --filter @alarm/db...
 COPY packages/db packages/db
 WORKDIR /app/packages/db
-CMD ["pnpm", "migrate:deploy"]
+RUN pnpm generate
+CMD ["sh", "-c", "pnpm migrate:deploy && pnpm seed"]

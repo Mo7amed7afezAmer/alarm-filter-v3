@@ -65,13 +65,20 @@ R-02 and R-03 are not defined in PLAN.md §7.
 | Q-02 | No — the mobile app is the only non-browser consumer | mohamed.hafez@docnile.com / 2026-10-15 |
 | Q-03 | NOC team owns the host and installs the Caddy root CA manually on each device | mohamed.hafez@docnile.com / 2026-10-15 |
 | Q-04 | 14 days (D-07 default); no off-host copy | mohamed.hafez@docnile.com / 2026-10-15 |
-| Q-05 | No — RECTIFIER stays OTHER (no POWER rule) | mohamed.hafez@docnile.com / 2026-10-15 |
+| Q-05 | ~~No — RECTIFIER stays OTHER (no POWER rule)~~ Superseded 2026-10-15: seed follows FR-16 as written (RECTIFIER → POWER, 13 rules) | mohamed.hafez@docnile.com / 2026-10-15 |
 | Q-06 | Yes — 50,000-row cap and 500 page size accepted | mohamed.hafez@docnile.com / 2026-10-15 |
 | Q-07 | Yes — more than one NOC office will use the system concurrently | mohamed.hafez@docnile.com / 2026-10-15 |
 | Q-08 | Yes — a production `raw_messages` sample is available | mohamed.hafez@docnile.com / 2026-10-15 |
 | Q-09 | Android and iOS | mohamed.hafez@docnile.com / 2026-10-15 |
 | Q-10 | Internal distribution (APK + TestFlight/ad-hoc); an Apple developer account exists | mohamed.hafez@docnile.com / 2026-10-15 |
 | Q-11 | No — D-11 stands (server unrars; no on-device unrar) | mohamed.hafez@docnile.com / 2026-10-15 |
+
+## Clarifications (2026-10-15)
+
+| Topic | Decision | By / date |
+| --- | --- | --- |
+| G-T02 table count | PLAN.md says "16 tables"; REQUIREMENTS.md §5 lists 9 models. The schema implements exactly the 9 models in §5. | mohamed.hafez@docnile.com / 2026-10-15 |
+| G-T02 seed scope | Seed default rules (FR-16) and the initial ADMIN (FR-29) only. The hourly-normalizations seed (NFR-31) waits until the default list is supplied under `samples/seed/`. | mohamed.hafez@docnile.com / 2026-10-15 |
 
 ## Approval (PLAN.md §10)
 
