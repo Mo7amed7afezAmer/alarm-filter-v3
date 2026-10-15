@@ -1,0 +1,13 @@
+{
+  "labels": [
+    { "id": "INBOX", "name": "INBOX", "type": "system" },
+    { "id": "SENT", "name": "SENT", "type": "system" },
+    { "id": "Label_P_DN", "name": "DN", "type": "user" },
+    { "id": "Label_DN", "name": "DN/Kafr ElDawar", "type": "user" },
+    { "id": "Label_DN_TANTA", "name": "DN/Tanta", "type": "user" },
+    { "id": "Label_P_DS", "name": "DS", "type": "user" },
+    { "id": "Label_DS_ZAGAZIG", "name": "DS/Zagazig", "type": "user" },
+    { "id": "Label_OTHER", "name": "Hourly Update", "type": "user" },
+    { "id": "Label_DNX", "name": "DNX/Not An Office", "type": "user" }
+  ]
+}
