@@ -18,6 +18,12 @@ export const DEFAULT_RULES: { pattern: string; category: Category }[] = [
   { pattern: "POWER", category: "POWER" },
 ];
 
+/** FR-16 rules as stored: ascending priority in the listed order. */
+export const SEED_RULES: { pattern: string; category: Category; priority: number }[] = DEFAULT_RULES.map((r, i) => ({
+  ...r,
+  priority: (i + 1) * 10,
+}));
+
 /** NFR-19: bcrypt cost and minimum password length. */
 export const BCRYPT_ROUNDS = 12;
 export const MIN_PASSWORD_LENGTH = 8;
@@ -36,7 +42,7 @@ export interface SeedResult {
 async function seedRules(db: PrismaClient): Promise<number> {
   if ((await db.rule.count()) > 0) return 0;
   const { count } = await db.rule.createMany({
-    data: DEFAULT_RULES.map((r, i) => ({ ...r, priority: (i + 1) * 10 })),
+    data: SEED_RULES,
   });
   return count;
 }
