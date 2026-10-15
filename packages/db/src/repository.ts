@@ -20,6 +20,22 @@ export async function insertRawMessages(db: Db, rows: NewRawMessage[]): Promise<
   return count;
 }
 
+/** FR-04: lookups of stored gmailIds are made in chunks of this size. */
+export const IN_CHUNK = 1000;
+
+/** FR-04: which of these gmailIds are already in raw_messages. */
+export async function knownGmailIds(db: Db, gmailIds: string[]): Promise<Set<string>> {
+  const known = new Set<string>();
+  for (let i = 0; i < gmailIds.length; i += IN_CHUNK) {
+    const rows = await db.rawMessage.findMany({
+      where: { gmailId: { in: gmailIds.slice(i, i + IN_CHUNK) } },
+      select: { gmailId: true },
+    });
+    for (const r of rows) known.add(r.gmailId);
+  }
+  return known;
+}
+
 /** FR-18: messages not processed yet (`processedAt` null). */
 export function pendingRawMessages(db: Db): Promise<RawMessage[]> {
   return db.rawMessage.findMany({ where: { processedAt: null } });
