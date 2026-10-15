@@ -8,3 +8,5 @@ dist/
 .next/
 coverage/
 playwright-report/
+*.tsbuildinfo
+!.env.example

@@ -6,7 +6,7 @@ Source: `PLAN.md` §5. Status: todo / in progress / done / skipped.
 | --- | --- | --- | --- | --- |
 | P0-T01 | Record D-01…D-12 and R-01…R-13 in `docs/DECISIONS.md` of the new repository; collect answers to Q-01…Q-11 | 0 | done | — |
 | P0-T02 | Create the new repository and remote; import test fixtures (`samples`) and the seed data as files only | 0 | done | — |
-| G-T01 | Monorepo skeleton: pnpm 9.15.9 workspace, `apps/web` (Next.js 14), `apps/worker`, `packages/core`, `packages/db`, TypeScript strict, Vitest, ESLint, `.env.example`, `docker-compose.yml` with `db` + `migrate`, `.gitignore`, CI stub | G | todo | — |
+| G-T01 | Monorepo skeleton: pnpm 9.15.9 workspace, `apps/web` (Next.js 14), `apps/worker`, `packages/core`, `packages/db`, TypeScript strict, Vitest, ESLint, `.env.example`, `docker-compose.yml` with `db` + `migrate`, `.gitignore`, CI stub | G | done | 0 tests (lint, typecheck, test green) |
 | G-T02 | `packages/db`: Prisma schema for the 16 tables in REQUIREMENTS §5 (incl. `SiteMaster.phone`), indexes, migrations, seed (default rules, ADMIN user), repository functions `findAlarm`, `findActiveAlarms`, `findAlarmByConsec`, `findOrphanClears`, `resetWindow`, upserts | G | todo | — |
 | G-T03 | `packages/core/parser`: `time.ts` (`ALARM_TZ`, DST), HASH subject parser, body parser (`neName`, `consecNbr`, timestamps) | G | todo | — |
 | G-T04 | `packages/core/classify`: category rules engine driven by the `rules` table, hidden types, site-code extraction | G | todo | — |
