@@ -1,0 +1,93 @@
+[
+  {
+    "code": "0444DE",
+    "siteName": "BH-SIDI-GHAZY",
+    "office": "KAFR EL DAWAR",
+    "nodality": "1+1",
+    "vip": true,
+    "siteType": null,
+    "powerSource": "EC",
+    "battery": "YES",
+    "phone": "01000000000",
+    "region": "DE",
+    "notes": null
+  },
+  {
+    "code": "3926DE",
+    "siteName": "UMB-BH",
+    "office": "KAFR EL DAWAR",
+    "nodality": "1+0",
+    "vip": false,
+    "siteType": null,
+    "powerSource": "EC",
+    "battery": "YES",
+    "phone": "01000000001",
+    "region": "DE",
+    "notes": null
+  },
+  {
+    "code": "3804DE",
+    "siteName": "BH-WSTANIYA",
+    "office": "KAFR EL DAWAR",
+    "nodality": "1+3",
+    "vip": true,
+    "siteType": null,
+    "powerSource": "DG",
+    "battery": "YES",
+    "phone": "01000000002",
+    "region": "DE",
+    "notes": null
+  },
+  {
+    "code": "3322DE",
+    "siteName": "KS-KHALIJ-HUKS",
+    "office": "KAFR EL DAWAR",
+    "nodality": "1+0",
+    "vip": false,
+    "siteType": null,
+    "powerSource": "EC/VF",
+    "battery": "NO",
+    "phone": "01000000003",
+    "region": "DE",
+    "notes": null
+  },
+  {
+    "code": "3273DE",
+    "siteName": "BH-6-OCTOBER",
+    "office": "KAFR EL DAWAR",
+    "nodality": "1+0",
+    "vip": false,
+    "siteType": null,
+    "powerSource": "EC",
+    "battery": "NO",
+    "phone": "01000000004",
+    "region": "DE",
+    "notes": null
+  },
+  {
+    "code": "3830DE",
+    "siteName": "BH-MHLT-KYL",
+    "office": "KAFR EL DAWAR",
+    "nodality": "1+0",
+    "vip": false,
+    "siteType": null,
+    "powerSource": "EC/VF",
+    "battery": "YES",
+    "phone": "01000000005",
+    "region": "DE",
+    "notes": null
+  },
+  {
+    "code": "3928DE",
+    "siteName": "BH-HORRIA",
+    "office": "KAFR EL DAWAR",
+    "nodality": "1+0",
+    "vip": false,
+    "siteType": null,
+    "powerSource": "EC",
+    "battery": "NO",
+    "phone": "01000000006",
+    "region": "DE",
+    "notes": null
+  }
+]

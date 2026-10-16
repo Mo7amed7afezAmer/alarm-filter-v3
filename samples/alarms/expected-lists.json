@@ -1,0 +1,1459 @@
+[
+  {
+    "name": "active-default",
+    "status": "active",
+    "expected": {
+      "total": 8,
+      "page": 1,
+      "pageSize": 50,
+      "items": [
+        {
+          "alarmKey": "D_S_BCCH MISSING||2421_O_MF-HK-FRAWNYH_0G01DE",
+          "alarmTime": "2026-10-11T13:40:08.000Z",
+          "consecNbr": null,
+          "siteCode": "0G01DE",
+          "vip": null,
+          "nodality": null,
+          "battery": null,
+          "phone": null,
+          "siteType": null,
+          "powerSource": null
+        },
+        {
+          "alarmKey": "S_D_N_NE3SWS AGENT NOT RESPONDING TO REQUESTS||SRAN_LWG_S_SK-TUKH-QARMUS_0665DE",
+          "alarmTime": "2026-10-11T13:35:40.000Z",
+          "consecNbr": null,
+          "siteCode": "0665DE",
+          "vip": null,
+          "nodality": null,
+          "battery": null,
+          "phone": null,
+          "siteType": null,
+          "powerSource": null
+        },
+        {
+          "alarmKey": "S_D_N_FENCE GATE||SRAN_LWG_TDD_G_BH-UMB-BH_3926DE",
+          "alarmTime": "2026-10-11T13:28:15.000Z",
+          "consecNbr": null,
+          "siteCode": "3926DE",
+          "vip": false,
+          "nodality": "1+0",
+          "battery": "YES",
+          "phone": "01000000001",
+          "siteType": null,
+          "powerSource": "EC"
+        },
+        {
+          "alarmKey": "S_D_N_BCCH MISSING||2611_D_KS-ABTU_3703DE",
+          "alarmTime": "2026-10-11T13:17:52.000Z",
+          "consecNbr": null,
+          "siteCode": "3703DE",
+          "vip": null,
+          "nodality": null,
+          "battery": null,
+          "phone": null,
+          "siteType": null,
+          "powerSource": null
+        },
+        {
+          "alarmKey": "S_D_N_FIRE ALARM||SRAN_LWG_S_MF-MNUF-MAWKEF_0981DE",
+          "alarmTime": "2026-10-11T13:17:31.000Z",
+          "consecNbr": null,
+          "siteCode": "0981DE",
+          "vip": null,
+          "nodality": null,
+          "battery": null,
+          "phone": null,
+          "siteType": null,
+          "powerSource": null
+        },
+        {
+          "alarmKey": "S_D_N_FIRE ALARM||SRAN_LWG_TDD_G_SK-ADLIYA_3458DE",
+          "alarmTime": "2026-10-11T13:08:25.000Z",
+          "consecNbr": null,
+          "siteCode": "3458DE",
+          "vip": null,
+          "nodality": null,
+          "battery": null,
+          "phone": null,
+          "siteType": null,
+          "powerSource": null
+        },
+        {
+          "alarmKey": "S_D_N_FENCE GATE ALARM||SRAN_LWG_D_BH-SHOBRA-RIS_4360DE",
+          "alarmTime": "2026-10-11T13:05:14.000Z",
+          "consecNbr": null,
+          "siteCode": "4360DE",
+          "vip": null,
+          "nodality": null,
+          "battery": null,
+          "phone": null,
+          "siteType": null,
+          "powerSource": null
+        },
+        {
+          "alarmKey": "S_D_N_RECTIFIER MINOR ALARM||SRAN_LWG_TDD_S_BH-OASIS-RD-2_4319DE",
+          "alarmTime": "2026-10-11T12:47:32.000Z",
+          "consecNbr": null,
+          "siteCode": "4319DE",
+          "vip": null,
+          "nodality": null,
+          "battery": null,
+          "phone": null,
+          "siteType": null,
+          "powerSource": null
+        }
+      ]
+    }
+  },
+  {
+    "name": "active-category-down",
+    "status": "active",
+    "category": "DOWN",
+    "expected": {
+      "total": 0,
+      "page": 1,
+      "pageSize": 50,
+      "items": []
+    }
+  },
+  {
+    "name": "active-category-power",
+    "status": "active",
+    "category": "POWER",
+    "expected": {
+      "total": 1,
+      "page": 1,
+      "pageSize": 50,
+      "items": [
+        {
+          "alarmKey": "S_D_N_RECTIFIER MINOR ALARM||SRAN_LWG_TDD_S_BH-OASIS-RD-2_4319DE",
+          "alarmTime": "2026-10-11T12:47:32.000Z",
+          "consecNbr": null,
+          "siteCode": "4319DE",
+          "vip": null,
+          "nodality": null,
+          "battery": null,
+          "phone": null,
+          "siteType": null,
+          "powerSource": null
+        }
+      ]
+    }
+  },
+  {
+    "name": "active-category-other",
+    "status": "active",
+    "category": "OTHER",
+    "expected": {
+      "total": 7,
+      "page": 1,
+      "pageSize": 50,
+      "items": [
+        {
+          "alarmKey": "D_S_BCCH MISSING||2421_O_MF-HK-FRAWNYH_0G01DE",
+          "alarmTime": "2026-10-11T13:40:08.000Z",
+          "consecNbr": null,
+          "siteCode": "0G01DE",
+          "vip": null,
+          "nodality": null,
+          "battery": null,
+          "phone": null,
+          "siteType": null,
+          "powerSource": null
+        },
+        {
+          "alarmKey": "S_D_N_NE3SWS AGENT NOT RESPONDING TO REQUESTS||SRAN_LWG_S_SK-TUKH-QARMUS_0665DE",
+          "alarmTime": "2026-10-11T13:35:40.000Z",
+          "consecNbr": null,
+          "siteCode": "0665DE",
+          "vip": null,
+          "nodality": null,
+          "battery": null,
+          "phone": null,
+          "siteType": null,
+          "powerSource": null
+        },
+        {
+          "alarmKey": "S_D_N_FENCE GATE||SRAN_LWG_TDD_G_BH-UMB-BH_3926DE",
+          "alarmTime": "2026-10-11T13:28:15.000Z",
+          "consecNbr": null,
+          "siteCode": "3926DE",
+          "vip": false,
+          "nodality": "1+0",
+          "battery": "YES",
+          "phone": "01000000001",
+          "siteType": null,
+          "powerSource": "EC"
+        },
+        {
+          "alarmKey": "S_D_N_BCCH MISSING||2611_D_KS-ABTU_3703DE",
+          "alarmTime": "2026-10-11T13:17:52.000Z",
+          "consecNbr": null,
+          "siteCode": "3703DE",
+          "vip": null,
+          "nodality": null,
+          "battery": null,
+          "phone": null,
+          "siteType": null,
+          "powerSource": null
+        },
+        {
+          "alarmKey": "S_D_N_FIRE ALARM||SRAN_LWG_S_MF-MNUF-MAWKEF_0981DE",
+          "alarmTime": "2026-10-11T13:17:31.000Z",
+          "consecNbr": null,
+          "siteCode": "0981DE",
+          "vip": null,
+          "nodality": null,
+          "battery": null,
+          "phone": null,
+          "siteType": null,
+          "powerSource": null
+        },
+        {
+          "alarmKey": "S_D_N_FIRE ALARM||SRAN_LWG_TDD_G_SK-ADLIYA_3458DE",
+          "alarmTime": "2026-10-11T13:08:25.000Z",
+          "consecNbr": null,
+          "siteCode": "3458DE",
+          "vip": null,
+          "nodality": null,
+          "battery": null,
+          "phone": null,
+          "siteType": null,
+          "powerSource": null
+        },
+        {
+          "alarmKey": "S_D_N_FENCE GATE ALARM||SRAN_LWG_D_BH-SHOBRA-RIS_4360DE",
+          "alarmTime": "2026-10-11T13:05:14.000Z",
+          "consecNbr": null,
+          "siteCode": "4360DE",
+          "vip": null,
+          "nodality": null,
+          "battery": null,
+          "phone": null,
+          "siteType": null,
+          "powerSource": null
+        }
+      ]
+    }
+  },
+  {
+    "name": "active-site-substring",
+    "status": "active",
+    "site": "adliya",
+    "expected": {
+      "total": 1,
+      "page": 1,
+      "pageSize": 50,
+      "items": [
+        {
+          "alarmKey": "S_D_N_FIRE ALARM||SRAN_LWG_TDD_G_SK-ADLIYA_3458DE",
+          "alarmTime": "2026-10-11T13:08:25.000Z",
+          "consecNbr": null,
+          "siteCode": "3458DE",
+          "vip": null,
+          "nodality": null,
+          "battery": null,
+          "phone": null,
+          "siteType": null,
+          "powerSource": null
+        }
+      ]
+    }
+  },
+  {
+    "name": "active-region-de",
+    "status": "active",
+    "region": "DE",
+    "expected": {
+      "total": 8,
+      "page": 1,
+      "pageSize": 50,
+      "items": [
+        {
+          "alarmKey": "D_S_BCCH MISSING||2421_O_MF-HK-FRAWNYH_0G01DE",
+          "alarmTime": "2026-10-11T13:40:08.000Z",
+          "consecNbr": null,
+          "siteCode": "0G01DE",
+          "vip": null,
+          "nodality": null,
+          "battery": null,
+          "phone": null,
+          "siteType": null,
+          "powerSource": null
+        },
+        {
+          "alarmKey": "S_D_N_NE3SWS AGENT NOT RESPONDING TO REQUESTS||SRAN_LWG_S_SK-TUKH-QARMUS_0665DE",
+          "alarmTime": "2026-10-11T13:35:40.000Z",
+          "consecNbr": null,
+          "siteCode": "0665DE",
+          "vip": null,
+          "nodality": null,
+          "battery": null,
+          "phone": null,
+          "siteType": null,
+          "powerSource": null
+        },
+        {
+          "alarmKey": "S_D_N_FENCE GATE||SRAN_LWG_TDD_G_BH-UMB-BH_3926DE",
+          "alarmTime": "2026-10-11T13:28:15.000Z",
+          "consecNbr": null,
+          "siteCode": "3926DE",
+          "vip": false,
+          "nodality": "1+0",
+          "battery": "YES",
+          "phone": "01000000001",
+          "siteType": null,
+          "powerSource": "EC"
+        },
+        {
+          "alarmKey": "S_D_N_BCCH MISSING||2611_D_KS-ABTU_3703DE",
+          "alarmTime": "2026-10-11T13:17:52.000Z",
+          "consecNbr": null,
+          "siteCode": "3703DE",
+          "vip": null,
+          "nodality": null,
+          "battery": null,
+          "phone": null,
+          "siteType": null,
+          "powerSource": null
+        },
+        {
+          "alarmKey": "S_D_N_FIRE ALARM||SRAN_LWG_S_MF-MNUF-MAWKEF_0981DE",
+          "alarmTime": "2026-10-11T13:17:31.000Z",
+          "consecNbr": null,
+          "siteCode": "0981DE",
+          "vip": null,
+          "nodality": null,
+          "battery": null,
+          "phone": null,
+          "siteType": null,
+          "powerSource": null
+        },
+        {
+          "alarmKey": "S_D_N_FIRE ALARM||SRAN_LWG_TDD_G_SK-ADLIYA_3458DE",
+          "alarmTime": "2026-10-11T13:08:25.000Z",
+          "consecNbr": null,
+          "siteCode": "3458DE",
+          "vip": null,
+          "nodality": null,
+          "battery": null,
+          "phone": null,
+          "siteType": null,
+          "powerSource": null
+        },
+        {
+          "alarmKey": "S_D_N_FENCE GATE ALARM||SRAN_LWG_D_BH-SHOBRA-RIS_4360DE",
+          "alarmTime": "2026-10-11T13:05:14.000Z",
+          "consecNbr": null,
+          "siteCode": "4360DE",
+          "vip": null,
+          "nodality": null,
+          "battery": null,
+          "phone": null,
+          "siteType": null,
+          "powerSource": null
+        },
+        {
+          "alarmKey": "S_D_N_RECTIFIER MINOR ALARM||SRAN_LWG_TDD_S_BH-OASIS-RD-2_4319DE",
+          "alarmTime": "2026-10-11T12:47:32.000Z",
+          "consecNbr": null,
+          "siteCode": "4319DE",
+          "vip": null,
+          "nodality": null,
+          "battery": null,
+          "phone": null,
+          "siteType": null,
+          "powerSource": null
+        }
+      ]
+    }
+  },
+  {
+    "name": "active-region-none",
+    "status": "active",
+    "region": "XX",
+    "expected": {
+      "total": 0,
+      "page": 1,
+      "pageSize": 50,
+      "items": []
+    }
+  },
+  {
+    "name": "active-min-hours",
+    "status": "active",
+    "minHours": 6,
+    "expected": {
+      "total": 1,
+      "page": 1,
+      "pageSize": 50,
+      "items": [
+        {
+          "alarmKey": "S_D_N_RECTIFIER MINOR ALARM||SRAN_LWG_TDD_S_BH-OASIS-RD-2_4319DE",
+          "alarmTime": "2026-10-11T12:47:32.000Z",
+          "consecNbr": null,
+          "siteCode": "4319DE",
+          "vip": null,
+          "nodality": null,
+          "battery": null,
+          "phone": null,
+          "siteType": null,
+          "powerSource": null
+        }
+      ]
+    }
+  },
+  {
+    "name": "active-page-2-size-2",
+    "status": "active",
+    "page": 2,
+    "pageSize": 2,
+    "expected": {
+      "total": 8,
+      "page": 2,
+      "pageSize": 2,
+      "items": [
+        {
+          "alarmKey": "S_D_N_FENCE GATE||SRAN_LWG_TDD_G_BH-UMB-BH_3926DE",
+          "alarmTime": "2026-10-11T13:28:15.000Z",
+          "consecNbr": null,
+          "siteCode": "3926DE",
+          "vip": false,
+          "nodality": "1+0",
+          "battery": "YES",
+          "phone": "01000000001",
+          "siteType": null,
+          "powerSource": "EC"
+        },
+        {
+          "alarmKey": "S_D_N_BCCH MISSING||2611_D_KS-ABTU_3703DE",
+          "alarmTime": "2026-10-11T13:17:52.000Z",
+          "consecNbr": null,
+          "siteCode": "3703DE",
+          "vip": null,
+          "nodality": null,
+          "battery": null,
+          "phone": null,
+          "siteType": null,
+          "powerSource": null
+        }
+      ]
+    }
+  },
+  {
+    "name": "active-office-ds",
+    "status": "active",
+    "office": "DS/Zagazig",
+    "expected": {
+      "total": 4,
+      "page": 1,
+      "pageSize": 50,
+      "items": [
+        {
+          "alarmKey": "S_D_N_WCDMA CELL OUT OF USE||U_S_BH-MHLT-KYL_3830DE||A_BH-MHLT-KYL_4_24314_S",
+          "alarmTime": "2026-10-11T18:36:45.000Z",
+          "consecNbr": "2294476",
+          "siteCode": "3830DE",
+          "vip": false,
+          "nodality": "1+0",
+          "battery": "YES",
+          "phone": "01000000005",
+          "siteType": null,
+          "powerSource": "EC/VF"
+        },
+        {
+          "alarmKey": "S_D_N_WCDMA CELL OUT OF USE||U_S_BH-MHLT-KYL_3830DE||A_BH-MHLT-KYL_2_24312_S",
+          "alarmTime": "2026-10-11T18:33:13.000Z",
+          "consecNbr": "2294326",
+          "siteCode": "3830DE",
+          "vip": false,
+          "nodality": "1+0",
+          "battery": "YES",
+          "phone": "01000000005",
+          "siteType": null,
+          "powerSource": "EC/VF"
+        },
+        {
+          "alarmKey": "S_D_N_RECTIFIER MINOR ALARM||SRAN_LG_TDD_E_BH-WASTANIYA_3804DE",
+          "alarmTime": "2026-10-11T18:12:23.000Z",
+          "consecNbr": "2292565",
+          "siteCode": "3804DE",
+          "vip": true,
+          "nodality": "1+3",
+          "battery": "YES",
+          "phone": "01000000002",
+          "siteType": null,
+          "powerSource": "DG"
+        },
+        {
+          "alarmKey": "S_D_N_RECTIFIER MINOR ALARM||SRAN_LWG_TDD_S_BH-6-OCTOBER_3273DE",
+          "alarmTime": "2026-10-11T17:37:27.000Z",
+          "consecNbr": "2289497",
+          "siteCode": "3273DE",
+          "vip": false,
+          "nodality": "1+0",
+          "battery": "NO",
+          "phone": "01000000004",
+          "siteType": null,
+          "powerSource": "EC"
+        }
+      ]
+    }
+  },
+  {
+    "name": "active-admin-hides-other",
+    "status": "active",
+    "adminHidden": {
+      "categories": [
+        "OTHER"
+      ]
+    },
+    "expected": {
+      "total": 1,
+      "page": 1,
+      "pageSize": 50,
+      "items": [
+        {
+          "alarmKey": "S_D_N_RECTIFIER MINOR ALARM||SRAN_LWG_TDD_S_BH-OASIS-RD-2_4319DE",
+          "alarmTime": "2026-10-11T12:47:32.000Z",
+          "consecNbr": null,
+          "siteCode": "4319DE",
+          "vip": null,
+          "nodality": null,
+          "battery": null,
+          "phone": null,
+          "siteType": null,
+          "powerSource": null
+        }
+      ]
+    }
+  },
+  {
+    "name": "active-user-hides-name",
+    "status": "active",
+    "userHidden": {
+      "alarmNames": [
+        "S_D_N_FIRE ALARM"
+      ]
+    },
+    "expected": {
+      "total": 6,
+      "page": 1,
+      "pageSize": 50,
+      "items": [
+        {
+          "alarmKey": "D_S_BCCH MISSING||2421_O_MF-HK-FRAWNYH_0G01DE",
+          "alarmTime": "2026-10-11T13:40:08.000Z",
+          "consecNbr": null,
+          "siteCode": "0G01DE",
+          "vip": null,
+          "nodality": null,
+          "battery": null,
+          "phone": null,
+          "siteType": null,
+          "powerSource": null
+        },
+        {
+          "alarmKey": "S_D_N_NE3SWS AGENT NOT RESPONDING TO REQUESTS||SRAN_LWG_S_SK-TUKH-QARMUS_0665DE",
+          "alarmTime": "2026-10-11T13:35:40.000Z",
+          "consecNbr": null,
+          "siteCode": "0665DE",
+          "vip": null,
+          "nodality": null,
+          "battery": null,
+          "phone": null,
+          "siteType": null,
+          "powerSource": null
+        },
+        {
+          "alarmKey": "S_D_N_FENCE GATE||SRAN_LWG_TDD_G_BH-UMB-BH_3926DE",
+          "alarmTime": "2026-10-11T13:28:15.000Z",
+          "consecNbr": null,
+          "siteCode": "3926DE",
+          "vip": false,
+          "nodality": "1+0",
+          "battery": "YES",
+          "phone": "01000000001",
+          "siteType": null,
+          "powerSource": "EC"
+        },
+        {
+          "alarmKey": "S_D_N_BCCH MISSING||2611_D_KS-ABTU_3703DE",
+          "alarmTime": "2026-10-11T13:17:52.000Z",
+          "consecNbr": null,
+          "siteCode": "3703DE",
+          "vip": null,
+          "nodality": null,
+          "battery": null,
+          "phone": null,
+          "siteType": null,
+          "powerSource": null
+        },
+        {
+          "alarmKey": "S_D_N_FENCE GATE ALARM||SRAN_LWG_D_BH-SHOBRA-RIS_4360DE",
+          "alarmTime": "2026-10-11T13:05:14.000Z",
+          "consecNbr": null,
+          "siteCode": "4360DE",
+          "vip": null,
+          "nodality": null,
+          "battery": null,
+          "phone": null,
+          "siteType": null,
+          "powerSource": null
+        },
+        {
+          "alarmKey": "S_D_N_RECTIFIER MINOR ALARM||SRAN_LWG_TDD_S_BH-OASIS-RD-2_4319DE",
+          "alarmTime": "2026-10-11T12:47:32.000Z",
+          "consecNbr": null,
+          "siteCode": "4319DE",
+          "vip": null,
+          "nodality": null,
+          "battery": null,
+          "phone": null,
+          "siteType": null,
+          "powerSource": null
+        }
+      ]
+    }
+  },
+  {
+    "name": "cleared-default-24h",
+    "status": "cleared",
+    "expected": {
+      "total": 15,
+      "page": 1,
+      "pageSize": 50,
+      "items": [
+        {
+          "alarmKey": "D_S_BCCH MISSING||2421_O_MF-HK-FRAWNYH_0G01DE",
+          "alarmTime": "2026-10-11T13:40:06.000Z",
+          "consecNbr": null,
+          "siteCode": "0G01DE",
+          "vip": null,
+          "nodality": null,
+          "battery": null,
+          "phone": null,
+          "siteType": null,
+          "powerSource": null
+        },
+        {
+          "alarmKey": "S_D_N_BCCH MISSING||1731_D_BH-SHOBRA-RIS_4360DE",
+          "alarmTime": "2026-10-11T12:51:00.000Z",
+          "consecNbr": null,
+          "siteCode": "4360DE",
+          "vip": null,
+          "nodality": null,
+          "battery": null,
+          "phone": null,
+          "siteType": null,
+          "powerSource": null
+        },
+        {
+          "alarmKey": "S_D_N_BCCH MISSING||3531_S_KS-SHARAQA_3961DE",
+          "alarmTime": "2026-10-11T13:01:59.000Z",
+          "consecNbr": null,
+          "siteCode": "3961DE",
+          "vip": null,
+          "nodality": null,
+          "battery": null,
+          "phone": null,
+          "siteType": null,
+          "powerSource": null
+        },
+        {
+          "alarmKey": "S_D_N_BCCH MISSING||0301_S_SK-ADLIYA_3458DE",
+          "alarmTime": "2026-10-11T13:01:10.000Z",
+          "consecNbr": null,
+          "siteCode": "3458DE",
+          "vip": null,
+          "nodality": null,
+          "battery": null,
+          "phone": null,
+          "siteType": null,
+          "powerSource": null
+        },
+        {
+          "alarmKey": "S_D_N_BCCH MISSING||2521_D_DK-MARKAZYA_3373DE",
+          "alarmTime": "2026-10-11T13:01:59.000Z",
+          "consecNbr": null,
+          "siteCode": "3373DE",
+          "vip": null,
+          "nodality": null,
+          "battery": null,
+          "phone": null,
+          "siteType": null,
+          "powerSource": null
+        },
+        {
+          "alarmKey": "S_D_N_BTS O&M LINK FAILURE||3531_S_KS-SHARAQA_3961DE",
+          "alarmTime": "2026-10-11T13:01:08.000Z",
+          "consecNbr": null,
+          "siteCode": "3961DE",
+          "vip": null,
+          "nodality": null,
+          "battery": null,
+          "phone": null,
+          "siteType": null,
+          "powerSource": null
+        },
+        {
+          "alarmKey": "S_D_N_BTS O&M LINK FAILURE||2521_D_DK-MARKAZYA_3373DE",
+          "alarmTime": "2026-10-11T13:01:08.000Z",
+          "consecNbr": null,
+          "siteCode": "3373DE",
+          "vip": null,
+          "nodality": null,
+          "battery": null,
+          "phone": null,
+          "siteType": null,
+          "powerSource": null
+        },
+        {
+          "alarmKey": "S_D_N_SHELTER DOO||SRAN_LWG_TDNR_S_GH-TANTA-UNV2_4392DE",
+          "alarmTime": "2026-10-11T13:00:52.000Z",
+          "consecNbr": null,
+          "siteCode": "4392DE",
+          "vip": null,
+          "nodality": null,
+          "battery": null,
+          "phone": null,
+          "siteType": null,
+          "powerSource": null
+        },
+        {
+          "alarmKey": "S_D_N_FIRE ALARM||SRAN_LWG_TDD_G_SK-ADLIYA_3458DE",
+          "alarmTime": "2026-10-11T13:02:39.000Z",
+          "consecNbr": null,
+          "siteCode": "3458DE",
+          "vip": null,
+          "nodality": null,
+          "battery": null,
+          "phone": null,
+          "siteType": null,
+          "powerSource": null
+        },
+        {
+          "alarmKey": "S_D_N_NE3SWS AGENT NOT RESPONDING TO REQUESTS||SRAN_LWG_S_SK-TUKH-QARMUS_0665DE",
+          "alarmTime": "2026-10-11T12:55:39.000Z",
+          "consecNbr": null,
+          "siteCode": "0665DE",
+          "vip": null,
+          "nodality": null,
+          "battery": null,
+          "phone": null,
+          "siteType": null,
+          "powerSource": null
+        },
+        {
+          "alarmKey": "S_D_N_BCCH MISSING||2611_D_KS-ABTU_3703DE",
+          "alarmTime": "2026-10-11T13:17:51.000Z",
+          "consecNbr": null,
+          "siteCode": "3703DE",
+          "vip": null,
+          "nodality": null,
+          "battery": null,
+          "phone": null,
+          "siteType": null,
+          "powerSource": null
+        },
+        {
+          "alarmKey": "S_D_N_AIR CONDITION FAULT||SRAN_LWG_TDNR_G_SK-MNSHYT-ABSA_0680DE",
+          "alarmTime": "2026-10-11T12:52:56.000Z",
+          "consecNbr": null,
+          "siteCode": "0680DE",
+          "vip": null,
+          "nodality": null,
+          "battery": null,
+          "phone": null,
+          "siteType": null,
+          "powerSource": null
+        },
+        {
+          "alarmKey": "S_D_N_BCCH MISSING||3531_S_KS-SHARAQA_3961DE",
+          "alarmTime": "2026-10-11T13:01:58.000Z",
+          "consecNbr": null,
+          "siteCode": "3961DE",
+          "vip": null,
+          "nodality": null,
+          "battery": null,
+          "phone": null,
+          "siteType": null,
+          "powerSource": null
+        },
+        {
+          "alarmKey": "S_D_N_BCCH MISSING||2521_D_DK-MARKAZYA_3373DE",
+          "alarmTime": "2026-10-11T13:01:58.000Z",
+          "consecNbr": null,
+          "siteCode": "3373DE",
+          "vip": null,
+          "nodality": null,
+          "battery": null,
+          "phone": null,
+          "siteType": null,
+          "powerSource": null
+        },
+        {
+          "alarmKey": "S_D_N_BCCH MISSING||0301_S_SK-ADLIYA_3458DE",
+          "alarmTime": "2026-10-11T13:00:30.000Z",
+          "consecNbr": null,
+          "siteCode": "3458DE",
+          "vip": null,
+          "nodality": null,
+          "battery": null,
+          "phone": null,
+          "siteType": null,
+          "powerSource": null
+        }
+      ]
+    }
+  },
+  {
+    "name": "cleared-window",
+    "status": "cleared",
+    "from": "2026-10-11T13:20:00.000Z",
+    "to": "2026-10-11T13:30:00.000Z",
+    "expected": {
+      "total": 9,
+      "page": 1,
+      "pageSize": 50,
+      "items": [
+        {
+          "alarmKey": "S_D_N_BCCH MISSING||1731_D_BH-SHOBRA-RIS_4360DE",
+          "alarmTime": "2026-10-11T12:51:00.000Z",
+          "consecNbr": null,
+          "siteCode": "4360DE",
+          "vip": null,
+          "nodality": null,
+          "battery": null,
+          "phone": null,
+          "siteType": null,
+          "powerSource": null
+        },
+        {
+          "alarmKey": "S_D_N_BCCH MISSING||3531_S_KS-SHARAQA_3961DE",
+          "alarmTime": "2026-10-11T13:01:59.000Z",
+          "consecNbr": null,
+          "siteCode": "3961DE",
+          "vip": null,
+          "nodality": null,
+          "battery": null,
+          "phone": null,
+          "siteType": null,
+          "powerSource": null
+        },
+        {
+          "alarmKey": "S_D_N_BCCH MISSING||0301_S_SK-ADLIYA_3458DE",
+          "alarmTime": "2026-10-11T13:01:10.000Z",
+          "consecNbr": null,
+          "siteCode": "3458DE",
+          "vip": null,
+          "nodality": null,
+          "battery": null,
+          "phone": null,
+          "siteType": null,
+          "powerSource": null
+        },
+        {
+          "alarmKey": "S_D_N_BCCH MISSING||2521_D_DK-MARKAZYA_3373DE",
+          "alarmTime": "2026-10-11T13:01:59.000Z",
+          "consecNbr": null,
+          "siteCode": "3373DE",
+          "vip": null,
+          "nodality": null,
+          "battery": null,
+          "phone": null,
+          "siteType": null,
+          "powerSource": null
+        },
+        {
+          "alarmKey": "S_D_N_BTS O&M LINK FAILURE||3531_S_KS-SHARAQA_3961DE",
+          "alarmTime": "2026-10-11T13:01:08.000Z",
+          "consecNbr": null,
+          "siteCode": "3961DE",
+          "vip": null,
+          "nodality": null,
+          "battery": null,
+          "phone": null,
+          "siteType": null,
+          "powerSource": null
+        },
+        {
+          "alarmKey": "S_D_N_BTS O&M LINK FAILURE||2521_D_DK-MARKAZYA_3373DE",
+          "alarmTime": "2026-10-11T13:01:08.000Z",
+          "consecNbr": null,
+          "siteCode": "3373DE",
+          "vip": null,
+          "nodality": null,
+          "battery": null,
+          "phone": null,
+          "siteType": null,
+          "powerSource": null
+        },
+        {
+          "alarmKey": "S_D_N_SHELTER DOO||SRAN_LWG_TDNR_S_GH-TANTA-UNV2_4392DE",
+          "alarmTime": "2026-10-11T13:00:52.000Z",
+          "consecNbr": null,
+          "siteCode": "4392DE",
+          "vip": null,
+          "nodality": null,
+          "battery": null,
+          "phone": null,
+          "siteType": null,
+          "powerSource": null
+        },
+        {
+          "alarmKey": "S_D_N_FIRE ALARM||SRAN_LWG_TDD_G_SK-ADLIYA_3458DE",
+          "alarmTime": "2026-10-11T13:02:39.000Z",
+          "consecNbr": null,
+          "siteCode": "3458DE",
+          "vip": null,
+          "nodality": null,
+          "battery": null,
+          "phone": null,
+          "siteType": null,
+          "powerSource": null
+        },
+        {
+          "alarmKey": "S_D_N_NE3SWS AGENT NOT RESPONDING TO REQUESTS||SRAN_LWG_S_SK-TUKH-QARMUS_0665DE",
+          "alarmTime": "2026-10-11T12:55:39.000Z",
+          "consecNbr": null,
+          "siteCode": "0665DE",
+          "vip": null,
+          "nodality": null,
+          "battery": null,
+          "phone": null,
+          "siteType": null,
+          "powerSource": null
+        }
+      ]
+    }
+  },
+  {
+    "name": "cleared-category-down",
+    "status": "cleared",
+    "category": "DOWN",
+    "expected": {
+      "total": 2,
+      "page": 1,
+      "pageSize": 50,
+      "items": [
+        {
+          "alarmKey": "S_D_N_BTS O&M LINK FAILURE||3531_S_KS-SHARAQA_3961DE",
+          "alarmTime": "2026-10-11T13:01:08.000Z",
+          "consecNbr": null,
+          "siteCode": "3961DE",
+          "vip": null,
+          "nodality": null,
+          "battery": null,
+          "phone": null,
+          "siteType": null,
+          "powerSource": null
+        },
+        {
+          "alarmKey": "S_D_N_BTS O&M LINK FAILURE||2521_D_DK-MARKAZYA_3373DE",
+          "alarmTime": "2026-10-11T13:01:08.000Z",
+          "consecNbr": null,
+          "siteCode": "3373DE",
+          "vip": null,
+          "nodality": null,
+          "battery": null,
+          "phone": null,
+          "siteType": null,
+          "powerSource": null
+        }
+      ]
+    }
+  },
+  {
+    "name": "cleared-category-power-ds",
+    "status": "cleared",
+    "category": "POWER",
+    "office": "DS/Zagazig",
+    "expected": {
+      "total": 5,
+      "page": 1,
+      "pageSize": 50,
+      "items": [
+        {
+          "alarmKey": "S_D_N_RECTIFIER MINOR ALARM||SRAN_LWG_TDD_S_BH-6-OCTOBER_3273DE",
+          "alarmTime": "2026-10-11T13:42:17.000Z",
+          "consecNbr": "2262061",
+          "siteCode": "3273DE",
+          "vip": false,
+          "nodality": "1+0",
+          "battery": "NO",
+          "phone": "01000000004",
+          "siteType": null,
+          "powerSource": "EC"
+        },
+        {
+          "alarmKey": "S_D_N_RECTIFIER MINOR ALARM||SRAN_LWG_TDD_S_BH-6-OCTOBER_3273DE",
+          "alarmTime": "2026-10-11T12:23:07.000Z",
+          "consecNbr": "2248772",
+          "siteCode": "3273DE",
+          "vip": false,
+          "nodality": "1+0",
+          "battery": "NO",
+          "phone": "01000000004",
+          "siteType": null,
+          "powerSource": "EC"
+        },
+        {
+          "alarmKey": "S_D_N_RECTIFIER MINOR ALARM||SRAN_LWG_TDD_S_BH-6-OCTOBER_3273DE",
+          "alarmTime": "2026-10-11T11:55:25.000Z",
+          "consecNbr": "2245584",
+          "siteCode": "3273DE",
+          "vip": false,
+          "nodality": "1+0",
+          "battery": "NO",
+          "phone": "01000000004",
+          "siteType": null,
+          "powerSource": "EC"
+        },
+        {
+          "alarmKey": "S_D_N_RECTIFIER MINOR ALARM||SRAN_LWG_TDD_S_BH-6-OCTOBER_3273DE",
+          "alarmTime": "2026-10-11T11:21:08.000Z",
+          "consecNbr": "2239985",
+          "siteCode": "3273DE",
+          "vip": false,
+          "nodality": "1+0",
+          "battery": "NO",
+          "phone": "01000000004",
+          "siteType": null,
+          "powerSource": "EC"
+        },
+        {
+          "alarmKey": "S_D_N_RECTIFIER MINOR ALARM||SRAN_LWG_TDD_S_BH-6-OCTOBER_3273DE",
+          "alarmTime": "2026-10-11T08:02:08.000Z",
+          "consecNbr": "2209978",
+          "siteCode": "3273DE",
+          "vip": false,
+          "nodality": "1+0",
+          "battery": "NO",
+          "phone": "01000000004",
+          "siteType": null,
+          "powerSource": "EC"
+        }
+      ]
+    }
+  },
+  {
+    "name": "cleared-site-substring",
+    "status": "cleared",
+    "site": "SHARAQA",
+    "expected": {
+      "total": 3,
+      "page": 1,
+      "pageSize": 50,
+      "items": [
+        {
+          "alarmKey": "S_D_N_BCCH MISSING||3531_S_KS-SHARAQA_3961DE",
+          "alarmTime": "2026-10-11T13:01:59.000Z",
+          "consecNbr": null,
+          "siteCode": "3961DE",
+          "vip": null,
+          "nodality": null,
+          "battery": null,
+          "phone": null,
+          "siteType": null,
+          "powerSource": null
+        },
+        {
+          "alarmKey": "S_D_N_BTS O&M LINK FAILURE||3531_S_KS-SHARAQA_3961DE",
+          "alarmTime": "2026-10-11T13:01:08.000Z",
+          "consecNbr": null,
+          "siteCode": "3961DE",
+          "vip": null,
+          "nodality": null,
+          "battery": null,
+          "phone": null,
+          "siteType": null,
+          "powerSource": null
+        },
+        {
+          "alarmKey": "S_D_N_BCCH MISSING||3531_S_KS-SHARAQA_3961DE",
+          "alarmTime": "2026-10-11T13:01:58.000Z",
+          "consecNbr": null,
+          "siteCode": "3961DE",
+          "vip": null,
+          "nodality": null,
+          "battery": null,
+          "phone": null,
+          "siteType": null,
+          "powerSource": null
+        }
+      ]
+    }
+  },
+  {
+    "name": "cleared-office-ds",
+    "status": "cleared",
+    "office": "DS/Zagazig",
+    "expected": {
+      "total": 18,
+      "page": 1,
+      "pageSize": 50,
+      "items": [
+        {
+          "alarmKey": "S_D_N_WCDMA CELL OUT OF USE||U_S_BH-MHLT-KYL_3830DE||A_BH-MHLT-KYL_4_24314_S",
+          "alarmTime": "2026-10-11T18:02:49.000Z",
+          "consecNbr": "2291817",
+          "siteCode": "3830DE",
+          "vip": false,
+          "nodality": "1+0",
+          "battery": "YES",
+          "phone": "01000000005",
+          "siteType": null,
+          "powerSource": "EC/VF"
+        },
+        {
+          "alarmKey": "S_D_N_WCDMA CELL OUT OF USE||U_S_BH-MHLT-KYL_3830DE||A_BH-MHLT-KYL_3_24313_S",
+          "alarmTime": "2026-10-11T18:02:49.000Z",
+          "consecNbr": "2291814",
+          "siteCode": "3830DE",
+          "vip": false,
+          "nodality": "1+0",
+          "battery": "YES",
+          "phone": "01000000005",
+          "siteType": null,
+          "powerSource": "EC/VF"
+        },
+        {
+          "alarmKey": "S_D_N_WCDMA CELL OUT OF USE||U_S_BH-MHLT-KYL_3830DE||A_BH-MHLT-KYL_2_24312_S",
+          "alarmTime": "2026-10-11T18:02:49.000Z",
+          "consecNbr": "2291816",
+          "siteCode": "3830DE",
+          "vip": false,
+          "nodality": "1+0",
+          "battery": "YES",
+          "phone": "01000000005",
+          "siteType": null,
+          "powerSource": "EC/VF"
+        },
+        {
+          "alarmKey": "S_D_N_SHELTER DOOR ALARM||SRAN_LWG_TDD_V_BH-KFDW-BOLES_3207DE",
+          "alarmTime": "2026-10-11T18:02:13.000Z",
+          "consecNbr": "2291619",
+          "siteCode": "3207DE",
+          "vip": null,
+          "nodality": null,
+          "battery": null,
+          "phone": null,
+          "siteType": null,
+          "powerSource": null
+        },
+        {
+          "alarmKey": "S_D_N_WCDMA BASE STATION OUT OF USE||U_S_BH-HORRIA_3928DE",
+          "alarmTime": "2026-10-11T16:03:38.000Z",
+          "consecNbr": "2280474",
+          "siteCode": "3928DE",
+          "vip": false,
+          "nodality": "1+0",
+          "battery": "NO",
+          "phone": "01000000006",
+          "siteType": null,
+          "powerSource": "EC"
+        },
+        {
+          "alarmKey": "S_D_N_SHELTER DOOR ALARM||SRAN_LWG_TDD_V_BH-KFDW-BOLES_3207DE",
+          "alarmTime": "2026-10-11T07:57:21.000Z",
+          "consecNbr": "2209431",
+          "siteCode": "3207DE",
+          "vip": null,
+          "nodality": null,
+          "battery": null,
+          "phone": null,
+          "siteType": null,
+          "powerSource": null
+        },
+        {
+          "alarmKey": "S_D_N_NE3SWS AGENT NOT RESPONDING TO REQUESTS||SRAN_LWG_S_KS-KHALIJ-HUKS_3322DE",
+          "alarmTime": "2026-10-11T14:40:54.000Z",
+          "consecNbr": "2270682",
+          "siteCode": "3322DE",
+          "vip": false,
+          "nodality": "1+0",
+          "battery": "NO",
+          "phone": "01000000003",
+          "siteType": null,
+          "powerSource": "EC/VF"
+        },
+        {
+          "alarmKey": "S_D_N_NE3SWS AGENT NOT RESPONDING TO REQUESTS||SRAN_LWG_S_KS-KHALIJ-HUKS_3322DE",
+          "alarmTime": "2026-10-11T14:36:55.000Z",
+          "consecNbr": "1113624626",
+          "siteCode": "3322DE",
+          "vip": false,
+          "nodality": "1+0",
+          "battery": "NO",
+          "phone": "01000000003",
+          "siteType": null,
+          "powerSource": "EC/VF"
+        },
+        {
+          "alarmKey": "S_D_N_WCDMA BASE STATION OUT OF USE||U_S_KS-KHALIJ-HUKS_3322DE",
+          "alarmTime": "2026-10-11T14:35:10.000Z",
+          "consecNbr": "2269765",
+          "siteCode": "3322DE",
+          "vip": false,
+          "nodality": "1+0",
+          "battery": "NO",
+          "phone": "01000000003",
+          "siteType": null,
+          "powerSource": "EC/VF"
+        },
+        {
+          "alarmKey": "S_D_N_ACOC DOOR OPEN||SRAN_LG_TDD_V_BH-SIDI-GHAZY_0444DE",
+          "alarmTime": "2026-10-11T14:40:36.000Z",
+          "consecNbr": "2270667",
+          "siteCode": "0444DE",
+          "vip": true,
+          "nodality": "1+1",
+          "battery": "YES",
+          "phone": "01000000000",
+          "siteType": null,
+          "powerSource": "EC"
+        },
+        {
+          "alarmKey": "S_D_N_RECTIFIER MINOR ALARM||SRAN_LWG_TDD_S_BH-6-OCTOBER_3273DE",
+          "alarmTime": "2026-10-11T13:42:17.000Z",
+          "consecNbr": "2262061",
+          "siteCode": "3273DE",
+          "vip": false,
+          "nodality": "1+0",
+          "battery": "NO",
+          "phone": "01000000004",
+          "siteType": null,
+          "powerSource": "EC"
+        },
+        {
+          "alarmKey": "S_D_N_RECTIFIER MINOR ALARM||SRAN_LWG_TDD_S_BH-6-OCTOBER_3273DE",
+          "alarmTime": "2026-10-11T12:23:07.000Z",
+          "consecNbr": "2248772",
+          "siteCode": "3273DE",
+          "vip": false,
+          "nodality": "1+0",
+          "battery": "NO",
+          "phone": "01000000004",
+          "siteType": null,
+          "powerSource": "EC"
+        },
+        {
+          "alarmKey": "S_D_N_RECTIFIER MINOR ALARM||SRAN_LWG_TDD_S_BH-6-OCTOBER_3273DE",
+          "alarmTime": "2026-10-11T11:55:25.000Z",
+          "consecNbr": "2245584",
+          "siteCode": "3273DE",
+          "vip": false,
+          "nodality": "1+0",
+          "battery": "NO",
+          "phone": "01000000004",
+          "siteType": null,
+          "powerSource": "EC"
+        },
+        {
+          "alarmKey": "S_D_N_RECTIFIER MINOR ALARM||SRAN_LWG_TDD_S_BH-6-OCTOBER_3273DE",
+          "alarmTime": "2026-10-11T11:21:08.000Z",
+          "consecNbr": "2239985",
+          "siteCode": "3273DE",
+          "vip": false,
+          "nodality": "1+0",
+          "battery": "NO",
+          "phone": "01000000004",
+          "siteType": null,
+          "powerSource": "EC"
+        },
+        {
+          "alarmKey": "S_D_N_NE3SWS AGENT NOT RESPONDING TO REQUESTS||SRAN_LWG_S_KS-KHALIJ-HUKS_3322DE",
+          "alarmTime": "2026-10-11T10:42:54.000Z",
+          "consecNbr": "2234402",
+          "siteCode": "3322DE",
+          "vip": false,
+          "nodality": "1+0",
+          "battery": "NO",
+          "phone": "01000000003",
+          "siteType": null,
+          "powerSource": "EC/VF"
+        },
+        {
+          "alarmKey": "S_D_N_NE3SWS AGENT NOT RESPONDING TO REQUESTS||SRAN_LWG_S_KS-KHALIJ-HUKS_3322DE",
+          "alarmTime": "2026-10-11T10:36:55.000Z",
+          "consecNbr": "1113623577",
+          "siteCode": "3322DE",
+          "vip": false,
+          "nodality": "1+0",
+          "battery": "NO",
+          "phone": "01000000003",
+          "siteType": null,
+          "powerSource": "EC/VF"
+        },
+        {
+          "alarmKey": "S_D_N_WCDMA BASE STATION OUT OF USE||U_S_KS-KHALIJ-HUKS_3322DE",
+          "alarmTime": "2026-10-11T10:36:34.000Z",
+          "consecNbr": "2233733",
+          "siteCode": "3322DE",
+          "vip": false,
+          "nodality": "1+0",
+          "battery": "NO",
+          "phone": "01000000003",
+          "siteType": null,
+          "powerSource": "EC/VF"
+        },
+        {
+          "alarmKey": "S_D_N_RECTIFIER MINOR ALARM||SRAN_LWG_TDD_S_BH-6-OCTOBER_3273DE",
+          "alarmTime": "2026-10-11T08:02:08.000Z",
+          "consecNbr": "2209978",
+          "siteCode": "3273DE",
+          "vip": false,
+          "nodality": "1+0",
+          "battery": "NO",
+          "phone": "01000000004",
+          "siteType": null,
+          "powerSource": "EC"
+        }
+      ]
+    }
+  },
+  {
+    "name": "cleared-admin-and-user-hidden",
+    "status": "cleared",
+    "office": "DS/Zagazig",
+    "adminHidden": {
+      "categories": [
+        "POWER"
+      ]
+    },
+    "userHidden": {
+      "alarmNames": [
+        "S_D_N_WCDMA CELL OUT OF USE"
+      ]
+    },
+    "expected": {
+      "total": 10,
+      "page": 1,
+      "pageSize": 50,
+      "items": [
+        {
+          "alarmKey": "S_D_N_SHELTER DOOR ALARM||SRAN_LWG_TDD_V_BH-KFDW-BOLES_3207DE",
+          "alarmTime": "2026-10-11T18:02:13.000Z",
+          "consecNbr": "2291619",
+          "siteCode": "3207DE",
+          "vip": null,
+          "nodality": null,
+          "battery": null,
+          "phone": null,
+          "siteType": null,
+          "powerSource": null
+        },
+        {
+          "alarmKey": "S_D_N_WCDMA BASE STATION OUT OF USE||U_S_BH-HORRIA_3928DE",
+          "alarmTime": "2026-10-11T16:03:38.000Z",
+          "consecNbr": "2280474",
+          "siteCode": "3928DE",
+          "vip": false,
+          "nodality": "1+0",
+          "battery": "NO",
+          "phone": "01000000006",
+          "siteType": null,
+          "powerSource": "EC"
+        },
+        {
+          "alarmKey": "S_D_N_SHELTER DOOR ALARM||SRAN_LWG_TDD_V_BH-KFDW-BOLES_3207DE",
+          "alarmTime": "2026-10-11T07:57:21.000Z",
+          "consecNbr": "2209431",
+          "siteCode": "3207DE",
+          "vip": null,
+          "nodality": null,
+          "battery": null,
+          "phone": null,
+          "siteType": null,
+          "powerSource": null
+        },
+        {
+          "alarmKey": "S_D_N_NE3SWS AGENT NOT RESPONDING TO REQUESTS||SRAN_LWG_S_KS-KHALIJ-HUKS_3322DE",
+          "alarmTime": "2026-10-11T14:40:54.000Z",
+          "consecNbr": "2270682",
+          "siteCode": "3322DE",
+          "vip": false,
+          "nodality": "1+0",
+          "battery": "NO",
+          "phone": "01000000003",
+          "siteType": null,
+          "powerSource": "EC/VF"
+        },
+        {
+          "alarmKey": "S_D_N_NE3SWS AGENT NOT RESPONDING TO REQUESTS||SRAN_LWG_S_KS-KHALIJ-HUKS_3322DE",
+          "alarmTime": "2026-10-11T14:36:55.000Z",
+          "consecNbr": "1113624626",
+          "siteCode": "3322DE",
+          "vip": false,
+          "nodality": "1+0",
+          "battery": "NO",
+          "phone": "01000000003",
+          "siteType": null,
+          "powerSource": "EC/VF"
+        },
+        {
+          "alarmKey": "S_D_N_WCDMA BASE STATION OUT OF USE||U_S_KS-KHALIJ-HUKS_3322DE",
+          "alarmTime": "2026-10-11T14:35:10.000Z",
+          "consecNbr": "2269765",
+          "siteCode": "3322DE",
+          "vip": false,
+          "nodality": "1+0",
+          "battery": "NO",
+          "phone": "01000000003",
+          "siteType": null,
+          "powerSource": "EC/VF"
+        },
+        {
+          "alarmKey": "S_D_N_ACOC DOOR OPEN||SRAN_LG_TDD_V_BH-SIDI-GHAZY_0444DE",
+          "alarmTime": "2026-10-11T14:40:36.000Z",
+          "consecNbr": "2270667",
+          "siteCode": "0444DE",
+          "vip": true,
+          "nodality": "1+1",
+          "battery": "YES",
+          "phone": "01000000000",
+          "siteType": null,
+          "powerSource": "EC"
+        },
+        {
+          "alarmKey": "S_D_N_NE3SWS AGENT NOT RESPONDING TO REQUESTS||SRAN_LWG_S_KS-KHALIJ-HUKS_3322DE",
+          "alarmTime": "2026-10-11T10:42:54.000Z",
+          "consecNbr": "2234402",
+          "siteCode": "3322DE",
+          "vip": false,
+          "nodality": "1+0",
+          "battery": "NO",
+          "phone": "01000000003",
+          "siteType": null,
+          "powerSource": "EC/VF"
+        },
+        {
+          "alarmKey": "S_D_N_NE3SWS AGENT NOT RESPONDING TO REQUESTS||SRAN_LWG_S_KS-KHALIJ-HUKS_3322DE",
+          "alarmTime": "2026-10-11T10:36:55.000Z",
+          "consecNbr": "1113623577",
+          "siteCode": "3322DE",
+          "vip": false,
+          "nodality": "1+0",
+          "battery": "NO",
+          "phone": "01000000003",
+          "siteType": null,
+          "powerSource": "EC/VF"
+        },
+        {
+          "alarmKey": "S_D_N_WCDMA BASE STATION OUT OF USE||U_S_KS-KHALIJ-HUKS_3322DE",
+          "alarmTime": "2026-10-11T10:36:34.000Z",
+          "consecNbr": "2233733",
+          "siteCode": "3322DE",
+          "vip": false,
+          "nodality": "1+0",
+          "battery": "NO",
+          "phone": "01000000003",
+          "siteType": null,
+          "powerSource": "EC/VF"
+        }
+      ]
+    }
+  }
+]

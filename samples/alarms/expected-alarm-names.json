@@ -1,0 +1,71 @@
+{
+  "office": "DN/Kafr ElDawar",
+  "adminHidden": [
+    "S_D_N_FIRE ALARM"
+  ],
+  "userHidden": [
+    "S_D_N_SHELTER DOO"
+  ],
+  "expected": [
+    {
+      "alarmName": "S_D_N_BCCH MISSING",
+      "count": 9,
+      "hidden": false,
+      "hiddenByMe": false
+    },
+    {
+      "alarmName": "S_D_N_FIRE ALARM",
+      "count": 3,
+      "hidden": true,
+      "hiddenByMe": false
+    },
+    {
+      "alarmName": "D_S_BCCH MISSING",
+      "count": 2,
+      "hidden": false,
+      "hiddenByMe": false
+    },
+    {
+      "alarmName": "S_D_N_BTS O&M LINK FAILURE",
+      "count": 2,
+      "hidden": false,
+      "hiddenByMe": false
+    },
+    {
+      "alarmName": "S_D_N_NE3SWS AGENT NOT RESPONDING TO REQUESTS",
+      "count": 2,
+      "hidden": false,
+      "hiddenByMe": false
+    },
+    {
+      "alarmName": "S_D_N_AIR CONDITION FAULT",
+      "count": 1,
+      "hidden": false,
+      "hiddenByMe": false
+    },
+    {
+      "alarmName": "S_D_N_FENCE GATE",
+      "count": 1,
+      "hidden": false,
+      "hiddenByMe": false
+    },
+    {
+      "alarmName": "S_D_N_FENCE GATE ALARM",
+      "count": 1,
+      "hidden": false,
+      "hiddenByMe": false
+    },
+    {
+      "alarmName": "S_D_N_RECTIFIER MINOR ALARM",
+      "count": 1,
+      "hidden": false,
+      "hiddenByMe": false
+    },
+    {
+      "alarmName": "S_D_N_SHELTER DOO",
+      "count": 1,
+      "hidden": false,
+      "hiddenByMe": true
+    }
+  ]
+}
