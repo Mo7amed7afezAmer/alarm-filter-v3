@@ -1,0 +1,48 @@
+{
+  "id": "hourlyxlsx000001",
+  "threadId": "hourlyxlsx000001",
+  "labelIds": [
+    "Label_HOURLY"
+  ],
+  "internalDate": "1791702300000",
+  "payload": {
+    "partId": "",
+    "mimeType": "multipart/mixed",
+    "filename": "",
+    "headers": [
+      {
+        "name": "Subject",
+        "value": "Nokia (Down & Environmental) Alarms Update Report"
+      },
+      {
+        "name": "From",
+        "value": "NOC Reports <reports@example.invalid>"
+      }
+    ],
+    "body": {
+      "size": 0
+    },
+    "parts": [
+      {
+        "partId": "0",
+        "mimeType": "text/plain",
+        "filename": "",
+        "headers": [],
+        "body": {
+          "size": 0,
+          "data": ""
+        }
+      },
+      {
+        "partId": "1",
+        "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "filename": "NSN Update_Output.xlsx",
+        "headers": [],
+        "body": {
+          "size": 560680,
+          "attachmentId": "nsn-update-output.xlsx"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "id": "1a12b49a56ded6dd",
+  "threadId": "1a12b49a56ded6dd",
+  "labelIds": [
+    "Label_HOURLY"
+  ],
+  "internalDate": "1791727596000",
+  "payload": {
+    "partId": "",
+    "mimeType": "multipart/mixed",
+    "filename": "",
+    "headers": [
+      {
+        "name": "Subject",
+        "value": "Nokia (Down & Environmental) Alarms Update Report"
+      },
+      {
+        "name": "From",
+        "value": "NOC Reports <reports@example.invalid>"
+      }
+    ],
+    "body": {
+      "size": 0
+    },
+    "parts": [
+      {
+        "partId": "0",
+        "mimeType": "text/plain",
+        "filename": "",
+        "headers": [],
+        "body": {
+          "size": 0,
+          "data": ""
+        }
+      },
+      {
+        "partId": "1",
+        "mimeType": "image/png",
+        "filename": "logo.png",
+        "headers": [],
+        "body": {
+          "size": 2048,
+          "attachmentId": "att-logo"
+        }
+      },
+      {
+        "partId": "2",
+        "mimeType": "application/octet-stream",
+        "filename": "NSN Update_Output.xlsx",
+        "headers": [],
+        "body": {
+          "size": 560680,
+          "attachmentId": "nsn-update-output.xlsx"
+        }
+      },
+      {
+        "partId": "3",
+        "mimeType": "application/x-rar-compressed",
+        "filename": "NSN Update_Output.rar",
+        "headers": [],
+        "body": {
+          "size": 538041,
+          "attachmentId": "nsn-update-output.rar"
+        }
+      }
+    ]
+  }
+}

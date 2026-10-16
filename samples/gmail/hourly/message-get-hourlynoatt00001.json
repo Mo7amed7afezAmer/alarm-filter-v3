@@ -1,0 +1,38 @@
+{
+  "id": "hourlynoatt00001",
+  "threadId": "hourlynoatt00001",
+  "labelIds": [
+    "Label_HOURLY"
+  ],
+  "internalDate": "1791698700000",
+  "payload": {
+    "partId": "",
+    "mimeType": "multipart/mixed",
+    "filename": "",
+    "headers": [
+      {
+        "name": "Subject",
+        "value": "Nokia (Down & Environmental) Alarms Update Report"
+      },
+      {
+        "name": "From",
+        "value": "NOC Reports <reports@example.invalid>"
+      }
+    ],
+    "body": {
+      "size": 0
+    },
+    "parts": [
+      {
+        "partId": "0",
+        "mimeType": "text/plain",
+        "filename": "",
+        "headers": [],
+        "body": {
+          "size": 0,
+          "data": ""
+        }
+      }
+    ]
+  }
+}
