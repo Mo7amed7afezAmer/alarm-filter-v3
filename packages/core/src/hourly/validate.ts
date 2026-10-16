@@ -12,7 +12,8 @@ export type HourlyErrorCode =
   | "UNSAFE_ENTRY"
   | "EXTRACT_TOO_LARGE"
   | "NO_WORKBOOK"
-  | "MULTIPLE_WORKBOOKS";
+  | "MULTIPLE_WORKBOOKS"
+  | "MISSING_COLUMNS";
 
 export class HourlyReportError extends Error {
   constructor(

@@ -1,0 +1,9 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "lib": ["dom", "ES2022"],
+    "types": []
+  },
+  "include": ["src/hourly/**/*.ts"],
+  "exclude": ["src/hourly/**/*.test.ts", "src/hourly/test-helpers.ts"]
+}

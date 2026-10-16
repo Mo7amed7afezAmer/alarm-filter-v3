@@ -97,6 +97,8 @@ R-02 and R-03 are not defined in PLAN.md §7.
 | G-T12 hourly roles | `GET /hourly-reports`: VIEWER. `…/attachment` and `…/xlsx` (downloading = processing): OPERATOR, as FR-49 / FR-64 had it. | mohamed.hafez@docnile.com / 2026-10-17 |
 | G-T12 40 MB memory test | The 40 MB RAR is generated during the test with WinRAR / `rar` from random data; skipped where `rar` is not installed. | mohamed.hafez@docnile.com / 2026-10-17 |
 | G-T12 cache bits | FR-47 "cache status" and FR-58's VIEWER 409 belonged to the server cache removed by D-10; both dropped. 409 now means "no attachment". | mohamed.hafez@docnile.com / 2026-10-17 |
+| G-T13 hourly row | Row fields: sheet, technologies[], alarmNumber, alarmType, alarmTime, clockInvalid, alarmText, alarmName, supplementaryInfo, dn, objectClass, siteName, siteCode, siteAddress, diagnosticInfo, userInfo + office, nodality, vip, siteType, powerSource, battery, phone, region, category. alarmTime = wall-clock text `YYYY-MM-DD HH:mm:ss` (Excel serial rounded to the second, no time zone). | mohamed.hafez@docnile.com / 2026-10-17 |
+| G-T13 normalization | Base normalization + rules apply to alarmName, alarmText, supplementaryInfo, siteName, office, siteType, nodality, powerSource; no default rules (DEFAULT_HOURLY_NORMALIZATIONS is not in REQUIREMENTS). Pipeline: parse → enrich → normalize → category. | mohamed.hafez@docnile.com / 2026-10-17 |
 
 ## Approval (PLAN.md §10)
 

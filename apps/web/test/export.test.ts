@@ -75,5 +75,5 @@ describe.skipIf(!testDatabaseUrl)("GET /api/v1/export", () => {
     expect(res.status).toBe(413);
     expect((await res.json()).error.code).toBe("TOO_MANY_ROWS");
     await db.alarm.deleteMany({ where: { office } });
-  });
+  }, 180_000); // inserting 50,001 rows is slow on a busy machine
 });
