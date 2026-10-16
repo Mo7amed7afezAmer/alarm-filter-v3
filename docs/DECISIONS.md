@@ -81,6 +81,10 @@ R-02 and R-03 are not defined in PLAN.md §7.
 | G-T02 seed scope | Seed default rules (FR-16) and the initial ADMIN (FR-29) only. The hourly-normalizations seed (NFR-31) waits until the default list is supplied under `samples/seed/`. | mohamed.hafez@docnile.com / 2026-10-15 |
 | G-T07 lock 42 | Two worker instances: `pg_try_advisory_xact_lock(42)` — the second instance logs and skips the cycle (D-03), instead of waiting as `pg_advisory_xact_lock` would (NFR-10 wording). | mohamed.hafez@docnile.com / 2026-10-15 |
 | G-T07 health grace | FR-69 start-up grace = `HEALTH_STALE_AFTER_SEC` (default 300 s): no 503 for staleness during the first 300 s after the worker starts. | mohamed.hafez@docnile.com / 2026-10-15 |
+| G-T08 role test | One route → minimum-role table (NFR-18) drives the role test; G-T08 tests the routes it builds and each later task adds its routes to the same table. | mohamed.hafez@docnile.com / 2026-10-16 |
+| G-T08 `?office=*` | Not built. Every view is scoped to the selected office (FR-40); the PLAN item is dropped. | mohamed.hafez@docnile.com / 2026-10-16 |
+| G-T08 self-demotion | FR-28 as written: an ADMIN cannot set their own role to VIEWER or delete themselves; self → OPERATOR is allowed. | mohamed.hafez@docnile.com / 2026-10-16 |
+| G-T08 users API | `GET`/`POST /api/v1/users`; `PATCH`/`DELETE /api/v1/users/{id}`, 404 for an unknown id. | mohamed.hafez@docnile.com / 2026-10-16 |
 
 ## Approval (PLAN.md §10)
 
