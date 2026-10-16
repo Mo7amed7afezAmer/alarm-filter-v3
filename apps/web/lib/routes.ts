@@ -64,4 +64,9 @@ export const ROUTES: RouteEntry[] = [
   // G-T09
   { method: "GET", path: "/api/v1/alarms?status=active", minRole: "VIEWER", load: () => import("@/app/api/v1/alarms/route") },
   { method: "GET", path: "/api/v1/alarm-names", minRole: "VIEWER", load: () => import("@/app/api/v1/alarm-names/route") },
+  // G-T10
+  { method: "GET", path: "/api/v1/export?status=active", minRole: "VIEWER", load: () => import("@/app/api/v1/export/route") },
+  { method: "GET", path: "/api/v1/stats/summary", minRole: "VIEWER", load: () => import("@/app/api/v1/stats/summary/route") },
+  { method: "GET", path: "/api/v1/stats/daily", minRole: "VIEWER", load: () => import("@/app/api/v1/stats/daily/route") },
+  { method: "GET", path: "/api/v1/stats/top-sites", minRole: "VIEWER", load: () => import("@/app/api/v1/stats/top-sites/route") },
 ];

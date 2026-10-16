@@ -101,12 +101,18 @@ export function AlarmList({ status, alertHours }: { status: Status; alertHours: 
   };
   const local = (iso: string | null) => (iso ? fmt.format(new Date(iso)) : "—");
   const pages = data ? Math.max(1, Math.ceil(data.total / data.pageSize)) : 1;
+  // FR-35: export the same filters to .xlsx.
+  const exportParams = new URLSearchParams({ status });
+  for (const [k, v] of Object.entries(filters)) if (v) exportParams.set(k, v);
 
   return (
     <section>
       <div className="list-head">
         <h1>{status === "active" ? "Active alarms" : "Cleared alarms"}</h1>
         <span data-testid="total">{data ? num.format(data.total) : "…"}</span>
+        <a className="export" href={`/api/v1/export?${exportParams}`} download>
+          Export .xlsx
+        </a>
         <button type="button" className="filters-toggle" onClick={() => setOpen((o) => !o)} aria-expanded={open}>
           Filters
         </button>
