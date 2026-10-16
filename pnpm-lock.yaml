@@ -32,15 +32,24 @@ importers:
       '@alarm/db':
         specifier: workspace:*
         version: link:../../packages/db
+      '@googleapis/gmail':
+        specifier: ^12.0.0
+        version: 12.0.1
       bcryptjs:
         specifier: ^2.4.3
         version: 2.4.3
+      google-auth-library:
+        specifier: ^9.15.0
+        version: 9.15.1
       next:
         specifier: ^14.2.15
         version: 14.2.35(@playwright/test@1.64.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       next-auth:
         specifier: ^4.24.10
         version: 4.24.15(next@14.2.35(@playwright/test@1.64.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      node-unrar-js:
+        specifier: ^2.0.2
+        version: 2.0.2
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -105,6 +114,10 @@ importers:
         version: 5.4.21(@types/node@20.19.43)
 
   packages/core:
+    dependencies:
+      node-unrar-js:
+        specifier: ^2.0.2
+        version: 2.0.2
     devDependencies:
       '@alarm/db':
         specifier: workspace:*
@@ -1398,6 +1411,10 @@ packages:
     peerDependenciesMeta:
       encoding:
         optional: true
+
+  node-unrar-js@2.0.2:
+    resolution: {integrity: sha512-hLNmoJzqaKJnod8yiTVGe9hnlNRHotUi0CreSv/8HtfRi/3JnRC8DvsmKfeGGguRjTEulhZK6zXX5PXoVuDZ2w==}
+    engines: {node: '>=10.0.0'}
 
   nypm@0.6.10:
     resolution: {integrity: sha512-W72Hrj1petq+b3Hk2aAC+9zswetlIFTnDW4s5djseZh2nYqBbyQLOtj472HwcbcWykPBUW1WpWpjOd4nK6gMRw==}
@@ -2939,6 +2956,8 @@ snapshots:
   node-fetch@2.7.0:
     dependencies:
       whatwg-url: 5.0.0
+
+  node-unrar-js@2.0.2: {}
 
   nypm@0.6.10:
     dependencies:

@@ -93,6 +93,10 @@ R-02 and R-03 are not defined in PLAN.md §7.
 | G-T11 health path | Web health stays public at `GET /api/health` (FR-70, G-T16 healthcheck): the one exception to D-02. | mohamed.hafez@docnile.com / 2026-10-16 |
 | G-T11 worker freshness | Web `/api/health` judges the worker stale with `WORKER_STALE_SEC` (default 300 s), as FR-70 states. | mohamed.hafez@docnile.com / 2026-10-16 |
 | G-T11 reprocess and unread | Fixes gap 23: when reprocess recreates an alarm that existed before (same consecNbr, or same key + alarmTime) it keeps the original `createdAt`, so seen alarms do not become unread again. | mohamed.hafez@docnile.com / 2026-10-16 |
+| G-T12 server unrar | `…/xlsx` (D-11) extracts in memory with node-unrar-js (WebAssembly); FR-51 checks run on the RAR headers; no temp files (D-10). Debian `unrar` is still installed in the web image (NFR-33). | mohamed.hafez@docnile.com / 2026-10-17 |
+| G-T12 hourly roles | `GET /hourly-reports`: VIEWER. `…/attachment` and `…/xlsx` (downloading = processing): OPERATOR, as FR-49 / FR-64 had it. | mohamed.hafez@docnile.com / 2026-10-17 |
+| G-T12 40 MB memory test | The 40 MB RAR is generated during the test with WinRAR / `rar` from random data; skipped where `rar` is not installed. | mohamed.hafez@docnile.com / 2026-10-17 |
+| G-T12 cache bits | FR-47 "cache status" and FR-58's VIEWER 409 belonged to the server cache removed by D-10; both dropped. 409 now means "no attachment". | mohamed.hafez@docnile.com / 2026-10-17 |
 
 ## Approval (PLAN.md §10)
 

@@ -14,9 +14,12 @@
   "dependencies": {
     "@alarm/core": "workspace:*",
     "@alarm/db": "workspace:*",
+    "@googleapis/gmail": "^12.0.0",
     "bcryptjs": "^2.4.3",
+    "google-auth-library": "^9.15.0",
     "next": "^14.2.15",
     "next-auth": "^4.24.10",
+    "node-unrar-js": "^2.0.2",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz",

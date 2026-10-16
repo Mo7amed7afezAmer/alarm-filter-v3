@@ -9,7 +9,7 @@ export default tseslint.config(
   {
     // Node config files (next.config.mjs etc.).
     files: ["**/*.mjs", "**/*.cjs"],
-    languageOptions: { globals: { process: "readonly", console: "readonly" } },
+    languageOptions: { globals: { process: "readonly", console: "readonly", URL: "readonly" } },
   },
   ...tseslint.configs.recommended,
 );

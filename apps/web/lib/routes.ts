@@ -91,4 +91,20 @@ export const ROUTES: RouteEntry[] = [
   { method: "POST", path: "/api/v1/reprocess", minRole: "ADMIN", load: () => import("@/app/api/v1/reprocess/route"), body: { days: 7 } },
   { method: "GET", path: "/api/v1/notifications", minRole: "VIEWER", load: () => import("@/app/api/v1/notifications/route") },
   { method: "POST", path: "/api/v1/notifications/read", minRole: "VIEWER", load: () => import("@/app/api/v1/notifications/read/route") },
+  // G-T12 (OPERATOR downloads = processing, decided 2026-10-17)
+  { method: "GET", path: "/api/v1/hourly-reports", minRole: "VIEWER", load: () => import("@/app/api/v1/hourly-reports/route") },
+  {
+    method: "GET",
+    path: "/api/v1/hourly-reports/:id/attachment",
+    minRole: "OPERATOR",
+    load: () => import("@/app/api/v1/hourly-reports/[id]/attachment/route"),
+    params: { id: "hourlynoatt00001" },
+  },
+  {
+    method: "GET",
+    path: "/api/v1/hourly-reports/:id/xlsx",
+    minRole: "OPERATOR",
+    load: () => import("@/app/api/v1/hourly-reports/[id]/xlsx/route"),
+    params: { id: "hourlynoatt00001" },
+  },
 ];

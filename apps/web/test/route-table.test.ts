@@ -5,6 +5,11 @@ import { getSessionUser } from "@/lib/session";
 import { clearUsers, createUser, freshDatabase, jsonRequest, testDatabaseUrl, type Role } from "./db";
 
 vi.mock("@/lib/session", () => ({ getSessionUser: vi.fn() }));
+// Never reach the real Gmail from tests: hourly routes read the samples/gmail/hourly mock.
+vi.mock("@/lib/gmail-hourly", async (orig) => {
+  const { MockHourlyApi } = await import("./mock-hourly");
+  return { ...(await orig<object>()), getHourlyApi: () => new MockHourlyApi() };
+});
 const session = vi.mocked(getSessionUser);
 const RANK: Record<Role, number> = { VIEWER: 0, OPERATOR: 1, ADMIN: 2 };
 
