@@ -1,0 +1,1097 @@
+{
+  "rawMessages": [
+    {
+      "gmailId": "1a12b6ccd0fa574e",
+      "subject": "S_D_N_ACOC DOOR OPEN on #SRAN_LG_TDD_V_BH-SIDI-GHAZY_0444DE# at |11-OCT-2026 17:40:36 |",
+      "receivedAt": "2026-10-11T14:45:06.000Z",
+      "body": "\t\t\t\t############NEW ALARM###########\r\n\r\nALARM NAME: \r\n\t\tACOC DOOR OPEN\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 17:40:36\r\nNE_name: \r\n\t\tSRAN\r\nAlarm_Number\r\n\t\t7103\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tSRAN_LG_TDD_V_BH-SIDI-GHAZY_0444DE\r\nALARM_Device:\r\n\t\tMRBTS\r\nCONSEC_NBR: \r\n\t\t 2270667\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+      "office": "DS/Zagazig",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "1a12b81985529ade",
+      "subject": "CLEARED_S_D_N_ACOC DOOR OPEN on #SRAN_LG_TDD_V_BH-SIDI-GHAZY_0444DE# at |11-OCT-2026 17:40:36 |",
+      "receivedAt": "2026-10-11T15:05:40.000Z",
+      "body": "\t\t\t\t############CLEARENCE ALARM###########\r\n\r\nALARM NAME: \r\n\t\tACOC DOOR OPEN\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 17:40:36\r\nNE_name: \r\n\t\tSRAN\r\nAlarm_Number\r\n\t\t7103\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tSRAN_LG_TDD_V_BH-SIDI-GHAZY_0444DE\r\nALARM_Device:\r\n\t\tMRBTS\r\nCONSEC_NBR: \r\n\t\t 2270667\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+      "office": "DS/Zagazig",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "1a12c240e5cd69ef",
+      "subject": "S_D_N_WCDMA CELL OUT OF USE on #U_S_BH-MHLT-KYL_3830DE# at |11-OCT-2026 21:02:49 |",
+      "receivedAt": "2026-10-11T18:05:18.000Z",
+      "body": "\t\t\t\t############NEW ALARM###########\r\n\r\nALARM NAME: \r\n\t\tWCDMA CELL OUT OF USE\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 21:02:49\r\nNE_name: \r\n\t\tRNC66\r\nAlarm_Number\r\n\t\t7771\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tU_S_BH-MHLT-KYL_3830DE\r\ncell name :\r\n\t\tA_BH-MHLT-KYL_2_24312_S\r\nALARM_Device:\r\n\t\tcell\r\nCONSEC_NBR: \r\n\t\t 2291816\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+      "office": "DS/Zagazig",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "1a12c2415accf6c6",
+      "subject": "S_D_N_WCDMA CELL OUT OF USE on #U_S_BH-MHLT-KYL_3830DE# at |11-OCT-2026 21:02:49 |",
+      "receivedAt": "2026-10-11T18:05:18.000Z",
+      "body": "\t\t\t\t############NEW ALARM###########\r\n\r\nALARM NAME: \r\n\t\tWCDMA CELL OUT OF USE\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 21:02:49\r\nNE_name: \r\n\t\tRNC66\r\nAlarm_Number\r\n\t\t7771\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tU_S_BH-MHLT-KYL_3830DE\r\ncell name :\r\n\t\tA_BH-MHLT-KYL_4_24314_S\r\nALARM_Device:\r\n\t\tcell\r\nCONSEC_NBR: \r\n\t\t 2291817\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+      "office": "DS/Zagazig",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "1a12c24173f5b744",
+      "subject": "S_D_N_WCDMA CELL OUT OF USE on #U_S_BH-MHLT-KYL_3830DE# at |11-OCT-2026 21:02:49 |",
+      "receivedAt": "2026-10-11T18:05:18.000Z",
+      "body": "\t\t\t\t############NEW ALARM###########\r\n\r\nALARM NAME: \r\n\t\tWCDMA CELL OUT OF USE\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 21:02:49\r\nNE_name: \r\n\t\tRNC66\r\nAlarm_Number\r\n\t\t7771\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tU_S_BH-MHLT-KYL_3830DE\r\ncell name :\r\n\t\tA_BH-MHLT-KYL_3_24313_S\r\nALARM_Device:\r\n\t\tcell\r\nCONSEC_NBR: \r\n\t\t 2291814\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+      "office": "DS/Zagazig",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "1a12c36b733f5952",
+      "subject": "CLEARED_S_D_N_WCDMA CELL OUT OF USE on #U_S_BH-MHLT-KYL_3830DE# at |11-OCT-2026 21:02:49 |",
+      "receivedAt": "2026-10-11T18:25:38.000Z",
+      "body": "\t\t\t\t############CLEARENCE ALARM###########\r\n\r\nALARM NAME: \r\n\t\tWCDMA CELL OUT OF USE\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 21:02:49\r\nNE_name: \r\n\t\tRNC66\r\nAlarm_Number\r\n\t\t7771\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tU_S_BH-MHLT-KYL_3830DE\r\ncell name :\r\n\t\tA_BH-MHLT-KYL_2_24312_S\r\nALARM_Device:\r\n\t\tcell\r\nCONSEC_NBR: \r\n\t\t 2291816\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+      "office": "DS/Zagazig",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "1a12c36b90009b17",
+      "subject": "CLEARED_S_D_N_WCDMA CELL OUT OF USE on #U_S_BH-MHLT-KYL_3830DE# at |11-OCT-2026 21:02:49 |",
+      "receivedAt": "2026-10-11T18:25:39.000Z",
+      "body": "\t\t\t\t############CLEARENCE ALARM###########\r\n\r\nALARM NAME: \r\n\t\tWCDMA CELL OUT OF USE\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 21:02:49\r\nNE_name: \r\n\t\tRNC66\r\nAlarm_Number\r\n\t\t7771\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tU_S_BH-MHLT-KYL_3830DE\r\ncell name :\r\n\t\tA_BH-MHLT-KYL_4_24314_S\r\nALARM_Device:\r\n\t\tcell\r\nCONSEC_NBR: \r\n\t\t 2291817\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+      "office": "DS/Zagazig",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "1a12c3856523f17f",
+      "subject": "CLEARED_S_D_N_WCDMA CELL OUT OF USE on #U_S_BH-MHLT-KYL_3830DE# at |11-OCT-2026 21:02:49 |",
+      "receivedAt": "2026-10-11T18:25:38.000Z",
+      "body": "\t\t\t\t############CLEARENCE ALARM###########\r\n\r\nALARM NAME: \r\n\t\tWCDMA CELL OUT OF USE\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 21:02:49\r\nNE_name: \r\n\t\tRNC66\r\nAlarm_Number\r\n\t\t7771\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tU_S_BH-MHLT-KYL_3830DE\r\ncell name :\r\n\t\tA_BH-MHLT-KYL_3_24313_S\r\nALARM_Device:\r\n\t\tcell\r\nCONSEC_NBR: \r\n\t\t 2291814\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+      "office": "DS/Zagazig",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "1a12c48b83efc086",
+      "subject": "S_D_N_WCDMA CELL OUT OF USE on #U_S_BH-MHLT-KYL_3830DE# at |11-OCT-2026 21:33:13 |",
+      "receivedAt": "2026-10-11T18:45:20.000Z",
+      "body": "\t\t\t\t############NEW ALARM###########\r\n\r\nALARM NAME: \r\n\t\tWCDMA CELL OUT OF USE\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 21:33:13\r\nNE_name: \r\n\t\tRNC66\r\nAlarm_Number\r\n\t\t7771\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tU_S_BH-MHLT-KYL_3830DE\r\ncell name :\r\n\t\tA_BH-MHLT-KYL_2_24312_S\r\nALARM_Device:\r\n\t\tcell\r\nCONSEC_NBR: \r\n\t\t 2294326\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+      "office": "DS/Zagazig",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "1a12c48bdc085fd2",
+      "subject": "S_D_N_WCDMA CELL OUT OF USE on #U_S_BH-MHLT-KYL_3830DE# at |11-OCT-2026 21:36:45 |",
+      "receivedAt": "2026-10-11T18:45:21.000Z",
+      "body": "\t\t\t\t############NEW ALARM###########\r\n\r\nALARM NAME: \r\n\t\tWCDMA CELL OUT OF USE\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 21:36:45\r\nNE_name: \r\n\t\tRNC66\r\nAlarm_Number\r\n\t\t7771\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tU_S_BH-MHLT-KYL_3830DE\r\ncell name :\r\n\t\tA_BH-MHLT-KYL_4_24314_S\r\nALARM_Device:\r\n\t\tcell\r\nCONSEC_NBR: \r\n\t\t 2294476\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+      "office": "DS/Zagazig",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "1a129ff6ccdf71fd",
+      "subject": "CLEARED_S_D_N_SHELTER DOOR ALARM on #SRAN_LWG_TDD_V_BH-KFDW-BOLES_3207DE# at |09-OCT-2026 06:51:11 |",
+      "receivedAt": "2026-10-11T08:06:02.000Z",
+      "body": "\t\t\t\t############CLEARENCE ALARM###########\r\n\r\nALARM NAME: \r\n\t\tSHELTER DOOR ALARM\r\nALARM_START_TIME: \r\n\t\t09-OCT-2026 06:51:11\r\nNE_name: \r\n\t\tSRAN\r\nAlarm_Number\r\n\t\t7103\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tSRAN_LWG_TDD_V_BH-KFDW-BOLES_3207DE\r\nALARM_Device:\r\n\t\tMRBTS\r\nCONSEC_NBR: \r\n\t\t 1885351\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+      "office": "DS/Zagazig",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "1a12a003253b795d",
+      "subject": "S_D_N_SHELTER DOOR ALARM on #SRAN_LWG_TDD_V_BH-KFDW-BOLES_3207DE# at |11-OCT-2026 10:57:21 |",
+      "receivedAt": "2026-10-11T08:05:25.000Z",
+      "body": "\t\t\t\t############NEW ALARM###########\r\n\r\nALARM NAME: \r\n\t\tSHELTER DOOR ALARM\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 10:57:21\r\nNE_name: \r\n\t\tSRAN\r\nAlarm_Number\r\n\t\t7103\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tSRAN_LWG_TDD_V_BH-KFDW-BOLES_3207DE\r\nALARM_Device:\r\n\t\tMRBTS\r\nCONSEC_NBR: \r\n\t\t 2209431\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+      "office": "DS/Zagazig",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "1a12bb6a663e5510",
+      "subject": "CLEARED_S_D_N_SHELTER DOOR ALARM on #SRAN_LWG_TDD_V_BH-KFDW-BOLES_3207DE# at |11-OCT-2026 10:57:21 |",
+      "receivedAt": "2026-10-11T16:05:46.000Z",
+      "body": "\t\t\t\t############CLEARENCE ALARM###########\r\n\r\nALARM NAME: \r\n\t\tSHELTER DOOR ALARM\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 10:57:21\r\nNE_name: \r\n\t\tSRAN\r\nAlarm_Number\r\n\t\t7103\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tSRAN_LWG_TDD_V_BH-KFDW-BOLES_3207DE\r\nALARM_Device:\r\n\t\tMRBTS\r\nCONSEC_NBR: \r\n\t\t 2209431\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+      "office": "DS/Zagazig",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "1a12c23f9ff7bede",
+      "subject": "S_D_N_SHELTER DOOR ALARM on #SRAN_LWG_TDD_V_BH-KFDW-BOLES_3207DE# at |11-OCT-2026 21:02:13 |",
+      "receivedAt": "2026-10-11T18:05:12.000Z",
+      "body": "\t\t\t\t############NEW ALARM###########\r\n\r\nALARM NAME: \r\n\t\tSHELTER DOOR ALARM\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 21:02:13\r\nNE_name: \r\n\t\tSRAN\r\nAlarm_Number\r\n\t\t7103\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tSRAN_LWG_TDD_V_BH-KFDW-BOLES_3207DE\r\nALARM_Device:\r\n\t\tMRBTS\r\nCONSEC_NBR: \r\n\t\t 2291619\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+      "office": "DS/Zagazig",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "1a12c3698726c4f4",
+      "subject": "CLEARED_S_D_N_SHELTER DOOR ALARM on #SRAN_LWG_TDD_V_BH-KFDW-BOLES_3207DE# at |11-OCT-2026 21:02:13 |",
+      "receivedAt": "2026-10-11T18:25:31.000Z",
+      "body": "\t\t\t\t############CLEARENCE ALARM###########\r\n\r\nALARM NAME: \r\n\t\tSHELTER DOOR ALARM\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 21:02:13\r\nNE_name: \r\n\t\tSRAN\r\nAlarm_Number\r\n\t\t7103\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tSRAN_LWG_TDD_V_BH-KFDW-BOLES_3207DE\r\nALARM_Device:\r\n\t\tMRBTS\r\nCONSEC_NBR: \r\n\t\t 2291619\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+      "office": "DS/Zagazig",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "1a12a487a6ff7ccf",
+      "subject": "CLEARED_S_D_N_RECTIFIER MINOR ALARM on #SRAN_LG_TDD_E_BH-WASTANIYA_3804DE# at |09-OCT-2026 19:29:17 |",
+      "receivedAt": "2026-10-11T09:25:49.000Z",
+      "body": "\t\t\t\t############CLEARENCE ALARM###########\r\n\r\nALARM NAME: \r\n\t\tRECTIFIER MINOR ALARM\r\nALARM_START_TIME: \r\n\t\t09-OCT-2026 19:29:17\r\nNE_name: \r\n\t\tSRAN\r\nAlarm_Number\r\n\t\t7103\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tSRAN_LG_TDD_E_BH-WASTANIYA_3804DE\r\nALARM_Device:\r\n\t\tMRBTS\r\nCONSEC_NBR: \r\n\t\t 1981512\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+      "office": "DS/Zagazig",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "1a12c3637e33cd71",
+      "subject": "S_D_N_RECTIFIER MINOR ALARM on #SRAN_LG_TDD_E_BH-WASTANIYA_3804DE# at |11-OCT-2026 21:12:23 |",
+      "receivedAt": "2026-10-11T18:25:05.000Z",
+      "body": "\t\t\t\t############NEW ALARM###########\r\n\r\nALARM NAME: \r\n\t\tRECTIFIER MINOR ALARM\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 21:12:23\r\nNE_name: \r\n\t\tSRAN\r\nAlarm_Number\r\n\t\t7103\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tSRAN_LG_TDD_E_BH-WASTANIYA_3804DE\r\nALARM_Device:\r\n\t\tMRBTS\r\nCONSEC_NBR: \r\n\t\t 2292565\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+      "office": "DS/Zagazig",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "1a12a24ed0e6e561",
+      "subject": "CLEARED_S_D_N_WCDMA BASE STATION OUT OF USE on #U_S_BH-HORRIA_3928DE# at |11-OCT-2026 10:18:41 |",
+      "receivedAt": "2026-10-11T08:46:59.000Z",
+      "body": "\t\t\t\t############CLEARENCE ALARM###########\r\n\r\nALARM NAME: \r\n\t\tWCDMA BASE STATION OUT OF USE\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 10:18:41\r\nNE_name: \r\n\t\tRNC66\r\nAlarm_Number\r\n\t\t7786\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tU_S_BH-HORRIA_3928DE\r\nALARM_Device:\r\n\t\tsite\r\nCONSEC_NBR: \r\n\t\t 2204165\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+      "office": "DS/Zagazig",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "1a12bb67302cf966",
+      "subject": "S_D_N_WCDMA BASE STATION OUT OF USE on #U_S_BH-HORRIA_3928DE# at |11-OCT-2026 19:03:38 |",
+      "receivedAt": "2026-10-11T16:05:34.000Z",
+      "body": "\t\t\t\t############NEW ALARM###########\r\n\r\nALARM NAME: \r\n\t\tWCDMA BASE STATION OUT OF USE\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 19:03:38\r\nNE_name: \r\n\t\tRNC66\r\nAlarm_Number\r\n\t\t7786\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tU_S_BH-HORRIA_3928DE\r\nALARM_Device:\r\n\t\tsite\r\nCONSEC_NBR: \r\n\t\t 2280474\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+      "office": "DS/Zagazig",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "1a12bc90a4119e8a",
+      "subject": "CLEARED_S_D_N_WCDMA BASE STATION OUT OF USE on #U_S_BH-HORRIA_3928DE# at |11-OCT-2026 19:03:38 |",
+      "receivedAt": "2026-10-11T16:25:52.000Z",
+      "body": "\t\t\t\t############CLEARENCE ALARM###########\r\n\r\nALARM NAME: \r\n\t\tWCDMA BASE STATION OUT OF USE\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 19:03:38\r\nNE_name: \r\n\t\tRNC66\r\nAlarm_Number\r\n\t\t7786\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tU_S_BH-HORRIA_3928DE\r\nALARM_Device:\r\n\t\tsite\r\nCONSEC_NBR: \r\n\t\t 2280474\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+      "office": "DS/Zagazig",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "1a129fec39ffe046",
+      "subject": "S_D_N_RECTIFIER MINOR ALARM on #SRAN_LWG_TDD_S_BH-6-OCTOBER_3273DE# at |11-OCT-2026 11:02:08 |",
+      "receivedAt": "2026-10-11T08:05:18.000Z",
+      "body": "\t\t\t\t############NEW ALARM###########\r\n\r\nALARM NAME: \r\n\t\tRECTIFIER MINOR ALARM\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 11:02:08\r\nNE_name: \r\n\t\tSRAN\r\nAlarm_Number\r\n\t\t7103\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tSRAN_LWG_TDD_S_BH-6-OCTOBER_3273DE\r\nALARM_Device:\r\n\t\tMRBTS\r\nCONSEC_NBR: \r\n\t\t 2209978\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+      "office": "DS/Zagazig",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "1a12a12016a871eb",
+      "subject": "CLEARED_S_D_N_RECTIFIER MINOR ALARM on #SRAN_LWG_TDD_S_BH-6-OCTOBER_3273DE# at |11-OCT-2026 11:02:08 |",
+      "receivedAt": "2026-10-11T08:26:19.000Z",
+      "body": "\t\t\t\t############CLEARENCE ALARM###########\r\n\r\nALARM NAME: \r\n\t\tRECTIFIER MINOR ALARM\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 11:02:08\r\nNE_name: \r\n\t\tSRAN\r\nAlarm_Number\r\n\t\t7103\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tSRAN_LWG_TDD_S_BH-6-OCTOBER_3273DE\r\nALARM_Device:\r\n\t\tMRBTS\r\nCONSEC_NBR: \r\n\t\t 2209978\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+      "office": "DS/Zagazig",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "1a12ab5f5ca8d7b1",
+      "subject": "S_D_N_RECTIFIER MINOR ALARM on #SRAN_LWG_TDD_S_BH-6-OCTOBER_3273DE# at |11-OCT-2026 14:21:08 |",
+      "receivedAt": "2026-10-11T11:25:17.000Z",
+      "body": "\t\t\t\t############NEW ALARM###########\r\n\r\nALARM NAME: \r\n\t\tRECTIFIER MINOR ALARM\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 14:21:08\r\nNE_name: \r\n\t\tSRAN\r\nAlarm_Number\r\n\t\t7103\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tSRAN_LWG_TDD_S_BH-6-OCTOBER_3273DE\r\nALARM_Device:\r\n\t\tMRBTS\r\nCONSEC_NBR: \r\n\t\t 2239985\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+      "office": "DS/Zagazig",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "1a12ada7cd7961ab",
+      "subject": "S_D_N_RECTIFIER MINOR ALARM on #SRAN_LWG_TDD_S_BH-6-OCTOBER_3273DE# at |11-OCT-2026 14:55:25 |",
+      "receivedAt": "2026-10-11T12:05:18.000Z",
+      "body": "\t\t\t\t############NEW ALARM###########\r\n\r\nALARM NAME: \r\n\t\tRECTIFIER MINOR ALARM\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 14:55:25\r\nNE_name: \r\n\t\tSRAN\r\nAlarm_Number\r\n\t\t7103\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tSRAN_LWG_TDD_S_BH-6-OCTOBER_3273DE\r\nALARM_Device:\r\n\t\tMRBTS\r\nCONSEC_NBR: \r\n\t\t 2245584\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+      "office": "DS/Zagazig",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "1a12adb23fa0d538",
+      "subject": "CLEARED_S_D_N_RECTIFIER MINOR ALARM on #SRAN_LWG_TDD_S_BH-6-OCTOBER_3273DE# at |11-OCT-2026 14:21:08 |",
+      "receivedAt": "2026-10-11T12:06:00.000Z",
+      "body": "\t\t\t\t############CLEARENCE ALARM###########\r\n\r\nALARM NAME: \r\n\t\tRECTIFIER MINOR ALARM\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 14:21:08\r\nNE_name: \r\n\t\tSRAN\r\nAlarm_Number\r\n\t\t7103\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tSRAN_LWG_TDD_S_BH-6-OCTOBER_3273DE\r\nALARM_Device:\r\n\t\tMRBTS\r\nCONSEC_NBR: \r\n\t\t 2239985\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+      "office": "DS/Zagazig",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "1a12aeccbaf5dde9",
+      "subject": "S_D_N_RECTIFIER MINOR ALARM on #SRAN_LWG_TDD_S_BH-6-OCTOBER_3273DE# at |11-OCT-2026 15:23:07 |",
+      "receivedAt": "2026-10-11T12:25:17.000Z",
+      "body": "\t\t\t\t############NEW ALARM###########\r\n\r\nALARM NAME: \r\n\t\tRECTIFIER MINOR ALARM\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 15:23:07\r\nNE_name: \r\n\t\tSRAN\r\nAlarm_Number\r\n\t\t7103\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tSRAN_LWG_TDD_S_BH-6-OCTOBER_3273DE\r\nALARM_Device:\r\n\t\tMRBTS\r\nCONSEC_NBR: \r\n\t\t 2248772\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+      "office": "DS/Zagazig",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "1a12aeda2cc83325",
+      "subject": "CLEARED_S_D_N_RECTIFIER MINOR ALARM on #SRAN_LWG_TDD_S_BH-6-OCTOBER_3273DE# at |11-OCT-2026 14:55:25 |",
+      "receivedAt": "2026-10-11T12:26:14.000Z",
+      "body": "\t\t\t\t############CLEARENCE ALARM###########\r\n\r\nALARM NAME: \r\n\t\tRECTIFIER MINOR ALARM\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 14:55:25\r\nNE_name: \r\n\t\tSRAN\r\nAlarm_Number\r\n\t\t7103\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tSRAN_LWG_TDD_S_BH-6-OCTOBER_3273DE\r\nALARM_Device:\r\n\t\tMRBTS\r\nCONSEC_NBR: \r\n\t\t 2245584\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+      "office": "DS/Zagazig",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "1a12affc34298d37",
+      "subject": "CLEARED_S_D_N_RECTIFIER MINOR ALARM on #SRAN_LWG_TDD_S_BH-6-OCTOBER_3273DE# at |11-OCT-2026 15:23:07 |",
+      "receivedAt": "2026-10-11T12:46:01.000Z",
+      "body": "\t\t\t\t############CLEARENCE ALARM###########\r\n\r\nALARM NAME: \r\n\t\tRECTIFIER MINOR ALARM\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 15:23:07\r\nNE_name: \r\n\t\tSRAN\r\nAlarm_Number\r\n\t\t7103\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tSRAN_LWG_TDD_S_BH-6-OCTOBER_3273DE\r\nALARM_Device:\r\n\t\tMRBTS\r\nCONSEC_NBR: \r\n\t\t 2248772\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+      "office": "DS/Zagazig",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "1a12b360c7473d48",
+      "subject": "S_D_N_RECTIFIER MINOR ALARM on #SRAN_LWG_TDD_S_BH-6-OCTOBER_3273DE# at |11-OCT-2026 16:42:17 |",
+      "receivedAt": "2026-10-11T13:45:19.000Z",
+      "body": "\t\t\t\t############NEW ALARM###########\r\n\r\nALARM NAME: \r\n\t\tRECTIFIER MINOR ALARM\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 16:42:17\r\nNE_name: \r\n\t\tSRAN\r\nAlarm_Number\r\n\t\t7103\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tSRAN_LWG_TDD_S_BH-6-OCTOBER_3273DE\r\nALARM_Device:\r\n\t\tMRBTS\r\nCONSEC_NBR: \r\n\t\t 2262061\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+      "office": "DS/Zagazig",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "1a12b497cbae470b",
+      "subject": "CLEARED_S_D_N_RECTIFIER MINOR ALARM on #SRAN_LWG_TDD_S_BH-6-OCTOBER_3273DE# at |11-OCT-2026 16:42:17 |",
+      "receivedAt": "2026-10-11T14:06:33.000Z",
+      "body": "\t\t\t\t############CLEARENCE ALARM###########\r\n\r\nALARM NAME: \r\n\t\tRECTIFIER MINOR ALARM\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 16:42:17\r\nNE_name: \r\n\t\tSRAN\r\nAlarm_Number\r\n\t\t7103\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tSRAN_LWG_TDD_S_BH-6-OCTOBER_3273DE\r\nALARM_Device:\r\n\t\tMRBTS\r\nCONSEC_NBR: \r\n\t\t 2262061\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+      "office": "DS/Zagazig",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "1a12c11a91d2fc1e",
+      "subject": "S_D_N_RECTIFIER MINOR ALARM on #SRAN_LWG_TDD_S_BH-6-OCTOBER_3273DE# at |11-OCT-2026 20:37:27 |",
+      "receivedAt": "2026-10-11T17:45:10.000Z",
+      "body": "\t\t\t\t############NEW ALARM###########\r\n\r\nALARM NAME: \r\n\t\tRECTIFIER MINOR ALARM\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 20:37:27\r\nNE_name: \r\n\t\tSRAN\r\nAlarm_Number\r\n\t\t7103\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tSRAN_LWG_TDD_S_BH-6-OCTOBER_3273DE\r\nALARM_Device:\r\n\t\tMRBTS\r\nCONSEC_NBR: \r\n\t\t 2289497\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+      "office": "DS/Zagazig",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "1a12a6ca5dd9d21c",
+      "subject": "CLEARED_S_D_N_NE3SWS AGENT NOT RESPONDING TO REQUESTS on #SRAN_LWG_S_KS-KHALIJ-HUKS_3322DE# at |11-OCT-2026 09:36:55 |",
+      "receivedAt": "2026-10-11T10:05:22.000Z",
+      "body": "\t\t\t\t############CLEARENCE ALARM###########\r\n\r\nALARM NAME: \r\n\t\tNE3SWS AGENT NOT RESPONDING TO REQUESTS\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 09:36:55\r\nNE_name: \r\n\t\t\r\nAlarm_Number\r\n\t\t9047\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tSRAN_LWG_S_KS-KHALIJ-HUKS_3322DE\r\nALARM_Device:\r\n\t\tsite\r\nCONSEC_NBR: \r\n\t\t 1113622816\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+      "office": "DS/Zagazig",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "1a12a6e6803e511c",
+      "subject": "CLEARED_S_D_N_NE3SWS AGENT NOT RESPONDING TO REQUESTS on #SRAN_LWG_S_KS-KHALIJ-HUKS_3322DE# at |11-OCT-2026 09:44:54 |",
+      "receivedAt": "2026-10-11T10:07:16.000Z",
+      "body": "\t\t\t\t############CLEARENCE ALARM###########\r\n\r\nALARM NAME: \r\n\t\tNE3SWS AGENT NOT RESPONDING TO REQUESTS\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 09:44:54\r\nNE_name: \r\n\t\t\r\nAlarm_Number\r\n\t\t9047\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tSRAN_LWG_S_KS-KHALIJ-HUKS_3322DE\r\nALARM_Device:\r\n\t\tsite\r\nCONSEC_NBR: \r\n\t\t 2199993\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+      "office": "DS/Zagazig",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "1a12a910bf619bc5",
+      "subject": "S_D_N_NE3SWS AGENT NOT RESPONDING TO REQUESTS on #SRAN_LWG_S_KS-KHALIJ-HUKS_3322DE# at |11-OCT-2026 13:36:55 |",
+      "receivedAt": "2026-10-11T10:45:08.000Z",
+      "body": "\t\t\t\t############NEW ALARM###########\r\n\r\nALARM NAME: \r\n\t\tNE3SWS AGENT NOT RESPONDING TO REQUESTS\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 13:36:55\r\nNE_name: \r\n\t\t\r\nAlarm_Number\r\n\t\t9047\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tSRAN_LWG_S_KS-KHALIJ-HUKS_3322DE\r\nALARM_Device:\r\n\t\tsite\r\nCONSEC_NBR: \r\n\t\t 1113623577\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+      "office": "DS/Zagazig",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "1a12a91d61fa9f5e",
+      "subject": "S_D_N_NE3SWS AGENT NOT RESPONDING TO REQUESTS on #SRAN_LWG_S_KS-KHALIJ-HUKS_3322DE# at |11-OCT-2026 13:42:54 |",
+      "receivedAt": "2026-10-11T10:45:57.000Z",
+      "body": "\t\t\t\t############NEW ALARM###########\r\n\r\nALARM NAME: \r\n\t\tNE3SWS AGENT NOT RESPONDING TO REQUESTS\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 13:42:54\r\nNE_name: \r\n\t\t\r\nAlarm_Number\r\n\t\t9047\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tSRAN_LWG_S_KS-KHALIJ-HUKS_3322DE\r\nALARM_Device:\r\n\t\tsite\r\nCONSEC_NBR: \r\n\t\t 2234402\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+      "office": "DS/Zagazig",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "1a12ab72d602ba24",
+      "subject": "CLEARED_S_D_N_NE3SWS AGENT NOT RESPONDING TO REQUESTS on #SRAN_LWG_S_KS-KHALIJ-HUKS_3322DE# at |11-OCT-2026 13:42:54 |",
+      "receivedAt": "2026-10-11T11:26:42.000Z",
+      "body": "\t\t\t\t############CLEARENCE ALARM###########\r\n\r\nALARM NAME: \r\n\t\tNE3SWS AGENT NOT RESPONDING TO REQUESTS\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 13:42:54\r\nNE_name: \r\n\t\t\r\nAlarm_Number\r\n\t\t9047\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tSRAN_LWG_S_KS-KHALIJ-HUKS_3322DE\r\nALARM_Device:\r\n\t\tsite\r\nCONSEC_NBR: \r\n\t\t 2234402\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+      "office": "DS/Zagazig",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "1a12ab7ac62d2869",
+      "subject": "CLEARED_S_D_N_NE3SWS AGENT NOT RESPONDING TO REQUESTS on #SRAN_LWG_S_KS-KHALIJ-HUKS_3322DE# at |11-OCT-2026 13:36:55 |",
+      "receivedAt": "2026-10-11T11:25:18.000Z",
+      "body": "\t\t\t\t############CLEARENCE ALARM###########\r\n\r\nALARM NAME: \r\n\t\tNE3SWS AGENT NOT RESPONDING TO REQUESTS\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 13:36:55\r\nNE_name: \r\n\t\t\r\nAlarm_Number\r\n\t\t9047\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tSRAN_LWG_S_KS-KHALIJ-HUKS_3322DE\r\nALARM_Device:\r\n\t\tsite\r\nCONSEC_NBR: \r\n\t\t 1113623577\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+      "office": "DS/Zagazig",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "1a12b6ccd667965b",
+      "subject": "S_D_N_NE3SWS AGENT NOT RESPONDING TO REQUESTS on #SRAN_LWG_S_KS-KHALIJ-HUKS_3322DE# at |11-OCT-2026 17:36:55 |",
+      "receivedAt": "2026-10-11T14:45:08.000Z",
+      "body": "\t\t\t\t############NEW ALARM###########\r\n\r\nALARM NAME: \r\n\t\tNE3SWS AGENT NOT RESPONDING TO REQUESTS\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 17:36:55\r\nNE_name: \r\n\t\t\r\nAlarm_Number\r\n\t\t9047\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tSRAN_LWG_S_KS-KHALIJ-HUKS_3322DE\r\nALARM_Device:\r\n\t\tsite\r\nCONSEC_NBR: \r\n\t\t 1113624626\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+      "office": "DS/Zagazig",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "1a12b6d31da81295",
+      "subject": "S_D_N_NE3SWS AGENT NOT RESPONDING TO REQUESTS on #SRAN_LWG_S_KS-KHALIJ-HUKS_3322DE# at |11-OCT-2026 17:40:54 |",
+      "receivedAt": "2026-10-11T14:45:32.000Z",
+      "body": "\t\t\t\t############NEW ALARM###########\r\n\r\nALARM NAME: \r\n\t\tNE3SWS AGENT NOT RESPONDING TO REQUESTS\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 17:40:54\r\nNE_name: \r\n\t\t\r\nAlarm_Number\r\n\t\t9047\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tSRAN_LWG_S_KS-KHALIJ-HUKS_3322DE\r\nALARM_Device:\r\n\t\tsite\r\nCONSEC_NBR: \r\n\t\t 2270682\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+      "office": "DS/Zagazig",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "1a12b9173d665af6",
+      "subject": "CLEARED_S_D_N_NE3SWS AGENT NOT RESPONDING TO REQUESTS on #SRAN_LWG_S_KS-KHALIJ-HUKS_3322DE# at |11-OCT-2026 17:36:55 |",
+      "receivedAt": "2026-10-11T15:25:12.000Z",
+      "body": "\t\t\t\t############CLEARENCE ALARM###########\r\n\r\nALARM NAME: \r\n\t\tNE3SWS AGENT NOT RESPONDING TO REQUESTS\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 17:36:55\r\nNE_name: \r\n\t\t\r\nAlarm_Number\r\n\t\t9047\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tSRAN_LWG_S_KS-KHALIJ-HUKS_3322DE\r\nALARM_Device:\r\n\t\tsite\r\nCONSEC_NBR: \r\n\t\t 1113624626\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+      "office": "DS/Zagazig",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "1a12b93a6bffdb7b",
+      "subject": "CLEARED_S_D_N_NE3SWS AGENT NOT RESPONDING TO REQUESTS on #SRAN_LWG_S_KS-KHALIJ-HUKS_3322DE# at |11-OCT-2026 17:40:54 |",
+      "receivedAt": "2026-10-11T15:25:49.000Z",
+      "body": "\t\t\t\t############CLEARENCE ALARM###########\r\n\r\nALARM NAME: \r\n\t\tNE3SWS AGENT NOT RESPONDING TO REQUESTS\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 17:40:54\r\nNE_name: \r\n\t\t\r\nAlarm_Number\r\n\t\t9047\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tSRAN_LWG_S_KS-KHALIJ-HUKS_3322DE\r\nALARM_Device:\r\n\t\tsite\r\nCONSEC_NBR: \r\n\t\t 2270682\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+      "office": "DS/Zagazig",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "1a12a5c1db9c69d4",
+      "subject": "CLEARED_S_D_N_WCDMA BASE STATION OUT OF USE on #U_S_KS-KHALIJ-HUKS_3322DE# at |11-OCT-2026 09:34:35 |",
+      "receivedAt": "2026-10-11T09:47:16.000Z",
+      "body": "\t\t\t\t############CLEARENCE ALARM###########\r\n\r\nALARM NAME: \r\n\t\tWCDMA BASE STATION OUT OF USE\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 09:34:35\r\nNE_name: \r\n\t\tRNC66\r\nAlarm_Number\r\n\t\t7786\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tU_S_KS-KHALIJ-HUKS_3322DE\r\nALARM_Device:\r\n\t\tsite\r\nCONSEC_NBR: \r\n\t\t 2198420\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+      "office": "DS/Zagazig",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "1a12a91d2c63f2d6",
+      "subject": "S_D_N_WCDMA BASE STATION OUT OF USE on #U_S_KS-KHALIJ-HUKS_3322DE# at |11-OCT-2026 13:36:34 |",
+      "receivedAt": "2026-10-11T10:45:53.000Z",
+      "body": "\t\t\t\t############NEW ALARM###########\r\n\r\nALARM NAME: \r\n\t\tWCDMA BASE STATION OUT OF USE\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 13:36:34\r\nNE_name: \r\n\t\tRNC66\r\nAlarm_Number\r\n\t\t7786\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tU_S_KS-KHALIJ-HUKS_3322DE\r\nALARM_Device:\r\n\t\tsite\r\nCONSEC_NBR: \r\n\t\t 2233733\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+      "office": "DS/Zagazig",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "1a12aa4873d99a53",
+      "subject": "CLEARED_S_D_N_WCDMA BASE STATION OUT OF USE on #U_S_KS-KHALIJ-HUKS_3322DE# at |11-OCT-2026 13:36:34 |",
+      "receivedAt": "2026-10-11T11:06:22.000Z",
+      "body": "\t\t\t\t############CLEARENCE ALARM###########\r\n\r\nALARM NAME: \r\n\t\tWCDMA BASE STATION OUT OF USE\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 13:36:34\r\nNE_name: \r\n\t\tRNC66\r\nAlarm_Number\r\n\t\t7786\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tU_S_KS-KHALIJ-HUKS_3322DE\r\nALARM_Device:\r\n\t\tsite\r\nCONSEC_NBR: \r\n\t\t 2233733\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+      "office": "DS/Zagazig",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "1a12b6d2512ebe6a",
+      "subject": "S_D_N_WCDMA BASE STATION OUT OF USE on #U_S_KS-KHALIJ-HUKS_3322DE# at |11-OCT-2026 17:35:10 |",
+      "receivedAt": "2026-10-11T14:45:29.000Z",
+      "body": "\t\t\t\t############NEW ALARM###########\r\n\r\nALARM NAME: \r\n\t\tWCDMA BASE STATION OUT OF USE\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 17:35:10\r\nNE_name: \r\n\t\tRNC66\r\nAlarm_Number\r\n\t\t7786\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tU_S_KS-KHALIJ-HUKS_3322DE\r\nALARM_Device:\r\n\t\tsite\r\nCONSEC_NBR: \r\n\t\t 2269765\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+      "office": "DS/Zagazig",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "1a12b802955eae20",
+      "subject": "CLEARED_S_D_N_WCDMA BASE STATION OUT OF USE on #U_S_KS-KHALIJ-HUKS_3322DE# at |11-OCT-2026 17:35:10 |",
+      "receivedAt": "2026-10-11T15:06:16.000Z",
+      "body": "\t\t\t\t############CLEARENCE ALARM###########\r\n\r\nALARM NAME: \r\n\t\tWCDMA BASE STATION OUT OF USE\r\nALARM_START_TIME: \r\n\t\t11-OCT-2026 17:35:10\r\nNE_name: \r\n\t\tRNC66\r\nAlarm_Number\r\n\t\t7786\r\nMR_of_Controled_NE: \r\n\t\tNO\r\nMR_of_Site:\r\n\t\tSYS_DELTA_NORTH\r\nALARM_SITE:\r\n\t\tU_S_KS-KHALIJ-HUKS_3322DE\r\nALARM_Device:\r\n\t\tsite\r\nCONSEC_NBR: \r\n\t\t 2269765\r\n\r\nTHANKS FOR USING THIS TOOL\r\n\r\nREGARGDS\r\nD.S\r\n\r\n",
+      "office": "DS/Zagazig",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "s011",
+      "subject": "S_D_N_SHELTER DOO on #SRAN_LWG_TDNR_S_GH-TANTA-UNV2_4392DE# at |11-OCT-2026 16:00:52 |",
+      "receivedAt": "2026-10-11T13:05:22.000Z",
+      "body": null,
+      "office": "DN/Kafr ElDawar",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "s190",
+      "subject": "CLEARED_S_D_N_SHELTER DOO on #SRAN_LWG_TDNR_S_GH-TANTA-UNV2_4392DE# at |11-OCT-2026 16:00:52 |",
+      "receivedAt": "2026-10-11T13:25:59.000Z",
+      "body": null,
+      "office": "DN/Kafr ElDawar",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "s271",
+      "subject": "S_D_N_FENCE GATE on #SRAN_LWG_TDD_G_BH-UMB-BH_3926DE# at |11-OCT-2026 16:28:15 |",
+      "receivedAt": "2026-10-11T13:45:16.000Z",
+      "body": null,
+      "office": "DN/Kafr ElDawar",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "s221",
+      "subject": "CLEARED_S_D_N_NE3S-WS Registration failed on #SRAN_LWG_D_QL-MSAKN-ZABAL_3230DE# at |24-SEP-2026 02:03:33 |",
+      "receivedAt": "2026-10-11T13:26:18.000Z",
+      "body": null,
+      "office": "DN/Kafr ElDawar",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "s001",
+      "subject": "S_D_N_FIRE ALARM;Default System Time on #SRAN_LWG_TDD_G_SK-ADLIYA_3458DE# at |11-OCT-2026 16:02:39 |",
+      "receivedAt": "2026-10-11T13:05:14.000Z",
+      "body": null,
+      "office": "DN/Kafr ElDawar",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "s049",
+      "subject": "CLEARED_S_D_N_FIRE ALARM on #SRAN_LWG_TDD_G_SK-ADLIYA_3458DE# at |11-OCT-2026 15:40:43 |",
+      "receivedAt": "2026-10-11T13:05:55.000Z",
+      "body": null,
+      "office": "DN/Kafr ElDawar",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "s146",
+      "subject": "S_D_N_FIRE ALARM on #SRAN_LWG_TDD_G_SK-ADLIYA_3458DE# at |11-OCT-2026 16:08:25 |",
+      "receivedAt": "2026-10-11T13:25:12.000Z",
+      "body": null,
+      "office": "DN/Kafr ElDawar",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "s183",
+      "subject": "CLEARED_S_D_N_FIRE ALARM;Default System Time on #SRAN_LWG_TDD_G_SK-ADLIYA_3458DE# at |11-OCT-2026 16:02:39 |",
+      "receivedAt": "2026-10-11T13:25:51.000Z",
+      "body": null,
+      "office": "DN/Kafr ElDawar",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "s009",
+      "subject": "S_D_N_AIR CONDITION FAULT on #SRAN_LWG_TDNR_G_SK-MNSHYT-ABSA_0680DE# at |11-OCT-2026 15:52:56 |",
+      "receivedAt": "2026-10-11T13:05:21.000Z",
+      "body": null,
+      "office": "DN/Kafr ElDawar",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "s059",
+      "subject": "CLEARED_S_D_N_AIR CONDITION FAULT on #SRAN_LWG_TDNR_G_SK-MNSHYT-ABSA_0680DE# at |11-OCT-2026 15:36:46 |",
+      "receivedAt": "2026-10-11T13:06:03.000Z",
+      "body": null,
+      "office": "DN/Kafr ElDawar",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "s188",
+      "subject": "CLEARED_S_D_N_AIR CONDITION FAULT on #SRAN_LWG_TDNR_G_SK-MNSHYT-ABSA_0680DE# at |11-OCT-2026 15:52:56 |",
+      "receivedAt": "2026-10-11T13:25:58.000Z",
+      "body": null,
+      "office": "DN/Kafr ElDawar",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "s015",
+      "subject": "S_D_N_BCCH MISSING on #2521_D_DK-MARKAZYA_3373DE# at |11-OCT-2026 16:01:59 |",
+      "receivedAt": "2026-10-11T13:05:26.000Z",
+      "body": null,
+      "office": "DN/Kafr ElDawar",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "s016",
+      "subject": "S_D_N_BCCH MISSING on #2521_D_DK-MARKAZYA_3373DE# at |11-OCT-2026 16:01:59 |",
+      "receivedAt": "2026-10-11T13:05:26.000Z",
+      "body": null,
+      "office": "DN/Kafr ElDawar",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "s017",
+      "subject": "S_D_N_BCCH MISSING on #2521_D_DK-MARKAZYA_3373DE# at |11-OCT-2026 16:01:58 |",
+      "receivedAt": "2026-10-11T13:05:27.000Z",
+      "body": null,
+      "office": "DN/Kafr ElDawar",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "s200",
+      "subject": "CLEARED_S_D_N_BCCH MISSING on #2521_D_DK-MARKAZYA_3373DE# at |11-OCT-2026 16:01:59 |",
+      "receivedAt": "2026-10-11T13:26:07.000Z",
+      "body": null,
+      "office": "DN/Kafr ElDawar",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "s201",
+      "subject": "CLEARED_S_D_N_BCCH MISSING on #2521_D_DK-MARKAZYA_3373DE# at |11-OCT-2026 16:01:59 |",
+      "receivedAt": "2026-10-11T13:26:08.000Z",
+      "body": null,
+      "office": "DN/Kafr ElDawar",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "s202",
+      "subject": "CLEARED_S_D_N_BCCH MISSING on #2521_D_DK-MARKAZYA_3373DE# at |11-OCT-2026 16:01:58 |",
+      "receivedAt": "2026-10-11T13:26:08.000Z",
+      "body": null,
+      "office": "DN/Kafr ElDawar",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "s020",
+      "subject": "S_D_N_BCCH MISSING on #3531_S_KS-SHARAQA_3961DE# at |11-OCT-2026 16:01:58 |",
+      "receivedAt": "2026-10-11T13:05:35.000Z",
+      "body": null,
+      "office": "DN/Kafr ElDawar",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "s021",
+      "subject": "S_D_N_BCCH MISSING on #3531_S_KS-SHARAQA_3961DE# at |11-OCT-2026 16:01:59 |",
+      "receivedAt": "2026-10-11T13:05:35.000Z",
+      "body": null,
+      "office": "DN/Kafr ElDawar",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "s022",
+      "subject": "S_D_N_BCCH MISSING on #3531_S_KS-SHARAQA_3961DE# at |11-OCT-2026 16:01:59 |",
+      "receivedAt": "2026-10-11T13:05:36.000Z",
+      "body": null,
+      "office": "DN/Kafr ElDawar",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "s023",
+      "subject": "S_D_N_BCCH MISSING on #3531_S_KS-SHARAQA_3961DE# at |11-OCT-2026 16:01:59 |",
+      "receivedAt": "2026-10-11T13:05:36.000Z",
+      "body": null,
+      "office": "DN/Kafr ElDawar",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "s205",
+      "subject": "CLEARED_S_D_N_BCCH MISSING on #3531_S_KS-SHARAQA_3961DE# at |11-OCT-2026 16:01:58 |",
+      "receivedAt": "2026-10-11T13:26:10.000Z",
+      "body": null,
+      "office": "DN/Kafr ElDawar",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "s206",
+      "subject": "CLEARED_S_D_N_BCCH MISSING on #3531_S_KS-SHARAQA_3961DE# at |11-OCT-2026 16:01:59 |",
+      "receivedAt": "2026-10-11T13:26:10.000Z",
+      "body": null,
+      "office": "DN/Kafr ElDawar",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "s207",
+      "subject": "CLEARED_S_D_N_BCCH MISSING on #3531_S_KS-SHARAQA_3961DE# at |11-OCT-2026 16:01:59 |",
+      "receivedAt": "2026-10-11T13:26:11.000Z",
+      "body": null,
+      "office": "DN/Kafr ElDawar",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "s208",
+      "subject": "CLEARED_S_D_N_BCCH MISSING on #3531_S_KS-SHARAQA_3961DE# at |11-OCT-2026 16:01:59 |",
+      "receivedAt": "2026-10-11T13:26:11.000Z",
+      "body": null,
+      "office": "DN/Kafr ElDawar",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "s018",
+      "subject": "S_D_N_BCCH MISSING on #0301_S_SK-ADLIYA_3458DE# at |11-OCT-2026 16:00:30 |",
+      "receivedAt": "2026-10-11T13:05:30.000Z",
+      "body": null,
+      "office": "DN/Kafr ElDawar",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "s019",
+      "subject": "S_D_N_BCCH MISSING on #0301_S_SK-ADLIYA_3458DE# at |11-OCT-2026 16:01:10 |",
+      "receivedAt": "2026-10-11T13:05:31.000Z",
+      "body": null,
+      "office": "DN/Kafr ElDawar",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "s203",
+      "subject": "CLEARED_S_D_N_BCCH MISSING on #0301_S_SK-ADLIYA_3458DE# at |11-OCT-2026 16:01:10 |",
+      "receivedAt": "2026-10-11T13:26:09.000Z",
+      "body": null,
+      "office": "DN/Kafr ElDawar",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "s204",
+      "subject": "CLEARED_S_D_N_BCCH MISSING on #0301_S_SK-ADLIYA_3458DE# at |11-OCT-2026 16:00:30 |",
+      "receivedAt": "2026-10-11T13:26:09.000Z",
+      "body": null,
+      "office": "DN/Kafr ElDawar",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "s024",
+      "subject": "S_D_N_BCCH MISSING on #1731_D_BH-SHOBRA-RIS_4360DE# at |11-OCT-2026 15:51:00 |",
+      "receivedAt": "2026-10-11T13:05:37.000Z",
+      "body": null,
+      "office": "DN/Kafr ElDawar",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "s025",
+      "subject": "S_D_N_BCCH MISSING on #1731_D_BH-SHOBRA-RIS_4360DE# at |11-OCT-2026 15:51:00 |",
+      "receivedAt": "2026-10-11T13:05:37.000Z",
+      "body": null,
+      "office": "DN/Kafr ElDawar",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "s028",
+      "subject": "S_D_N_BCCH MISSING on #1731_D_BH-SHOBRA-RIS_4360DE# at |11-OCT-2026 15:51:00 |",
+      "receivedAt": "2026-10-11T13:05:38.000Z",
+      "body": null,
+      "office": "DN/Kafr ElDawar",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "s211",
+      "subject": "CLEARED_S_D_N_BCCH MISSING on #1731_D_BH-SHOBRA-RIS_4360DE# at |11-OCT-2026 15:51:00 |",
+      "receivedAt": "2026-10-11T13:26:12.000Z",
+      "body": null,
+      "office": "DN/Kafr ElDawar",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "s212",
+      "subject": "CLEARED_S_D_N_BCCH MISSING on #1731_D_BH-SHOBRA-RIS_4360DE# at |11-OCT-2026 15:51:00 |",
+      "receivedAt": "2026-10-11T13:26:12.000Z",
+      "body": null,
+      "office": "DN/Kafr ElDawar",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "s214",
+      "subject": "CLEARED_S_D_N_BCCH MISSING on #1731_D_BH-SHOBRA-RIS_4360DE# at |11-OCT-2026 15:51:00 |",
+      "receivedAt": "2026-10-11T13:26:13.000Z",
+      "body": null,
+      "office": "DN/Kafr ElDawar",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "s005",
+      "subject": "S_D_N_RECTIFIER MINOR ALARM on #SRAN_LWG_TDD_S_BH-OASIS-RD-2_4319DE# at |11-OCT-2026 15:47:32 |",
+      "receivedAt": "2026-10-11T13:05:16.000Z",
+      "body": null,
+      "office": "DN/Kafr ElDawar",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "s055",
+      "subject": "CLEARED_S_D_N_RECTIFIER MINOR ALARM on #SRAN_LWG_TDD_S_BH-OASIS-RD-2_4319DE# at |10-OCT-2026 03:20:58 |",
+      "receivedAt": "2026-10-11T13:05:59.000Z",
+      "body": null,
+      "office": "DN/Kafr ElDawar",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "s012",
+      "subject": "S_D_N_BTS O&M LINK FAILURE on #3531_S_KS-SHARAQA_3961DE# at |11-OCT-2026 16:01:08 |",
+      "receivedAt": "2026-10-11T13:05:24.000Z",
+      "body": null,
+      "office": "DN/Kafr ElDawar",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "s013",
+      "subject": "S_D_N_BTS O&M LINK FAILURE on #2521_D_DK-MARKAZYA_3373DE# at |11-OCT-2026 16:01:08 |",
+      "receivedAt": "2026-10-11T13:05:24.000Z",
+      "body": null,
+      "office": "DN/Kafr ElDawar",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "s194",
+      "subject": "CLEARED_S_D_N_BTS O&M LINK FAILURE on #3531_S_KS-SHARAQA_3961DE# at |11-OCT-2026 16:01:08 |",
+      "receivedAt": "2026-10-11T13:26:02.000Z",
+      "body": null,
+      "office": "DN/Kafr ElDawar",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "s195",
+      "subject": "CLEARED_S_D_N_BTS O&M LINK FAILURE on #2521_D_DK-MARKAZYA_3373DE# at |11-OCT-2026 16:01:08 |",
+      "receivedAt": "2026-10-11T13:26:02.000Z",
+      "body": null,
+      "office": "DN/Kafr ElDawar",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "s043",
+      "subject": "CLEARED_S_D_N_FIRE ALARM on #SRAN_LWG_S_MF-MNUF-MAWKEF_0981DE# at |11-OCT-2026 15:41:53 |",
+      "receivedAt": "2026-10-11T13:05:52.000Z",
+      "body": null,
+      "office": "DN/Kafr ElDawar",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "s139",
+      "subject": "S_D_N_FIRE ALARM on #SRAN_LWG_S_MF-MNUF-MAWKEF_0981DE# at |11-OCT-2026 16:17:31 |",
+      "receivedAt": "2026-10-11T13:25:09.000Z",
+      "body": null,
+      "office": "DN/Kafr ElDawar",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "s063",
+      "subject": "CLEARED_D_S_BCCH MISSING on #0111_S_QL-KFR-ARAB_3891DE# at |11-OCT-2026 15:40:26 |",
+      "receivedAt": "2026-10-11T13:06:11.000Z",
+      "body": null,
+      "office": "DN/Kafr ElDawar",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "s064",
+      "subject": "CLEARED_D_S_BCCH MISSING on #0111_S_QL-KFR-ARAB_3891DE# at |11-OCT-2026 15:40:35 |",
+      "receivedAt": "2026-10-11T13:06:12.000Z",
+      "body": null,
+      "office": "DN/Kafr ElDawar",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "s065",
+      "subject": "CLEARED_D_S_BCCH MISSING on #0111_S_QL-KFR-ARAB_3891DE# at |11-OCT-2026 15:40:59 |",
+      "receivedAt": "2026-10-11T13:06:13.000Z",
+      "body": null,
+      "office": "DN/Kafr ElDawar",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "s066",
+      "subject": "CLEARED_D_S_BCCH MISSING on #0111_S_QL-KFR-ARAB_3891DE# at |11-OCT-2026 15:40:50 |",
+      "receivedAt": "2026-10-11T13:06:13.000Z",
+      "body": null,
+      "office": "DN/Kafr ElDawar",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "s164",
+      "subject": "S_D_N_BCCH MISSING on #2611_D_KS-ABTU_3703DE# at |11-OCT-2026 16:17:51 |",
+      "receivedAt": "2026-10-11T13:25:32.000Z",
+      "body": null,
+      "office": "DN/Kafr ElDawar",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "s165",
+      "subject": "S_D_N_BCCH MISSING on #2611_D_KS-ABTU_3703DE# at |11-OCT-2026 16:17:52 |",
+      "receivedAt": "2026-10-11T13:25:33.000Z",
+      "body": null,
+      "office": "DN/Kafr ElDawar",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "s166",
+      "subject": "S_D_N_BCCH MISSING on #2611_D_KS-ABTU_3703DE# at |11-OCT-2026 16:17:51 |",
+      "receivedAt": "2026-10-11T13:25:33.000Z",
+      "body": null,
+      "office": "DN/Kafr ElDawar",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "s039",
+      "subject": "S_D_N_NE3SWS AGENT NOT RESPONDING TO REQUESTS on #SRAN_LWG_S_SK-TUKH-QARMUS_0665DE# at |11-OCT-2026 15:55:39 |",
+      "receivedAt": "2026-10-11T13:05:45.000Z",
+      "body": null,
+      "office": "DN/Kafr ElDawar",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "s144",
+      "subject": "CLEARED_S_D_N_NE3SWS AGENT NOT RESPONDING TO REQUESTS on #SRAN_LWG_S_SK-TUKH-QARMUS_0665DE# at |11-OCT-2026 15:50:40 |",
+      "receivedAt": "2026-10-11T13:25:11.000Z",
+      "body": null,
+      "office": "DN/Kafr ElDawar",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "s257",
+      "subject": "S_D_N_NE3SWS AGENT NOT RESPONDING TO REQUESTS on #SRAN_LWG_S_SK-TUKH-QARMUS_0665DE# at |11-OCT-2026 16:35:40 |",
+      "receivedAt": "2026-10-11T13:45:09.000Z",
+      "body": null,
+      "office": "DN/Kafr ElDawar",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "s040",
+      "subject": "CLEARED_S_D_N_FENCE GATE ALARM on #SRAN_LWG_D_BH-SHOBRA-RIS_4360DE# at |30-SEP-2026 14:50:39 |",
+      "receivedAt": "2026-10-11T13:05:48.000Z",
+      "body": null,
+      "office": "DN/Kafr ElDawar",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "s136",
+      "subject": "S_D_N_FENCE GATE ALARM on #SRAN_LWG_D_BH-SHOBRA-RIS_4360DE# at |11-OCT-2026 16:05:14 |",
+      "receivedAt": "2026-10-11T13:25:06.000Z",
+      "body": null,
+      "office": "DN/Kafr ElDawar",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "s172",
+      "subject": "CLEARED_S_D_N_FENCE GATE ALARM;Default System Time on #SRAN_LWG_D_BH-SHOBRA-RIS_4360DE# at |11-OCT-2026 15:58:05 |",
+      "receivedAt": "2026-10-11T13:25:43.000Z",
+      "body": null,
+      "office": "DN/Kafr ElDawar",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "s292",
+      "subject": "D_S_BCCH MISSING on #2421_O_MF-HK-FRAWNYH_0G01DE# at |11-OCT-2026 16:40:06 |",
+      "receivedAt": "2026-10-11T13:45:45.000Z",
+      "body": null,
+      "office": "DN/Kafr ElDawar",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "s293",
+      "subject": "D_S_BCCH MISSING on #2421_O_MF-HK-FRAWNYH_0G01DE# at |11-OCT-2026 16:40:08 |",
+      "receivedAt": "2026-10-11T13:45:46.000Z",
+      "body": null,
+      "office": "DN/Kafr ElDawar",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "1a12b49a56ded6dd",
+      "subject": "Nokia (Down & Environmental) Alarms Update Report",
+      "receivedAt": "2026-10-11T14:06:36.000Z",
+      "body": null,
+      "office": "DN/Kafr ElDawar",
+      "parseError": "unrecognised subject format",
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "s071",
+      "subject": "Huawei Alram Notify New alarm: October-RNC33/UMTS Cell Max DL Power Mismatch/Major",
+      "receivedAt": "2026-10-11T13:09:07.000Z",
+      "body": null,
+      "office": "DN/Kafr ElDawar",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    },
+    {
+      "gmailId": "s072",
+      "subject": "Huawei Alram Notify New alarm: October-RNC33/UMTS Cell Max DL Power Mismatch/Major",
+      "receivedAt": "2026-10-11T13:09:07.000Z",
+      "body": null,
+      "office": "DN/Kafr ElDawar",
+      "parseError": null,
+      "processedAt": "2026-10-11T19:00:00.000Z"
+    }
+  ],
+  "orphanClears": [
+    {
+      "alarmKey": "S_D_N_SHELTER DOOR ALARM||SRAN_LWG_TDD_V_BH-KFDW-BOLES_3207DE",
+      "subject": "CLEARED_S_D_N_SHELTER DOOR ALARM on #SRAN_LWG_TDD_V_BH-KFDW-BOLES_3207DE# at |09-OCT-2026 06:51:11 |",
+      "clearTime": "2026-10-11T08:06:02.000Z",
+      "consecNbr": "1885351",
+      "office": "DS/Zagazig",
+      "gmailId": "1a129ff6ccdf71fd"
+    },
+    {
+      "alarmKey": "S_D_N_RECTIFIER MINOR ALARM||SRAN_LG_TDD_E_BH-WASTANIYA_3804DE",
+      "subject": "CLEARED_S_D_N_RECTIFIER MINOR ALARM on #SRAN_LG_TDD_E_BH-WASTANIYA_3804DE# at |09-OCT-2026 19:29:17 |",
+      "clearTime": "2026-10-11T09:25:49.000Z",
+      "consecNbr": "1981512",
+      "office": "DS/Zagazig",
+      "gmailId": "1a12a487a6ff7ccf"
+    },
+    {
+      "alarmKey": "S_D_N_WCDMA BASE STATION OUT OF USE||U_S_BH-HORRIA_3928DE",
+      "subject": "CLEARED_S_D_N_WCDMA BASE STATION OUT OF USE on #U_S_BH-HORRIA_3928DE# at |11-OCT-2026 10:18:41 |",
+      "clearTime": "2026-10-11T08:46:59.000Z",
+      "consecNbr": "2204165",
+      "office": "DS/Zagazig",
+      "gmailId": "1a12a24ed0e6e561"
+    },
+    {
+      "alarmKey": "S_D_N_NE3SWS AGENT NOT RESPONDING TO REQUESTS||SRAN_LWG_S_KS-KHALIJ-HUKS_3322DE",
+      "subject": "CLEARED_S_D_N_NE3SWS AGENT NOT RESPONDING TO REQUESTS on #SRAN_LWG_S_KS-KHALIJ-HUKS_3322DE# at |11-OCT-2026 09:36:55 |",
+      "clearTime": "2026-10-11T10:05:22.000Z",
+      "consecNbr": "1113622816",
+      "office": "DS/Zagazig",
+      "gmailId": "1a12a6ca5dd9d21c"
+    },
+    {
+      "alarmKey": "S_D_N_NE3SWS AGENT NOT RESPONDING TO REQUESTS||SRAN_LWG_S_KS-KHALIJ-HUKS_3322DE",
+      "subject": "CLEARED_S_D_N_NE3SWS AGENT NOT RESPONDING TO REQUESTS on #SRAN_LWG_S_KS-KHALIJ-HUKS_3322DE# at |11-OCT-2026 09:44:54 |",
+      "clearTime": "2026-10-11T10:07:16.000Z",
+      "consecNbr": "2199993",
+      "office": "DS/Zagazig",
+      "gmailId": "1a12a6e6803e511c"
+    },
+    {
+      "alarmKey": "S_D_N_WCDMA BASE STATION OUT OF USE||U_S_KS-KHALIJ-HUKS_3322DE",
+      "subject": "CLEARED_S_D_N_WCDMA BASE STATION OUT OF USE on #U_S_KS-KHALIJ-HUKS_3322DE# at |11-OCT-2026 09:34:35 |",
+      "clearTime": "2026-10-11T09:47:16.000Z",
+      "consecNbr": "2198420",
+      "office": "DS/Zagazig",
+      "gmailId": "1a12a5c1db9c69d4"
+    },
+    {
+      "alarmKey": "S_D_N_NE3S-WS Registration failed||SRAN_LWG_D_QL-MSAKN-ZABAL_3230DE",
+      "subject": "CLEARED_S_D_N_NE3S-WS Registration failed on #SRAN_LWG_D_QL-MSAKN-ZABAL_3230DE# at |24-SEP-2026 02:03:33 |",
+      "clearTime": "2026-10-11T13:26:18.000Z",
+      "consecNbr": null,
+      "office": "DN/Kafr ElDawar",
+      "gmailId": "s221"
+    },
+    {
+      "alarmKey": "S_D_N_FIRE ALARM||SRAN_LWG_TDD_G_SK-ADLIYA_3458DE",
+      "subject": "CLEARED_S_D_N_FIRE ALARM on #SRAN_LWG_TDD_G_SK-ADLIYA_3458DE# at |11-OCT-2026 15:40:43 |",
+      "clearTime": "2026-10-11T13:05:55.000Z",
+      "consecNbr": null,
+      "office": "DN/Kafr ElDawar",
+      "gmailId": "s049"
+    },
+    {
+      "alarmKey": "S_D_N_RECTIFIER MINOR ALARM||SRAN_LWG_TDD_S_BH-OASIS-RD-2_4319DE",
+      "subject": "CLEARED_S_D_N_RECTIFIER MINOR ALARM on #SRAN_LWG_TDD_S_BH-OASIS-RD-2_4319DE# at |10-OCT-2026 03:20:58 |",
+      "clearTime": "2026-10-11T13:05:59.000Z",
+      "consecNbr": null,
+      "office": "DN/Kafr ElDawar",
+      "gmailId": "s055"
+    },
+    {
+      "alarmKey": "S_D_N_FIRE ALARM||SRAN_LWG_S_MF-MNUF-MAWKEF_0981DE",
+      "subject": "CLEARED_S_D_N_FIRE ALARM on #SRAN_LWG_S_MF-MNUF-MAWKEF_0981DE# at |11-OCT-2026 15:41:53 |",
+      "clearTime": "2026-10-11T13:05:52.000Z",
+      "consecNbr": null,
+      "office": "DN/Kafr ElDawar",
+      "gmailId": "s043"
+    },
+    {
+      "alarmKey": "D_S_BCCH MISSING||0111_S_QL-KFR-ARAB_3891DE",
+      "subject": "CLEARED_D_S_BCCH MISSING on #0111_S_QL-KFR-ARAB_3891DE# at |11-OCT-2026 15:40:26 |",
+      "clearTime": "2026-10-11T13:06:11.000Z",
+      "consecNbr": null,
+      "office": "DN/Kafr ElDawar",
+      "gmailId": "s063"
+    },
+    {
+      "alarmKey": "D_S_BCCH MISSING||0111_S_QL-KFR-ARAB_3891DE",
+      "subject": "CLEARED_D_S_BCCH MISSING on #0111_S_QL-KFR-ARAB_3891DE# at |11-OCT-2026 15:40:35 |",
+      "clearTime": "2026-10-11T13:06:12.000Z",
+      "consecNbr": null,
+      "office": "DN/Kafr ElDawar",
+      "gmailId": "s064"
+    },
+    {
+      "alarmKey": "D_S_BCCH MISSING||0111_S_QL-KFR-ARAB_3891DE",
+      "subject": "CLEARED_D_S_BCCH MISSING on #0111_S_QL-KFR-ARAB_3891DE# at |11-OCT-2026 15:40:50 |",
+      "clearTime": "2026-10-11T13:06:13.000Z",
+      "consecNbr": null,
+      "office": "DN/Kafr ElDawar",
+      "gmailId": "s066"
+    },
+    {
+      "alarmKey": "D_S_BCCH MISSING||0111_S_QL-KFR-ARAB_3891DE",
+      "subject": "CLEARED_D_S_BCCH MISSING on #0111_S_QL-KFR-ARAB_3891DE# at |11-OCT-2026 15:40:59 |",
+      "clearTime": "2026-10-11T13:06:13.000Z",
+      "consecNbr": null,
+      "office": "DN/Kafr ElDawar",
+      "gmailId": "s065"
+    },
+    {
+      "alarmKey": "S_D_N_FENCE GATE ALARM||SRAN_LWG_D_BH-SHOBRA-RIS_4360DE",
+      "subject": "CLEARED_S_D_N_FENCE GATE ALARM on #SRAN_LWG_D_BH-SHOBRA-RIS_4360DE# at |30-SEP-2026 14:50:39 |",
+      "clearTime": "2026-10-11T13:05:48.000Z",
+      "consecNbr": null,
+      "office": "DN/Kafr ElDawar",
+      "gmailId": "s040"
+    },
+    {
+      "alarmKey": "S_D_N_FENCE GATE ALARM||SRAN_LWG_D_BH-SHOBRA-RIS_4360DE",
+      "subject": "CLEARED_S_D_N_FENCE GATE ALARM;Default System Time on #SRAN_LWG_D_BH-SHOBRA-RIS_4360DE# at |11-OCT-2026 15:58:05 |",
+      "clearTime": "2026-10-11T13:25:43.000Z",
+      "consecNbr": null,
+      "office": "DN/Kafr ElDawar",
+      "gmailId": "s172"
+    }
+  ]
+}

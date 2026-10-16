@@ -1,0 +1,232 @@
+{
+  "now": "2026-10-11T19:00:00.000Z",
+  "alertHours": 4,
+  "summary": [
+    {
+      "office": "DN/Kafr ElDawar",
+      "hidden": {},
+      "expected": {
+        "office": "DN/Kafr ElDawar",
+        "active": {
+          "DOWN": 0,
+          "POWER": 1,
+          "OTHER": 7
+        },
+        "overdue": 8,
+        "mttrMinutes": {
+          "DOWN": 25.0,
+          "POWER": null,
+          "OTHER": 24.875
+        },
+        "last24h": {
+          "cleared": 15,
+          "orphanClears": 10,
+          "parseErrors": 1
+        }
+      }
+    },
+    {
+      "office": "DS/Zagazig",
+      "hidden": {},
+      "expected": {
+        "office": "DS/Zagazig",
+        "active": {
+          "DOWN": 0,
+          "POWER": 2,
+          "OTHER": 2
+        },
+        "overdue": 0,
+        "mttrMinutes": {
+          "DOWN": null,
+          "POWER": 29.4,
+          "OTHER": 67.15384615384616
+        },
+        "last24h": {
+          "cleared": 18,
+          "orphanClears": 6,
+          "parseErrors": 0
+        }
+      }
+    },
+    {
+      "office": "DN/Kafr ElDawar",
+      "hidden": {
+        "categories": [
+          "POWER"
+        ],
+        "alarmNames": [
+          "S_D_N_FIRE ALARM"
+        ]
+      },
+      "expected": {
+        "office": "DN/Kafr ElDawar",
+        "active": {
+          "DOWN": 0,
+          "POWER": 0,
+          "OTHER": 5
+        },
+        "overdue": 5,
+        "mttrMinutes": {
+          "DOWN": 25.0,
+          "POWER": null,
+          "OTHER": 25.142857142857142
+        },
+        "last24h": {
+          "cleared": 14,
+          "orphanClears": 10,
+          "parseErrors": 1
+        }
+      }
+    }
+  ],
+  "daily": [
+    {
+      "office": "DN/Kafr ElDawar",
+      "days": 7,
+      "expected": [
+        {
+          "day": "2026-10-05",
+          "DOWN": 0,
+          "POWER": 0,
+          "OTHER": 0
+        },
+        {
+          "day": "2026-10-06",
+          "DOWN": 0,
+          "POWER": 0,
+          "OTHER": 0
+        },
+        {
+          "day": "2026-10-07",
+          "DOWN": 0,
+          "POWER": 0,
+          "OTHER": 0
+        },
+        {
+          "day": "2026-10-08",
+          "DOWN": 0,
+          "POWER": 0,
+          "OTHER": 0
+        },
+        {
+          "day": "2026-10-09",
+          "DOWN": 0,
+          "POWER": 0,
+          "OTHER": 0
+        },
+        {
+          "day": "2026-10-10",
+          "DOWN": 0,
+          "POWER": 0,
+          "OTHER": 0
+        },
+        {
+          "day": "2026-10-11",
+          "DOWN": 2,
+          "POWER": 1,
+          "OTHER": 20
+        }
+      ]
+    },
+    {
+      "office": "DS/Zagazig",
+      "days": 2,
+      "expected": [
+        {
+          "day": "2026-10-10",
+          "DOWN": 0,
+          "POWER": 0,
+          "OTHER": 0
+        },
+        {
+          "day": "2026-10-11",
+          "DOWN": 0,
+          "POWER": 7,
+          "OTHER": 15
+        }
+      ]
+    }
+  ],
+  "topSites": [
+    {
+      "office": "DN/Kafr ElDawar",
+      "limit": 3,
+      "days": 30,
+      "expected": [
+        {
+          "site": "2521_D_DK-MARKAZYA_3373DE",
+          "total": 3,
+          "active": 0,
+          "region": "DE"
+        },
+        {
+          "site": "3531_S_KS-SHARAQA_3961DE",
+          "total": 3,
+          "active": 0,
+          "region": "DE"
+        },
+        {
+          "site": "0301_S_SK-ADLIYA_3458DE",
+          "total": 2,
+          "active": 0,
+          "region": "DE"
+        }
+      ]
+    },
+    {
+      "office": "DS/Zagazig",
+      "limit": 10,
+      "days": 30,
+      "expected": [
+        {
+          "site": "SRAN_LWG_TDD_S_BH-6-OCTOBER_3273DE",
+          "total": 6,
+          "active": 1,
+          "region": "DE"
+        },
+        {
+          "site": "U_S_BH-MHLT-KYL_3830DE",
+          "total": 5,
+          "active": 2,
+          "region": "DE"
+        },
+        {
+          "site": "SRAN_LWG_S_KS-KHALIJ-HUKS_3322DE",
+          "total": 4,
+          "active": 0,
+          "region": "DE"
+        },
+        {
+          "site": "SRAN_LWG_TDD_V_BH-KFDW-BOLES_3207DE",
+          "total": 2,
+          "active": 0,
+          "region": "DE"
+        },
+        {
+          "site": "U_S_KS-KHALIJ-HUKS_3322DE",
+          "total": 2,
+          "active": 0,
+          "region": "DE"
+        },
+        {
+          "site": "SRAN_LG_TDD_E_BH-WASTANIYA_3804DE",
+          "total": 1,
+          "active": 1,
+          "region": "DE"
+        },
+        {
+          "site": "SRAN_LG_TDD_V_BH-SIDI-GHAZY_0444DE",
+          "total": 1,
+          "active": 0,
+          "region": "DE"
+        },
+        {
+          "site": "U_S_BH-HORRIA_3928DE",
+          "total": 1,
+          "active": 0,
+          "region": "DE"
+        }
+      ]
+    }
+  ]
+}
