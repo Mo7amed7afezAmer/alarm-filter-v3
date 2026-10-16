@@ -61,4 +61,7 @@ export const ROUTES: RouteEntry[] = [
     load: () => import("@/app/api/v1/me/notification-prefs/route"),
     body: { enabled: true, sound: false, categories: ["DOWN"], alarmNames: [], sites: [] },
   },
+  // G-T09
+  { method: "GET", path: "/api/v1/alarms?status=active", minRole: "VIEWER", load: () => import("@/app/api/v1/alarms/route") },
+  { method: "GET", path: "/api/v1/alarm-names", minRole: "VIEWER", load: () => import("@/app/api/v1/alarm-names/route") },
 ];

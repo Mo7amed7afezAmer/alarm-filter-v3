@@ -1,4 +1,5 @@
-// Home: the signed-in shell. Alarm pages are added in G-T09.
+import { redirect } from "next/navigation";
+
 export default function Home() {
-  return null;
+  redirect("/alarms");
 }

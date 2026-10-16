@@ -1,5 +1,6 @@
+import { assertAuthEnv } from "./lib/auth-env";
+
 // Runs once when the server starts: refuse to boot without NEXTAUTH_SECRET.
-export async function register(): Promise<void> {
-  const { assertAuthEnv } = await import("./lib/auth");
+export function register(): void {
   assertAuthEnv(process.env);
 }

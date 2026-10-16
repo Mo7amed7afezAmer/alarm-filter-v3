@@ -10,10 +10,7 @@ import type { Role } from "./roles";
 
 export const SESSION_MAX_AGE_SEC = 12 * 3600;
 
-/** NEXTAUTH_SECRET must be set before the web app serves anything. */
-export function assertAuthEnv(env: Record<string, string | undefined>): void {
-  if (!env.NEXTAUTH_SECRET?.trim()) throw new Error("NEXTAUTH_SECRET is required");
-}
+export { assertAuthEnv } from "./auth-env";
 
 export interface AuthorizeDeps {
   db: PrismaClient;

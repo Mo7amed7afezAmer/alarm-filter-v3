@@ -28,3 +28,90 @@ main {
   display: grid;
   gap: 4px;
 }
+nav.links {
+  display: flex;
+  gap: 12px;
+}
+.list-head {
+  display: flex;
+  gap: 12px;
+  align-items: baseline;
+}
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 8px 0 16px;
+}
+.filters label {
+  display: grid;
+  gap: 4px;
+}
+.filters-toggle {
+  display: none;
+}
+table.alarms {
+  width: 100%;
+  border-collapse: collapse;
+}
+table.alarms th,
+table.alarms td {
+  text-align: left;
+  padding: 4px 8px;
+  border-bottom: 1px solid #8883;
+}
+tr.alert,
+.card.alert {
+  background: #d9363e22;
+}
+.badge {
+  margin-left: 6px;
+  padding: 0 6px;
+  border-radius: 8px;
+  font-size: 0.75em;
+}
+.badge.vip {
+  background: #e6a700;
+  color: #000;
+}
+.cards {
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.card {
+  display: grid;
+  gap: 4px;
+  padding: 12px;
+  margin-bottom: 8px;
+  border: 1px solid #8884;
+  border-radius: 8px;
+}
+.pager {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-top: 12px;
+}
+/* NFR-37: cards below md (768px); collapsible filter bar below sm (640px). */
+@media (max-width: 767px) {
+  table.alarms {
+    display: none;
+  }
+  .cards {
+    display: block;
+  }
+}
+@media (max-width: 639px) {
+  .filters-toggle {
+    display: inline-block;
+  }
+  .filters {
+    display: none;
+  }
+  .filters.open {
+    display: flex;
+    flex-direction: column;
+  }
+}

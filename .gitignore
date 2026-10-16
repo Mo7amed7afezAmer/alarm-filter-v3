@@ -10,3 +10,5 @@ coverage/
 playwright-report/
 *.tsbuildinfo
 !.env.example
+.next-e2e/
+test-results/

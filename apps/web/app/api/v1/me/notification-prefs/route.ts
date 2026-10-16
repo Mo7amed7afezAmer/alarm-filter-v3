@@ -3,6 +3,9 @@ import { z } from "zod";
 import { route } from "@/lib/api";
 import { db } from "@/lib/db";
 
+// Reads the session and the database on every request.
+export const dynamic = "force-dynamic";
+
 // FR-45: per-user notification prefs.
 const body = z.object({
   enabled: z.boolean(),

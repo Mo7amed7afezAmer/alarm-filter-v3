@@ -3,6 +3,9 @@ import { z } from "zod";
 import { route } from "@/lib/api";
 import { db } from "@/lib/db";
 
+// Reads the session and the database on every request.
+export const dynamic = "force-dynamic";
+
 // FR-42: each user hides categories and alarm names from their own views.
 const body = z.object({
   categories: z.array(z.enum(CATEGORIES as unknown as ["DOWN", "POWER", "OTHER"])),

@@ -4,6 +4,9 @@ import { conflict, route } from "@/lib/api";
 import { db } from "@/lib/db";
 import { BCRYPT_ROUNDS, password, publicUser, role } from "@/lib/users";
 
+// Reads the session and the database on every request.
+export const dynamic = "force-dynamic";
+
 // FR-28: ADMIN lists and creates users.
 export const GET = route({ minRole: "ADMIN" }, async () => ({
   users: await db.user.findMany({ select: publicUser, orderBy: { email: "asc" } }),

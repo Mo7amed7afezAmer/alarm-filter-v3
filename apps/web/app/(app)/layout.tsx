@@ -1,4 +1,5 @@
 import { redirect } from "next/navigation";
+import Link from "next/link";
 import type { ReactNode } from "react";
 import { getSessionUser } from "@/lib/session";
 import { SignOut } from "./sign-out";
@@ -11,6 +12,10 @@ export default async function AppLayout({ children }: { children: ReactNode }) {
     <>
       <header className="shell">
         <strong>NOC Alarm Platform</strong>
+        <nav className="links">
+          <Link href="/alarms">Alarms</Link>
+          <Link href="/cleared">Cleared</Link>
+        </nav>
         <span className="who">
           {user.email} · {user.role}
         </span>

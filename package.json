@@ -10,7 +10,8 @@
     "lint": "eslint .",
     "typecheck": "pnpm -r typecheck",
     "test": "pnpm -r --workspace-concurrency=1 test",
-    "gmail:auth": "pnpm --filter worker gmail:auth"
+    "gmail:auth": "pnpm --filter worker gmail:auth",
+    "e2e": "pnpm --filter web e2e"
   },
   "devDependencies": {
     "@eslint/js": "^9.14.0",

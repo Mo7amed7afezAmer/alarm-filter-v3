@@ -85,6 +85,8 @@ R-02 and R-03 are not defined in PLAN.md §7.
 | G-T08 `?office=*` | Not built. Every view is scoped to the selected office (FR-40); the PLAN item is dropped. | mohamed.hafez@docnile.com / 2026-10-16 |
 | G-T08 self-demotion | FR-28 as written: an ADMIN cannot set their own role to VIEWER or delete themselves; self → OPERATOR is allowed. | mohamed.hafez@docnile.com / 2026-10-16 |
 | G-T08 users API | `GET`/`POST /api/v1/users`; `PATCH`/`DELETE /api/v1/users/{id}`, 404 for an unknown id. | mohamed.hafez@docnile.com / 2026-10-16 |
+| G-T09 region | Region = last 2 characters of the site code (FR-32 `siteCodeOf`), as for hourly rows; the `sites` table is not read. | mohamed.hafez@docnile.com / 2026-10-16 |
+| G-T09 no office | With no office selected, views are scoped to the first `GMAIL_LABELS` entry (the label the worker reads, FR-07). | mohamed.hafez@docnile.com / 2026-10-16 |
 
 ## Approval (PLAN.md §10)
 
