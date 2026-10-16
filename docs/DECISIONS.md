@@ -89,6 +89,10 @@ R-02 and R-03 are not defined in PLAN.md §7.
 | G-T09 no office | With no office selected, views are scoped to the first `GMAIL_LABELS` entry (the label the worker reads, FR-07). | mohamed.hafez@docnile.com / 2026-10-16 |
 | G-T10 export columns | Active: Alarm, Category, Site, Site code, Cell, Device, CONSEC_NBR, Region, VIP, Nodality, Battery, Phone, Site type, Power source, Alarm time, Age (min). Cleared: the same to Alarm time, then Clear time, Duration (min), Clear type. Times `YYYY-MM-DD HH:mm:ss` in ALARM_TZ. Checked against expected cell values (JSON) instead of a binary golden.xlsx. | mohamed.hafez@docnile.com / 2026-10-16 |
 | G-T10 stats scope | Summary orphan/parse-error counts are office-scoped; daily and top-sites windows and day buckets use alarmTime; hidden types are excluded from every count. | mohamed.hafez@docnile.com / 2026-10-16 |
+| G-T11 bell polling | The notification feed is polled every 30 s (FR-46, NFR-06); PLAN's "20 s" is not used. | mohamed.hafez@docnile.com / 2026-10-16 |
+| G-T11 health path | Web health stays public at `GET /api/health` (FR-70, G-T16 healthcheck): the one exception to D-02. | mohamed.hafez@docnile.com / 2026-10-16 |
+| G-T11 worker freshness | Web `/api/health` judges the worker stale with `WORKER_STALE_SEC` (default 300 s), as FR-70 states. | mohamed.hafez@docnile.com / 2026-10-16 |
+| G-T11 reprocess and unread | Fixes gap 23: when reprocess recreates an alarm that existed before (same consecNbr, or same key + alarmTime) it keeps the original `createdAt`, so seen alarms do not become unread again. | mohamed.hafez@docnile.com / 2026-10-16 |
 
 ## Approval (PLAN.md §10)
 

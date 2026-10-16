@@ -73,7 +73,12 @@ export function findActiveAlarms(db: Db, alarmKey: string): Promise<Alarm[]> {
 }
 
 export type NewAlarm = Pick<Alarm, "alarmKey" | "alarmName" | "site" | "category" | "alarmTime"> &
-  Partial<Pick<Alarm, "status" | "clearTime" | "durationMin" | "clearType" | "consecNbr" | "cellName" | "device" | "office">>;
+  Partial<Pick<Alarm, "status" | "clearTime" | "durationMin" | "clearType" | "consecNbr" | "cellName" | "device" | "office" | "createdAt">>;
+
+/** FR-24: alarms with alarmTime ≥ since (the ones resetWindow deletes). */
+export function findAlarmsFrom(db: Db, since: Date): Promise<Alarm[]> {
+  return db.alarm.findMany({ where: { alarmTime: { gte: since } } });
+}
 
 export function createAlarm(db: Db, data: NewAlarm): Promise<Alarm> {
   return db.alarm.create({ data });

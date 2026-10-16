@@ -59,9 +59,13 @@ export class MemoryStore implements EngineStore {
     if (data.consecNbr !== null && this.alarms.some((a) => a.consecNbr === data.consecNbr)) {
       throw new Error(`duplicate consecNbr ${data.consecNbr}`);
     }
-    const alarm: Alarm = { ...data, id: this.nextId++, createdAt: new Date() };
+    const alarm: Alarm = { ...data, id: this.nextId++, createdAt: data.createdAt ?? new Date() };
     this.alarms.push(alarm);
     return alarm;
+  }
+
+  async findAlarmsFrom(since: Date): Promise<Alarm[]> {
+    return this.alarms.filter((a) => a.alarmTime.getTime() >= since.getTime());
   }
 
   async updateAlarm(id: number, data: AlarmUpdate): Promise<Alarm> {

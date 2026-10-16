@@ -165,6 +165,8 @@ describe.skipIf(!url)("worker cycle against alarms_test", () => {
       const shape = (rows: typeof before) =>
         rows.map((a) => ({ ...a, id: undefined, createdAt: undefined }));
       expect(shape(after)).toEqual(shape(before));
+      // G-T11: recreated alarms keep their createdAt, so seen alarms do not become unread again.
+      expect(after.map((a) => a.createdAt)).toEqual(before.map((a) => a.createdAt));
     });
   });
 

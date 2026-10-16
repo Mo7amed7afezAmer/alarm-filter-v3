@@ -30,3 +30,23 @@ export function telHref(phone: string): string {
   const first = phone.split("/")[0] ?? "";
   return `tel:${first.replace(/[^\d+]/g, "")}`;
 }
+
+/** NFR-06: dashboard summary every 60 s, charts every 5 min; FR-46: bell every 30 s. */
+export const DASHBOARD_REFRESH_MS = 60_000;
+export const CHARTS_REFRESH_MS = 300_000;
+export const BELL_POLL_MS = 30_000;
+
+/** FR-39: the sync bar turns red when the last run is older than 300 s or has an error. */
+export const SYNC_STALE_SEC = 300;
+
+export function syncState(lastRunAt: Date | null, lastError: string | null, now: Date): "ok" | "stale" | "error" {
+  if (lastError) return "error";
+  if (!lastRunAt || now.getTime() - lastRunAt.getTime() > SYNC_STALE_SEC * 1000) return "stale";
+  return "ok";
+}
+
+/** FR-46: "(n)" in the tab title. */
+export function titleWithCount(title: string, count: number): string {
+  const base = title.replace(/^\(\d+\)\s*/, "");
+  return count > 0 ? `(${count}) ${base}` : base;
+}

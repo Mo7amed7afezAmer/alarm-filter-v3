@@ -1,6 +1,8 @@
 import { redirect } from "next/navigation";
 import Link from "next/link";
 import type { ReactNode } from "react";
+import { NotificationBell } from "@/components/notification-bell";
+import { hasRole } from "@/lib/roles";
 import { getSessionUser } from "@/lib/session";
 import { SignOut } from "./sign-out";
 
@@ -15,10 +17,14 @@ export default async function AppLayout({ children }: { children: ReactNode }) {
         <nav className="links">
           <Link href="/alarms">Alarms</Link>
           <Link href="/cleared">Cleared</Link>
+          <Link href="/dashboard">Dashboard</Link>
+          <Link href="/me">My settings</Link>
+          {hasRole(user.role, "ADMIN") && <Link href="/settings">Settings</Link>}
         </nav>
         <span className="who">
           {user.email} · {user.role}
         </span>
+        <NotificationBell />
         <SignOut />
       </header>
       <main>{children}</main>

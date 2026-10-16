@@ -34,7 +34,8 @@ export interface Alarm {
   createdAt: Date;
 }
 
-export type NewAlarm = Omit<Alarm, "id" | "createdAt">;
+/** `createdAt` defaults to now; reprocess passes the original one (G-T11). */
+export type NewAlarm = Omit<Alarm, "id" | "createdAt"> & { createdAt?: Date };
 export type AlarmUpdate = Partial<Pick<Alarm, "status" | "clearTime" | "durationMin" | "clearType">>;
 
 export interface OrphanClear {
@@ -64,6 +65,8 @@ export interface EngineStore {
   /** ACTIVE alarms of the key, newest first. */
   findActiveAlarms(alarmKey: string): Promise<Alarm[]>;
   createAlarm(data: NewAlarm): Promise<Alarm>;
+  /** FR-24: alarms with `alarmTime ≥ since` (the ones a reprocess deletes). */
+  findAlarmsFrom(since: Date): Promise<Alarm[]>;
   updateAlarm(id: number, data: AlarmUpdate): Promise<Alarm>;
 
   /** Oldest first. */

@@ -31,3 +31,28 @@ describe("alarm page helpers", () => {
     expect(telHref("010 000 / 011 222")).toBe("tel:010000");
   });
 });
+
+describe("dashboard and bell helpers (FR-39, FR-46, NFR-06)", () => {
+  it("refreshes the summary every 60 s, the charts every 5 min and the bell every 30 s", async () => {
+    const { DASHBOARD_REFRESH_MS, CHARTS_REFRESH_MS, BELL_POLL_MS } = await import("./alarm-ui");
+    expect(DASHBOARD_REFRESH_MS).toBe(60_000);
+    expect(CHARTS_REFRESH_MS).toBe(300_000);
+    expect(BELL_POLL_MS).toBe(30_000);
+  });
+
+  it("turns the sync bar red when the last run is older than 300 s or has an error", async () => {
+    const { syncState } = await import("./alarm-ui");
+    const now = new Date("2026-10-11T19:00:00Z");
+    expect(syncState(new Date("2026-10-11T18:56:00Z"), null, now)).toBe("ok");
+    expect(syncState(new Date("2026-10-11T18:54:59Z"), null, now)).toBe("stale");
+    expect(syncState(null, null, now)).toBe("stale");
+    expect(syncState(new Date("2026-10-11T18:59:00Z"), "Gmail API 500", now)).toBe("error");
+  });
+
+  it("shows the unread count in the tab title", async () => {
+    const { titleWithCount } = await import("./alarm-ui");
+    expect(titleWithCount("NOC Alarm Platform", 3)).toBe("(3) NOC Alarm Platform");
+    expect(titleWithCount("(3) NOC Alarm Platform", 0)).toBe("NOC Alarm Platform");
+    expect(titleWithCount("(3) NOC Alarm Platform", 5)).toBe("(5) NOC Alarm Platform");
+  });
+});

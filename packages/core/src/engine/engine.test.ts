@@ -110,6 +110,27 @@ describe("reprocess (FR-24, NFR-13)", () => {
   });
 });
 
+describe("reprocess keeps createdAt of recreated alarms (G-T11, fixes gap 23)", () => {
+  it.each(cases.map((c) => [c.name, c] as const))("%s", async (_name, c) => {
+    vi.useFakeTimers({ now: new Date("2026-10-11T19:00:00Z"), toFake: ["Date"] });
+    try {
+      const store = await run(c);
+      const before = new Map(store.alarms.map((a) => [a.consecNbr ?? `${a.alarmKey}|${a.alarmTime.toISOString()}`, a.createdAt.getTime()]));
+      const since = new Date(Math.min(...c.batches.flat().map((m) => Date.parse(m.receivedAt))));
+
+      vi.setSystemTime(new Date("2026-10-12T08:00:00Z"));
+      await reprocess(store, since, opts);
+
+      for (const a of store.alarms) {
+        const key = a.consecNbr ?? `${a.alarmKey}|${a.alarmTime.toISOString()}`;
+        expect(a.createdAt.getTime(), key).toBe(before.get(key) ?? Date.parse("2026-10-12T08:00:00Z"));
+      }
+    } finally {
+      vi.useRealTimers();
+    }
+  });
+});
+
 describe("global matching across offices (D-05)", () => {
   const crossOffice = cases.find((c) => c.name === "x04-cross-office-match")!;
 

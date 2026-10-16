@@ -69,4 +69,26 @@ export const ROUTES: RouteEntry[] = [
   { method: "GET", path: "/api/v1/stats/summary", minRole: "VIEWER", load: () => import("@/app/api/v1/stats/summary/route") },
   { method: "GET", path: "/api/v1/stats/daily", minRole: "VIEWER", load: () => import("@/app/api/v1/stats/daily/route") },
   { method: "GET", path: "/api/v1/stats/top-sites", minRole: "VIEWER", load: () => import("@/app/api/v1/stats/top-sites/route") },
+  // G-T11
+  { method: "GET", path: "/api/v1/settings/office", minRole: "ADMIN", load: () => import("@/app/api/v1/settings/office/route") },
+  {
+    method: "PUT",
+    path: "/api/v1/settings/office",
+    minRole: "ADMIN",
+    load: () => import("@/app/api/v1/settings/office/route"),
+    body: { office: "DN/Kafr ElDawar" },
+  },
+  { method: "GET", path: "/api/v1/settings/display", minRole: "ADMIN", load: () => import("@/app/api/v1/settings/display/route") },
+  {
+    method: "PUT",
+    path: "/api/v1/settings/display",
+    minRole: "ADMIN",
+    load: () => import("@/app/api/v1/settings/display/route"),
+    body: { categories: [], alarmNames: [] },
+  },
+  { method: "GET", path: "/api/v1/rules", minRole: "ADMIN", load: () => import("@/app/api/v1/rules/route") },
+  { method: "PUT", path: "/api/v1/rules", minRole: "ADMIN", load: () => import("@/app/api/v1/rules/route"), body: { rules: [] } },
+  { method: "POST", path: "/api/v1/reprocess", minRole: "ADMIN", load: () => import("@/app/api/v1/reprocess/route"), body: { days: 7 } },
+  { method: "GET", path: "/api/v1/notifications", minRole: "VIEWER", load: () => import("@/app/api/v1/notifications/route") },
+  { method: "POST", path: "/api/v1/notifications/read", minRole: "VIEWER", load: () => import("@/app/api/v1/notifications/read/route") },
 ];

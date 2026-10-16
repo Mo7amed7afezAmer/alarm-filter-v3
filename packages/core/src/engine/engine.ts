@@ -8,6 +8,8 @@ export interface EngineOptions {
   tz?: string;
   /** Receives one line per notable event (D-05: Clear matched an alarm of another office). */
   log?: (line: string) => void;
+  /** createdAt to give a recreated alarm (reprocess, G-T11); undefined = now. */
+  createdAtFor?: (alarm: { consecNbr: string | null; alarmKey: string; alarmTime: Date }) => Date | undefined;
 }
 
 export type Outcome =
@@ -114,6 +116,7 @@ async function handleAlarm(
     cellName: m.cellName ?? null,
     device: m.device ?? null,
     office: raw.office, // FR-23
+    createdAt: opts.createdAtFor?.({ consecNbr, alarmKey: m.alarmKey, alarmTime: m.alarmTime }),
   };
 
   // FR-22: a stored Clear for this alarm (same consecNbr, or same key + subject time).
@@ -214,6 +217,11 @@ async function handleClear(store: EngineStore, raw: RawMessage, m: HashMessage, 
  * it inside the transaction that holds advisory lock 42.
  */
 export async function reprocess(store: EngineStore, since: Date, opts: EngineOptions): Promise<Outcomes> {
+  // G-T11 (gap 23): an alarm recreated by the reprocess keeps its createdAt, so alarms a user has
+  // already seen do not come back as unread notifications.
+  const key = (a: { consecNbr: string | null; alarmKey: string; alarmTime: Date }) =>
+    a.consecNbr ?? `${a.alarmKey}|${a.alarmTime.toISOString()}`;
+  const createdAt = new Map((await store.findAlarmsFrom(since)).map((a) => [key(a), a.createdAt]));
   await store.resetWindow(since);
-  return processBatch(store, opts);
+  return processBatch(store, { ...opts, createdAtFor: (a) => createdAt.get(key(a)) });
 }

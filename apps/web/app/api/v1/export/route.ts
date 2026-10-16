@@ -12,7 +12,7 @@ import { getEffectiveFilter } from "@/lib/visibility";
 export const dynamic = "force-dynamic";
 
 /** NFR-09: export cap. */
-export const MAX_ROWS = 50_000;
+const MAX_ROWS = 50_000;
 
 // FR-35: export active or cleared alarms (same filters as the lists) to .xlsx. page/pageSize are
 // accepted and ignored: the export holds every matching row.
