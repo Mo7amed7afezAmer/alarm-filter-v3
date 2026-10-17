@@ -278,3 +278,8 @@ tr.alert,
 .muted {
   opacity: 0.7;
 }
+
+/* G-T15: wide Site Master table scrolls inside its box. */
+.table-scroll {
+  overflow-x: auto;
+}

@@ -117,16 +117,18 @@ model User {
 }
 
 model SystemStatus {
-  id              Int       @id @default(1)
-  lastHistoryId   String?
-  lastRunAt       DateTime?
-  lastError       String?
-  lastRunMessages Int       @default(0)
-  reprocessDays   Int?
-  officeLabel     String?
-  syncedLabel     String?
-  availableLabels Json?
-  displayFilter   Json?
+  id                 Int       @id @default(1)
+  lastHistoryId      String?
+  lastRunAt          DateTime?
+  lastError          String?
+  lastRunMessages    Int       @default(0)
+  reprocessDays      Int?
+  officeLabel        String?
+  syncedLabel        String?
+  availableLabels    Json?
+  displayFilter      Json?
+  /// G-T15: set on Site Master import/edit and normalization PUT; ETag of /api/v1/hourly-reference.
+  referenceUpdatedAt DateTime?
 
   @@map("system_status")
 }

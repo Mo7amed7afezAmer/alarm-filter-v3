@@ -8,3 +8,4 @@ export * from "./diff";
 export * from "./process";
 export * from "./filter";
 export * from "./cache";
+export * from "./site-master";

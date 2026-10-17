@@ -1,6 +1,7 @@
 "use client";
 
 // ADMIN settings: office (FR-40), hidden types for everyone (FR-41), rules (FR-17), reprocess (FR-24).
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import { sendJson, useJson } from "./use-json";
 
@@ -183,6 +184,9 @@ export function AdminSettings() {
   return (
     <section className="settings">
       <h1>Settings</h1>
+      <p>
+        <Link href="/settings/site-master">Site Master</Link>
+      </p>
       <OfficeSettings />
       <HiddenTypes url="/api/v1/settings/display" names="hidden" />
       <RulesEditor />

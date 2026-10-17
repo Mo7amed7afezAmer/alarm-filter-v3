@@ -107,4 +107,24 @@ export const ROUTES: RouteEntry[] = [
     load: () => import("@/app/api/v1/hourly-reports/[id]/xlsx/route"),
     params: { id: "hourlynoatt00001" },
   },
+  // G-T15 (hourly-reference: OPERATOR, decided 2026-10-17)
+  { method: "GET", path: "/api/v1/site-master", minRole: "VIEWER", load: () => import("@/app/api/v1/site-master/route") },
+  { method: "POST", path: "/api/v1/site-master/import", minRole: "ADMIN", load: () => import("@/app/api/v1/site-master/import/route") },
+  {
+    method: "PUT",
+    path: "/api/v1/site-master/:code",
+    minRole: "ADMIN",
+    load: () => import("@/app/api/v1/site-master/[code]/route"),
+    params: { code: "0999DE" },
+    body: { vip: true },
+  },
+  { method: "GET", path: "/api/v1/hourly-normalizations", minRole: "ADMIN", load: () => import("@/app/api/v1/hourly-normalizations/route") },
+  {
+    method: "PUT",
+    path: "/api/v1/hourly-normalizations",
+    minRole: "ADMIN",
+    load: () => import("@/app/api/v1/hourly-normalizations/route"),
+    body: { rules: [] },
+  },
+  { method: "GET", path: "/api/v1/hourly-reference", minRole: "OPERATOR", load: () => import("@/app/api/v1/hourly-reference/route") },
 ];

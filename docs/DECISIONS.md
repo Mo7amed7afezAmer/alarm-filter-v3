@@ -105,6 +105,12 @@ R-02 and R-03 are not defined in PLAN.md §7.
 | G-T14 export columns | Default columns: Sheet, Alarm time, Alarm name, Site name, Site code, Office, Region, Category, VIP, Nodality, Battery, Phone, Clock invalid (YES / blank); every other row field can be chosen. | mohamed.hafez@docnile.com / 2026-10-17 |
 | G-T14 report cap | The browser keeps the 3 most recently used processed reports (LRU), no time-based expiry; all are cleared on logout. | mohamed.hafez@docnile.com / 2026-10-17 |
 | G-T14 timing | The 40k-row budget is checked as the median of three warm runs (< 5 s) against a production build (`next build` + `next start` on :3201) in `pnpm e2e`. | mohamed.hafez@docnile.com / 2026-10-17 |
+| G-T15 reference role | `GET /api/v1/hourly-reference` (Site Master + normalizations for in-browser processing): OPERATOR, like `…/attachment`. `GET`/`PUT /hourly-normalizations` stay ADMIN (FR-68); `GET /site-master` stays VIEWER (FR-67). | mohamed.hafez@docnile.com / 2026-10-17 |
+| G-T15 reference ETag | New column `system_status.referenceUpdatedAt`, set by Site Master import, Site Master edit and normalization PUT; it is the hourly-reference `updatedAt` / ETag. Replaces FR-65 / FR-68 "the hourly cache is cleared" under D-10. | mohamed.hafez@docnile.com / 2026-10-17 |
+| G-T15 import fixture | The Site Master `.xlsx` is generated inside the tests from `samples/hourly/site-master.json` plus invalid rows; nothing is written to `samples/`. | mohamed.hafez@docnile.com / 2026-10-17 |
+| G-T15 import columns | Headers are matched ignoring case, spaces and punctuation: Code (or Site Code), Site Name, Office, Nodality, VIP, Site Type, Power Source, Battery, Notes; phone from Guard Number / Guard Phone / Phone / Phone Number / Mobile / Contact (FR-66). A skipped row is an invalid code, a code already seen in the file, or an empty office (samples/hourly: 136 inserted / 2 skipped, as FR-65). | mohamed.hafez@docnile.com / 2026-10-17 |
+| G-T15 phone | A numeric cell gets the leading 0 back (Excel only drops it from numbers); a text cell is split on `/ , ;` and new lines; repeated numbers are dropped; numbers are joined with " / ". | mohamed.hafez@docnile.com / 2026-10-17 |
+| G-T15 normalizations UI | Normalizations are edited through the API only (FR-68 names the route, no page). | mohamed.hafez@docnile.com / 2026-10-17 |
 
 ## Approval (PLAN.md §10)
 
