@@ -1,4 +1,7 @@
+import { existsSync, readFileSync } from "node:fs";
+import { fileURLToPath } from "node:url";
 import { describe, expect, it } from "vitest";
+import * as XLSX from "xlsx";
 import { parseSiteMaster, phoneText, pickSiteMasterSheet, vipOf, type SiteMasterRecord } from "./index";
 import { siteMaster } from "./test-helpers";
 
@@ -138,5 +141,23 @@ describe("parseSiteMaster (FR-65, FR-66)", () => {
 
   it("an empty workbook gives nothing", () => {
     expect(parseSiteMaster({})).toEqual({ records: [], skipped: 0, skippedRows: [] });
+  });
+});
+
+// The original Site Master workbook (tests/fixtures, files only): FR-65 "136 inserted / 2 skipped".
+const original = fileURLToPath(new URL("../../../../tests/fixtures/SiteMaster_KafrElDawar.xlsx", import.meta.url));
+describe.skipIf(!existsSync(original))("tests/fixtures/SiteMaster_KafrElDawar.xlsx (FR-65)", () => {
+  it("gives 136 sites and skips the 2 repeated codes", () => {
+    const book = XLSX.read(readFileSync(original), { type: "buffer" });
+    const sheets = Object.fromEntries(
+      book.SheetNames.map((n) => [n, XLSX.utils.sheet_to_json<Record<string, unknown>>(book.Sheets[n]!, { raw: true, defval: "" })]),
+    );
+    const out = parseSiteMaster(sheets);
+    expect(out.records).toHaveLength(136);
+    expect(out.skippedRows).toEqual([
+      { row: 38, reason: "DUPLICATE_CODE" },
+      { row: 48, reason: "DUPLICATE_CODE" },
+    ]);
+    expect(out.records.find((r) => r.code === "0200DE")).toMatchObject({ office: "KAFR EL DAWAR", phone: "01068200827", region: "DE" });
   });
 });
