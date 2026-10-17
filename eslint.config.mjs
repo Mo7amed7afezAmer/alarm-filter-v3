@@ -11,17 +11,11 @@ export default tseslint.config(
     files: ["**/*.mjs", "**/*.cjs"],
     languageOptions: { globals: { process: "readonly", console: "readonly", URL: "readonly" } },
   },
-  {
-    // CommonJS scripts.
-    files: ["**/*.cjs"],
-    languageOptions: { sourceType: "commonjs", globals: { require: "readonly", module: "writable", __dirname: "readonly" } },
-    rules: { "@typescript-eslint/no-require-imports": "off" },
-  },
   ...tseslint.configs.recommended,
   {
-    // CommonJS Node scripts (e2e fixture builders).
+    // CommonJS Node scripts (e2e fixture builders); after the TS presets so the rule override wins.
     files: ["**/*.cjs"],
-    languageOptions: { sourceType: "commonjs", globals: { require: "readonly", __dirname: "readonly" } },
+    languageOptions: { sourceType: "commonjs", globals: { require: "readonly", module: "writable", __dirname: "readonly" } },
     rules: { "@typescript-eslint/no-require-imports": "off" },
   },
 );
