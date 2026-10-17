@@ -18,6 +18,7 @@ export default async function AppLayout({ children }: { children: ReactNode }) {
           <Link href="/alarms">Alarms</Link>
           <Link href="/cleared">Cleared</Link>
           <Link href="/dashboard">Dashboard</Link>
+          <Link href="/hourly">Hourly</Link>
           <Link href="/me">My settings</Link>
           {hasRole(user.role, "ADMIN") && <Link href="/settings">Settings</Link>}
         </nav>

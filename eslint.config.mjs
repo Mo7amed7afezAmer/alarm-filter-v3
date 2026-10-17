@@ -3,7 +3,7 @@ import tseslint from "typescript-eslint";
 
 export default tseslint.config(
   {
-    ignores: ["**/node_modules/**", "**/dist/**", "**/.next/**", "**/coverage/**", "**/next-env.d.ts", "**/.next-e2e/**", "**/test-results/**", "**/playwright-report/**"],
+    ignores: ["**/node_modules/**", "**/dist/**", "**/.next/**", "**/coverage/**", "**/next-env.d.ts", "**/.next-e2e/**", "**/.next-e2e-prod/**", "**/.e2e-hourly/**", "**/test-results/**", "**/playwright-report/**"],
   },
   js.configs.recommended,
   {
@@ -11,5 +11,17 @@ export default tseslint.config(
     files: ["**/*.mjs", "**/*.cjs"],
     languageOptions: { globals: { process: "readonly", console: "readonly", URL: "readonly" } },
   },
+  {
+    // CommonJS scripts.
+    files: ["**/*.cjs"],
+    languageOptions: { sourceType: "commonjs", globals: { require: "readonly", module: "writable", __dirname: "readonly" } },
+    rules: { "@typescript-eslint/no-require-imports": "off" },
+  },
   ...tseslint.configs.recommended,
+  {
+    // CommonJS Node scripts (e2e fixture builders).
+    files: ["**/*.cjs"],
+    languageOptions: { sourceType: "commonjs", globals: { require: "readonly", __dirname: "readonly" } },
+    rules: { "@typescript-eslint/no-require-imports": "off" },
+  },
 );

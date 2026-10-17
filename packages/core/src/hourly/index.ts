@@ -6,3 +6,5 @@ export * from "./enrich";
 export * from "./normalize";
 export * from "./diff";
 export * from "./process";
+export * from "./filter";
+export * from "./cache";
