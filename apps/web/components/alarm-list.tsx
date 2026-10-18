@@ -145,11 +145,17 @@ export function AlarmList({ status, alertHours }: { status: Status; alertHours: 
           <>
             <label>
               From
-              <input type="datetime-local" onChange={(e) => set("from")({ target: { value: e.target.value ? new Date(e.target.value).toISOString() : "" } })} />
+              <input
+                type="datetime-local"
+                onChange={(e) => set("from")({ target: { value: e.target.value ? new Date(e.target.value).toISOString() : "" } })}
+              />
             </label>
             <label>
               To
-              <input type="datetime-local" onChange={(e) => set("to")({ target: { value: e.target.value ? new Date(e.target.value).toISOString() : "" } })} />
+              <input
+                type="datetime-local"
+                onChange={(e) => set("to")({ target: { value: e.target.value ? new Date(e.target.value).toISOString() : "" } })}
+              />
             </label>
           </>
         )}

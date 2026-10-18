@@ -3,7 +3,18 @@ import tseslint from "typescript-eslint";
 
 export default tseslint.config(
   {
-    ignores: ["**/node_modules/**", "**/dist/**", "**/.next/**", "**/coverage/**", "**/next-env.d.ts", "**/.next-e2e/**", "**/.next-e2e-prod/**", "**/.e2e-hourly/**", "**/test-results/**", "**/playwright-report/**"],
+    ignores: [
+      "**/node_modules/**",
+      "**/dist/**",
+      "**/.next/**",
+      "**/coverage/**",
+      "**/next-env.d.ts",
+      "**/.next-e2e/**",
+      "**/.next-e2e-prod/**",
+      "**/.e2e-hourly/**",
+      "**/test-results/**",
+      "**/playwright-report/**",
+    ],
   },
   js.configs.recommended,
   {

@@ -44,22 +44,21 @@ describe.skipIf(!testDatabaseUrl)("GET /api/v1/stats/*", () => {
       },
     });
 
-  it.each(expectedStats.summary.map((s, i) => [`${s.office}${Object.keys(s.hidden).length ? " with hidden types" : ""} #${i}`, s] as const))(
-    "summary %s (FR-36)",
-    async (_name, s) => {
-      await scope(s.office, Object.keys(s.hidden).length ? s.hidden : undefined);
-      const res = await getSummary(jsonRequest("GET", "/api/v1/stats/summary"));
-      expect(res.status).toBe(200);
-      const body = await res.json();
-      const { mttrMinutes, ...rest } = s.expected as { mttrMinutes: Record<string, number | null> };
-      expect(body).toMatchObject(rest);
-      for (const [cat, v] of Object.entries(mttrMinutes)) {
-        if (v === null) expect(body.mttrMinutes[cat]).toBeNull();
-        else expect(body.mttrMinutes[cat]).toBeCloseTo(v, 6);
-      }
-      expect(body.lastRun).toEqual({ lastRunAt: "2026-10-11T18:59:00.000Z", lastRunMessages: 7, lastError: null });
-    },
-  );
+  it.each(
+    expectedStats.summary.map((s, i) => [`${s.office}${Object.keys(s.hidden).length ? " with hidden types" : ""} #${i}`, s] as const),
+  )("summary %s (FR-36)", async (_name, s) => {
+    await scope(s.office, Object.keys(s.hidden).length ? s.hidden : undefined);
+    const res = await getSummary(jsonRequest("GET", "/api/v1/stats/summary"));
+    expect(res.status).toBe(200);
+    const body = await res.json();
+    const { mttrMinutes, ...rest } = s.expected as { mttrMinutes: Record<string, number | null> };
+    expect(body).toMatchObject(rest);
+    for (const [cat, v] of Object.entries(mttrMinutes)) {
+      if (v === null) expect(body.mttrMinutes[cat]).toBeNull();
+      else expect(body.mttrMinutes[cat]).toBeCloseTo(v, 6);
+    }
+    expect(body.lastRun).toEqual({ lastRunAt: "2026-10-11T18:59:00.000Z", lastRunMessages: 7, lastError: null });
+  });
 
   it.each(expectedStats.daily.map((d) => [`${d.office} ${d.days} days`, d] as const))("daily %s (FR-37)", async (_n, d) => {
     await scope(d.office);

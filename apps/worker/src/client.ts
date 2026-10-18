@@ -32,9 +32,7 @@ export async function readDesktopClient(credentialsPath: string): Promise<Deskto
   }
   const installed = parsed.installed;
   if (!installed?.client_id || !installed.client_secret) {
-    throw new GmailSetupError(
-      `Gmail OAuth client file at ${credentialsPath} is not a "Desktop app" client (no "installed" section).`,
-    );
+    throw new GmailSetupError(`Gmail OAuth client file at ${credentialsPath} is not a "Desktop app" client (no "installed" section).`);
   }
   return { clientId: installed.client_id, clientSecret: installed.client_secret };
 }
@@ -45,9 +43,7 @@ export function oauthClient(client: DesktopClient, redirectUri?: string): OAuth2
 
 async function readToken(tokenPath: string): Promise<Credentials> {
   if (!existsSync(tokenPath)) {
-    throw new GmailSetupError(
-      `Gmail token file not found at ${tokenPath} (GOOGLE_TOKEN_PATH). Run "pnpm gmail:auth" once to create it.`,
-    );
+    throw new GmailSetupError(`Gmail token file not found at ${tokenPath} (GOOGLE_TOKEN_PATH). Run "pnpm gmail:auth" once to create it.`);
   }
   try {
     return JSON.parse(await readFile(tokenPath, "utf8")) as Credentials;

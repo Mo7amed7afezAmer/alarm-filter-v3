@@ -31,7 +31,8 @@ export type WorkerResponse =
   | { id: string; ok: false; code: string; message: string };
 
 let wasm: Promise<ArrayBuffer> | null = null;
-const unrarWasm = () => (wasm ??= fetch("/unrar.wasm").then((r) => (r.ok ? r.arrayBuffer() : Promise.reject(new Error("unrar.wasm missing")))));
+const unrarWasm = () =>
+  (wasm ??= fetch("/unrar.wasm").then((r) => (r.ok ? r.arrayBuffer() : Promise.reject(new Error("unrar.wasm missing")))));
 
 /** Lighter SheetJS read (G-T14 spike): values only, the six hourly sheets only. */
 const READ_OPTIONS: XLSX.ParsingOptions = {
@@ -75,4 +76,3 @@ self.onmessage = async (e: MessageEvent<WorkerRequest>) => {
     self.postMessage(reply);
   }
 };
-

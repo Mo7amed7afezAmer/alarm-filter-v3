@@ -1,13 +1,4 @@
-import type {
-  Alarm,
-  AlarmUpdate,
-  EngineStore,
-  NewAlarm,
-  NewOrphanClear,
-  NewRawMessage,
-  OrphanClear,
-  RawMessage,
-} from "./store";
+import type { Alarm, AlarmUpdate, EngineStore, NewAlarm, NewOrphanClear, NewRawMessage, OrphanClear, RawMessage } from "./store";
 
 /** In-memory `EngineStore` with the same semantics as the PostgreSQL repository. */
 export class MemoryStore implements EngineStore {
@@ -43,9 +34,8 @@ export class MemoryStore implements EngineStore {
 
   async findAlarm(alarmKey: string, alarmTime: Date): Promise<Alarm | null> {
     return (
-      [...this.alarms]
-        .sort((a, b) => a.id - b.id)
-        .find((a) => a.alarmKey === alarmKey && a.alarmTime.getTime() === alarmTime.getTime()) ?? null
+      [...this.alarms].sort((a, b) => a.id - b.id).find((a) => a.alarmKey === alarmKey && a.alarmTime.getTime() === alarmTime.getTime()) ??
+      null
     );
   }
 

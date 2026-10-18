@@ -17,7 +17,16 @@ const sample = (pred: (r: HourlyRow) => boolean) => rows.find(pred)!;
 
 describe("enrichRows (FR-55)", () => {
   it("fills Site Master fields by site code and counts unmatched and empty codes", () => {
-    const bare = rows.map((r) => ({ ...r, office: null, nodality: null, vip: null, siteType: null, powerSource: null, battery: null, phone: null }));
+    const bare = rows.map((r) => ({
+      ...r,
+      office: null,
+      nodality: null,
+      vip: null,
+      siteType: null,
+      powerSource: null,
+      battery: null,
+      phone: null,
+    }));
     const out = enrichRows(bare, siteMaster);
     expect(out.unmatched).toBe(reference.stats.unmatched);
     expect(out.emptyCodes).toBe(reference.stats.emptyCodes);
@@ -53,7 +62,16 @@ describe("normalization (FR-56)", () => {
   });
 
   it("normalizes exactly the eight filter fields", () => {
-    expect(NORMALIZED_FIELDS).toEqual(["alarmName", "alarmText", "supplementaryInfo", "siteName", "office", "siteType", "nodality", "powerSource"]);
+    expect(NORMALIZED_FIELDS).toEqual([
+      "alarmName",
+      "alarmText",
+      "supplementaryInfo",
+      "siteName",
+      "office",
+      "siteType",
+      "nodality",
+      "powerSource",
+    ]);
   });
 
   const r = sample((x) => x.sheet === "Environmental" && x.alarmName === "RECTIFIER MINOR ALARM");

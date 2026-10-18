@@ -58,7 +58,9 @@ export function Dashboard() {
         <div className="counter">
           <span>Last 24 h</span>
           <small>
-            {s ? `${num.format(s.last24h.cleared)} cleared · ${num.format(s.last24h.orphanClears)} orphan · ${num.format(s.last24h.parseErrors)} parse errors` : "…"}
+            {s
+              ? `${num.format(s.last24h.cleared)} cleared · ${num.format(s.last24h.orphanClears)} orphan · ${num.format(s.last24h.parseErrors)} parse errors`
+              : "…"}
           </small>
         </div>
       </div>

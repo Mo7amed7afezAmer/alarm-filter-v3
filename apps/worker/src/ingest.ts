@@ -1,13 +1,5 @@
 import { insertRawMessages, knownGmailIds, type Db, type NewRawMessage } from "@alarm/db";
-import {
-  currentHistoryId,
-  getMessage,
-  historySince,
-  isQuotaError,
-  listSince,
-  type FetchedMessage,
-  type GmailApi,
-} from "./gmail";
+import { currentHistoryId, getMessage, historySince, isQuotaError, listSince, type FetchedMessage, type GmailApi } from "./gmail";
 
 /** NFR-03: concurrent `messages.get` calls. */
 export const FETCH_CONCURRENCY = 5;

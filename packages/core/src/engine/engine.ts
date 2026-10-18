@@ -90,13 +90,7 @@ export async function processBatch(store: EngineStore, opts: EngineOptions): Pro
   return outcomes;
 }
 
-async function handleAlarm(
-  store: EngineStore,
-  raw: RawMessage,
-  m: HashMessage,
-  opts: EngineOptions,
-  tz: string,
-): Promise<Outcome> {
+async function handleAlarm(store: EngineStore, raw: RawMessage, m: HashMessage, opts: EngineOptions, tz: string): Promise<Outcome> {
   const consecNbr = m.consecNbr ?? null;
 
   // FR-19: duplicate by consecNbr, or (no consecNbr) by key + time.

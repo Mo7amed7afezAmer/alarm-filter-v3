@@ -16,10 +16,12 @@ export async function buildHourlyXlsx(rows: HourlyRow[], columns: HourlyColumn[]
   const fills = officeFills(rows);
   for (const r of rows) {
     // Empty text is written as a blank cell.
-    const row = ws.addRow(columns.map((c) => {
-      const v = HOURLY_COLUMNS[c].value(r);
-      return v === "" ? null : v;
-    }));
+    const row = ws.addRow(
+      columns.map((c) => {
+        const v = HOURLY_COLUMNS[c].value(r);
+        return v === "" ? null : v;
+      }),
+    );
     const color = r.office ? fills.get(r.office) : undefined;
     if (color) {
       for (let i = 1; i <= columns.length; i++) {

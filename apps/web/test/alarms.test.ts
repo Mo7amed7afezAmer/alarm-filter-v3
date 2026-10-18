@@ -88,9 +88,27 @@ describe.skipIf(!testDatabaseUrl)("GET /api/v1/alarms and /alarm-names", () => {
     const body = await (await getAlarms(jsonRequest("GET", "/api/v1/alarms?status=cleared"))).json();
     expect(Object.keys(body.items[0]).sort()).toEqual(
       [
-        "alarmKey", "alarmName", "alarmTime", "battery", "category", "cellName", "clearTime", "clearType",
-        "consecNbr", "device", "durationMin", "id", "nodality", "office", "phone", "powerSource", "site",
-        "siteCode", "siteType", "status", "vip",
+        "alarmKey",
+        "alarmName",
+        "alarmTime",
+        "battery",
+        "category",
+        "cellName",
+        "clearTime",
+        "clearType",
+        "consecNbr",
+        "device",
+        "durationMin",
+        "id",
+        "nodality",
+        "office",
+        "phone",
+        "powerSource",
+        "site",
+        "siteCode",
+        "siteType",
+        "status",
+        "vip",
       ].sort(),
     );
   });

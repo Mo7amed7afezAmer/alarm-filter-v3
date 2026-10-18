@@ -12,15 +12,12 @@ export const GET = route({ minRole: "ADMIN" }, async () => ({
   users: await db.user.findMany({ select: publicUser, orderBy: { email: "asc" } }),
 }));
 
-export const POST = route(
-  { minRole: "ADMIN", body: z.object({ email: z.string().trim().email(), password, role }) },
-  async ({ body }) => {
-    const exists = await db.user.findFirst({ where: { email: { equals: body.email, mode: "insensitive" } } });
-    if (exists) throw conflict(`a user with e-mail ${body.email} already exists`);
-    const user = await db.user.create({
-      data: { email: body.email, role: body.role, passwordHash: await bcrypt.hash(body.password, BCRYPT_ROUNDS) },
-      select: publicUser,
-    });
-    return Response.json({ user }, { status: 201 });
-  },
-);
+export const POST = route({ minRole: "ADMIN", body: z.object({ email: z.string().trim().email(), password, role }) }, async ({ body }) => {
+  const exists = await db.user.findFirst({ where: { email: { equals: body.email, mode: "insensitive" } } });
+  if (exists) throw conflict(`a user with e-mail ${body.email} already exists`);
+  const user = await db.user.create({
+    data: { email: body.email, role: body.role, passwordHash: await bcrypt.hash(body.password, BCRYPT_ROUNDS) },
+    select: publicUser,
+  });
+  return Response.json({ user }, { status: 201 });
+});

@@ -26,10 +26,7 @@ describe("createGmailApi: start-up errors", () => {
 
   it("fails clearly when token.json is missing and points at pnpm gmail:auth", async () => {
     const creds = join(dir, "credentials.json");
-    writeFileSync(
-      creds,
-      JSON.stringify({ installed: { client_id: "id", client_secret: "secret", redirect_uris: ["http://localhost"] } }),
-    );
+    writeFileSync(creds, JSON.stringify({ installed: { client_id: "id", client_secret: "secret", redirect_uris: ["http://localhost"] } }));
     const err = await createGmailApi({ credentialsPath: creds, tokenPath: missing }).catch((e: unknown) => e);
     expect(err).toBeInstanceOf(GmailSetupError);
     expect(String((err as Error).message)).toContain("pnpm gmail:auth");
@@ -54,9 +51,11 @@ describe("loadGmailConfig (NFR-34)", () => {
   });
 
   it("reads overrides", () => {
-    expect(
-      loadGmailConfig({ ...base, INITIAL_BACKFILL_HOURS: "48", MAX_MESSAGES_PER_RUN: "50", GMAIL_QUERY: "from:x" }),
-    ).toMatchObject({ initialBackfillHours: 48, maxMessagesPerRun: 50, gmailQuery: "from:x" });
+    expect(loadGmailConfig({ ...base, INITIAL_BACKFILL_HOURS: "48", MAX_MESSAGES_PER_RUN: "50", GMAIL_QUERY: "from:x" })).toMatchObject({
+      initialBackfillHours: 48,
+      maxMessagesPerRun: 50,
+      gmailQuery: "from:x",
+    });
   });
 
   it.each(["GOOGLE_CREDENTIALS_PATH", "GOOGLE_TOKEN_PATH"])("requires %s", (name) => {

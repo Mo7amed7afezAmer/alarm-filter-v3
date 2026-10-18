@@ -2,7 +2,7 @@ import { readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { expect, test, type Page } from "@playwright/test";
 import ExcelJS from "exceljs";
-import { E2E_OPERATOR } from "./global-setup";
+import { E2E_OPERATOR, E2E_USER } from "./global-setup";
 
 // G-T14: the hourly pipeline in the browser (D-10). Reports come from HOURLY_GMAIL_MOCK_DIR
 // (playwright.config.ts); the Site Master endpoint of G-T15 is mocked with samples/hourly/site-master.json.
@@ -19,10 +19,10 @@ const REAL = "mock-nsn-update-output_rar";
 const PLAIN = "mock-nsn-update-output_xlsx";
 const BIG = "mock-report-40k_rar";
 
-async function signIn(page: Page) {
+async function signIn(page: Page, user = E2E_OPERATOR) {
   await page.goto("/login");
-  await page.getByLabel("E-mail").fill(E2E_OPERATOR.email);
-  await page.getByLabel("Password").fill(E2E_OPERATOR.password);
+  await page.getByLabel("E-mail").fill(user.email);
+  await page.getByLabel("Password").fill(user.password);
   await page.getByRole("button", { name: "Sign in" }).click();
   await page.waitForURL("**/alarms");
 }
@@ -106,6 +106,13 @@ test.describe("hourly reports in the browser", () => {
     await page.getByRole("button", { name: "Download images" }).click();
     await expect.poll(() => downloads.length).toBe(Math.ceil(reference.stats.bySheet.HW! / 40));
     expect(downloads.every((n) => /^hourly-other-\d+\.png$/.test(n))).toBe(true);
+  });
+
+  test("a VIEWER sees the reports but no Process link (FR-64)", async ({ page }) => {
+    await signIn(page, E2E_USER);
+    await page.goto("/hourly");
+    await expect(page.getByRole("cell", { name: /nsn-update-output\.rar/ })).toBeVisible({ timeout: 60_000 });
+    await expect(page.getByTestId("process")).toHaveCount(0);
   });
 
   test("shows the fallback message without WebAssembly", async ({ page }) => {

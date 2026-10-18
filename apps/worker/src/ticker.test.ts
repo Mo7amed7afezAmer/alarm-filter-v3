@@ -47,7 +47,10 @@ describe("ticker (FR-01, NFR-10)", () => {
 
   it("idle() waits for a running cycle, up to a timeout (NFR-14)", async () => {
     let release!: () => void;
-    const ticker = createTicker(() => new Promise<void>((r) => (release = r)), () => {});
+    const ticker = createTicker(
+      () => new Promise<void>((r) => (release = r)),
+      () => {},
+    );
     void ticker.tick();
 
     expect(await ticker.idle(20)).toBe(false);

@@ -130,7 +130,10 @@ export function HourlyReport({ id }: { id: string }) {
     setError(null);
     processReport(id)
       .then((r) => live && setReport(r))
-      .catch((e: unknown) => live && setError(e instanceof HourlyError ? { code: e.code, message: e.message } : { code: "ERROR", message: String(e) }));
+      .catch(
+        (e: unknown) =>
+          live && setError(e instanceof HourlyError ? { code: e.code, message: e.message } : { code: "ERROR", message: String(e) }),
+      );
     return () => {
       live = false;
     };
@@ -146,7 +149,14 @@ export function HourlyReport({ id }: { id: string }) {
     const f = filterHourlyRows(inSheet, filter);
     return sort ? sortHourlyRows(f, sort, dir) : f;
   }, [inSheet, filter, sort, dir]);
-  const facets = useMemo(() => hourlyFacets(inSheet, FACETS.map((f) => f.field)), [inSheet]);
+  const facets = useMemo(
+    () =>
+      hourlyFacets(
+        inSheet,
+        FACETS.map((f) => f.field),
+      ),
+    [inSheet],
+  );
 
   const setParam = (k: string, v: string | null) => {
     const next = new URLSearchParams(params);
@@ -163,7 +173,10 @@ export function HourlyReport({ id }: { id: string }) {
 
   async function exportXlsx() {
     const bytes = await buildHourlyXlsx(visible, columns);
-    download(new Blob([bytes as Uint8Array<ArrayBuffer>], { type: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" }), `hourly-${id}.xlsx`);
+    download(
+      new Blob([bytes as Uint8Array<ArrayBuffer>], { type: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" }),
+      `hourly-${id}.xlsx`,
+    );
   }
   async function makeImages() {
     const imgs = await renderTableImages(visible, {
@@ -194,7 +207,11 @@ export function HourlyReport({ id }: { id: string }) {
         {report.filename} <small data-testid="hourly-count">{visible.length.toLocaleString("en-US")}</small> rows
       </h1>
       <p className="muted">
-        Processed in <span data-testid="hourly-ms" data-ms={Math.round(report.ms)}>{(report.ms / 1000).toFixed(1)}</span> s · {report.stats.unmatched} unmatched site codes · {report.stats.emptyCodes} empty codes
+        Processed in{" "}
+        <span data-testid="hourly-ms" data-ms={Math.round(report.ms)}>
+          {(report.ms / 1000).toFixed(1)}
+        </span>{" "}
+        s · {report.stats.unmatched} unmatched site codes · {report.stats.emptyCodes} empty codes
       </p>
 
       <nav className="tabs" role="tablist">
@@ -212,7 +229,11 @@ export function HourlyReport({ id }: { id: string }) {
         </label>
         <label>
           From
-          <input defaultValue={filter.from ?? ""} placeholder="YYYY-MM-DD HH:mm:ss" onBlur={(e) => setParam("from", e.target.value || null)} />
+          <input
+            defaultValue={filter.from ?? ""}
+            placeholder="YYYY-MM-DD HH:mm:ss"
+            onBlur={(e) => setParam("from", e.target.value || null)}
+          />
         </label>
         <label>
           To
@@ -236,7 +257,11 @@ export function HourlyReport({ id }: { id: string }) {
               {facets[field]?.slice(0, 200).map((f) => (
                 <li key={f.value}>
                   <label>
-                    <input type="checkbox" checked={!!(filter[key] as string[] | undefined)?.includes(f.value)} onChange={() => toggle(key, f.value)} />{" "}
+                    <input
+                      type="checkbox"
+                      checked={!!(filter[key] as string[] | undefined)?.includes(f.value)}
+                      onChange={() => toggle(key, f.value)}
+                    />{" "}
                     {f.value} ({f.count})
                   </label>
                 </li>
@@ -285,12 +310,16 @@ export function HourlyReport({ id }: { id: string }) {
           Copy as table
         </button>
         <label>
-          <input type="checkbox" checked={imgOpts.compact} onChange={(e) => setImgOpts({ ...imgOpts, compact: e.target.checked })} /> Compact
-          columns
+          <input type="checkbox" checked={imgOpts.compact} onChange={(e) => setImgOpts({ ...imgOpts, compact: e.target.checked })} />{" "}
+          Compact columns
         </label>
         <label>
-          <input type="checkbox" checked={imgOpts.perCategory} onChange={(e) => setImgOpts({ ...imgOpts, perCategory: e.target.checked })} /> One
-          set per category
+          <input
+            type="checkbox"
+            checked={imgOpts.perCategory}
+            onChange={(e) => setImgOpts({ ...imgOpts, perCategory: e.target.checked })}
+          />{" "}
+          One set per category
         </label>
         <select
           aria-label="Rows per image"
@@ -303,14 +332,24 @@ export function HourlyReport({ id }: { id: string }) {
             </option>
           ))}
         </select>
-        <button type="button" onClick={() => void makeImages().then((i) => shareImages(i, report.filename)).then((how) => setMsg(how === "shared" ? "Shared." : "Images downloaded."))}>
+        <button
+          type="button"
+          onClick={() =>
+            void makeImages()
+              .then((i) => shareImages(i, report.filename))
+              .then((how) => setMsg(how === "shared" ? "Shared." : "Images downloaded."))
+          }
+        >
           Share images
         </button>
         <button type="button" onClick={() => void makeImages().then((imgs) => imgs.forEach((i) => download(i.blob, i.name)))}>
           Download images
         </button>
         {images[0] && (
-          <button type="button" onClick={() => void copyImage(images[0]!).then((how) => setMsg(how === "copied" ? "Image copied." : "Image downloaded."))}>
+          <button
+            type="button"
+            onClick={() => void copyImage(images[0]!).then((how) => setMsg(how === "copied" ? "Image copied." : "Image downloaded."))}
+          >
             Copy first image
           </button>
         )}

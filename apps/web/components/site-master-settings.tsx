@@ -149,11 +149,7 @@ export function SiteMasterSettings() {
               <th />
             </tr>
           </thead>
-          <tbody>
-            {data?.items.map((s) => (
-              <Row key={s.code} site={s} onSaved={reload} />
-            ))}
-          </tbody>
+          <tbody>{data?.items.map((s) => <Row key={s.code} site={s} onSaved={reload} />)}</tbody>
         </table>
       </div>
       <nav>

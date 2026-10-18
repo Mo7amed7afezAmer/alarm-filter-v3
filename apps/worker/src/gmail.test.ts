@@ -31,7 +31,7 @@ describe("historySince (FR-02)", () => {
     expect(gmail.count("historyList")).toBe(2);
   });
 
-  it("returns \"expired\" on HTTP 404", async () => {
+  it('returns "expired" on HTTP 404', async () => {
     expect(await historySince(new MockGmail({ historyExpired: true }), "8000", LABEL.id)).toBe("expired");
   });
 });

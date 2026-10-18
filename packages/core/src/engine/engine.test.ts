@@ -50,14 +50,9 @@ const cmp = (a: string, b: string) => (a < b ? -1 : a > b ? 1 : 0);
 /** Same shape as expected-alarms.json. */
 function snapshot(store: MemoryStore) {
   const alarms = [...store.alarms].sort(
-    (a, b) =>
-      a.alarmTime.getTime() - b.alarmTime.getTime() ||
-      cmp(a.alarmKey, b.alarmKey) ||
-      cmp(a.consecNbr ?? "", b.consecNbr ?? ""),
+    (a, b) => a.alarmTime.getTime() - b.alarmTime.getTime() || cmp(a.alarmKey, b.alarmKey) || cmp(a.consecNbr ?? "", b.consecNbr ?? ""),
   );
-  const orphans = [...store.orphanClears].sort(
-    (a, b) => a.clearTime.getTime() - b.clearTime.getTime() || cmp(a.subject, b.subject),
-  );
+  const orphans = [...store.orphanClears].sort((a, b) => a.clearTime.getTime() - b.clearTime.getTime() || cmp(a.subject, b.subject));
   const raws = [...store.rawMessages].sort((a, b) => cmp(a.gmailId, b.gmailId));
   return {
     alarms: alarms.map((a) => ({

@@ -111,6 +111,9 @@ R-02 and R-03 are not defined in PLAN.md §7.
 | G-T15 import columns | Headers are matched ignoring case, spaces and punctuation: Code (or Site Code), Site Name, Office, Nodality, VIP, Site Type, Power Source, Battery, Notes; phone from Guard Number / Guard Phone / Phone / Phone Number / Mobile / Contact (FR-66). A skipped row is an invalid code, a code already seen in the file, or an empty office (samples/hourly: 136 inserted / 2 skipped, as FR-65). | mohamed.hafez@docnile.com / 2026-10-17 |
 | G-T15 phone | A numeric cell gets the leading 0 back (Excel only drops it from numbers); a text cell is split on `/ , ;` and new lines; repeated numbers are dropped; numbers are joined with " / ". | mohamed.hafez@docnile.com / 2026-10-17 |
 | G-T15 normalizations UI | Normalizations are edited through the API only (FR-68 names the route, no page). | mohamed.hafez@docnile.com / 2026-10-17 |
+| G-T16 rate limit | D-08's 10 req/min/IP login limit runs in Caddy with the `github.com/mholt/caddy-ratelimit` plugin (pinned, built with xcaddy into the `proxy` image) on `POST /api/auth/callback/credentials`. | mohamed.hafez@docnile.com / 2026-10-17 |
+| G-T16 backups | Daily `pg_dump -Fc` into `./backups` on the host (bind mount, gitignored); files older than 14 days are deleted; `scripts/restore.sh <file>` restores one. | mohamed.hafez@docnile.com / 2026-10-17 |
+| G-T16 parity rows | An FR changed or dropped by a recorded decision is green in `docs/PARITY.md` when its row names the decision and the test of the behaviour that replaced it. | mohamed.hafez@docnile.com / 2026-10-17 |
 
 ## Approval (PLAN.md §10)
 

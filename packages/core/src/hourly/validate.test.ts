@@ -33,7 +33,10 @@ describe("limitsFromEnv (FR-50 … FR-52)", () => {
     expect(limitsFromEnv({})).toEqual({ maxRarBytes: 25 * MB, maxExtractBytes: 100 * MB });
   });
   it("reads the env values", () => {
-    expect(limitsFromEnv({ HOURLY_MAX_RAR_MB: "50", HOURLY_MAX_EXTRACT_MB: "200" })).toEqual({ maxRarBytes: 50 * MB, maxExtractBytes: 200 * MB });
+    expect(limitsFromEnv({ HOURLY_MAX_RAR_MB: "50", HOURLY_MAX_EXTRACT_MB: "200" })).toEqual({
+      maxRarBytes: 50 * MB,
+      maxExtractBytes: 200 * MB,
+    });
   });
 });
 

@@ -1,0 +1,18 @@
+# NFR-43: Prettier formats the source; generated files, fixtures and documents are left alone.
+node_modules
+pnpm-lock.yaml
+**/.next
+**/.next-e2e
+**/.next-e2e-prod
+**/.e2e-hourly
+**/dist
+**/coverage
+**/test-results
+**/playwright-report
+**/public/unrar.wasm
+**/migrations/**/*.sql
+samples
+tests/fixtures
+secrets
+backups
+*.md

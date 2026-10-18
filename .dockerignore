@@ -10,3 +10,10 @@ credentials.json
 token.json
 samples
 tests
+backups
+**/.next-e2e
+**/.next-e2e-prod
+**/.e2e-hourly
+**/test-results
+**/playwright-report
+**/*.tsbuildinfo

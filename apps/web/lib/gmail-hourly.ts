@@ -96,8 +96,12 @@ function readJson<T>(path: string, what: string): T {
 }
 
 function gmailFromFiles(credentialsPath: string, tokenPath: string): HourlyApi {
-  const creds = readJson<{ installed?: { client_id?: string; client_secret?: string } }>(credentialsPath, "Gmail OAuth client file (GOOGLE_CREDENTIALS_PATH)");
-  if (!creds.installed?.client_id || !creds.installed.client_secret) throw new Error("GOOGLE_CREDENTIALS_PATH is not a Desktop OAuth client");
+  const creds = readJson<{ installed?: { client_id?: string; client_secret?: string } }>(
+    credentialsPath,
+    "Gmail OAuth client file (GOOGLE_CREDENTIALS_PATH)",
+  );
+  if (!creds.installed?.client_id || !creds.installed.client_secret)
+    throw new Error("GOOGLE_CREDENTIALS_PATH is not a Desktop OAuth client");
   const auth = new OAuth2Client({ clientId: creds.installed.client_id, clientSecret: creds.installed.client_secret });
   // Access tokens refresh in memory; token.json is mounted read-only (NFR-21).
   auth.setCredentials(readJson<Credentials>(tokenPath, "Gmail token file (GOOGLE_TOKEN_PATH)"));

@@ -5,7 +5,11 @@ import { contentDisposition, downloadChecked, REPORT_ID, reportFile, streamBytes
 // Reads Gmail on every request.
 export const dynamic = "force-dynamic";
 
-const CONTENT_TYPE = { rar: "application/vnd.rar", xlsx: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", other: "application/octet-stream" };
+const CONTENT_TYPE = {
+  rar: "application/vnd.rar",
+  xlsx: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+  other: "application/octet-stream",
+};
 
 // D-10: the browser processes the report; the server streams the checked attachment
 // (FR-48, FR-50, FR-52). OPERATOR, as processing was (FR-49, decided 2026-10-17).

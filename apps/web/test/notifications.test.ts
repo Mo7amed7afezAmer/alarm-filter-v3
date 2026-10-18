@@ -97,7 +97,13 @@ describe.skipIf(!testDatabaseUrl)("/api/v1/notifications", () => {
     const t = new Date(NOW.getTime() - 60_000);
     await db.alarm.createMany({
       data: Array.from({ length: 60 }, (_, i) => ({
-        alarmKey: `N||S${i}`, alarmName: "N", site: `S${i}`, category: "OTHER" as const, alarmTime: t, createdAt: t, office: DEFAULT_OFFICE,
+        alarmKey: `N||S${i}`,
+        alarmName: "N",
+        site: `S${i}`,
+        category: "OTHER" as const,
+        alarmTime: t,
+        createdAt: t,
+        office: DEFAULT_OFFICE,
       })),
     });
     expect((await feed()).items).toHaveLength(50);

@@ -77,7 +77,9 @@ export function hourlyFacets(rows: HourlyRow[], fields: FacetField[]) {
       const k = String(v);
       counts.set(k, (counts.get(k) ?? 0) + 1);
     }
-    out[field] = [...counts].map(([value, count]) => ({ value, count })).sort((a, b) => b.count - a.count || a.value.localeCompare(b.value));
+    out[field] = [...counts]
+      .map(([value, count]) => ({ value, count }))
+      .sort((a, b) => b.count - a.count || a.value.localeCompare(b.value));
   }
   return out;
 }

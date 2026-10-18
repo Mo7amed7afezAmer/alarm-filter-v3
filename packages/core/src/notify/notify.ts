@@ -23,7 +23,14 @@ export const DEFAULT_NOTIFY_PREFS: NotifyPrefs = {
 
 const strings = (v: unknown, trim: boolean): string[] | undefined =>
   Array.isArray(v)
-    ? [...new Set(v.filter((s): s is string => typeof s === "string").map((s) => (trim ? s.trim() : s)).filter(Boolean))]
+    ? [
+        ...new Set(
+          v
+            .filter((s): s is string => typeof s === "string")
+            .map((s) => (trim ? s.trim() : s))
+            .filter(Boolean),
+        ),
+      ]
     : undefined;
 
 /** Reads a stored JSON value into prefs; missing or invalid fields take the default. */
@@ -42,10 +49,7 @@ export function normalizePrefs(value: unknown): NotifyPrefs {
   };
 }
 
-export function matchesPrefs(
-  alarm: { category: Category; alarmName: string; site: string },
-  prefs: NotifyPrefs,
-): boolean {
+export function matchesPrefs(alarm: { category: Category; alarmName: string; site: string }, prefs: NotifyPrefs): boolean {
   if (!prefs.enabled) return false;
   if (prefs.categories.length && !prefs.categories.includes(alarm.category)) return false;
   if (prefs.alarmNames.length && !prefs.alarmNames.includes(alarm.alarmName)) return false;

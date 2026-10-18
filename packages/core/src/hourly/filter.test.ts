@@ -19,7 +19,11 @@ describe("filterHourlyRows (FR-59)", () => {
     ["alarm name", { alarm: ["BCCH MISSING"] }, (r: HourlyRow) => r.alarmName === "BCCH MISSING"],
     ["category", { category: ["POWER" as const] }, (r: HourlyRow) => r.category === "POWER"],
     ["vip", { vip: true }, (r: HourlyRow) => r.vip === true],
-    ["sheet AND category", { sheet: ["Environmental"], category: ["OTHER" as const] }, (r: HourlyRow) => r.sheet === "Environmental" && r.category === "OTHER"],
+    [
+      "sheet AND category",
+      { sheet: ["Environmental"], category: ["OTHER" as const] },
+      (r: HourlyRow) => r.sheet === "Environmental" && r.category === "OTHER",
+    ],
   ])("%s", (_name, filter, pred) => {
     const out = filterHourlyRows(rows, filter);
     expect(out).toHaveLength(count(pred));

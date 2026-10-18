@@ -73,7 +73,9 @@ export function parseSiteMaster(sheets: SheetRows): SiteMasterImport {
     const first = (names: readonly string[]) => names.map((n) => cells.get(n)).find((v) => text(v) !== null);
     const row = i + 2;
 
-    const code = String(first(COLS.code) ?? "").trim().toUpperCase();
+    const code = String(first(COLS.code) ?? "")
+      .trim()
+      .toUpperCase();
     if (!SITE_CODE_RE.test(code)) return skippedRows.push({ row, reason: "INVALID_CODE" });
     if (seen.has(code)) return skippedRows.push({ row, reason: "DUPLICATE_CODE" });
     seen.add(code);

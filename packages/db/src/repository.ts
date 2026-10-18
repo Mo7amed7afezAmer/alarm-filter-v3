@@ -92,10 +92,7 @@ export function updateAlarm(db: Db, id: number, data: AlarmUpdate): Promise<Alar
 
 // ---------------------------------------------------------------- orphan clears
 
-export type NewOrphanClear = Pick<
-  OrphanClear,
-  "alarmKey" | "subject" | "clearTime" | "rawMessageId" | "consecNbr" | "office"
->;
+export type NewOrphanClear = Pick<OrphanClear, "alarmKey" | "subject" | "clearTime" | "rawMessageId" | "consecNbr" | "office">;
 
 /** FR-22: store a Clear that has no target yet. */
 export function createOrphanClear(db: Db, data: NewOrphanClear): Promise<OrphanClear> {
@@ -103,10 +100,7 @@ export function createOrphanClear(db: Db, data: NewOrphanClear): Promise<OrphanC
 }
 
 /** FR-22: orphan clears with this CONSEC_NBR, or with this key; oldest first. */
-export function findOrphanClears(
-  db: Db,
-  by: { consecNbr: string } | { alarmKey: string },
-): Promise<OrphanClear[]> {
+export function findOrphanClears(db: Db, by: { consecNbr: string } | { alarmKey: string }): Promise<OrphanClear[]> {
   return db.orphanClear.findMany({ where: by, orderBy: [{ clearTime: "asc" }, { id: "asc" }] });
 }
 

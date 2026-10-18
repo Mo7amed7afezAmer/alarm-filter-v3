@@ -63,10 +63,7 @@ export const GET = route({ minRole: "VIEWER", query }, async ({ user, query: q }
   if (total > MAX_ROWS) {
     throw new ApiError(413, "TOO_MANY_ROWS", `${total} rows match; the export is limited to ${MAX_ROWS}. Narrow the filters.`);
   }
-  const alarms = await withSiteInfo(
-    db,
-    await db.alarm.findMany({ where, orderBy: alarmOrder(q.status), select: ALARM_SELECT }),
-  );
+  const alarms = await withSiteInfo(db, await db.alarm.findMany({ where, orderBy: alarmOrder(q.status), select: ALARM_SELECT }));
 
   const rows = alarms.map((a) => {
     const base = [

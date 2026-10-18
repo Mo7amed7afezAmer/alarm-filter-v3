@@ -60,9 +60,7 @@ export function route<
       if (!user) return errorResponse(401, "UNAUTHORIZED", "sign in required");
       if (!hasRole(user.role, opts.minRole)) return errorResponse(403, "FORBIDDEN", `requires role ${opts.minRole}`);
 
-      const query = opts.query
-        ? parse(opts.query, Object.fromEntries(new URL(req.url).searchParams), "query")
-        : undefined;
+      const query = opts.query ? parse(opts.query, Object.fromEntries(new URL(req.url).searchParams), "query") : undefined;
       const params = opts.params ? parse(opts.params, ctx?.params ?? {}, "path parameters") : undefined;
       let body: unknown;
       if (opts.body) {

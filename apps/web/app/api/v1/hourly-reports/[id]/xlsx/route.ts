@@ -1,7 +1,16 @@
 import { extractXlsxFromRar } from "@alarm/core";
 import { z } from "zod";
 import { route } from "@/lib/api";
-import { asApiError, contentDisposition, downloadChecked, hourlyLimits, REPORT_ID, reportFile, streamBytes, unrarWasm } from "@/lib/hourly-files";
+import {
+  asApiError,
+  contentDisposition,
+  downloadChecked,
+  hourlyLimits,
+  REPORT_ID,
+  reportFile,
+  streamBytes,
+  unrarWasm,
+} from "@/lib/hourly-files";
 
 // Reads Gmail on every request.
 export const dynamic = "force-dynamic";

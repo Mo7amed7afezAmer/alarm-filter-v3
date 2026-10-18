@@ -3,7 +3,10 @@ import { regionOf, type HourlyRow, type SiteMasterRecord } from "./types";
 
 type Enrichment = Pick<HourlyRow, "office" | "nodality" | "vip" | "siteType" | "powerSource" | "battery" | "phone" | "region">;
 
-export function enrichRows<R extends { siteCode: string }>(rows: R[], siteMaster: SiteMasterRecord[]): {
+export function enrichRows<R extends { siteCode: string }>(
+  rows: R[],
+  siteMaster: SiteMasterRecord[],
+): {
   rows: (Omit<R, keyof Enrichment> & Enrichment)[];
   unmatched: number;
   emptyCodes: number;

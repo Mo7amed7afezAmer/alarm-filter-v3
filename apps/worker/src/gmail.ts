@@ -69,7 +69,11 @@ function statusOf(err: unknown): number | undefined {
 }
 
 function reasonsOf(err: unknown): string[] {
-  const e = err as { reason?: unknown; errors?: { reason?: unknown }[]; response?: { data?: { error?: { errors?: { reason?: unknown }[] } } } };
+  const e = err as {
+    reason?: unknown;
+    errors?: { reason?: unknown }[];
+    response?: { data?: { error?: { errors?: { reason?: unknown }[] } } };
+  };
   const list = [e?.reason, ...(e?.errors ?? []).map((x) => x.reason), ...(e?.response?.data?.error?.errors ?? []).map((x) => x.reason)];
   return list.filter((r): r is string => typeof r === "string");
 }
@@ -143,13 +147,8 @@ export async function currentHistoryId(gmail: GmailApi): Promise<string> {
 }
 
 /** FR-03: `after:<epoch> (label:…) <GMAIL_QUERY>`; ids oldest first. */
-export async function listSince(
-  gmail: GmailApi,
-  opts: { after: Date; labelName: string; query: string },
-): Promise<string[]> {
-  const q = [`after:${Math.floor(opts.after.getTime() / 1000)}`, `(label:"${opts.labelName}")`, opts.query]
-    .filter(Boolean)
-    .join(" ");
+export async function listSince(gmail: GmailApi, opts: { after: Date; labelName: string; query: string }): Promise<string[]> {
+  const q = [`after:${Math.floor(opts.after.getTime() / 1000)}`, `(label:"${opts.labelName}")`, opts.query].filter(Boolean).join(" ");
   const newestFirst: string[] = [];
   let pageToken: string | undefined;
   do {

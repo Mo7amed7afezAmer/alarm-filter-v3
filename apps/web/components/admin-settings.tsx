@@ -68,7 +68,12 @@ export function HiddenTypes({ url, names }: { url: string; names: "hidden" | "hi
       <legend>Hidden alarm types</legend>
       {CATS.map((c) => (
         <label key={c}>
-          <input type="checkbox" checked={f.categories.includes(c)} onChange={() => void save({ ...f, categories: toggle(f.categories, c) })} /> {c}
+          <input
+            type="checkbox"
+            checked={f.categories.includes(c)}
+            onChange={() => void save({ ...f, categories: toggle(f.categories, c) })}
+          />{" "}
+          {c}
         </label>
       ))}
       <ul className="names">
@@ -123,7 +128,13 @@ function RulesEditor() {
           {rules.map((r, i) => (
             <tr key={i}>
               <td>
-                <input type="number" min={0} max={100000} value={r.priority} onChange={(e) => set(i, { priority: Number(e.target.value) })} />
+                <input
+                  type="number"
+                  min={0}
+                  max={100000}
+                  value={r.priority}
+                  onChange={(e) => set(i, { priority: Number(e.target.value) })}
+                />
               </td>
               <td>
                 <input value={r.pattern} maxLength={100} onChange={(e) => set(i, { pattern: e.target.value })} />

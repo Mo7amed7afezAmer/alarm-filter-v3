@@ -57,7 +57,11 @@ describe.skipIf(!testDatabaseUrl)("migrations (alarms_test)", () => {
     const rows = await db.$queryRaw<{ indexdef: string }[]>`
       SELECT indexdef FROM pg_indexes WHERE schemaname = 'public'`;
     const defs = rows.map((r) => r.indexdef.replace(/"/g, ""));
-    const has = (re: RegExp) => expect(defs.some((d) => re.test(d)), String(re)).toBe(true);
+    const has = (re: RegExp) =>
+      expect(
+        defs.some((d) => re.test(d)),
+        String(re),
+      ).toBe(true);
 
     has(/UNIQUE INDEX .* ON public\.raw_messages .*\(gmailId\)/);
     has(/ON public\.raw_messages .*\(receivedAt\)/);

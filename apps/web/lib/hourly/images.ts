@@ -23,7 +23,9 @@ export interface TableImage {
 /** Splits rows into image pages (per category first when asked). */
 export function imagePages(rows: HourlyRow[], rowsPerImage: number, perCategory: boolean) {
   const groups = perCategory
-    ? (["DOWN", "POWER", "OTHER"] as const).map((c) => ({ label: c, rows: rows.filter((r) => r.category === c) })).filter((g) => g.rows.length)
+    ? (["DOWN", "POWER", "OTHER"] as const)
+        .map((c) => ({ label: c, rows: rows.filter((r) => r.category === c) }))
+        .filter((g) => g.rows.length)
     : [{ label: "ALL", rows }];
   return groups.flatMap((g) => {
     const pages = Math.max(1, Math.ceil(g.rows.length / rowsPerImage));
@@ -48,7 +50,9 @@ export async function renderTableImages(rows: HourlyRow[], opts: ImageOptions): 
   for (const p of imagePages(rows, opts.rowsPerImage, opts.perCategory)) {
     const head = opts.columns.map((c) => HOURLY_COLUMNS[c].header);
     const body = p.rows.map((r) => opts.columns.map((c) => cellText(HOURLY_COLUMNS[c].value(r))));
-    const widths = head.map((h, i) => Math.min(360, Math.max(measure.measureText(h).width, ...body.map((b) => measure.measureText(b[i]!).width)) + 2 * PAD));
+    const widths = head.map((h, i) =>
+      Math.min(360, Math.max(measure.measureText(h).width, ...body.map((b) => measure.measureText(b[i]!).width)) + 2 * PAD),
+    );
     const width = Math.ceil(widths.reduce((a, b) => a + b, 0));
     const height = (body.length + 2) * ROW_H;
 
@@ -86,7 +90,9 @@ export async function renderTableImages(rows: HourlyRow[], opts: ImageOptions): 
     drawRow(head, ROW_H, "#e8e8e8", true);
     p.rows.forEach((r, i) => drawRow(body[i]!, (i + 2) * ROW_H, r.office && fills.get(r.office) ? `#${fills.get(r.office)}` : null, false));
 
-    const blob = await new Promise<Blob>((resolve, reject) => canvas.toBlob((b) => (b ? resolve(b) : reject(new Error("PNG failed"))), "image/png"));
+    const blob = await new Promise<Blob>((resolve, reject) =>
+      canvas.toBlob((b) => (b ? resolve(b) : reject(new Error("PNG failed"))), "image/png"),
+    );
     out.push({ name: `hourly-${p.label.toLowerCase()}-${p.page}.png`, blob });
   }
   return out;

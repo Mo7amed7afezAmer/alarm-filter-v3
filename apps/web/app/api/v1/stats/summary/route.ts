@@ -38,7 +38,7 @@ export const GET = route({ minRole: "VIEWER", query: z.object({ days }) }, async
     db.rawMessage.count({ where: { office, parseError: { not: null }, receivedAt: { gte: day } } }),
   ]);
 
-  const byCategory = <T,>(rows: { category: string }[], pick: (r: never) => T, empty: T) =>
+  const byCategory = <T>(rows: { category: string }[], pick: (r: never) => T, empty: T) =>
     Object.fromEntries(
       CATEGORY_LIST.map((c) => {
         const r = rows.find((x) => x.category === c);

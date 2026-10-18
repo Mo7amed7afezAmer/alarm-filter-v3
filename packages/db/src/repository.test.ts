@@ -149,13 +149,10 @@ describe.skipIf(!testDatabaseUrl)("repository (alarms_test)", () => {
       });
 
       expect((await findOrphanClears(db, { consecNbr: "42" })).map((o) => o.id)).toEqual([byConsec.id]);
-      expect((await findOrphanClears(db, { alarmKey: "LINK FAILURE||SITE_A" })).map((o) => o.id)).toEqual([
-        byConsec.id,
-        byKey.id,
-      ]);
+      expect((await findOrphanClears(db, { alarmKey: "LINK FAILURE||SITE_A" })).map((o) => o.id)).toEqual([byConsec.id, byKey.id]);
 
       await deleteOrphanClear(db, byConsec.id);
-      expect((await findOrphanClears(db, { consecNbr: "42" }))).toEqual([]);
+      expect(await findOrphanClears(db, { consecNbr: "42" })).toEqual([]);
     });
   });
 
@@ -192,10 +189,20 @@ describe.skipIf(!testDatabaseUrl)("repository (alarms_test)", () => {
       await markProcessed(db, oldOrphanRaw.id);
       await markProcessed(db, newOrphanRaw.id);
       await createOrphanClear(db, {
-        alarmKey: "K5", subject: "x", clearTime: oldOrphanRaw.receivedAt, rawMessageId: oldOrphanRaw.id, consecNbr: null, office: null,
+        alarmKey: "K5",
+        subject: "x",
+        clearTime: oldOrphanRaw.receivedAt,
+        rawMessageId: oldOrphanRaw.id,
+        consecNbr: null,
+        office: null,
       });
       await createOrphanClear(db, {
-        alarmKey: "K6", subject: "y", clearTime: newOrphanRaw.receivedAt, rawMessageId: newOrphanRaw.id, consecNbr: null, office: null,
+        alarmKey: "K6",
+        subject: "y",
+        clearTime: newOrphanRaw.receivedAt,
+        rawMessageId: newOrphanRaw.id,
+        consecNbr: null,
+        office: null,
       });
       return { since, keep, reopen, closedBefore };
     }

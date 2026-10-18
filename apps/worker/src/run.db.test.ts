@@ -6,7 +6,7 @@ import { afterAll, beforeAll, beforeEach, describe, expect, it, vi } from "vites
 import { loadWorkerConfig, type WorkerConfig } from "./config";
 import { startHealthServer } from "./health";
 import { LabelDirectory } from "./labels";
-import { runOnce, type RunDeps } from "./run";
+import { runCycle, runOnce, summaryLine, type RunDeps } from "./run";
 import { GONE_ID, MockGmail, OFFICE, SAMPLE_IDS, type MockOptions } from "./test/mock-gmail";
 
 const url = process.env.TEST_DATABASE_URL;
@@ -162,8 +162,7 @@ describe.skipIf(!url)("worker cycle against alarms_test", () => {
       expect((await status()).reprocessDays).toBeNull();
       const after = await db.alarm.findMany({ orderBy: [{ alarmTime: "asc" }, { alarmKey: "asc" }] });
       // Ids and createdAt change when alarms are recreated; everything else must match.
-      const shape = (rows: typeof before) =>
-        rows.map((a) => ({ ...a, id: undefined, createdAt: undefined }));
+      const shape = (rows: typeof before) => rows.map((a) => ({ ...a, id: undefined, createdAt: undefined }));
       expect(shape(after)).toEqual(shape(before));
       // G-T11: recreated alarms keep their createdAt, so seen alarms do not become unread again.
       expect(after.map((a) => a.createdAt)).toEqual(before.map((a) => a.createdAt));
@@ -178,8 +177,21 @@ describe.skipIf(!url)("worker cycle against alarms_test", () => {
 
       expect(results.map((r) => r.outcome).sort()).toEqual(["locked", "ran"]);
       expect(await db.rawMessage.count()).toBe(FETCHABLE.length);
-      const skipped = results[0]!.outcome === "locked" ? a : b;
-      expect(skipped.log).toHaveBeenCalledWith(expect.stringContaining("lock 42"));
+      // NFR-35: the skip is reported by the cycle's one summary line, not a separate log line.
+      const skipped = results.find((r) => r.outcome === "locked")!;
+      expect(summaryLine(skipped)).toBe("cycle: skipped (lock held)");
+    });
+
+    it("two concurrent cycles → one summary line each, exactly one says skipped (NFR-35)", async () => {
+      const a = deps(new MockGmail({ getDelayMs: 200 }));
+      const b = deps(new MockGmail({ getDelayMs: 200 }));
+      await Promise.all([runCycle(a), runCycle(b)]);
+
+      const lines = [a, b].map((d) => d.log.mock.calls.map((c) => String(c[0])));
+      const summaries = lines.map((l) => l.filter((x) => x.startsWith("cycle:")));
+      expect(summaries.map((s) => s.length)).toEqual([1, 1]);
+      expect(summaries.flat().filter((x) => x === "cycle: skipped (lock held)")).toHaveLength(1);
+      expect(await db.rawMessage.count()).toBe(FETCHABLE.length);
     });
   });
 

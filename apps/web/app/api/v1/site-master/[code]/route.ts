@@ -45,7 +45,13 @@ const body = z
   })
   .strict();
 
-const params = z.object({ code: z.string().min(1).max(20).transform((s) => s.toUpperCase()) });
+const params = z.object({
+  code: z
+    .string()
+    .min(1)
+    .max(20)
+    .transform((s) => s.toUpperCase()),
+});
 
 // FR-67: ADMIN edits one site (every field but code and region).
 export const PUT = route({ minRole: "ADMIN", params, body }, async ({ params: { code }, body }) => {

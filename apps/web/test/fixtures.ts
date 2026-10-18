@@ -103,9 +103,10 @@ export async function seedRawAndOrphans(db: PrismaClient): Promise<void> {
 const exportDir = fileURLToPath(new URL("../../../samples/export/", import.meta.url));
 const loadExport = <T>(file: string): T => JSON.parse(readFileSync(exportDir + file, "utf8")) as T;
 
-export const expectedExports = loadExport<
-  { name: string; query: string; office: string; sheet: string; cells: (string | number | null)[][] }[]
->("expected-exports.json");
+export const expectedExports =
+  loadExport<{ name: string; query: string; office: string; sheet: string; cells: (string | number | null)[][] }[]>(
+    "expected-exports.json",
+  );
 
 export interface ExpectedStats {
   now: string;

@@ -19,9 +19,7 @@ export const GET = route({ minRole: "VIEWER", query }, async ({ query: { office,
   const text = q?.trim();
   const where: Prisma.SiteMasterWhereInput = {
     ...(office?.trim() ? { office: baseNormalize(office) } : {}),
-    ...(text
-      ? { OR: [{ code: { contains: text, mode: "insensitive" } }, { siteName: { contains: text, mode: "insensitive" } }] }
-      : {}),
+    ...(text ? { OR: [{ code: { contains: text, mode: "insensitive" } }, { siteName: { contains: text, mode: "insensitive" } }] } : {}),
   };
   const [total, items] = await Promise.all([
     db.siteMaster.count({ where }),

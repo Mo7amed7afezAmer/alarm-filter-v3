@@ -20,13 +20,11 @@ const rar = new Uint8Array(readFileSync(hourlyDir + "nsn-update-output.rar"));
 const xlsx = new Uint8Array(readFileSync(hourlyDir + "nsn-update-output.xlsx"));
 const ctx = (id: string) => ({ params: { id } });
 // receivedAt of the real report message in samples/bodies.jsonl.
-const realReceivedAt = (
-  readFileSync(new URL("../../../samples/bodies.jsonl", import.meta.url), "utf8")
-    .split("\n")
-    .filter(Boolean)
-    .map((l) => JSON.parse(l) as { id: string; receivedAt: string })
-    .find((m) => m.id === REAL_ID)!
-).receivedAt;
+const realReceivedAt = readFileSync(new URL("../../../samples/bodies.jsonl", import.meta.url), "utf8")
+  .split("\n")
+  .filter(Boolean)
+  .map((l) => JSON.parse(l) as { id: string; receivedAt: string })
+  .find((m) => m.id === REAL_ID)!.receivedAt;
 
 // FR-47, FR-48, FR-50 … FR-52, NFR-09, NFR-23; D-10/D-11: list + attachment + server unrar only.
 describe("/api/v1/hourly-reports", () => {
@@ -182,7 +180,10 @@ describe("/api/v1/hourly-reports", () => {
         const msg = await api.messagesGet({ id: REAL_ID, format: "full" });
         vi.spyOn(api, "messagesGet").mockResolvedValue({
           ...msg,
-          payload: { ...msg.payload, parts: msg.payload!.parts!.map((p) => (p.filename.endsWith(".rar") ? { ...p, body: { ...p.body, size: big.length } } : p)) },
+          payload: {
+            ...msg.payload,
+            parts: msg.payload!.parts!.map((p) => (p.filename.endsWith(".rar") ? { ...p, body: { ...p.body, size: big.length } } : p)),
+          },
         });
 
         global.gc?.();

@@ -72,4 +72,3 @@ export function loadWorkerConfig(env: Env, validateCron: (expr: string) => boole
     alarmTz: env.ALARM_TZ?.trim() || "Africa/Cairo",
   };
 }
-

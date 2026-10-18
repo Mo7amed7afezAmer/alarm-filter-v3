@@ -37,7 +37,9 @@ describe("parseReport (FR-53, FR-54)", () => {
   });
 
   it("takes the Environmental alarm name from Supplementary Information, falling back to Alarm Text", () => {
-    const env = { Environmental: [row({ "Supplementary Information": "RECTIFIER MINOR ALARM" }), row({ "Supplementary Information": "" })] };
+    const env = {
+      Environmental: [row({ "Supplementary Information": "RECTIFIER MINOR ALARM" }), row({ "Supplementary Information": "" })],
+    };
     const [a, b] = parseReport(env);
     expect(a!.alarmName).toBe("RECTIFIER MINOR ALARM");
     expect(b!.alarmName).toBe("BASE STATION EXTERNAL ALARM NOTIFICATION");

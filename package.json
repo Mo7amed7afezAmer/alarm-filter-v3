@@ -7,15 +7,17 @@
     "pnpm": "9.15.9"
   },
   "scripts": {
-    "lint": "eslint .",
+    "lint": "eslint . && prettier --check .",
     "typecheck": "pnpm -r typecheck",
-    "test": "pnpm -r --workspace-concurrency=1 test",
+    "test": "pnpm -r --workspace-concurrency=1 test && vitest run tests/ops/compose.test.ts",
     "gmail:auth": "pnpm --filter worker gmail:auth",
-    "e2e": "pnpm --filter web e2e"
+    "e2e": "pnpm --filter web e2e",
+    "ops:test": "vitest run tests/ops"
   },
   "devDependencies": {
     "@eslint/js": "^9.14.0",
     "eslint": "^9.14.0",
+    "prettier": "3.3.3",
     "typescript": "^5.6.3",
     "typescript-eslint": "^8.13.0",
     "vitest": "^2.1.4"

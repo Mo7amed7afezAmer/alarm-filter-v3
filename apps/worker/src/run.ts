@@ -66,10 +66,8 @@ export async function runOnce(deps: RunDeps): Promise<RunResult> {
         },
         { timeout: REPROCESS_TIMEOUT_MS, maxWait: CYCLE_MAX_WAIT_MS },
       );
-      if (!ran) {
-        log(`cycle skipped: advisory lock ${LOCK_ID} is held by another instance`);
-        return { outcome: "locked" };
-      }
+      // NFR-35: the cycle's summary line reports the skip ("skipped (lock held)").
+      if (!ran) return { outcome: "locked" };
       reprocessed = true;
     }
 
@@ -123,7 +121,6 @@ export async function runOnce(deps: RunDeps): Promise<RunResult> {
       { timeout: CYCLE_TIMEOUT_MS, maxWait: CYCLE_MAX_WAIT_MS },
     );
 
-    if (result.outcome === "locked") log(`cycle skipped: advisory lock ${LOCK_ID} is held by another instance`);
     return result;
   } catch (err) {
     await recordError(db, err, now).catch((e: unknown) => log(`could not record the error: ${String(e)}`));
@@ -142,4 +139,9 @@ export function summaryLine(r: RunResult): string {
     `cycle: office=${r.office} mode=${r.mode} fetched=${r.fetched} backlog=${r.backlog}` +
     `${r.throttled ? " throttled" : ""}${r.reprocessed ? " reprocessed" : ""} ${counts || "no changes"}`
   );
+}
+
+/** NFR-35: one cycle, logged as one summary line (the worker's tick). */
+export async function runCycle(deps: RunDeps): Promise<void> {
+  deps.log(summaryLine(await runOnce(deps)));
 }

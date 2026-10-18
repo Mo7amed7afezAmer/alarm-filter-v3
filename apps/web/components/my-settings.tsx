@@ -13,7 +13,11 @@ interface Prefs {
   alarmNames: string[];
   sites: string[];
 }
-const lines = (s: string) => s.split("\n").map((x) => x.trim()).filter(Boolean);
+const lines = (s: string) =>
+  s
+    .split("\n")
+    .map((x) => x.trim())
+    .filter(Boolean);
 
 function NotificationPrefs() {
   const { data } = useJson<Prefs>("/api/v1/me/notification-prefs");
@@ -21,7 +25,8 @@ function NotificationPrefs() {
   const [msg, setMsg] = useState<string | null>(null);
   useEffect(() => setP(data), [data]);
   if (!p) return null;
-  const toggle = (c: Cat) => setP({ ...p, categories: p.categories.includes(c) ? p.categories.filter((x) => x !== c) : [...p.categories, c] });
+  const toggle = (c: Cat) =>
+    setP({ ...p, categories: p.categories.includes(c) ? p.categories.filter((x) => x !== c) : [...p.categories, c] });
   async function save() {
     try {
       setP((await sendJson("PUT", "/api/v1/me/notification-prefs", p)) as Prefs);

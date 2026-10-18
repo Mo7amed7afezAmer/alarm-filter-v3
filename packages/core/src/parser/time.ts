@@ -4,8 +4,18 @@
 export const DEFAULT_ALARM_TZ = "Africa/Cairo";
 
 const MONTHS: Record<string, number> = {
-  JAN: 1, FEB: 2, MAR: 3, APR: 4, MAY: 5, JUN: 6,
-  JUL: 7, AUG: 8, SEP: 9, OCT: 10, NOV: 11, DEC: 12,
+  JAN: 1,
+  FEB: 2,
+  MAR: 3,
+  APR: 4,
+  MAY: 5,
+  JUN: 6,
+  JUL: 7,
+  AUG: 8,
+  SEP: 9,
+  OCT: 10,
+  NOV: 11,
+  DEC: 12,
 };
 
 const STAMP_RE = /^(\d{2})-([A-Za-z]{3})-(\d{4}) (\d{2}):(\d{2}):(\d{2})$/;
@@ -18,8 +28,12 @@ function formatter(tz: string): Intl.DateTimeFormat {
     f = new Intl.DateTimeFormat("en-US", {
       timeZone: tz,
       hourCycle: "h23",
-      year: "numeric", month: "2-digit", day: "2-digit",
-      hour: "2-digit", minute: "2-digit", second: "2-digit",
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit",
+      hour: "2-digit",
+      minute: "2-digit",
+      second: "2-digit",
     });
     formatters.set(tz, f);
   }
@@ -38,8 +52,12 @@ function offsetMs(utcMs: number, tz: string): number {
 
 /** Converts a wall-clock time in `tz` to a UTC instant (DST-aware). */
 export function zonedToUtc(
-  year: number, month: number, day: number,
-  hour: number, minute: number, second: number,
+  year: number,
+  month: number,
+  day: number,
+  hour: number,
+  minute: number,
+  second: number,
   tz: string = DEFAULT_ALARM_TZ,
 ): Date {
   const wall = Date.UTC(year, month - 1, day, hour, minute, second);
@@ -56,7 +74,11 @@ export function parseAlarmStamp(text: string, tz: string = DEFAULT_ALARM_TZ): Da
   const [, dd, mon, yyyy, hh, mi, ss] = m;
   const month = MONTHS[mon!.toUpperCase()];
   if (!month) return null;
-  const year = Number(yyyy), day = Number(dd), hour = Number(hh), minute = Number(mi), second = Number(ss);
+  const year = Number(yyyy),
+    day = Number(dd),
+    hour = Number(hh),
+    minute = Number(mi),
+    second = Number(ss);
   if (hour > 23 || minute > 59 || second > 59) return null;
   const check = new Date(Date.UTC(year, month - 1, day));
   if (check.getUTCMonth() !== month - 1 || check.getUTCDate() !== day) return null;

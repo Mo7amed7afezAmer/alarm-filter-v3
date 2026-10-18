@@ -118,7 +118,12 @@ export const ROUTES: RouteEntry[] = [
     params: { code: "0999DE" },
     body: { vip: true },
   },
-  { method: "GET", path: "/api/v1/hourly-normalizations", minRole: "ADMIN", load: () => import("@/app/api/v1/hourly-normalizations/route") },
+  {
+    method: "GET",
+    path: "/api/v1/hourly-normalizations",
+    minRole: "ADMIN",
+    load: () => import("@/app/api/v1/hourly-normalizations/route"),
+  },
   {
     method: "PUT",
     path: "/api/v1/hourly-normalizations",

@@ -13,7 +13,14 @@ const golden = JSON.parse(readFileSync(dir + "golden-export.json", "utf8")) as {
   sheetName: string;
   palette: string[];
   defaultColumns: string[];
-  exports: { name: string; selection: string; columns: string[]; header: string[]; rows: (string | number | null)[][]; fills: (string | null)[] }[];
+  exports: {
+    name: string;
+    selection: string;
+    columns: string[];
+    header: string[];
+    rows: (string | number | null)[][];
+    fills: (string | null)[];
+  }[];
 };
 
 const SELECTIONS: Record<string, (r: HourlyRow) => boolean> = {

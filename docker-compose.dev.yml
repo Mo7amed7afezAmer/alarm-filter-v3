@@ -1,6 +1,75 @@
-# Development override (NFR-26): publish db on 127.0.0.1 only.
-# Usage: docker compose -f docker-compose.yml -f docker-compose.dev.yml up -d db
+# Development override (G-T16): sources bind-mounted, `next dev` and `tsx watch` with reload on save.
+# Usage: docker compose -f docker-compose.yml -f docker-compose.dev.yml up
+# Ports are bound to 127.0.0.1 only (NFR-26): db 5432, web 3000, worker health 4000.
+# node_modules live in named volumes (Linux binaries), filled once by the `deps` service.
+
+x-dev-node: &dev-node
+  image: node:20-bookworm-slim
+  build: !reset null
+  working_dir: /app
+  healthcheck:
+    disable: true
+  volumes:
+    - .:/app
+    - node-modules:/app/node_modules
+    - web-node-modules:/app/apps/web/node_modules
+    - worker-node-modules:/app/apps/worker/node_modules
+    - core-node-modules:/app/packages/core/node_modules
+    - db-node-modules:/app/packages/db/node_modules
+    - ./secrets:/run/gmail:ro
+
 services:
   db:
     ports:
       - "127.0.0.1:5432:5432"
+
+  deps:
+    <<: *dev-node
+    restart: "no"
+    command:
+      [
+        "sh",
+        "-c",
+        "apt-get update -qq && apt-get install -y -qq openssl >/dev/null && corepack enable && pnpm install --frozen-lockfile && pnpm --filter @alarm/db generate",
+      ]
+
+  web:
+    <<: *dev-node
+    command:
+      [
+        "sh",
+        "-c",
+        "apt-get update -qq && apt-get install -y -qq openssl >/dev/null && corepack enable && pnpm --filter web exec next dev -p 3000",
+      ]
+    environment:
+      NEXTAUTH_URL: ${NEXTAUTH_URL:-http://localhost:3000}
+    ports:
+      - "127.0.0.1:3000:3000"
+    depends_on:
+      deps:
+        condition: service_completed_successfully
+      migrate:
+        condition: service_completed_successfully
+
+  worker:
+    <<: *dev-node
+    command:
+      [
+        "sh",
+        "-c",
+        "apt-get update -qq && apt-get install -y -qq openssl >/dev/null && corepack enable && pnpm --filter worker exec tsx watch src/index.ts",
+      ]
+    ports:
+      - "127.0.0.1:4000:4000"
+    depends_on:
+      deps:
+        condition: service_completed_successfully
+      migrate:
+        condition: service_completed_successfully
+
+volumes:
+  node-modules:
+  web-node-modules:
+  worker-node-modules:
+  core-node-modules:
+  db-node-modules:

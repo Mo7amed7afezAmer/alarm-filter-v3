@@ -25,7 +25,13 @@ const sample = JSON.parse(
 const sites = sample.filter((r, i) => sample.findIndex((s) => s.code === r.code) === i);
 
 /** The import workbook, generated from samples/hourly/site-master.json plus 2 invalid rows (decided 2026-10-17). */
-function workbook(rows = sample, extra: Record<string, unknown>[] = [{ Code: "bad", Office: "X" }, { Code: "0999DE", Office: "" }]): Uint8Array<ArrayBuffer> {
+function workbook(
+  rows = sample,
+  extra: Record<string, unknown>[] = [
+    { Code: "bad", Office: "X" },
+    { Code: "0999DE", Office: "" },
+  ],
+): Uint8Array<ArrayBuffer> {
   const sheet = XLSX.utils.json_to_sheet([
     ...rows.map((r) => ({
       Code: r.code,
@@ -113,7 +119,9 @@ describe.skipIf(!testDatabaseUrl)("G-T15 Site Master and normalizations", () => 
     it("400 for a file that is not .xlsx, or no file", async () => {
       expect((await importSites(upload(workbook(), "sites.csv"))).status).toBe(400);
       expect((await importSites(upload(new Uint8Array([1, 2, 3, 4])))).status).toBe(400);
-      expect((await importSites(new Request("http://localhost/api/v1/site-master/import", { method: "POST", body: new FormData() }))).status).toBe(400);
+      expect(
+        (await importSites(new Request("http://localhost/api/v1/site-master/import", { method: "POST", body: new FormData() }))).status,
+      ).toBe(400);
     });
 
     it("403 for an OPERATOR", async () => {
@@ -139,12 +147,20 @@ describe.skipIf(!testDatabaseUrl)("G-T15 Site Master and normalizations", () => 
 
     it("filters by office and by q (code or site name, case-insensitive)", async () => {
       const office = String(sample[0]!.office);
-      const byOffice = await (await listSites(jsonRequest("GET", `/api/v1/site-master?office=${encodeURIComponent(office)}&pageSize=500`))).json();
+      const byOffice = await (
+        await listSites(jsonRequest("GET", `/api/v1/site-master?office=${encodeURIComponent(office)}&pageSize=500`))
+      ).json();
       expect(byOffice.total).toBe(sites.filter((r) => r.office === office).length);
       const name = String(sample[0]!.siteName);
       const q = name.slice(0, 6).toLowerCase();
       const byQ = await (await listSites(jsonRequest("GET", `/api/v1/site-master?q=${encodeURIComponent(q)}&pageSize=500`))).json();
-      const expected = sites.filter((r) => String(r.code).toLowerCase().includes(q) || String(r.siteName ?? "").toLowerCase().includes(q));
+      const expected = sites.filter(
+        (r) =>
+          String(r.code).toLowerCase().includes(q) ||
+          String(r.siteName ?? "")
+            .toLowerCase()
+            .includes(q),
+      );
       expect(byQ.total).toBe(expected.length);
     });
 
@@ -185,7 +201,9 @@ describe.skipIf(!testDatabaseUrl)("G-T15 Site Master and normalizations", () => 
     });
 
     it("404 for an unknown code; 403 for an OPERATOR", async () => {
-      expect((await putSite(jsonRequest("PUT", "/api/v1/site-master/0999DE", { vip: true }), { params: { code: "0999DE" } })).status).toBe(404);
+      expect((await putSite(jsonRequest("PUT", "/api/v1/site-master/0999DE", { vip: true }), { params: { code: "0999DE" } })).status).toBe(
+        404,
+      );
       await as("OPERATOR");
       expect((await putSite(jsonRequest("PUT", `/api/v1/site-master/${code}`, { vip: true }), { params: { code } })).status).toBe(403);
     });
@@ -226,7 +244,8 @@ describe.skipIf(!testDatabaseUrl)("G-T15 Site Master and normalizations", () => 
         [rules[0], rules[0]],
         Array.from({ length: 501 }, (_, i) => ({ field: "*", from: `A${i}`, to: "B" })),
       ];
-      for (const r of bad) expect((await putNormalizations(jsonRequest("PUT", "/api/v1/hourly-normalizations", { rules: r }))).status).toBe(400);
+      for (const r of bad)
+        expect((await putNormalizations(jsonRequest("PUT", "/api/v1/hourly-normalizations", { rules: r }))).status).toBe(400);
     });
 
     it("403 for an OPERATOR (GET and PUT)", async () => {

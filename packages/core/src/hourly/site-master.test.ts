@@ -130,7 +130,9 @@ describe("parseSiteMaster (FR-65, FR-66)", () => {
   });
 
   it("joins the numbers of several phone columns", () => {
-    const [r] = parseSiteMaster({ SiteMaster: [{ Code: "0444DE", Office: "X", "Guard Number": 1001234567, Mobile: "01112223334" }] }).records;
+    const [r] = parseSiteMaster({
+      SiteMaster: [{ Code: "0444DE", Office: "X", "Guard Number": 1001234567, Mobile: "01112223334" }],
+    }).records;
     expect(r!.phone).toBe("01001234567 / 01112223334");
   });
 

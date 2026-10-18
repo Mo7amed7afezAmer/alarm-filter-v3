@@ -6,7 +6,7 @@ import { createGmailApi, GmailSetupError } from "./client";
 import { ConfigError, loadWorkerConfig } from "./config";
 import { startHealthServer } from "./health";
 import { LabelDirectory } from "./labels";
-import { runOnce, summaryLine } from "./run";
+import { runCycle } from "./run";
 import { createTicker, startSchedule } from "./ticker";
 
 /** NFR-14: how long shutdown waits for a running cycle. */
@@ -30,9 +30,7 @@ async function main(): Promise<void> {
   });
   log(`worker started: cron "${config.cron}", health on :${config.healthPort}`);
 
-  const ticker = createTicker(async () => {
-    log(summaryLine(await runOnce({ gmail, db, config, labels, log })));
-  }, log);
+  const ticker = createTicker(() => runCycle({ gmail, db, config, labels, log }), log);
 
   let task: { stop: () => void } | undefined;
   const shutdown = async (signal: string) => {

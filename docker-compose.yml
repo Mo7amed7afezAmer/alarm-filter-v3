@@ -1,5 +1,10 @@
 name: alarm-platform
 
+# Production stack (NFR-32, G-T16): db, migrate (one-shot), worker, web, proxy, backup.
+# Only `proxy` publishes ports (NFR-26, D-06). Configuration comes from .env (see .env.example).
+
+x-database-url: &database-url postgresql://${POSTGRES_USER:-alarms}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB:-alarms}
+
 services:
   db:
     image: postgres:16
@@ -8,8 +13,10 @@ services:
       POSTGRES_USER: ${POSTGRES_USER:-alarms}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?POSTGRES_PASSWORD is required}
       POSTGRES_DB: ${POSTGRES_DB:-alarms}
+      TZ: UTC
     volumes:
-      - db-data:/var/lib/postgresql/data
+      # NFR-30: Postgres data in the named volume pgdata.
+      - pgdata:/var/lib/postgresql/data
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
       interval: 5s
@@ -21,7 +28,7 @@ services:
       context: .
       dockerfile: packages/db/Dockerfile
     environment:
-      DATABASE_URL: postgresql://${POSTGRES_USER:-alarms}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB:-alarms}
+      DATABASE_URL: *database-url
       ADMIN_EMAIL: ${ADMIN_EMAIL:-}
       ADMIN_PASSWORD: ${ADMIN_PASSWORD:-}
     depends_on:
@@ -35,7 +42,7 @@ services:
       dockerfile: apps/worker/Dockerfile
     restart: unless-stopped
     environment:
-      DATABASE_URL: postgresql://${POSTGRES_USER:-alarms}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB:-alarms}
+      DATABASE_URL: *database-url
       GOOGLE_CREDENTIALS_PATH: /run/gmail/credentials.json
       GOOGLE_TOKEN_PATH: /run/gmail/token.json
       GMAIL_LABELS: ${GMAIL_LABELS:-}
@@ -63,5 +70,76 @@ services:
       retries: 3
       start_period: 30s
 
+  web:
+    build:
+      context: .
+      dockerfile: apps/web/Dockerfile
+    restart: unless-stopped
+    environment:
+      DATABASE_URL: *database-url
+      NEXTAUTH_SECRET: ${NEXTAUTH_SECRET:?NEXTAUTH_SECRET is required}
+      NEXTAUTH_URL: ${NEXTAUTH_URL:-https://localhost}
+      ALARM_TZ: ${ALARM_TZ:-Africa/Cairo}
+      ALERT_HOURS: ${ALERT_HOURS:-4}
+      GMAIL_LABELS: ${GMAIL_LABELS:-}
+      GOOGLE_CREDENTIALS_PATH: /run/gmail/credentials.json
+      GOOGLE_TOKEN_PATH: /run/gmail/token.json
+      HOURLY_GMAIL_LABEL: ${HOURLY_GMAIL_LABEL:-Hourly Update}
+      HOURLY_MAX_RAR_MB: ${HOURLY_MAX_RAR_MB:-25}
+      HOURLY_MAX_EXTRACT_MB: ${HOURLY_MAX_EXTRACT_MB:-100}
+      WORKER_STALE_SEC: ${WORKER_STALE_SEC:-300}
+    volumes:
+      # NFR-21: OAuth files mounted read-only.
+      - ./secrets/credentials.json:/run/gmail/credentials.json:ro
+      - ./secrets/token.json:/run/gmail/token.json:ro
+    depends_on:
+      db:
+        condition: service_healthy
+      migrate:
+        condition: service_completed_successfully
+    # NFR-33: /api/health every 30 s (the image runs as `node`, NFR-26).
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://127.0.0.1:3000/api/health || exit 1"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 30s
+
+  proxy:
+    build:
+      context: proxy
+    restart: unless-stopped
+    environment:
+      # Host name or IP the NOC devices use; certificates come from Caddy's internal CA (D-06).
+      SITE_ADDRESS: ${SITE_ADDRESS:-localhost}
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - caddy-data:/data
+      - caddy-config:/config
+    depends_on:
+      - web
+
+  backup:
+    build:
+      context: backup
+    restart: unless-stopped
+    environment:
+      PGHOST: db
+      PGUSER: ${POSTGRES_USER:-alarms}
+      PGPASSWORD: ${POSTGRES_PASSWORD}
+      PGDATABASE: ${POSTGRES_DB:-alarms}
+      BACKUP_KEEP_DAYS: "14"
+      TZ: UTC
+    volumes:
+      # D-07: dumps land in ./backups on the host.
+      - ./backups:/backups
+    depends_on:
+      db:
+        condition: service_healthy
+
 volumes:
-  db-data:
+  pgdata:
+  caddy-data:
+  caddy-config:
