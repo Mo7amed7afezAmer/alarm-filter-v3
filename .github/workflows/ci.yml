@@ -1,4 +1,7 @@
-# CI stub (G-T01). The full pipeline is built in P4-T04.
+# P4-T04: lint, typecheck, unit, integration (postgres:16, alarms_test), Playwright smoke and Docker
+# build, as parallel jobs of at most 15 minutes. No step uses Gmail credentials or repository secrets:
+# Gmail is mocked from samples/ (worker, web) and the images are only built, never run.
+# GitHub sets CI=true, so fixture-dependent tests fail instead of skipping (P4-T03).
 name: ci
 
 on:
@@ -7,9 +10,18 @@ on:
   pull_request:
     branches: [main]
 
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
 jobs:
   check:
-    runs-on: ubuntu-latest
+    name: Lint and typecheck
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v4
@@ -18,6 +30,105 @@ jobs:
           node-version: 20
           cache: pnpm
       - run: pnpm install --frozen-lockfile
-      - run: pnpm lint
-      - run: pnpm typecheck
-      - run: pnpm test
+      - name: Lint (ESLint + Prettier)
+        run: pnpm lint
+      - name: Typecheck
+        run: pnpm typecheck
+
+  test:
+    name: Unit and integration tests
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: alarms
+          POSTGRES_PASSWORD: alarms
+          POSTGRES_DB: alarms_test
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U alarms -d alarms_test"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+    env:
+      TEST_DATABASE_URL: postgresql://alarms:alarms@localhost:5432/alarms_test
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      # The 40 MB RAR memory test (G-T12) builds its archive with RarLab `rar` (multiverse).
+      - name: Install rar
+        run: |
+          sudo add-apt-repository -y multiverse
+          sudo apt-get update -y
+          sudo apt-get install -y --no-install-recommends rar
+      - name: Unit tests (packages/core)
+        run: pnpm --filter @alarm/core test
+      # One database for all packages: run them one at a time.
+      - name: Integration tests against alarms_test (packages/db, worker, web)
+        run: pnpm -r --workspace-concurrency=1 --filter @alarm/db --filter worker --filter web test
+      - name: Integration tests of the compose files and CI (tests/ops, tests/ci)
+        run: pnpm exec vitest run tests/ops/compose.test.ts tests/ci
+
+  e2e:
+    name: Playwright smoke
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: alarms
+          POSTGRES_PASSWORD: alarms
+          POSTGRES_DB: alarms_test
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U alarms -d alarms_test"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+    env:
+      TEST_DATABASE_URL: postgresql://alarms:alarms@localhost:5432/alarms_test
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - name: Generate the Prisma client
+        run: pnpm --filter @alarm/db generate
+      - name: Install Chromium
+        run: pnpm --filter web exec playwright install --with-deps chromium
+      # Without `rar` the 40k laptop-timing test skips itself (G-T14 budget is for a laptop).
+      - name: Playwright smoke tests (next dev :3200, production build :3201)
+        run: pnpm e2e
+      - name: Keep the Playwright report
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report
+          path: |
+            apps/web/playwright-report
+            apps/web/test-results
+          retention-days: 7
+
+  docker:
+    name: Docker build
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    env:
+      # Placeholders for the variables compose requires; the images are built, not run.
+      POSTGRES_PASSWORD: ci-build-only
+      NEXTAUTH_SECRET: ci-build-only
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build every image (migrate, worker, web, proxy, backup)
+        run: docker compose --env-file .env.example build

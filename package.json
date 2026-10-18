@@ -9,7 +9,7 @@
   "scripts": {
     "lint": "eslint . && prettier --check .",
     "typecheck": "pnpm -r typecheck",
-    "test": "pnpm -r --workspace-concurrency=1 test && vitest run tests/ops/compose.test.ts",
+    "test": "pnpm -r --workspace-concurrency=1 test && vitest run tests/ops/compose.test.ts tests/ci",
     "gmail:auth": "pnpm --filter worker gmail:auth",
     "e2e": "pnpm --filter web e2e",
     "ops:test": "vitest run tests/ops"
@@ -20,6 +20,7 @@
     "prettier": "3.3.3",
     "typescript": "^5.6.3",
     "typescript-eslint": "^8.13.0",
-    "vitest": "^2.1.4"
+    "vitest": "^2.1.4",
+    "yaml": "2.9.1"
   }
 }

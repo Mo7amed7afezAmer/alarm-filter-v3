@@ -111,7 +111,8 @@ test.describe("hourly reports in the browser", () => {
   test("a VIEWER sees the reports but no Process link (FR-64)", async ({ page }) => {
     await signIn(page, E2E_USER);
     await page.goto("/hourly");
-    await expect(page.getByRole("cell", { name: /nsn-update-output\.rar/ })).toBeVisible({ timeout: 60_000 });
+    // The attachment cell ("nsn-update-output.rar (0.5 MB)"), not the subject cell that also names the file.
+    await expect(page.getByRole("cell", { name: /^nsn-update-output\.rar \(/ })).toBeVisible({ timeout: 60_000 });
     await expect(page.getByTestId("process")).toHaveCount(0);
   });
 

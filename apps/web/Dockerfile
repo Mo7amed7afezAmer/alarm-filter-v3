@@ -15,6 +15,8 @@ RUN --mount=type=cache,id=pnpm-store,target=/pnpm/store --mount=type=cache,id=pr
 COPY packages/core packages/core
 COPY packages/db packages/db
 COPY apps/web apps/web
+# `next build` typechecks apps/web, including vitest.config.ts, which imports the root fixture guard (P4-T03).
+COPY vitest.fixtures.ts ./
 RUN --mount=type=cache,id=prisma-engines,target=/root/.cache/prisma pnpm --filter @alarm/db generate
 # Build-time placeholders only; the real values come from the environment at run time.
 RUN cd apps/web && node scripts/copy-unrar-wasm.mjs && BUILD_STANDALONE=1 NEXTAUTH_SECRET=build-only DATABASE_URL=postgresql://build@localhost/build pnpm exec next build
