@@ -8,12 +8,12 @@
 {$SITE_ADDRESS:localhost} {
 	tls internal
 
-	# D-08: 10 login attempts per minute per client IP; the 11th gets 429.
+	# D-08: 10 login attempts per minute per client IP (web and mobile sign-in together); the 11th gets 429.
 	rate_limit {
 		zone login {
 			match {
 				method POST
-				path /api/auth/callback/credentials
+				path /api/auth/callback/credentials /api/v1/auth/login
 			}
 			key    {remote_host}
 			events 10

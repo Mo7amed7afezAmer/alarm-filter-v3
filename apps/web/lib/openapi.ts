@@ -3,6 +3,7 @@
 // minimum roles; every operation carries that role as `x-min-role`.
 import { OpenAPIRegistry, OpenApiGeneratorV31, extendZodWithOpenApi } from "@asteasolutions/zod-to-openapi";
 import { z, type AnyZodObject, type ZodTypeAny } from "zod";
+import { loginBody } from "./api-tokens";
 import { ROUTES } from "./routes";
 
 extendZodWithOpenApi(z);
@@ -63,6 +64,20 @@ async function generate(): Promise<object> {
       },
     } as Parameters<OpenAPIRegistry["registerPath"]>[0]);
   }
+
+  registry.registerPath({
+    method: "post",
+    path: "/api/v1/auth/login",
+    summary: "POST /api/v1/auth/login",
+    description: "Public (decision P7 mobile login): e-mail + password → a new API token of that user; same lockout as the web sign-in.",
+    security: [],
+    request: { body: { content: { "application/json": { schema: loginBody } } } },
+    responses: {
+      200: { description: "Token (shown once) and the user" },
+      400: errorBody("Invalid input"),
+      401: errorBody("Wrong e-mail or password, or the e-mail is locked"),
+    },
+  });
 
   registry.registerPath({
     method: "get",

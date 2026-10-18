@@ -73,6 +73,8 @@ jobs:
       # One database for all packages: run them one at a time.
       - name: Integration tests against alarms_test (packages/db, worker, web)
         run: pnpm -r --workspace-concurrency=1 --filter @alarm/db --filter worker --filter web test
+      - name: Mobile app tests (apps/mobile; Metro bundles Android + iOS with packages/core)
+        run: pnpm --filter mobile test
       - name: Integration tests of the compose files and CI (tests/ops, tests/ci)
         run: pnpm exec vitest run tests/ops/compose.test.ts tests/ci
 

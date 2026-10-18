@@ -1,0 +1,23 @@
+{
+  "expo": {
+    "name": "NOC Alarms",
+    "slug": "noc-alarms",
+    "scheme": "nocalarms",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "plugins": ["expo-router", "expo-status-bar", "expo-secure-store", "expo-sqlite", "expo-sharing", "./plugins/with-lan-trust"],
+    "ios": {
+      "bundleIdentifier": "com.docnile.nocalarms",
+      "supportsTablet": false,
+      "infoPlist": {
+        "NSAppTransportSecurity": {
+          "NSAllowsArbitraryLoads": false
+        }
+      }
+    },
+    "android": {
+      "package": "com.docnile.nocalarms"
+    }
+  }
+}

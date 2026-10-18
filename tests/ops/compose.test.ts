@@ -205,6 +205,10 @@ describe("proxy/Caddyfile (D-06, D-08)", () => {
     expect(caddyfile).toMatch(/window\s+1m\b/);
   });
 
+  it("the mobile sign-in POST /api/v1/auth/login shares the same 10/min/IP zone (decision P7 mobile login)", () => {
+    expect(caddyfile).toMatch(/path \/api\/auth\/callback\/credentials \/api\/v1\/auth\/login/);
+  });
+
   it("the proxy image pins caddy-ratelimit", () => {
     expect(readFileSync(root + "proxy/Dockerfile", "utf8")).toMatch(/github\.com\/mholt\/caddy-ratelimit@[0-9a-f]{7,}|caddy-ratelimit@v\d/);
   });

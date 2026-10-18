@@ -3,7 +3,7 @@
 // FR-33 / FR-34 / NFR-06 / NFR-37 / NFR-39: alarm lists with filters, live ages, refresh, Site Master
 // columns and card views on small screens.
 import { useCallback, useEffect, useState } from "react";
-import { AGE_TICK_MS, ALARMS_REFRESH_MS, ageText, isAlert, telHref } from "@/lib/alarm-ui";
+import { AGE_TICK_MS, ALARMS_REFRESH_MS, ageText, alarmsQuery, isAlert, telHref } from "@/lib/alarm-ui";
 
 type Status = "active" | "cleared";
 
@@ -76,10 +76,8 @@ export function AlarmList({ status, alertHours }: { status: Status; alertHours: 
   const [open, setOpen] = useState(false);
 
   const load = useCallback(async () => {
-    const params = new URLSearchParams({ status, page: String(page) });
-    for (const [k, v] of Object.entries(filters)) if (v) params.set(k, v);
     try {
-      const res = await fetch(`/api/v1/alarms?${params}`, { cache: "no-store" });
+      const res = await fetch(`/api/v1/alarms?${alarmsQuery(status, page, filters)}`, { cache: "no-store" });
       const body = await res.json();
       if (!res.ok) throw new Error(body?.error?.message ?? res.statusText);
       setData(body as Page);

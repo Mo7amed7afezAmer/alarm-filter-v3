@@ -24,7 +24,7 @@ describe("middleware (FR-26, NFR-17)", () => {
     expect(await res.json()).toEqual({ error: { code: "UNAUTHORIZED", message: expect.any(String) } });
   });
 
-  it.each(["/api/auth/session", "/api/auth/callback/credentials", "/api/health", "/login"])(
+  it.each(["/api/auth/session", "/api/auth/callback/credentials", "/api/health", "/login", "/api/v1/auth/login"])(
     "lets %s through without a session",
     async (path) => {
       token.mockResolvedValue(null);

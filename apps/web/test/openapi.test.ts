@@ -42,9 +42,10 @@ describe("OpenAPI 3.1 (P3-T03)", () => {
 
   it("lists exactly the protected routes, the spec itself and the public /api/health", () => {
     const listed = Object.entries(spec.paths).flatMap(([p, ops]) => Object.keys(ops).map((m) => `${m.toUpperCase()} ${p}`));
-    const expected = [...ROUTES.map((r) => `${r.method} ${openApiPath(r.path)}`), "GET /api/health"];
+    const expected = [...ROUTES.map((r) => `${r.method} ${openApiPath(r.path)}`), "GET /api/health", "POST /api/v1/auth/login"];
     expect(listed.sort()).toEqual([...new Set(expected)].sort());
     expect(spec.paths["/api/health"]!.get!.security).toEqual([]);
+    expect(spec.paths["/api/v1/auth/login"]!.post!.security).toEqual([]);
   });
 
   it("takes query, path and body schemas from the routes' zod schemas", () => {

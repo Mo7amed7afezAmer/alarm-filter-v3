@@ -145,3 +145,58 @@ describe("documentation matches the code (P6-T01, P6-T02)", () => {
       expect(doc, rule).toContain(rule);
   });
 });
+
+// P7-T08: the RUNBOOK's mobile section matches apps/mobile/eas.json and the eas-preview workflow.
+describe("mobile distribution docs (P7-T08)", () => {
+  const runbook = read("docs/RUNBOOK.md");
+  const section = runbook.slice(runbook.indexOf("## 8. Mobile app"));
+  const eas = JSON.parse(read("apps/mobile/eas.json")) as {
+    build: Record<
+      string,
+      { distribution?: string; autoIncrement?: boolean; android?: { buildType?: string }; ios?: { simulator?: boolean } }
+    >;
+  };
+
+  it("has a mobile app section with one-time setup, build, install per OS, first start and updates", () => {
+    expect(runbook).toContain("## 8. Mobile app (EAS internal distribution)");
+    for (const h of [
+      "One-time setup",
+      "Build",
+      "Install on Android",
+      "Install on iOS (ad-hoc)",
+      "iOS through TestFlight",
+      "First start",
+      "Updates",
+    ]) {
+      expect(section, h).toContain(`### ${h}`);
+    }
+    for (const step of [
+      "eas login",
+      "eas init",
+      "EXPO_TOKEN",
+      "eas device:create",
+      "eas submit --platform ios --latest",
+      "Developer Mode",
+    ]) {
+      expect(section, step).toContain(step);
+    }
+    expect(section).toContain("TLS trust");
+    expect(section).toContain("Server");
+  });
+
+  it("every profile the section names exists in eas.json with the documented distribution", () => {
+    const named = [...section.matchAll(/--profile (\w+)/g)].map((m) => m[1]!);
+    expect(new Set(named)).toEqual(new Set(["preview", "testflight"]));
+    for (const p of named) expect(eas.build[p], p).toBeDefined();
+    expect(eas.build.preview).toMatchObject({ distribution: "internal", android: { buildType: "apk" }, ios: { simulator: false } });
+    expect(eas.build.testflight).toMatchObject({ distribution: "store", autoIncrement: true });
+  });
+
+  it("describes the eas-preview workflow as it is (manual or v* tag, preview profile, both platforms)", () => {
+    const wf = read(".github/workflows/eas-preview.yml");
+    expect(wf).toContain("eas build --profile preview --platform all");
+    expect(section).toContain("eas-preview");
+    expect(section).toContain("`v*` tag");
+    expect(section).toContain("eas build --profile preview --platform all");
+  });
+});

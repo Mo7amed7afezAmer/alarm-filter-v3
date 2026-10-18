@@ -14,6 +14,8 @@ export default tseslint.config(
       "**/.e2e-hourly/**",
       "**/test-results/**",
       "**/playwright-report/**",
+      "**/.expo/**",
+      "apps/mobile/expo-env.d.ts",
     ],
   },
   js.configs.recommended,
@@ -24,8 +26,8 @@ export default tseslint.config(
   },
   ...tseslint.configs.recommended,
   {
-    // CommonJS Node scripts (e2e fixture builders); after the TS presets so the rule override wins.
-    files: ["**/*.cjs"],
+    // CommonJS Node scripts (e2e fixture builders, Metro config); after the TS presets so the rule override wins.
+    files: ["**/*.cjs", "apps/mobile/metro.config.js", "apps/mobile/plugins/*.js"],
     languageOptions: { sourceType: "commonjs", globals: { require: "readonly", module: "writable", __dirname: "readonly" } },
     rules: { "@typescript-eslint/no-require-imports": "off" },
   },

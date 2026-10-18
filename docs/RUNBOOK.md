@@ -62,6 +62,11 @@ Target: under 1 hour on a clean host.
    - iOS: AirDrop or e-mail the file → install the profile → Settings → General → About →
      Certificate Trust Settings → enable it.
 
+   The mobile app (P7-T07) uses the same trust: on Android it accepts the installed CA certificate
+   (its network security config trusts user CAs, clear text off); on iOS the profile must be
+   enabled under Certificate Trust Settings. In the app, enter `https://<SITE_ADDRESS>` on the
+   Server screen; it is checked with `/api/health` before it is saved.
+
    The certificate lives in the `caddy-data` volume. Keep that volume, or every device has to
    trust a new CA.
 9. **First sign-in.** Open `https://<SITE_ADDRESS>` and sign in as the ADMIN. In **Settings**:
@@ -149,3 +154,87 @@ FR-24). It is idempotent.
 | Web health | `curl -k https://<SITE_ADDRESS>/api/health` |
 | Restart one service | `docker compose restart web` |
 | Stop everything (data kept) | `docker compose down` (never add `-v`: it deletes `pgdata` and the Caddy CA) |
+
+## 8. Mobile app (EAS internal distribution)
+
+The NOC phones get the app from EAS internal distribution (Q-10): an Android APK and an iOS ad-hoc
+build from the `preview` profile, or TestFlight from the `testflight` profile. Nothing goes to the
+public stores. The app only reaches the server on the NOC LAN, over HTTPS (D-06, P7-T07).
+
+### One-time setup
+
+1. Install the CLI on a workstation and sign in with the NOC Expo account:
+   `npm install -g eas-cli`, then `eas login`.
+2. In `apps/mobile`, link the project: `eas init`. It writes `expo.extra.eas.projectId` (and the
+   owner) into `app.json`; commit that change.
+3. Create an Expo access token (expo.dev → Account settings → Access tokens) and store it as the
+   GitHub repository secret `EXPO_TOKEN`. Only the `eas-preview` workflow uses it; `ci.yml` has no
+   secrets.
+4. iOS ad-hoc builds install only on registered devices. Register each NOC iPhone before its
+   first build: `eas device:create`, then open the link it prints on the iPhone and install the
+   profile. `eas device:list` shows the registered devices.
+5. iOS signing: the first iOS build asks for the Apple developer account and lets EAS create and
+   keep the certificate and provisioning profile. Run that first build from the workstation
+   (`eas build --profile preview --platform ios`) so the questions can be answered; later builds,
+   including the workflow, reuse the stored credentials.
+
+### Build
+
+- **From GitHub:** run the `eas-preview` workflow (Actions → eas-preview → Run workflow), or push a
+  `v*` tag. It runs `eas build --profile preview --platform all --non-interactive --no-wait`: the
+  builds run on EAS and the job ends once they are queued.
+- **From a workstation:** `eas build --profile preview --platform all` in `apps/mobile`.
+- Follow the builds on expo.dev (project `noc-alarms` → Builds) or with `eas build:list`. Each
+  finished build has an install page with a link and a QR code; send that link to the NOC phones.
+
+After adding an iPhone with `eas device:create`, build iOS again: an ad-hoc build only installs on
+the devices that were registered when it was built.
+
+### Install on Android
+
+1. Open the build's install link on the phone (or scan its QR code) and download the APK.
+2. Allow the browser to install unknown apps when Android asks (Settings → Apps → the browser →
+   Install unknown apps), then install.
+3. Install the NOC root certificate once (step 8 of section 1, "TLS trust"): Settings → Security →
+   Install a certificate → CA certificate.
+
+### Install on iOS (ad-hoc)
+
+1. Open the build's install link in Safari on a registered iPhone and tap Install.
+2. iOS 16 and later: turn on Developer Mode (Settings → Privacy & Security → Developer Mode), let the
+   phone restart and confirm. Ad-hoc builds do not open without it.
+3. Install and enable the NOC root certificate once (section 1, "TLS trust"): install the profile,
+   then Settings → General → About → Certificate Trust Settings → turn it on.
+
+### iOS through TestFlight
+
+For iPhones that should not be registered one by one:
+
+1. `eas build --profile testflight --platform ios` (store signing; the build number goes up by one
+   each time, so commit the `ios.buildNumber` change in `app.json`).
+2. `eas submit --platform ios --latest` uploads it to App Store Connect. The first submit asks for the
+   Apple ID and creates the app record.
+3. In App Store Connect → TestFlight, add the NOC staff as internal testers. They install TestFlight
+   and accept the invitation. Internal testers need no App Review.
+4. The NOC root certificate is needed as for ad-hoc (step 3 above). Developer Mode is not.
+
+### First start
+
+1. On the **Server** screen, enter `https://<SITE_ADDRESS>`. The app checks `/api/health` before it
+   saves the address. "Cannot reach" means the phone is not on the NOC Wi-Fi or does not trust the
+   NOC root certificate.
+2. Sign in with the user's e-mail and password (same lockout as the web). The app keeps an API token
+   named `mobile` for that user. Signing out revokes it.
+
+### Updates
+
+- Raise `expo.version` in `app.json` for a release, then build again (workflow or `v*` tag). Phones
+  install the new build from its install link over the old one. Data on the phone is kept: the
+  server address, the session and the hourly reference data.
+- A new iPhone needs `eas device:create` and a new iOS ad-hoc build, or a TestFlight invitation.
+- A lost phone: revoke the user's `mobile` tokens on the Docker host (the web has no token list).
+  Every phone of that user has to sign in again:
+  ```bash
+  docker compose exec db psql -U alarms -d alarms -c "UPDATE api_tokens SET \"revokedAt\" = now() WHERE name = 'mobile' AND \"revokedAt\" IS NULL AND \"userId\" = (SELECT id FROM users WHERE email = 'user@example.com')"
+  ```
+  Deleting the user (`DELETE /api/v1/users/{id}`, ADMIN) also removes all of the user's tokens.

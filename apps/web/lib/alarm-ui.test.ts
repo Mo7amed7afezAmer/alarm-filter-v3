@@ -56,3 +56,12 @@ describe("dashboard and bell helpers (FR-39, FR-46, NFR-06)", () => {
     expect(titleWithCount("(3) NOC Alarm Platform", 5)).toBe("(5) NOC Alarm Platform");
   });
 });
+
+describe("alarm list query (FR-30, FR-31; shared with the P7-T03 contract test)", () => {
+  it("is status, page, then the non-empty filters, as the page always sent", async () => {
+    const { alarmsQuery } = await import("./alarm-ui");
+    expect(alarmsQuery("active", 1, {})).toBe("status=active&page=1");
+    expect(alarmsQuery("cleared", 3, { category: "DOWN", site: "", region: "DE" })).toBe("status=cleared&page=3&category=DOWN&region=DE");
+    expect(alarmsQuery("active", 2, {}, 2)).toBe("status=active&page=2&pageSize=2");
+  });
+});

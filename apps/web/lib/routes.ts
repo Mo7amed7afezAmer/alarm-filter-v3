@@ -147,6 +147,8 @@ export const ROUTES: RouteEntry[] = [
     load: () => import("@/app/api/v1/auth/tokens/[id]/route"),
     params: { id: "999999" },
   },
+  // P7-T02 (mobile sign-in; POST /api/v1/auth/login is public)
+  { method: "POST", path: "/api/v1/auth/logout", minRole: "VIEWER", load: () => import("@/app/api/v1/auth/logout/route") },
   // P3-T03
   { method: "GET", path: "/api/v1/openapi.json", minRole: "ADMIN", load: () => import("@/app/api/v1/openapi.json/route") },
 ];

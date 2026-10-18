@@ -3,7 +3,8 @@
 import { getToken } from "next-auth/jwt";
 import { NextResponse, type NextRequest } from "next/server";
 
-const PUBLIC = [/^\/login(\/|$)/, /^\/api\/auth(\/|$)/, /^\/api\/health(\/|$)/];
+// Decision "P7 mobile login": POST /api/v1/auth/login is how the mobile app signs in.
+const PUBLIC = [/^\/login(\/|$)/, /^\/api\/auth(\/|$)/, /^\/api\/health(\/|$)/, /^\/api\/v1\/auth\/login$/];
 
 export async function middleware(req: NextRequest): Promise<NextResponse> {
   const { pathname } = req.nextUrl;

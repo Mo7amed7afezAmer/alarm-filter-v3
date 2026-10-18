@@ -1,0 +1,41 @@
+{
+  "name": "mobile",
+  "version": "0.0.0",
+  "private": true,
+  "main": "expo-router/entry",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "typecheck": "tsc -p tsconfig.json && tsc -p tsconfig.node.json",
+    "test": "vitest run --passWithNoTests"
+  },
+  "dependencies": {
+    "@alarm/core": "workspace:*",
+    "exceljs": "4.4.0",
+    "expo": "~58.0.14",
+    "expo-constants": "~58.0.12",
+    "expo-file-system": "~58.0.9",
+    "expo-linking": "~58.0.13",
+    "expo-router": "~58.0.23",
+    "expo-secure-store": "~58.0.2",
+    "expo-sharing": "~58.0.19",
+    "expo-sqlite": "~58.0.13",
+    "expo-status-bar": "~58.0.3",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "react-native": "0.88.0",
+    "react-native-safe-area-context": "~5.10.1",
+    "react-native-screens": "~4.30.0",
+    "react-native-view-shot": "6.1.1",
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.0",
+    "@types/react": "^19.2.18",
+    "@types/sql.js": "1.4.9",
+    "sql.js": "1.13.0",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.4"
+  }
+}

@@ -1,0 +1,33 @@
+# P7-T01 (decision "P7 EAS builds"): EAS preview builds of apps/mobile for Android (APK) and iOS
+# (ad-hoc), started by hand or by a v* tag. The builds run on EAS; this job only submits them, so it
+# needs the EXPO_TOKEN repository secret. ci.yml stays secret-free.
+name: eas-preview
+
+on:
+  workflow_dispatch:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: EAS preview build (Android + iOS)
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - uses: expo/expo-github-action@v8
+        with:
+          eas-version: 25.2.0
+          token: ${{ secrets.EXPO_TOKEN }}
+      - name: Submit the preview builds to EAS
+        working-directory: apps/mobile
+        run: eas build --profile preview --platform all --non-interactive --no-wait

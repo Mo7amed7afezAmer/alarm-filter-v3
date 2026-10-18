@@ -36,6 +36,7 @@ which are processed in the browser (D-10). Staff sign in on the LAN behind Caddy
 | `packages/db` | Prisma schema and migrations, seed (13 rules + first ADMIN), repository functions |
 | `apps/worker` | Gmail client and sync (`gmail.ts`, `ingest.ts`), label directory, cycle (`run.ts`), cron ticker, `/health`, one-time `pnpm gmail:auth` (`auth-cli.ts`) |
 | `apps/web` | Next.js 14: pages under `app/(app)`, route handlers under `app/api`, route layer `lib/api.ts`, role table `lib/routes.ts`, OpenAPI `lib/openapi.ts`, hourly browser pipeline `lib/hourly/` (Web Worker, IndexedDB reference cache, export, images) |
+| `apps/mobile` | Expo SDK 58 app (Phase 7): Expo Router screens in `app/`, logic in `src/` (session in expo-secure-store, API client with bearer token, roles); bundles `packages/core` unchanged (Metro stubs the server-only `node-unrar-js`) |
 | `proxy/`, `backup/`, `scripts/restore.sh` | Caddy (TLS internal, login rate limit), daily `pg_dump`, restore |
 | `samples/`, `tests/fixtures/` | Test fixtures only |
 | `tests/ops`, `tests/ci` | Compose and live-stack checks; CI fixture guard, workflow and documentation checks |
@@ -110,9 +111,11 @@ at `/api-docs`), generated from the routes' zod schemas. Every protected route, 
 | GET | `/api/v1/hourly-reference` | OPERATOR |
 | POST | `/api/v1/auth/tokens` | ADMIN |
 | DELETE | `/api/v1/auth/tokens/{id}` | ADMIN |
+| POST | `/api/v1/auth/logout` | VIEWER |
 | GET | `/api/v1/openapi.json` | ADMIN |
 
-Public: `/api/health` (FR-70) and NextAuth under `/api/auth/*`. `PUT /api/v1/rules`,
+Public: `/api/health` (FR-70), `POST /api/v1/auth/login` (mobile sign-in → API token, same lockout
+as the web, Caddy 10/min/IP) and NextAuth under `/api/auth/*`. `PUT /api/v1/rules`,
 `POST /api/v1/site-master/import` and `POST /api/v1/reprocess` accept `Idempotency-Key` (P3-T08).
 Errors always use `{ error: { code, message, details? } }`; invalid input is 400 with zod details.
 

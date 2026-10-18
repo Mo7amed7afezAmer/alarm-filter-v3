@@ -3,6 +3,7 @@
 // role until revoked (decided 2026-10-18: chosen user, no expiry, revoke only).
 import { createHash, randomBytes } from "node:crypto";
 import type { PrismaClient } from "@alarm/db";
+import { z } from "zod";
 import type { SessionUser } from "./roles";
 
 export const hashToken = (token: string): string => createHash("sha256").update(token).digest("hex");
@@ -23,4 +24,14 @@ export async function tokenUser(db: PrismaClient, token: string): Promise<Sessio
   });
   if (!row || row.revokedAt) return null;
   return row.user;
+}
+
+/** Decision "P7 mobile login": body of the public POST /api/v1/auth/login. */
+export const loginBody = z.object({ email: z.string().trim().email(), password: z.string().min(1).max(200) });
+
+/** Creates a token for `userId` and returns the token (shown once). */
+export async function issueToken(db: PrismaClient, userId: number, name: string): Promise<string> {
+  const token = newToken();
+  await db.apiToken.create({ data: { name, userId, tokenHash: hashToken(token) } });
+  return token;
 }

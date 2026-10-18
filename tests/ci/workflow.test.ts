@@ -61,6 +61,10 @@ describe("CI workflow (P4-T04)", () => {
     expect(runs(job)).toMatch(/playwright install/);
   });
 
+  it("runs the mobile app's tests (P7-T01)", () => {
+    expect(allRuns).toMatch(/pnpm --filter mobile test/);
+  });
+
   it("builds the Docker images", () => {
     expect(allRuns).toMatch(/docker compose[^\n]* build/);
   });
@@ -86,5 +90,30 @@ describe("CI workflow (P4-T04)", () => {
       packageManager: string;
     };
     expect(pkg.packageManager).toBe("pnpm@9.15.9");
+  });
+});
+
+// P7-T01 / decision "P7 EAS builds": EAS preview builds run in a separate, manual workflow with the
+// EXPO_TOKEN secret, so ci.yml stays secret-free.
+describe("EAS preview workflow (P7-T01)", () => {
+  const easFile = fileURLToPath(new URL("../../.github/workflows/eas-preview.yml", import.meta.url));
+  const easText = readFileSync(easFile, "utf8");
+  const eas = parse(easText) as { on: Record<string, unknown>; jobs: Record<string, Job> };
+
+  it("runs manually and on v* tags only", () => {
+    expect(Object.keys(eas.on).sort()).toEqual(["push", "workflow_dispatch"]);
+    expect(eas.on.push).toEqual({ tags: ["v*"] });
+  });
+
+  it("builds the preview profile for Android and iOS with EXPO_TOKEN", () => {
+    const run = Object.values(eas.jobs).map(runs).join("\n");
+    expect(run).toMatch(/eas build --profile preview --platform all --non-interactive/);
+    expect(easText).toMatch(/secrets\.EXPO_TOKEN/);
+    expect(easText).not.toMatch(/credentials\.json|token\.json/);
+  });
+
+  it("keeps the job under 15 minutes (builds run on EAS, not on the runner)", () => {
+    for (const job of Object.values(eas.jobs)) expect(job["timeout-minutes"]).toBeLessThanOrEqual(15);
+    expect(Object.values(eas.jobs).map(runs).join("\n")).toMatch(/--no-wait/);
   });
 });

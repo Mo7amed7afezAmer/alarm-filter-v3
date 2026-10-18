@@ -50,3 +50,11 @@ export function titleWithCount(title: string, count: number): string {
   const base = title.replace(/^\(\d+\)\s*/, "");
   return count > 0 ? `(${count}) ${base}` : base;
 }
+
+/** FR-30 / FR-31: the alarm list query: status, page, then the non-empty filters (pageSize when given). */
+export function alarmsQuery(status: "active" | "cleared", page: number, filters: Record<string, string>, pageSize?: number): string {
+  const params = new URLSearchParams({ status, page: String(page) });
+  for (const [k, v] of Object.entries(filters)) if (v) params.set(k, v);
+  if (pageSize !== undefined) params.set("pageSize", String(pageSize));
+  return params.toString();
+}
