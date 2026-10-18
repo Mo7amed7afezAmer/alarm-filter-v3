@@ -132,4 +132,21 @@ export const ROUTES: RouteEntry[] = [
     body: { rules: [] },
   },
   { method: "GET", path: "/api/v1/hourly-reference", minRole: "OPERATOR", load: () => import("@/app/api/v1/hourly-reference/route") },
+  // P3-T07
+  {
+    method: "POST",
+    path: "/api/v1/auth/tokens",
+    minRole: "ADMIN",
+    load: () => import("@/app/api/v1/auth/tokens/route"),
+    body: { userId: 999999, name: "role-table" },
+  },
+  {
+    method: "DELETE",
+    path: "/api/v1/auth/tokens/:id",
+    minRole: "ADMIN",
+    load: () => import("@/app/api/v1/auth/tokens/[id]/route"),
+    params: { id: "999999" },
+  },
+  // P3-T03
+  { method: "GET", path: "/api/v1/openapi.json", minRole: "ADMIN", load: () => import("@/app/api/v1/openapi.json/route") },
 ];

@@ -8,7 +8,7 @@ export const dynamic = "force-dynamic";
 // FR-24: an ADMIN requests reprocess(days) (1–90, default 7); the worker runs it on its next cycle.
 const body = z.object({ days: z.number().int().min(1).max(90).default(7) });
 
-export const POST = route({ minRole: "ADMIN", body }, async ({ body }) => {
+export const POST = route({ minRole: "ADMIN", body, idempotent: true }, async ({ body }) => {
   await db.systemStatus.upsert({
     where: { id: 1 },
     create: { id: 1, reprocessDays: body.days },

@@ -7,6 +7,8 @@ const env = loadEnv("", root, "");
 
 export default defineConfig({
   resolve: { alias: { "@": fileURLToPath(new URL(".", import.meta.url)) } },
+  // tsconfig keeps JSX for Next ("preserve"); tests that import pages compile it with the automatic runtime.
+  esbuild: { jsx: "automatic" },
   test: {
     // Route and repository code reads DATABASE_URL; tests point it at alarms_test (NFR-41).
     env: { ...env, DATABASE_URL: env.TEST_DATABASE_URL ?? "", NEXTAUTH_SECRET: "test-secret-for-vitest-only" },

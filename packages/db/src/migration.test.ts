@@ -2,9 +2,10 @@ import type { PrismaClient } from "@prisma/client";
 import { afterAll, beforeAll, describe, expect, it } from "vitest";
 import { resetSchema, migrateDeploy, testClient, testDatabaseUrl } from "./test-db";
 
-// REQUIREMENTS.md §5: nine models.
+// REQUIREMENTS.md §5: nine models, plus api_tokens (P3-T07).
 const TABLES = [
   "alarms",
+  "api_tokens",
   "hourly_normalizations",
   "orphan_clears",
   "raw_messages",
@@ -77,6 +78,15 @@ describe.skipIf(!testDatabaseUrl)("migrations (alarms_test)", () => {
     has(/UNIQUE INDEX .* ON public\.users .*\(email\)/);
     has(/ON public\.site_master .*\(office\)/);
     has(/UNIQUE INDEX .* ON public\.hourly_normalizations .*\(field, from\)/);
+    has(/UNIQUE INDEX .* ON public\.api_tokens .*\(tokenHash\)/);
+    has(/ON public\.api_tokens .*\(userId\)/);
+  });
+
+  it("deletes a user's API tokens with the user (P3-T07, onDelete Cascade)", async () => {
+    const user = await db.user.create({ data: { email: "token-owner@noc.test", passwordHash: "x" } });
+    await db.apiToken.create({ data: { name: "script", tokenHash: "a".repeat(64), userId: user.id } });
+    await db.user.delete({ where: { id: user.id } });
+    expect(await db.apiToken.count()).toBe(0);
   });
 
   it("deletes orphan clears with their raw message (onDelete Cascade)", async () => {

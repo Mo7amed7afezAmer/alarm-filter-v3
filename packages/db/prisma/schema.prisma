@@ -112,8 +112,24 @@ model User {
   notifyPrefs         Json?
   notificationsSeenAt DateTime?
   displayPrefs        Json?
+  apiTokens           ApiToken[]
 
   @@map("users")
+}
+
+/// P3-T07: bearer tokens for scripts and the mobile app. Only the SHA-256 hash is stored; a token
+/// acts as its user (current role) until revoked.
+model ApiToken {
+  id        Int       @id @default(autoincrement())
+  name      String
+  tokenHash String    @unique
+  userId    Int
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  createdAt DateTime  @default(now())
+  revokedAt DateTime?
+
+  @@index([userId])
+  @@map("api_tokens")
 }
 
 model SystemStatus {

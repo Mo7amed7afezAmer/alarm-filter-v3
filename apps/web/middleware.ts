@@ -13,6 +13,8 @@ export async function middleware(req: NextRequest): Promise<NextResponse> {
   if (token) return NextResponse.next();
 
   if (pathname.startsWith("/api/")) {
+    // P3-T07: API tokens are checked by the route layer (lib/api.ts), which needs the database.
+    if (/^Bearer\s+\S/i.test(req.headers.get("authorization") ?? "")) return NextResponse.next();
     return NextResponse.json({ error: { code: "UNAUTHORIZED", message: "sign in required" } }, { status: 401 });
   }
   const login = new URL("/login", req.url);

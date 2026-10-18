@@ -33,6 +33,18 @@ describe("middleware (FR-26, NFR-17)", () => {
     },
   );
 
+  it("lets an API call with a bearer token through to the route layer (P3-T07)", async () => {
+    token.mockResolvedValue(null);
+    const res = await middleware(new NextRequest("http://localhost/api/v1/alarms", { headers: { Authorization: "Bearer abc" } }));
+    expect(res.headers.get("x-middleware-next")).toBe("1");
+  });
+
+  it("still redirects a page request that only carries a bearer token", async () => {
+    token.mockResolvedValue(null);
+    const res = await middleware(new NextRequest("http://localhost/alarms", { headers: { Authorization: "Bearer abc" } }));
+    expect(res.status).toBe(307);
+  });
+
   it("lets signed-in requests through", async () => {
     token.mockResolvedValue({ id: 1, role: "VIEWER" } as never);
     expect((await middleware(req("/alarms"))).headers.get("x-middleware-next")).toBe("1");

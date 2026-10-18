@@ -22,7 +22,7 @@ export const GET = route({ minRole: "ADMIN" }, async () => ({
   rules: await db.rule.findMany({ select, orderBy: [{ priority: "asc" }, { id: "asc" }] }),
 }));
 
-export const PUT = route({ minRole: "ADMIN", body }, async ({ body }) => {
+export const PUT = route({ minRole: "ADMIN", body, idempotent: true }, async ({ body }) => {
   const rules = await db.$transaction(
     async (tx) => {
       await tx.rule.deleteMany();

@@ -10,7 +10,7 @@ const ZIP_MAGIC = [0x50, 0x4b, 0x03, 0x04];
 
 // FR-65: ADMIN imports a Site Master .xlsx (≤ 5 MB, NFR-25) as multipart field `file` and upserts
 // by Code; returns inserted / updated / skipped.
-export const POST = route({ minRole: "ADMIN" }, async ({ req }) => {
+export const POST = route({ minRole: "ADMIN", idempotent: true }, async ({ req }) => {
   const form = await req.formData().catch(() => null);
   const file = form?.get("file");
   if (!(file instanceof Blob)) throw badRequest("multipart field `file` is required");
